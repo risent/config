@@ -1,0 +1,5 @@
+dev-lang/php apache2 bzip2 iconv mysql sqlite ssl session snmp unicode xml curl json soap zip simplexml posix imap  -ncurses -perl -cli
+net-im/pidgin qq
+app-editor/emacs gtk alsa X png jpeg svg xpm unicode
+media-vedio/vlc X a52 alsa dbus dvd ffmpeg mmx mpeg ogg opengl png qt4 svg truetype xml xv skins fontconfig vlm win32codecs 
+app-office/openoffice -eds kdeenablefinal -java
