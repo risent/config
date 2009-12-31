@@ -1,0 +1,18 @@
+;; Object linux_fetion_v1.0/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "linux_fetion_v1.0/"
+  :tables (list 
+   (semanticdb-table "64_libfetion.sh"
+    :major-mode 'sh-mode
+    :tags nil
+    :file "64_libfetion.sh"
+    :pointmax 494
+    :fsize 493
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Downloads!temp!linux_fetion_v1.0!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

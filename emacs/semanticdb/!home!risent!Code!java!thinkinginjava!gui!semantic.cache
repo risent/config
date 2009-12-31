@@ -1,0 +1,33 @@
+;; Object gui/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gui/"
+  :tables (list 
+   (semanticdb-table "HelloSwing.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("javax.swing.JFrame" include nil nil [1 27])
+            ("HelloSwing" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [83 96]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [59 264]))                  
+                :type "class")
+                nil [29 266]))          
+    :file "HelloSwing.java"
+    :pointmax 266
+    :fsize 265
+    :lastmodtime '(19115 3588)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!java!thinkinginjava!gui!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

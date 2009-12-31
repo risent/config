@@ -1,0 +1,18 @@
+;; Object bin/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "bin/"
+  :tables (list 
+   (semanticdb-table "scilab"
+    :major-mode 'sh-mode
+    :tags nil
+    :file "scilab"
+    :pointmax 8433
+    :fsize 8432
+    :lastmodtime '(18916 18346)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!.cache!.fr-VNBXtj!scilab-5.1.1!bin!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

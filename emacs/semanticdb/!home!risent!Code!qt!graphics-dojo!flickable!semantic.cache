@@ -1,0 +1,325 @@
+;; Object flickable/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "flickable/"
+  :tables (list 
+   (semanticdb-table "main.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtCore" include (:system-flag t) nil [1078 1095])
+            ("QtGui" include (:system-flag t) nil [1096 1112])
+            ("flickable.h" include nil nil [1114 1136])
+            ("colorPairs" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("max" variable (:type "int") (reparse-symbol arg-sub-list) [1210 1218]))                  
+                :type ("QStringList" type (:type "class") nil nil))
+                nil [1180 1979])
+            ("ColorList" type
+               (:superclasses 
+                  ( ("QWidget" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil)
+                    ("Flickable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2048 2055])
+                    ("ColorList" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("parent" variable
+                               (:pointer 1
+                                :default-value "0"
+                                :type ("QWidget" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2070 2089]))                          
+                        :type ("ColorList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2060 2818])
+                    ("protected" label nil (reparse-symbol classsubparts) [2820 2830])
+                    ("scrollOffset" function
+                       (:typemodifiers ("virtual")
+                        :type ("QPoint" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2869 2948])
+                    ("setScrollOffset" function
+                       (:typemodifiers ("virtual")
+                        :arguments 
+                          ( ("offset" variable
+                               (:constant-flag t
+                                :type ("QPoint" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3017 3038]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2988 3219])
+                    ("protected" label nil (reparse-symbol classsubparts) [3221 3231])
+                    ("paintEvent" function
+                       (:arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QPaintEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3252 3271]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3236 4482])
+                    ("keyReleaseEvent" function
+                       (:arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QKeyEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4509 4526]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4488 4838])
+                    ("mousePressEvent" function
+                       (:arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4865 4884]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4844 5303])
+                    ("mouseMoveEvent" function
+                       (:arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5329 5348]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5309 5399])
+                    ("mouseReleaseEvent" function
+                       (:arguments 
+                          ( ("event" variable
+                               (:pointer 1
+                                :type ("QMouseEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5428 5447]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [5405 5703])
+                    ("private" label nil (reparse-symbol classsubparts) [5705 5713])
+                    ("m_offset" variable (:type "int") (reparse-symbol classsubparts) [5718 5731])
+                    ("m_height" variable (:type "int") (reparse-symbol classsubparts) [5736 5749])
+                    ("m_highlight" variable (:type "int") (reparse-symbol classsubparts) [5754 5770])
+                    ("m_selected" variable (:type "int") (reparse-symbol classsubparts) [5775 5790])
+                    ("m_colorNames" variable (:type ("QStringList" type (:type "class") nil nil)) (reparse-symbol classsubparts) [5795 5820])
+                    ("m_firstColor" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QColor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5825 5852])
+                    ("m_secondColor" variable (:type ("QList" type
+                         (:template-specifier 
+                            ( ("QColor" type nil nil nil))                            
+                          :type "class")
+                          nil nil)) (reparse-symbol classsubparts) [5857 5885]))                  
+                :type "class")
+                nil [1981 5888])
+            ("main.moc" include nil nil [5890 5909])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [5920 5929])
+                    ("argv" variable
+                       (:pointer 1
+                        :dereference 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5930 5943]))                  
+                :type "int")
+                nil [5911 6175]))          
+    :file "main.cpp"
+    :pointmax 6176
+    :fsize 6175
+    :lastmodtime '(19102 7105)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "flickable.h"
+    :tags 
+        '( ("FLICKABLE_H" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("Flickable" type
+               (:type "class"
+                :line 34
+                :members 
+                  ( ("Flickable" function
+                       (:constructor-flag t
+                        :line 38
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("Flickable" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 39
+                        :protection "public")
+                        nil nil)
+                    ("setThreshold" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 41
+                        :arguments 
+                          ( ("threshold" variable (:type "int") nil nil))                          )
+                        nil nil)
+                    ("threshold" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 42
+                        :arguments (nil))
+                        nil nil)
+                    ("setAcceptMouseClick" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 44
+                        :arguments (nil))
+                        nil nil)
+                    ("handleMousePress" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 46
+                        :arguments (nil))
+                        nil nil)
+                    ("handleMouseMove" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 47
+                        :arguments (nil))
+                        nil nil)
+                    ("handleMouseRelease" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 48
+                        :arguments (nil))
+                        nil nil)
+                    ("scrollOffset" function
+                       (:protection "protected"
+                        :arguments (nil)
+                        :line 51
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("setScrollOffset" function
+                       (:protection "protected"
+                        :arguments (nil)
+                        :line 52
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("tick" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 55)
+                        nil nil)
+                    ("d" variable
+                       (:protection "private"
+                        :line 58)
+                        nil nil))                  )
+                nil nil))          
+    :file "flickable.h"
+    :pointmax 6176
+    :fsize 1781
+    :lastmodtime '(19084 7988)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "flickable.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("random" include nil nil [1078 1096])
+            ("PyQt4.QtCore" include nil nil [1097 1123])
+            ("PyQt4.QtGui" include nil nil [1124 1149])
+            ("FlickableTicker" type
+               (:superclasses ("QObject")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1201 1205])
+                        ("scroller" variable nil (reparse-symbol function_parameters) [1207 1215])
+                        ("parent" variable nil (reparse-symbol function_parameters) [1217 1223]))                      ) (reparse-symbol indented_block_body) [1188 1349])
+                    ("start" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1364 1368])
+                        ("interval" variable nil (reparse-symbol function_parameters) [1370 1378]))                      ) (reparse-symbol indented_block_body) [1354 1468])
+                    ("stop" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1482 1486]))                      ) (reparse-symbol indented_block_body) [1473 1517])
+                    ("timerEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1541 1545])
+                        ("event" variable nil (reparse-symbol function_parameters) [1547 1552]))                      ) (reparse-symbol indented_block_body) [1526 1586]))                  
+                :type "class")
+                nil [1151 1586])
+            ("FlickablePrivate" type
+               (:members 
+                  ( ("State" type
+                       (:members 
+                          ( ("__init__" function (:arguments 
+                              ( ("self" variable nil (reparse-symbol function_parameters) [1651 1655])
+                                ("value" variable nil (reparse-symbol function_parameters) [1657 1662]))                              ) (reparse-symbol indented_block_body) [1638 1696]))                          
+                        :type "class")
+                        (reparse-symbol indented_block_body) [1617 1696])
+                    ("Steady, Pressed, ManualScroll, AutoScroll, Stop" code nil (reparse-symbol indented_block_body) [1705 1775]))                  
+                :type "class")
+                nil [1588 1776])
+            ("Flickable" type
+               (:members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("setThreshold" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("th" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("threshold" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("setAcceptMouseClick" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("target" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("deaccelerate" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("speed" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("a" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("maximum" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("handleMousePress" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("event" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("handleMouseRelease" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("event" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("handleMouseMove" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("event" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("tick" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776]))                  
+                :type "class")
+                nil [1776 1776])
+            ("colorPairs" function (:arguments 
+              ( ("maximum" variable nil (reparse-symbol function_parameters) [1776 1776]))              ) nil [1776 1776])
+            ("ColorList" type
+               (:superclasses ("QWidget" "Flickable")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("parent" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("scrollOffset" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("setScrollOffset" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1776 1776])
+                        ("offset" variable nil (reparse-symbol function_parameters) [1776 1776]))                      ) (reparse-symbol indented_block_body) [1776 1776])
+                    ("paintEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [8887 8891])
+                        ("event" variable nil (reparse-symbol function_parameters) [8893 8898]))                      ) (reparse-symbol indented_block_body) [8872 10187])
+                    ("keyReleaseEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10212 10216])
+                        ("event" variable nil (reparse-symbol function_parameters) [10218 10223]))                      ) (reparse-symbol indented_block_body) [10192 10519])
+                    ("mousePressEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10544 10548])
+                        ("event" variable nil (reparse-symbol function_parameters) [10550 10555]))                      ) (reparse-symbol indented_block_body) [10524 10942])
+                    ("mouseMoveEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [10966 10970])
+                        ("event" variable nil (reparse-symbol function_parameters) [10972 10977]))                      ) (reparse-symbol indented_block_body) [10947 11016])
+                    ("mouseReleaseEvent" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [11043 11047])
+                        ("event" variable nil (reparse-symbol function_parameters) [11049 11054]))                      ) (reparse-symbol indented_block_body) [11021 11291]))                  
+                :type "class")
+                nil [1776 11291])
+            ("if" code nil nil [11293 11595]))          
+    :file "flickable.py"
+    :pointmax 11595
+    :fsize 11585
+    :lastmodtime '(19084 7988)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!qt!graphics-dojo!flickable!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,51 @@
+;; Object slot/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "slot/"
+  :tables (list 
+   (semanticdb-table "slot.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_SLOT_SLOT_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/slot/detail/def.hpp" include (:line 16) nil nil)
+            ("BOOST_PP_ASSIGN_SLOT" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("BOOST_PP_ASSIGN_SLOT_1" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("BOOST_PP_ASSIGN_SLOT_2" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_PP_ASSIGN_SLOT_3" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_PP_ASSIGN_SLOT_4" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_ASSIGN_SLOT_5" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_PP_SLOT" variable
+               (:constant-flag t
+                :line 30)
+                nil nil))          
+    :file "slot.hpp"
+    :pointmax 286
+    :fsize 1356
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!slot!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

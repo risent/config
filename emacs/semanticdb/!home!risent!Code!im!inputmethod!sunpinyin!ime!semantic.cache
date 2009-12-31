@@ -1,0 +1,18 @@
+;; Object ime/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ime/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags nil
+    :file "Makefile.am"
+    :pointmax 2479
+    :fsize 2478
+    :lastmodtime '(19082 13867)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,868 @@
+;; Object msvc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "msvc/"
+  :tables (list 
+   (semanticdb-table "remove_cv.hpp"
+    :tags 
+        '( ("BOOST_TYPE_TRAITS_MSVC_REMOVE_CV_HOLT_2004_0901" variable
+               (:constant-flag t
+                :line 6)
+                nil nil)
+            ("boost/type_traits/msvc/typeof.hpp" include (:line 8) nil nil)
+            ("boost/type_traits/is_volatile.hpp" include (:line 9) nil nil)
+            ("boost/type_traits/is_const.hpp" include (:line 10) nil nil)
+            ("boost/type_traits/is_pointer.hpp" include (:line 11) nil nil)
+            ("boost/type_traits/is_array.hpp" include (:line 12) nil nil)
+            ("boost" type
+               (:type "namespace"
+                :line 14
+                :members 
+                  ( ("detail" type
+                       (:type "namespace"
+                        :line 15
+                        :members 
+                          ( ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 17
+                                :members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 20
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 19
+                                        :protection "public")
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 24
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 23
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 28
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 30
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 32
+                                                :arguments (nil nil))
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 33
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 34
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 35
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 39
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 38
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 43
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 45
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 47
+                                                :arguments (nil nil))
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 48
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 49
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 50
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 54
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 53
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 58
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 60
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 62
+                                                :arguments (nil nil))
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 63
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 64
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 65
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 69
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 68
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 73
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 75
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 77
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 78
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 79
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 80
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 84
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 83
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 88
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 90
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 92
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 93
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 94
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 95
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 99
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 98
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 103
+                                :members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 105
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 107
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 108
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 109
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 110
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 114
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 113
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 118
+                                :members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 121
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "sizeof") nil nil)
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    nil
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 124
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 125
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 126
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 127
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 120
+                                        :protection "public")
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 131
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 130
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 135
+                                :members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 138
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "sizeof") nil nil)
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    nil
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 141
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 142
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 143
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 144
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 137
+                                        :protection "public")
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 148
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 147
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("remove_cv_impl_typeof" type
+                               (:type "struct"
+                                :line 153
+                                :members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 156
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "sizeof") nil nil)
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    nil
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 159
+                                                :arguments 
+                                                  ( ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 160
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 161
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "void") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 162
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 155
+                                        :protection "public")
+                                        nil nil)
+                                    ("transform_type" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 166
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 165
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil))                          )
+                        nil nil)
+                    ("remove_cv" type
+                       (:type "struct"
+                        :line 173
+                        :members 
+                          ( ("remove_cv_type" type
+                               (:protection "public"
+                                :line 179
+                                :type "typedef")
+                                nil nil)
+                            ("type" type
+                               (:protection "public"
+                                :line 185
+                                :type "typedef")
+                                nil nil))                          )
+                        nil nil))                  )
+                nil nil))          
+    :file "remove_cv.hpp"
+    :pointmax 286
+    :fsize 7755
+    :lastmodtime '(19085 43101)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "typeof.hpp"
+    :tags 
+        '( ("BOOST_TYPETRAITS_MSVC_TYPEOF_HPP" variable
+               (:constant-flag t
+                :line 6)
+                nil nil)
+            ("boost/config.hpp" include (:line 8) nil nil)
+            ("boost/detail/workaround.hpp" include (:line 9) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:type "namespace"
+                        :line 11
+                        :members 
+                          ( ("msvc_extract_type" type
+                               (:members 
+                                  ( ("id2type" type
+                                       (:protection "public"
+                                        :line 19
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 14
+                                :type "struct")
+                                nil nil)
+                            ("msvc_register_type" type
+                               (:members 
+                                  ( ("id2type_impl" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 28
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 26
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 23
+                                :type "struct")
+                                nil nil))                          )
+                        nil nil))                  
+                :line 11
+                :type "namespace")
+                nil nil))          
+    :file "typeof.hpp"
+    :pointmax 286
+    :fsize 1362
+    :lastmodtime '(19085 43101)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "remove_bounds.hpp"
+    :tags 
+        '( ("BOOST_TYPE_TRAITS_MSVC_REMOVE_BOUNDS_HOLT_2004_0827" variable
+               (:constant-flag t
+                :line 6)
+                nil nil)
+            ("boost/type_traits/msvc/typeof.hpp" include (:line 8) nil nil)
+            ("boost/type_traits/is_array.hpp" include (:line 9) nil nil)
+            ("boost" type
+               (:type "namespace"
+                :line 11
+                :members 
+                  ( ("detail" type
+                       (:type "namespace"
+                        :line 12
+                        :members 
+                          ( ("remove_bounds_impl_typeof" type
+                               (:members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 17
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 16
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 14
+                                :type "struct")
+                                nil nil)
+                            ("remove_bounds_impl_typeof" type
+                               (:members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 23
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 25
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 26
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 27
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 28
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil))                                  
+                                :line 21
+                                :type "struct")
+                                nil nil))                          )
+                        nil nil)
+                    ("remove_bounds" type
+                       (:members 
+                          ( ("type" type
+                               (:protection "public"
+                                :line 37
+                                :type "typedef")
+                                nil nil))                          
+                        :line 34
+                        :type "struct")
+                        nil nil))                  )
+                nil nil))          
+    :file "remove_bounds.hpp"
+    :pointmax 286
+    :fsize 1509
+    :lastmodtime '(19085 43101)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "remove_reference.hpp"
+    :tags 
+        '( ("BOOST_TYPE_TRAITS_MSVC_REMOVE_REFERENCE_HOLT_2004_0827" variable
+               (:constant-flag t
+                :line 6)
+                nil nil)
+            ("boost/type_traits/msvc/typeof.hpp" include (:line 8) nil nil)
+            ("boost/type_traits/is_reference.hpp" include (:line 9) nil nil)
+            ("boost" type
+               (:type "namespace"
+                :line 11
+                :members 
+                  ( ("detail" type
+                       (:type "namespace"
+                        :line 12
+                        :members 
+                          ( ("remove_reference_impl_typeof" type
+                               (:members 
+                                  ( ("inner" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 17
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 16
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 14
+                                :type "struct")
+                                nil nil)
+                            ("remove_reference_impl_typeof" type
+                               (:members 
+                                  ( ("inner" type
+                                       (:protection "public"
+                                        :line 23
+                                        :type "struct"
+                                        :members 
+                                          ( ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 25
+                                                :arguments (nil nil))
+                                                nil nil)
+                                            ("test" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 26
+                                                :arguments (nil))
+                                                nil nil)
+                                            ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 27
+                                                :arguments 
+                                                  ( ("" variable (:type "unsigned") nil nil)
+                                                    nil
+                                                    ("" variable (:type "test") nil nil)
+                                                    nil
+                                                    ("" variable (:type "T") nil nil)
+                                                    nil
+                                                    ("" variable (:type "NULL") nil nil)
+                                                    nil
+                                                    nil)                                                  )
+                                                nil nil)
+                                            ("type" type
+                                               (:protection "public"
+                                                :line 28
+                                                :type "typedef")
+                                                nil nil))                                          )
+                                        nil nil))                                  
+                                :line 21
+                                :type "struct")
+                                nil nil))                          )
+                        nil nil)
+                    ("remove_reference" type
+                       (:members 
+                          ( ("type" type
+                               (:protection "public"
+                                :line 37
+                                :type "typedef")
+                                nil nil))                          
+                        :line 34
+                        :type "struct")
+                        nil nil))                  )
+                nil nil))          
+    :file "remove_reference.hpp"
+    :pointmax 286
+    :fsize 1542
+    :lastmodtime '(19085 43101)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!type_traits!msvc!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

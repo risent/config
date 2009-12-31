@@ -1,0 +1,46 @@
+;; Object thread/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "thread/"
+  :tables (list 
+   (semanticdb-table "test_thread.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("string" include nil nil [25 55])
+            ("thread_main" function (:arguments 
+              ( ("a" variable nil (reparse-symbol function_parameters) [73 74]))              ) nil [57 362])
+            ("main" function (:arguments 
+              ( ("num" variable nil (reparse-symbol function_parameters) [376 379]))              ) nil [367 713])
+            ("if" code nil nil [723 787]))          
+    :file "test_thread.py"
+    :pointmax 787
+    :fsize 880
+    :lastmodtime '(19246 55466)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "test_new_thread.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("threading" include nil nil [25 41])
+            ("time" include nil nil [42 53])
+            ("Test" type
+               (:superclasses ("threading.Thread")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [102 106])
+                        ("num" variable nil (reparse-symbol function_parameters) [108 111]))                      ) (reparse-symbol indented_block_body) [89 182])
+                    ("run" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [199 203]))                      ) (reparse-symbol indented_block_body) [191 495]))                  
+                :type "class")
+                nil [55 495])
+            ("if" code nil nil [496 809]))          
+    :file "test_new_thread.py"
+    :pointmax 809
+    :fsize 848
+    :lastmodtime '(19236 41591)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!python!thread!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

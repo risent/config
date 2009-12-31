@@ -1,0 +1,29 @@
+;; Object risent/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "risent/"
+  :tables (list 
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file ".emacs"
+    :pointmax 10158
+    :fsize 10219
+    :lastmodtime '(19260 2703)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".ecb-tip-of-day.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("ecb-tod-cursor" variable nil nil [1 26])
+            ("setq" code nil nil [27 50]))          
+    :file ".ecb-tip-of-day.el"
+    :pointmax 50
+    :fsize 50
+    :lastmodtime '(19259 24453)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,19 @@
+;; Object shell/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shell/"
+  :tables (list 
+   (semanticdb-table "shunit2_test.sh"
+    :major-mode 'sh-mode
+    :tags 
+        '( ("usage" function nil nil [702 2634]))          
+    :file "shunit2_test.sh"
+    :pointmax 2635
+    :fsize 2647
+    :lastmodtime '(19247 10998)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!google!chromiumos!chromiumos.git!src!third_party!shunit2!files!src!shell!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

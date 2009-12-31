@@ -1,0 +1,443 @@
+;; Object custom/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "custom/"
+  :tables (list 
+   (semanticdb-table "twit.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("twit-version-number" variable (:default-value "0.3.5") nil [44 80])
+            ("xml" include nil nil [17115 17129])
+            ("url" include nil nil [17130 17144])
+            ("url-http" include nil nil [17145 17164])
+            ("cl" include nil nil [17187 17200])
+            ("twit-set-auth" function (:arguments ("user" "pass")) nil [17226 18134])
+            ("twit-set-user-pass" function (:arguments ("sym" "val")) nil [18159 19049])
+            ("when" code nil nil [19164 19214])
+            ("twit" customgroup (:user-visible-flag t) nil [19227 19726])
+            ("twit-user" variable nil nil [19728 19899])
+            ("twit-pass" variable nil nil [19901 20072])
+            ("twit-new-tweet-hook" variable (:default-value (quote nil)) nil [20074 20295])
+            ("twit-follow-idle-interval" variable (:default-value 90) nil [20297 20666])
+            ("twit-shadow-follow-idle-interval" variable (:default-value twit-follow-idle-interval) nil [20668 20821])
+            ("twit-protocol" variable (:default-value "http") nil [20823 21309])
+            ("twit-language" variable (:default-value (quote en)) nil [21311 21601])
+            ("twit-show-user-images" variable nil nil [21603 21721])
+            ("twit-user-image-dir" variable (:default-value (concat (car image-load-path) "twitter")) nil [21723 21923])
+            ("twit-posting-function" variable (:default-value (quote twit-query-for-post)) nil [21925 22203])
+            ("twit-debug" variable nil nil [22205 22314])
+            ("twit-debug-mem" variable nil nil [22316 22410])
+            ("twit-filter-tweets-regex" variable nil nil [22412 22713])
+            ("twit-filter-at-tweets" variable nil nil [22715 23017])
+            ("twit-filter-diarrhea" variable nil nil [23019 23414])
+            ("twit-completing-searches" variable nil nil [23416 23641])
+            ("twit-multi-accounts" variable (:default-value (quote nil)) nil [23673 24188])
+            ("twit-message-face" variable
+               (:default-value (quote ((default :family "helv" :height 1.1)))
+                :type "face")
+                nil [24199 24347])
+            ("twit-author-face" variable
+               (:default-value (quote ((t (:height 0.8 :weight bold :family "mono"))))
+                :type "face")
+                nil [24349 24512])
+            ("twit-info-face" variable
+               (:default-value (quote ((t (:height 0.8 :slant italic))))
+                :type "face")
+                nil [24514 24653])
+            ("twit-title-face" variable
+               (:default-value (quote ((((background light)) (:background "PowderBlue" :underline "DeepSkyBlue" :box (:line-width 2 :color "PowderBlue" :style 0))) (((background dark)) (:background "PowderBlue" :underline "DeepSkyBlue" :box (:line-width 2 :color "PowderBlue" :style 0))) (t (:underline "white"))))
+                :type "face")
+                nil [24655 25078])
+            ("twit-logo-face" variable
+               (:default-value (quote ((((class color)) (:family "mono" :weight bold :height 1.5 :box (:line-width 2 :color "PowderBlue" :style 0) :background "Yellow3" :foreground "Yellow1" :underline "DeepSkyBlue")) (t (:inverse))))
+                :type "face")
+                nil [25080 25391])
+            ("twit-hash-at-face" variable
+               (:default-value (quote ((((class color) (background light)) (:foreground "GoldenRod3")) (((class color) (background dark)) (:foreground "GoldenRod")) (t (:underline "white"))))
+                :type "face")
+                nil [25393 25645])
+            ("twit-zebra-1-face" variable
+               (:default-value (quote ((((class color) (background light)) (:foreground "black" :background "gray89" :box (:line-width 2 :color "gray89" :style 0))) (((class color) (background dark)) (:foreground "white" :background "black" :box (:line-width 2 :color "black" :style 0))) (t (:inverse))))
+                :type "face")
+                nil [25647 26071])
+            ("twit-zebra-2-face" variable
+               (:default-value (quote ((((class color) (background light)) (:foreground "black" :background "AliceBlue" :box (:line-width 2 :color "AliceBlue" :style 0))) (((class color) (background dark)) (:foreground "white" :background "grey4" :box (:line-width 2 :color "grey4" :style 0)))))
+                :type "face")
+                nil [26073 26482])
+            ("twit-error-face" variable
+               (:default-value (quote ((((class color)) (:family "mono" :background "FireBrick" :foreground "Black")) (t (:inverse))))
+                :type "face")
+                nil [26484 26675])
+            ("twit-too-long-face" variable
+               (:default-value (quote ((((supports :strike-through t)) :strike-through t) (t :inherit (quote font-lock-warning-face))))
+                :type "face")
+                nil [26677 26882])
+            ("twit-url-face" variable
+               (:default-value (quote ((default :weight bold)))
+                :type "face")
+                nil [26884 26991])
+            ("twit-favorite-face" variable
+               (:default-value (quote ((((class color)) (:family "mono" :weight bold :height 2.0 :foreground "gold1")) (t (:underline white))))
+                :type "face")
+                nil [26993 27220])
+            ("twit-fail-whale-face" variable
+               (:default-value (quote ((((class color)) (:family "mono" :weight bold :height 4.0 :box (:line-width 10 :color "SteelBlue3" :style 0) :background "SteelBlue3" :foreground "SteelBlue4")) (t (:inverse))))
+                :type "face")
+                nil [27222 27508])
+            ("twit-status-mode-map" variable (:default-value (make-sparse-keymap)) nil [27525 27627])
+            ("twit-followers-mode-map" variable (:default-value (make-sparse-keymap)) nil [27629 27728])
+            ("twit-key-list" variable (:default-value (quote (("s" . twit-show-recent-tweets) ("f" . twit-show-followers) ("@" . twit-show-at-tweets) ("w" . twit-post) ("t" . twit-post-to) ("r" . twit-post-reply) ("u" . twit-post-url) ("R" . twit-post-loud-reply) ("c" . twit-post-retweet) ("d" . twit-direct) ("n" . twit-next-tweet) ("p" . twit-previous-tweet) ("*" . twit-add-favorite) ("-" . twit-remove-favorite) ("a" . twit-add-friend) ("k" . twit-remove-friend) ("S" . twit-search) ("v" . twit-visit-link) ("A" . twit-analyse-user) ("G" . twit-analyse-graph-user) ("i" . twit-install-elisp) ("q" . bury-buffer) ("h" . twit-mode-help) ("?" . twit-mode-help)))) nil [27745 28445])
+            ("define-key" code nil nil [28447 28509])
+            ("define-key" code nil nil [28510 28571])
+            ("dolist" code nil nil [28588 28736])
+            ("twit-mode-help" function (:user-visible-flag t) nil [28761 28932])
+            ("twit-timer" variable nil nil [28942 29020])
+            ("twit-rate-limit-timer" variable nil nil [29022 29102])
+            ("twit-first-time-through" variable nil nil [29104 29140])
+            ("twit-base-search-url" variable
+               (:constant-flag t
+                :default-value "http://search.twitter.com")
+                nil [29157 29216])
+            ("twit-base-url" variable
+               (:constant-flag t
+                :default-value (concat twit-protocol "://twitternest.appspot.com"))
+                nil [29217 29297])
+            ("twit-secure-base-url" variable
+               (:constant-flag t
+                :default-value (concat twit-protocol "://twitternest.appspot.com"))
+                nil [29298 29385])
+            ("twit-update-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/update.xml"))
+                nil [29387 29461])
+            ("twit-puplic-timeline-file" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/public_timeline.xml?page=%s"))
+                nil [29462 29563])
+            ("twit-friend-timeline-file" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/friends_timeline.xml?page=%s"))
+                nil [29564 29666])
+            ("twit-followers-list-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/followers.xml?page=%s"))
+                nil [29667 29760])
+            ("twit-friend-list-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/friends.xml"))
+                nil [29761 29841])
+            ("twit-mentions-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/statuses/mentions.xml?page=%s"))
+                nil [29842 29928])
+            ("twit-rate-limit-file" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/account/rate_limit_status.xml"))
+                nil [29930 30019])
+            ("twit-direct-msg-send-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/direct_messages/new.xml"))
+                nil [30021 30108])
+            ("twit-direct-msg-get-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/direct_messages.xml?page=%s"))
+                nil [30109 30199])
+            ("twit-add-friend-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/friendships/create/%s.xml"))
+                nil [30201 30285])
+            ("twit-remove-friend-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/friendships/destroy/%s.xml"))
+                nil [30286 30374])
+            ("twit-add-favorite-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/favorites/create/%s.xml"))
+                nil [30376 30460])
+            ("twit-remove-favorite-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/favorites/destroy/%s.xml"))
+                nil [30461 30549])
+            ("twit-search-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-search-url "/search.atom?q=%s"))
+                nil [30551 30629])
+            ("twit-graph-friends-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/friends/ids.xml?user_id=%s"))
+                nil [30651 30739])
+            ("twit-graph-followers-url" variable
+               (:constant-flag t
+                :default-value (concat twit-base-url "/followers/ids.xml?user_id=%s"))
+                nil [30741 30833])
+            ("twit-analyse-user-url" variable
+               (:constant-flag t
+                :default-value "http://twanalyst.com/%s")
+                nil [30856 30937])
+            ("twit-analyse-graph-user-url" variable
+               (:constant-flag t
+                :default-value "http://twanalyst.com/%s/track")
+                nil [30939 31037])
+            ("twit-analyse-suggest-user-url" variable
+               (:constant-flag t
+                :default-value "http://twanalyst.com/%s/suggest")
+                nil [31039 31142])
+            ("twit-max-tweet" variable
+               (:constant-flag t
+                :default-value 140)
+                nil [31154 31212])
+            ("twit-post-success-msg" variable
+               (:constant-flag t
+                :default-value "Post sent!")
+                nil [31237 31284])
+            ("twit-direct-success-msg" variable
+               (:constant-flag t
+                :default-value "Direct Message sent!")
+                nil [31285 31344])
+            ("twit-post-failed-msg" variable
+               (:constant-flag t
+                :default-value "Your posting has failed.")
+                nil [31346 31404])
+            ("twit-too-long-msg" variable
+               (:constant-flag t
+                :default-value (format "Post not sent because length exceeds %d characters" twit-max-tweet))
+                nil [31406 31523])
+            ("twit-add-friend-success-msg" variable
+               (:constant-flag t
+                :default-value "Friend successfully added!")
+                nil [31525 31594])
+            ("twit-add-friend-fail-msg" variable
+               (:constant-flag t
+                :default-value "Friend addition failed.")
+                nil [31595 31658])
+            ("twit-remove-friend-success-msg" variable
+               (:constant-flag t
+                :default-value "Friend successfully removed!")
+                nil [31660 31734])
+            ("twit-remove-friend-fail-msg" variable
+               (:constant-flag t
+                :default-value "Friend removal failed.")
+                nil [31735 31800])
+            ("twit-add-favorite-success-msg" variable
+               (:constant-flag t
+                :default-value "Tweet set to favorite")
+                nil [31802 31868])
+            ("twit-add-favorite-fail-msg" variable
+               (:constant-flag t
+                :default-value "Setting tweet to favorite failed.")
+                nil [31869 31944])
+            ("twit-remove-favorite-success-msg" variable
+               (:constant-flag t
+                :default-value "Tweet removed as favorite,")
+                nil [31946 32020])
+            ("twit-remove-favorite-fail-msg" variable
+               (:constant-flag t
+                :default-value "Tweet favorite removal failed.")
+                nil [32021 32096])
+            ("twit-standard-rate-limit" variable
+               (:constant-flag t
+                :default-value 100)
+                nil [32109 32185])
+            ("twit-rate-limit-offset" variable
+               (:constant-flag t
+                :default-value 5)
+                nil [32187 32292])
+            ("twit-rate-limit-interval" variable
+               (:constant-flag t
+                :default-value (* 2 60 60))
+                nil [32294 32384])
+            ("twit-filter-at-tweets-retweet-regex" variable
+               (:constant-flag t
+                :default-value "\\bRT[ :]*@")
+                nil [32402 32550])
+            ("twit-at-regex" variable
+               (:constant-flag t
+                :default-value "@\\([a-zA-Z0-9_]+\\)")
+                nil [32552 32642])
+            ("twit-hash-at-regex" variable
+               (:constant-flag t
+                :default-value "\\([#@][a-zA-Z0-9_.]+\\)")
+                nil [32644 32774])
+            ("twit-url-regex" variable
+               (:constant-flag t
+                :default-value "\\(http://[a-zA-Z0-9.]+.[a-zA-Z0-9%#;~/.=+&$,?@-]+\\)")
+                nil [32776 32892])
+            ("twit-emacs-lisp-regex" variable
+               (:constant-flag t
+                :default-value "\\([a-zA-Z0-9-.]+\\)\\.el")
+                nil [32894 32986])
+            ("twit-request-headers" variable
+               (:constant-flag t
+                :default-value (\` (("X-Twitter-Client" . "twit.el") ("X-Twitter-Client-Version" \, twit-version-number) ("X-Twitter-Client-URL" . "http://www.emacswiki.org/cgi-bin/emacs/twit.el"))))
+                nil [33057 33305])
+            ("twit-time-string" variable
+               (:constant-flag t
+                :default-value "%a %b %e %T %Y")
+                nil [33317 33393])
+            ("with-twit-buffer" function (:arguments ("buffer-name" "&rest" "forms")) nil [33405 33892])
+            ("with-twit-auth" function (:arguments ("user" "pass" "&rest" "forms")) nil [33909 34660])
+            ("with-twit-account" function (:arguments ("account" "&rest" "forms")) nil [34691 35008])
+            ("twit-alert" function (:arguments ("msg" "&optional" "title")) nil [35031 35375])
+            ("twit-parse-xml" function (:arguments ("url" "method")) nil [35567 36457])
+            ("twit-parse-header" function (:arguments ("header-frag")) nil [36480 37460])
+            ("twit-header-error-p" function (:arguments ("header")) nil [37480 37666])
+            ("twit-get-header-error" function (:arguments ("header")) nil [37687 38566])
+            ("when" code nil nil [38584 38853])
+            ("twit-display-error" function (:arguments ("xml")) nil [38874 39492])
+            ("twit-async-buffer" variable (:default-value (quote nil)) nil [39511 39603])
+            ("twit-parse-xml-async" function (:arguments ("url" "callback")) nil [39624 40067])
+            ("twit-rate-limit-halt-flag" variable (:default-value (quote nil)) nil [40088 40386])
+            ("twit-parse-xml-async-retrieve" function (:arguments ("status" "url" "callback")) nil [40407 41325])
+            ("twit-handle-post" function (:arguments ("err" "success-msg" "error-msg")) nil [41344 41910])
+            ("twit-post-status" function (:arguments ("url" "post" "&optional" "reply-id")) nil [41928 42633])
+            ("twit-direct-message" function (:arguments ("user" "msg")) nil [42651 43222])
+            ("twit-post-function" function (:arguments ("url" "data" "success-msg" "fail-msg")) nil [43239 43872])
+            ("twit-parse-rate-limit" function (:arguments ("xml")) nil [43883 44244])
+            ("twit-get-rate-limit" function (:user-visible-flag t) nil [44267 44476])
+            ("twit-get-and-set-async-rate-limit" function (:user-visible-flag t) nil [44492 44708])
+            ("twit-get-and-set-async-rate-limit-callback" function (:arguments ("status" "url" "result")) nil [44724 45197])
+            ("twit--query-for-post-update" function (:arguments ("&optional" "beg" "end" "length" "invert")) nil [45384 46756])
+            ("twit--query-for-post-exit-minibuffer" function nil nil [46779 47202])
+            ("twit--query-for-post-minibuffer-setup" function nil nil [47225 47565])
+            ("twit-query-for-post" function (:arguments ("prompt-heading" "initial-input")) nil [47581 48095])
+            ("define-derived-mode" code nil nil [48124 48278])
+            ("twit-buffer-up-for-post" function (:arguments ("prompt-heading" "initial-input")) nil [48302 48547])
+            ("twit-interactive-post" function (:user-visible-flag t) nil [48572 49117])
+            ("twit-last-tweet" variable (:default-value (quote nil)) nil [49134 49355])
+            ("setq" code nil nil [49357 49383])
+            ("when" code nil nil [49398 49558])
+            ("when" code nil nil [49573 49781])
+            ("twit-write-recent-tweets" function (:arguments ("xml-data")) nil [49861 51250])
+            ("twit-last-author" variable (:default-value (quote (nil 0.0))) nil [51267 51452])
+            ("twit--filter-tweet" function (:arguments ("message" "author")) nil [51575 52344])
+            ("twit-write-tweet" function (:arguments ("tweet" "&optional" "filter-tweets" "times-through")) nil [52375 55138])
+            ("twit-write-title" function (:arguments ("title" "&rest" "args")) nil [55157 55508])
+            ("twit-keymap-and-fontify-message" function (:arguments ("message")) nil [55527 57776])
+            ("twit-write-search" function (:arguments ("atom-data")) nil [57796 58523])
+            ("twit-insert-with-overlay-attributes" function (:arguments ("text" "attributes" "&optional" "prefix" "justify")) nil [58543 59273])
+            ("twit-user-image-list" variable (:default-value (quote nil)) nil [59289 59360])
+            ("setq" code nil nil [59361 59393])
+            ("twit-get-user-image" function (:arguments ("url" "user-id")) nil [59405 60703])
+            ("twit-write-user-image" function (:arguments ("status" "url" "user-id")) nil [60715 61511])
+            ("twit-follow-recent-tweets-timer-function" function nil nil [61579 61816])
+            ("twit-follow-recent-tweets-async-callback" function (:arguments ("status" "url" "xml")) nil [61841 62335])
+            ("twit-last-rate-limit" variable (:default-value twit-standard-rate-limit) nil [62350 62443])
+            ("twit-verify-and-set-rate-limit" function (:arguments ("limit")) nil [62454 64176])
+            ("twit-get-friends-cache" variable nil nil [64193 64303])
+            ("twit-get-friends" function (:arguments ("&optional" "cached")) nil [64317 64991])
+            ("twit-at-message-was-from-friend" function (:arguments ("tweet")) nil [65015 65544])
+            ("when" code nil nil [65546 65672])
+            ("twit-todochiku" function nil nil [65745 66052])
+            ("twit-get-text-property" function (:arguments ("propname")) nil [66074 66342])
+            ("twit-check-page-prefix" function (:arguments ("page")) nil [66359 66524])
+            ("twit-read-account" function nil nil [66544 66756])
+            ("twit-read-friend" function (:arguments ("prompt" "&optional" "req")) nil [66775 67270])
+            ("twit-direct" function
+               (:user-visible-flag t
+                :arguments ("user" "msg"))
+                nil [67311 67831])
+            ("twit-direct-with-account" function
+               (:user-visible-flag t
+                :arguments ("account"))
+                nil [67870 68166])
+            ("twit-post" function
+               (:user-visible-flag t
+                :arguments ("prefix"))
+                nil [68210 69079])
+            ("twit-post-with-account" function
+               (:user-visible-flag t
+                :arguments ("account" "post"))
+                nil [69122 69484])
+            ("twit-post-to" function (:user-visible-flag t) nil [69514 69839])
+            ("twit-post-reply" function (:user-visible-flag t) nil [69868 70314])
+            ("twit-post-loud-reply" function (:user-visible-flag t) nil [70350 71046])
+            ("twit-post-retweet" function (:user-visible-flag t) nil [71118 71646])
+            ("twit-post-url" function (:user-visible-flag t) nil [71757 72088])
+            ("compress-url" function (:arguments ("url")) nil [72292 72710])
+            ("twit-post-region" function
+               (:user-visible-flag t
+                :arguments ("start" "end"))
+                nil [72755 73223])
+            ("twit-post-buffer" function (:user-visible-flag t) nil [73261 73699])
+            ("twit-add-friend" function
+               (:user-visible-flag t
+                :arguments ("user"))
+                nil [73721 74119])
+            ("twit-remove-friend" function
+               (:user-visible-flag t
+                :arguments ("user"))
+                nil [74144 74517])
+            ("twit-add-favorite" function
+               (:user-visible-flag t
+                :arguments ("post"))
+                nil [74541 75156])
+            ("twit-remove-favorite" function
+               (:user-visible-flag t
+                :arguments ("post"))
+                nil [75183 75820])
+            ("twit-show-followers" function
+               (:user-visible-flag t
+                :arguments ("&optional" "page"))
+                nil [76048 76750])
+            ("defalias" code nil nil [76752 76888])
+            ("twit-show-friends" function (:user-visible-flag t) nil [76934 77535])
+            ("twit-follow-recent-tweets" function (:user-visible-flag t) nil [77586 78286])
+            ("twit-stop-following-tweets" function (:user-visible-flag t) nil [78322 78685])
+            ("twit-show-recent-tweets" function
+               (:user-visible-flag t
+                :arguments ("&optional" "page"))
+                nil [78730 79667])
+            ("twit-next-tweet" function
+               (:user-visible-flag t
+                :arguments ("&optional" "arg"))
+                nil [79690 80042])
+            ("twit-previous-tweet" function
+               (:user-visible-flag t
+                :arguments ("&optional" "arg"))
+                nil [80064 80437])
+            ("twit-this-sessions-searches" variable (:default-value (quote nil)) nil [80461 80592])
+            ("twit-search" function
+               (:user-visible-flag t
+                :arguments ("term"))
+                nil [80617 81488])
+            ("twit-show-direct-tweets" function
+               (:user-visible-flag t
+                :arguments ("page"))
+                nil [81608 82373])
+            ("twit-show-direct-tweets-with-account" function
+               (:user-visible-flag t
+                :arguments ("account" "page"))
+                nil [82417 82676])
+            ("twit-show-at-tweets" function
+               (:user-visible-flag t
+                :arguments ("page"))
+                nil [82721 83494])
+            ("twit-show-at-tweets-with-account" function
+               (:user-visible-flag t
+                :arguments ("account" "page"))
+                nil [83538 83798])
+            ("defalias" code nil nil [83800 83936])
+            ("twit-visit-link" function (:user-visible-flag t) nil [83938 84344])
+            ("twit-analyse-user" function (:user-visible-flag t) nil [84370 84624])
+            ("twit-analyse-graph-user" function (:user-visible-flag t) nil [84650 84926])
+            ("twit-analyse-suggest-user" function (:user-visible-flag t) nil [84952 85233])
+            ("twit-install-elisp" function (:user-visible-flag t) nil [85259 85759])
+            ("twit-switch-account" function
+               (:user-visible-flag t
+                :arguments ("account"))
+                nil [85791 86087])
+            ("define-minor-mode" code nil nil [86113 86692])
+            ("twit" package nil nil [86693 86708])
+            ("when" code nil nil [86728 87074])
+            ("when" code nil nil [87088 87297])
+            ("when" code nil nil [87311 88054]))          
+    :file "twit.el"
+    :pointmax 88115
+    :fsize 88130
+    :lastmodtime '(19124 20357)
+    :unmatched-syntax '((close-paren 17200 . 17201) (symbol 17167 . 17184) (open-paren 17166 . 17167))
+    )
+   )
+  :file "!home!risent!.emacs.d!custom!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

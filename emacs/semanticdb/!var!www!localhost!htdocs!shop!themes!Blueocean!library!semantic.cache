@@ -1,0 +1,25 @@
+;; Object library/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "library/"
+  :tables (list 
+   (semanticdb-table "pages.lbi"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{$lang.page_first}" anchor nil nil [324 327])
+            ("{$lang.page_prev}" anchor nil nil [377 380])
+            ("{$lang.page_next}" anchor nil nil [428 431])
+            ("{$lang.page_last}" anchor nil nil [479 482])
+            ("{$key}" anchor nil nil [1066 1069])
+            ("{$key}" anchor nil nil [1527 1530])
+            ("" section nil nil [2219 2364]))          
+    :file "pages.lbi"
+    :pointmax 2364
+    :fsize 2429
+    :lastmodtime '(19203 44133)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!var!www!localhost!htdocs!shop!themes!Blueocean!library!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

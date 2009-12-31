@@ -1,0 +1,326 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "engine_impl.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ENGINE_IMPL_H" variable (:constant-flag t) nil [31 44])
+            ("imi_option_event.h" include (:system-flag t) nil [46 75])
+            ("sunpinyin_config.h" include nil nil [76 105])
+            ("SunPinyinLookupTable" type
+               (:prototype t
+                :type "class")
+                nil [107 134])
+            ("SunPinyinProperty" type
+               (:prototype t
+                :type "class")
+                nil [135 159])
+            ("SetupLauncher" type
+               (:prototype t
+                :type "class")
+                nil [160 180])
+            ("ICandidateList" type
+               (:prototype t
+                :type "class")
+                nil [181 202])
+            ("IPreeditString" type
+               (:prototype t
+                :type "class")
+                nil [203 224])
+            ("CIBusWinHandler" type
+               (:prototype t
+                :type "class")
+                nil [225 247])
+            ("CIMIView" type
+               (:prototype t
+                :type "class")
+                nil [248 263])
+            ("CHotkeyProfile" type
+               (:prototype t
+                :type "class")
+                nil [264 285])
+            ("EngineImpl" type
+               (:superclasses 
+                  ( ("IConfigurable" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [329 336])
+                    ("EngineImpl" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:pointer 1
+                                :type ("IBusEngine" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [352 365]))                          
+                        :type ("EngineImpl" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [341 366])
+                    ("EngineImpl" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [371 385])
+                    ("init" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [391 404])
+                    ("destroy" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [409 425])
+                    ("process_key_event" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("key_val" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [458 472])
+                            ("key_code" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [473 488])
+                            ("modifiers" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [489 505]))                          
+                        :type ("gboolean" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [430 506])
+                    ("focus_in" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [511 528])
+                    ("focus_out" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [533 551])
+                    ("reset" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [556 570])
+                    ("enable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [575 590])
+                    ("disable" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [595 611])
+                    ("page_up" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [616 632])
+                    ("page_down" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [637 655])
+                    ("cursor_up" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [660 678])
+                    ("cursor_down" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [683 703])
+                    ("commit_string" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("std::wstring" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [728 748]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [708 749])
+                    ("property_activate" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("name" variable
+                               (:constant-flag t
+                                :type ("std::string" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [778 802])
+                            ("state" variable
+                               (:default-value "PROP_STATE_UNCHECKED)"
+                                :type "unsigned int")
+                                (reparse-symbol arg-sub-list) [803 841]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [754 842])
+                    ("candidate_clicked" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("index" variable (:type ("guint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [871 883]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [847 884])
+                    ("update_candidates" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("ICandidateList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [973 995]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [950 996])
+                    ("update_preedit_string" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable
+                               (:constant-flag t
+                                :type ("IPreeditString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1028 1050]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1001 1051])
+                    ("update_status_property" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1084 1089]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1056 1090])
+                    ("update_punct_property" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1122 1127]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1095 1128])
+                    ("update_letter_property" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [1161 1166]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1133 1167])
+                    ("is_valid" function
+                       (:prototype-flag t
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1218 1240])
+                    ("onConfigChanged" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("event" variable
+                               (:constant-flag t
+                                :type ("COptionEvent" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [1275 1301]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [1246 1302])
+                    ("private" label nil (reparse-symbol classsubparts) [1308 1316])
+                    ("update_config" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1321 1342])
+                    ("update_history_power" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1347 1375])
+                    ("update_cand_window_size" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1380 1411])
+                    ("update_mode_key_shift" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1416 1445])
+                    ("update_mode_key_control" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1450 1481])
+                    ("update_page_key_minus" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1486 1515])
+                    ("update_page_key_comma" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1520 1549])
+                    ("update_page_key_bracket" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1554 1585])
+                    ("update_page_key" function
+                       (:prototype-flag t
+                        :arguments 
+                          ( ("conf_key" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol arg-sub-list) [1611 1632])
+                            ("default_val" variable (:type "bool") (reparse-symbol arg-sub-list) [1633 1650])
+                            ("page_up" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1677 1694])
+                            ("page_down" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1695 1714]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [1590 1715])
+                    ("update_charset_level" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1725 1753])
+                    ("update_lookup_table" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [1763 1790])
+                    ("private" label nil (reparse-symbol classsubparts) [1796 1804])
+                    ("m_status_prop" variable
+                       (:pointer 1
+                        :type ("SunPinyinProperty" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1809 1842])
+                    ("m_letter_prop" variable
+                       (:pointer 1
+                        :type ("SunPinyinProperty" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1847 1880])
+                    ("m_punct_prop" variable
+                       (:pointer 1
+                        :type ("SunPinyinProperty" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1885 1917])
+                    ("m_setup_prop" variable
+                       (:pointer 1
+                        :type ("SetupLauncher" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1922 1954])
+                    ("m_ibus_engine" variable
+                       (:pointer 1
+                        :type ("IBusEngine" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1960 1996])
+                    ("m_prop_list" variable
+                       (:pointer 1
+                        :type ("IBusPropList" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2001 2035])
+                    ("m_lookup_table" variable
+                       (:pointer 1
+                        :type ("SunPinyinLookupTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2040 2077])
+                    ("m_wh" variable
+                       (:pointer 1
+                        :type ("CIBusWinHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2083 2105])
+                    ("m_pv" variable
+                       (:pointer 1
+                        :type ("CIMIView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2110 2132])
+                    ("m_hotkey_profile" variable
+                       (:pointer 1
+                        :type ("CHotkeyProfile" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2137 2171])
+                    ("m_config" variable
+                       (:pointer 1
+                        :type ("SunPinyinConfig" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2181 2207]))                  
+                :type "class")
+                nil [287 2210]))          
+    :file "engine_impl.h"
+    :pointmax 2236
+    :fsize 2235
+    :lastmodtime '(19143 31140)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("ENGINE_IMPL_H")
+          )
+
+    )
+   (semanticdb-table "ibus_portable.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("ibus_portable.h" include nil nil [2050 2076]))          
+    :file "ibus_portable.cpp"
+    :pointmax 2709
+    :fsize 2708
+    :lastmodtime '(19143 31140)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ibus_portable.h"
+    :file "ibus_portable.h"
+    :fsize 2434
+    :lastmodtime '(19143 31140)
+    )
+   )
+  :file "!home!risent!Code!im!sunpinyin2!inputmethod!sunpinyin2!wrapper!ibus!src!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

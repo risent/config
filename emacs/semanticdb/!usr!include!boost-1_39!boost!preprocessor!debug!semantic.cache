@@ -1,0 +1,59 @@
+;; Object debug/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "debug/"
+  :tables (list 
+   (semanticdb-table "error.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_DEBUG_ERROR_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 16) nil nil)
+            ("BOOST_PP_ERROR" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0000" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0001" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0002" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0003" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0004" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0005" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0006" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("BOOST_PP_ERROR_0x0007" variable
+               (:constant-flag t
+                :line 31)
+                nil nil))          
+    :file "error.hpp"
+    :pointmax 286
+    :fsize 1574
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!debug!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

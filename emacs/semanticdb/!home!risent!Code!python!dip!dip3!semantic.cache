@@ -1,0 +1,30 @@
+;; Object dip3/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dip3/"
+  :tables (list 
+   (semanticdb-table "alphametics.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("re" include nil nil [25 34])
+            ("itertools" include nil nil [35 51])
+            ("solve" function (:arguments 
+              ( ("puzzle" variable nil (reparse-symbol function_parameters) [63 69]))              ) nil [53 763])
+            ("if" code nil nil [764 941]))          
+    :file "alphametics.py"
+    :pointmax 941
+    :fsize 940
+    :lastmodtime '(19245 32746)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table ".emacs"
+    :major-mode 'emacs-lisp-mode
+    :tags nil
+    :file ".emacs"
+    :pointmax 1
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!python!dip!dip3!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,2303 @@
+;; Object libfetion/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libfetion/"
+  :tables (list 
+   (semanticdb-table "common.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_LIBFETION_COMMON_H" variable (:constant-flag t) nil [393 412])
+            ("libfetion/fxconfig.h" include nil nil [682 713])
+            ("libfetion/event.h" include nil nil [714 742])
+            ("ENABLE" variable (:constant-flag t) nil [841 847])
+            ("Uint8" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [1138 1168])
+            ("Sint8" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [1267 1297])
+            ("Uint16" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [1400 1431])
+            ("Sint16" type
+               (:typedef ("signed short")
+                :superclasses "signed short"
+                :type "typedef")
+                nil [1530 1561])
+            ("Uint32" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [1662 1693])
+            ("Sint32" type
+               (:typedef ("signed int")
+                :superclasses "signed int"
+                :type "typedef")
+                nil [1790 1821])
+            ("Uint64" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("hi" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2707 2717])
+                          ("lo" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2719 2729]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2689 2747])
+            ("Sint64" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("hi" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2707 2717])
+                          ("lo" variable (:type ("Uint32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [2719 2729]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [2689 2747])
+            ("FETION_COMPILE_TIME_ASSERT" variable (:constant-flag t) nil [2818 2844])
+            ("FETION_dummy_uint8" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2919 2973])
+            ("FETION_dummy_sint8" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [2974 3028])
+            ("FETION_dummy_uint16" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3029 3085])
+            ("FETION_dummy_sint16" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3086 3142])
+            ("FETION_dummy_uint32" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3143 3199])
+            ("FETION_dummy_sint32" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3200 3256])
+            ("FETION_dummy_uint64" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3257 3313])
+            ("FETION_dummy_sint64" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [3314 3370])
+            ("FETION_LIL_ENDIAN" variable (:constant-flag t) nil [3565 3582])
+            ("FETION_BIG_ENDIAN" variable (:constant-flag t) nil [3654 3671])
+            ("FETION_BYTEORDER" variable (:constant-flag t) nil [4682 4698])
+            ("FX_EXPORT" variable (:constant-flag t) nil [5118 5127])
+            ("BOOL" type
+               (:typedef ("int")
+                :superclasses "int"
+                :type "typedef")
+                nil [5383 5400])
+            ("FALSE" variable (:constant-flag t) nil [5493 5498])
+            ("TRUE" variable (:constant-flag t) nil [5587 5591])
+            ("NULL" variable (:constant-flag t) nil [5757 5761])
+            ("BYTE" type
+               (:typedef ("unsigned char")
+                :superclasses "unsigned char"
+                :type "typedef")
+                nil [6040 6069])
+            ("SBYTE" type
+               (:typedef ("signed char")
+                :superclasses "signed char"
+                :type "typedef")
+                nil [6167 6197])
+            ("WORD" type
+               (:typedef ("unsigned short")
+                :superclasses "unsigned short"
+                :type "typedef")
+                nil [6328 6357])
+            ("SWORD" type
+               (:typedef ("signed short")
+                :superclasses "signed short"
+                :type "typedef")
+                nil [6461 6491])
+            ("DWORD" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [6628 6658])
+            ("SDWORD" type
+               (:typedef ("signed long")
+                :superclasses "signed long"
+                :type "typedef")
+                nil [6760 6791])
+            ("UINT" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [6906 6935])
+            ("LONG" type
+               (:typedef ("long")
+                :superclasses "long"
+                :type "typedef")
+                nil [7045 7074])
+            ("WPARAM" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [7244 7275])
+            ("LPARAM" type
+               (:typedef ("unsigned long")
+                :superclasses "unsigned long"
+                :type "typedef")
+                nil [7505 7536])
+            ("LOBYTE" variable (:constant-flag t) nil [7661 7667])
+            ("HIBYTE" variable (:constant-flag t) nil [7792 7798])
+            ("MAKEWORD" variable (:constant-flag t) nil [7946 7954])
+            ("LOWORD" variable (:constant-flag t) nil [8147 8153])
+            ("HIWORD" variable (:constant-flag t) nil [8291 8297])
+            ("LOSWORD" variable (:constant-flag t) nil [8463 8470])
+            ("HISWORD" variable (:constant-flag t) nil [8616 8623])
+            ("MAKELONG" variable (:constant-flag t) nil [8784 8792])
+            ("TABLESIZE" variable (:constant-flag t) nil [9080 9089])
+            ("MAX" variable (:constant-flag t) nil [9258 9261])
+            ("MIN" variable (:constant-flag t) nil [9406 9409])
+            ("ABS" variable (:constant-flag t) nil [9549 9552])
+            ("CLAMP" variable (:constant-flag t) nil [9728 9733])
+            ("ISSPACE" variable (:constant-flag t) nil [9901 9908])
+            ("ISUPPER" variable (:constant-flag t) nil [10101 10108])
+            ("ISLOWER" variable (:constant-flag t) nil [10237 10244])
+            ("ISALPHA" variable (:constant-flag t) nil [10367 10374])
+            ("TOUPPER" variable (:constant-flag t) nil [10508 10515])
+            ("TOLOWER" variable (:constant-flag t) nil [10658 10665])
+            ("time_t" type
+               (:typedef ("unsigned int")
+                :superclasses "unsigned int"
+                :type "typedef")
+                nil [10789 10817])
+            ("tm" type
+               (:members 
+                  ( ("tm_sec" variable (:type "int") (reparse-symbol classsubparts) [10832 10846])
+                    ("tm_min" variable (:type "int") (reparse-symbol classsubparts) [10871 10885])
+                    ("tm_hour" variable (:type "int") (reparse-symbol classsubparts) [10910 10925])
+                    ("tm_mday" variable (:type "int") (reparse-symbol classsubparts) [10946 10961])
+                    ("tm_mon" variable (:type "int") (reparse-symbol classsubparts) [10990 11004])
+                    ("tm_year" variable (:type "int") (reparse-symbol classsubparts) [11035 11050])
+                    ("tm_wday" variable (:type "int") (reparse-symbol classsubparts) [11076 11091])
+                    ("tm_yday" variable (:type "int") (reparse-symbol classsubparts) [11131 11146])
+                    ("tm_isdst" variable (:type "int") (reparse-symbol classsubparts) [11175 11191]))                  
+                :type "struct")
+                nil [10819 11222])
+            ("EventListener" variable
+               (:functionpointer-flag t
+                :type "void")
+                nil [11501 11579]))          
+    :file "common.h"
+    :pointmax 11687
+    :fsize 11686
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax '((TYPEDEF 11493 . 11500))
+    :lexical-table 
+        '(("HIWORD" (spp-arg-list ("l") 8297 . 8300) . ((semantic-list "((WORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8311 . 8350)))
+          ("MIN" (spp-arg-list ("x" "y") 9409 . 9415) . ((semantic-list "(((x) < (y))?(x):(y))" 9426 . 9447)))
+          ("ABS" (spp-arg-list ("x") 9552 . 9555) . ((semantic-list "(((x)<0) ? -(x) : (x))" 9569 . 9591)))
+          ("NULL" . ((semantic-list "((void*) 0)" 5769 . 5780)))
+          ("TOUPPER" (spp-arg-list ("c") 10515 . 10518) . ((semantic-list "(ISLOWER (c) ? (c) - 'a' + 'A' : (c))" 10520 . 10557)))
+          ("MAKEWORD" (spp-arg-list ("low" "high") 7954 . 7965) . ((semantic-list "((WORD)(((BYTE)((low) & 0xff )) | (((WORD)((BYTE) ((high) & 0xff ))) << 8)))" 7966 . 8042)))
+          ("ISSPACE" (spp-arg-list ("c") 9908 . 9911) . ((semantic-list "((c) == ' ' || (c) == '\\f' || (c) == '\\n' || \\
+	(c) == '\\r' || (c) == '\\t' || (c) == '\\v')" 9913 . 10003)))
+          ("LOSWORD" (spp-arg-list ("l") 8470 . 8473) . ((semantic-list "((SWORD)(DWORD)(l))" 8483 . 8502)))
+          ("_LIBFETION_COMMON_H")
+          ("FETION_BYTEORDER" . ((symbol "FETION_LIL_ENDIAN" 4701 . 4718)))
+          ("LOBYTE" (spp-arg-list ("w") 7667 . 7670) . ((semantic-list "((BYTE)(w))" 7681 . 7692)))
+          ("ISUPPER" (spp-arg-list ("c") 10108 . 10111) . ((semantic-list "((c) >= 'A' && (c) <= 'Z')" 10113 . 10139)))
+          ("ENABLE" (spp-arg-list ("FEATURE") 847 . 856) . ((semantic-list "(defined( ENABLE_##FEATURE ) && ENABLE_##FEATURE)" 857 . 906)))
+          ("HIBYTE" (spp-arg-list ("w") 7798 . 7801) . ((semantic-list "((BYTE)(((WORD)(w) >> 8) & 0xFF))" 7812 . 7845)))
+          ("TOLOWER" (spp-arg-list ("c") 10665 . 10668) . ((semantic-list "(ISUPPER (c) ? (c) - 'A' + 'a' : (c))" 10670 . 10707)))
+          ("TABLESIZE" (spp-arg-list ("table") 9089 . 9096) . ((semantic-list "(sizeof(table)/sizeof(table[0]))" 9100 . 9132)))
+          ("TRUE" . ((semantic-list "(1)" 5595 . 5598)))
+          ("FETION_BIG_ENDIAN" . ((number "4321" 3673 . 3677)))
+          ("MAKELONG" (spp-arg-list ("low" "high") 8792 . 8803) . ((semantic-list "((DWORD)(((WORD)(low)) | (((DWORD)((WORD)(high))) << 16)))" 8804 . 8862)))
+          ("ISLOWER" (spp-arg-list ("c") 10244 . 10247) . ((semantic-list "((c) >= 'a' && (c) <= 'z')" 10249 . 10275)))
+          ("FETION_LIL_ENDIAN" . ((number "1234" 3584 . 3588)))
+          ("FX_EXPORT")
+          ("HISWORD" (spp-arg-list ("l") 8623 . 8626) . ((semantic-list "((SWORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8636 . 8676)))
+          ("MAX" (spp-arg-list ("x" "y") 9261 . 9267) . ((semantic-list "(((x) > (y))?(x):(y))" 9278 . 9299)))
+          ("ISALPHA" (spp-arg-list ("c") 10374 . 10377) . ((semantic-list "(ISUPPER (c) || ISLOWER (c))" 10379 . 10407)))
+          ("FALSE" . ((semantic-list "(0)" 5501 . 5504)))
+          ("LOWORD" (spp-arg-list ("l") 8153 . 8156) . ((semantic-list "((WORD)(DWORD)(l))" 8167 . 8185)))
+          ("CLAMP" (spp-arg-list ("x" "low" "high") 9733 . 9747) . ((semantic-list "(((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))" 9749 . 9806)))
+          )
+
+    )
+   (semanticdb-table "fxconfig.h"
+    :tags 
+        '( ("ENABLE_CHECK_NETWORK" variable
+               (:constant-flag t
+                :line 5)
+                nil nil)
+            ("ENABLE_CURL" variable
+               (:constant-flag t
+                :line 8)
+                nil nil)
+            ("HAVE_ASPRINTF" variable
+               (:constant-flag t
+                :line 11)
+                nil nil)
+            ("HAVE_C99_VSNPRINTF" variable
+               (:constant-flag t
+                :line 14)
+                nil nil)
+            ("HAVE_CTYPE_H" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("HAVE_DIRENT_H" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("HAVE_DLFCN_H" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("HAVE_INTTYPES_H" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("HAVE_MEMORY_H" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("HAVE_SNPRINTF" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("HAVE_STDINT_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("HAVE_STDLIB_H" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("HAVE_STRINGS_H" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("HAVE_STRING_H" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("HAVE_SYS_STAT_H" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("HAVE_SYS_TYPES_H" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("HAVE_TIME" variable
+               (:constant-flag t
+                :line 65)
+                nil nil)
+            ("HAVE_UNISTD_H" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("HAVE_VASPRINTF" variable
+               (:constant-flag t
+                :line 71)
+                nil nil)
+            ("HAVE_VSNPRINTF" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("PACKAGE" variable
+               (:constant-flag t
+                :line 77)
+                nil nil)
+            ("PACKAGE_BUGREPORT" variable
+               (:constant-flag t
+                :line 80)
+                nil nil)
+            ("PACKAGE_NAME" variable
+               (:constant-flag t
+                :line 83)
+                nil nil)
+            ("PACKAGE_STRING" variable
+               (:constant-flag t
+                :line 86)
+                nil nil)
+            ("PACKAGE_TARNAME" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("PACKAGE_VERSION" variable
+               (:constant-flag t
+                :line 92)
+                nil nil)
+            ("STDC_HEADERS" variable
+               (:constant-flag t
+                :line 95)
+                nil nil)
+            ("TIME_WITH_SYS_TIME" variable
+               (:constant-flag t
+                :line 98)
+                nil nil)
+            ("VERSION" variable
+               (:constant-flag t
+                :line 104)
+                nil nil))          
+    :file "fxconfig.h"
+    :pointmax 11687
+    :fsize 3295
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax '((TYPEDEF 11493 . 11500))
+    :lexical-table 
+        '(("HIWORD" (spp-arg-list ("l") 8297 . 8300) . ((semantic-list "((WORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8311 . 8350)))
+          ("MIN" (spp-arg-list ("x" "y") 9409 . 9415) . ((semantic-list "(((x) < (y))?(x):(y))" 9426 . 9447)))
+          ("ABS" (spp-arg-list ("x") 9552 . 9555) . ((semantic-list "(((x)<0) ? -(x) : (x))" 9569 . 9591)))
+          ("NULL" . ((semantic-list "((void*) 0)" 5769 . 5780)))
+          ("TOUPPER" (spp-arg-list ("c") 10515 . 10518) . ((semantic-list "(ISLOWER (c) ? (c) - 'a' + 'A' : (c))" 10520 . 10557)))
+          ("MAKEWORD" (spp-arg-list ("low" "high") 7954 . 7965) . ((semantic-list "((WORD)(((BYTE)((low) & 0xff )) | (((WORD)((BYTE) ((high) & 0xff ))) << 8)))" 7966 . 8042)))
+          ("ISSPACE" (spp-arg-list ("c") 9908 . 9911) . ((semantic-list "((c) == ' ' || (c) == '\\f' || (c) == '\\n' || \\
+	(c) == '\\r' || (c) == '\\t' || (c) == '\\v')" 9913 . 10003)))
+          ("LOSWORD" (spp-arg-list ("l") 8470 . 8473) . ((semantic-list "((SWORD)(DWORD)(l))" 8483 . 8502)))
+          ("_LIBFETION_COMMON_H")
+          ("FETION_BYTEORDER" . ((symbol "FETION_LIL_ENDIAN" 4701 . 4718)))
+          ("LOBYTE" (spp-arg-list ("w") 7667 . 7670) . ((semantic-list "((BYTE)(w))" 7681 . 7692)))
+          ("ISUPPER" (spp-arg-list ("c") 10108 . 10111) . ((semantic-list "((c) >= 'A' && (c) <= 'Z')" 10113 . 10139)))
+          ("ENABLE" (spp-arg-list ("FEATURE") 847 . 856) . ((semantic-list "(defined( ENABLE_##FEATURE ) && ENABLE_##FEATURE)" 857 . 906)))
+          ("HIBYTE" (spp-arg-list ("w") 7798 . 7801) . ((semantic-list "((BYTE)(((WORD)(w) >> 8) & 0xFF))" 7812 . 7845)))
+          ("TOLOWER" (spp-arg-list ("c") 10665 . 10668) . ((semantic-list "(ISUPPER (c) ? (c) - 'A' + 'a' : (c))" 10670 . 10707)))
+          ("TABLESIZE" (spp-arg-list ("table") 9089 . 9096) . ((semantic-list "(sizeof(table)/sizeof(table[0]))" 9100 . 9132)))
+          ("TRUE" . ((semantic-list "(1)" 5595 . 5598)))
+          ("FETION_BIG_ENDIAN" . ((number "4321" 3673 . 3677)))
+          ("MAKELONG" (spp-arg-list ("low" "high") 8792 . 8803) . ((semantic-list "((DWORD)(((WORD)(low)) | (((DWORD)((WORD)(high))) << 16)))" 8804 . 8862)))
+          ("ISLOWER" (spp-arg-list ("c") 10244 . 10247) . ((semantic-list "((c) >= 'a' && (c) <= 'z')" 10249 . 10275)))
+          ("FETION_LIL_ENDIAN" . ((number "1234" 3584 . 3588)))
+          ("FX_EXPORT")
+          ("HISWORD" (spp-arg-list ("l") 8623 . 8626) . ((semantic-list "((SWORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8636 . 8676)))
+          ("MAX" (spp-arg-list ("x" "y") 9261 . 9267) . ((semantic-list "(((x) > (y))?(x):(y))" 9278 . 9299)))
+          ("ISALPHA" (spp-arg-list ("c") 10374 . 10377) . ((semantic-list "(ISUPPER (c) || ISLOWER (c))" 10379 . 10407)))
+          ("FALSE" . ((semantic-list "(0)" 5501 . 5504)))
+          ("LOWORD" (spp-arg-list ("l") 8153 . 8156) . ((semantic-list "((WORD)(DWORD)(l))" 8167 . 8185)))
+          ("CLAMP" (spp-arg-list ("x" "low" "high") 9733 . 9747) . ((semantic-list "(((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))" 9749 . 9806)))
+          )
+
+    )
+   (semanticdb-table "event.h"
+    :tags 
+        '( ("_LIBFETION_EVENT_H_" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("FX_EVENT_BASE" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("FX_EVENT_SPARE" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("FX_LOGIN_CONNECTING" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("FX_LOGIN_WAIT_AUTH" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("FX_LOGIN_AUTH_OK" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("FX_LOGIN_FAIL" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("FX_LOGIN_NETWORK_ERROR" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("FX_LOGIN_UNKOWN_ERROR" variable
+               (:constant-flag t
+                :line 95)
+                nil nil)
+            ("FX_LOGIN_UNKOWN_USR" variable
+               (:constant-flag t
+                :line 102)
+                nil nil)
+            ("FX_LOGIN_GCL_GETTING" variable
+               (:constant-flag t
+                :line 109)
+                nil nil)
+            ("FX_LOGIN_GCL_OK" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("FX_LOGIN_GCL_FAIL" variable
+               (:constant-flag t
+                :line 123)
+                nil nil)
+            ("FX_LOGIN_GP_GETTING" variable
+               (:constant-flag t
+                :line 130)
+                nil nil)
+            ("FX_LOGIN_GP_OK" variable
+               (:constant-flag t
+                :line 137)
+                nil nil)
+            ("FX_LOGIN_GP_FAIL" variable
+               (:constant-flag t
+                :line 144)
+                nil nil)
+            ("FX_LOGIN_OK" variable
+               (:constant-flag t
+                :line 151)
+                nil nil)
+            ("FX_LOGIN_TIMEOUT" variable
+               (:constant-flag t
+                :line 158)
+                nil nil)
+            ("FX_LOGIN_URI_ERROR" variable
+               (:constant-flag t
+                :line 165)
+                nil nil)
+            ("FX_LOGIN_SERVER_ERROR" variable
+               (:constant-flag t
+                :line 172)
+                nil nil)
+            ("FX_LOGIN_SERVER_REFUSE" variable
+               (:constant-flag t
+                :line 179)
+                nil nil)
+            ("FX_LOGIN_GSML_OK" variable
+               (:constant-flag t
+                :line 186)
+                nil nil)
+            ("FX_LOGIN_GSML_FAIL" variable
+               (:constant-flag t
+                :line 193)
+                nil nil)
+            ("FX_NEW_MESSAGE" variable
+               (:constant-flag t
+                :line 221)
+                nil nil)
+            ("FX_NEW_QUN_MESSAGE" variable
+               (:constant-flag t
+                :line 240)
+                nil nil)
+            ("FX_SYS_MESSAGE" variable
+               (:constant-flag t
+                :line 257)
+                nil nil)
+            ("FX_NUDGE_MESSAGE" variable
+               (:constant-flag t
+                :line 268)
+                nil nil)
+            ("FX_SMS_OK" variable
+               (:constant-flag t
+                :line 281)
+                nil nil)
+            ("FX_SMS_FAIL" variable
+               (:constant-flag t
+                :line 288)
+                nil nil)
+            ("FX_SMS_TIMEOUT" variable
+               (:constant-flag t
+                :line 295)
+                nil nil)
+            ("FX_SMS_UNKOWN_ERROR" variable
+               (:constant-flag t
+                :line 302)
+                nil nil)
+            ("FX_SMS_FAIL_LIMIT" variable
+               (:constant-flag t
+                :line 309)
+                nil nil)
+            ("FX_DIA_BG_TRYING" variable
+               (:constant-flag t
+                :line 322)
+                nil nil)
+            ("FX_DIA_BG_OK" variable
+               (:constant-flag t
+                :line 329)
+                nil nil)
+            ("FX_DIA_BG_FAIL" variable
+               (:constant-flag t
+                :line 336)
+                nil nil)
+            ("FX_DIA_BG_TIMEOUT" variable
+               (:constant-flag t
+                :line 343)
+                nil nil)
+            ("FX_DIA_SEND_OK" variable
+               (:constant-flag t
+                :line 351)
+                nil nil)
+            ("FX_DIA_SEND_FAIL" variable
+               (:constant-flag t
+                :line 358)
+                nil nil)
+            ("FX_DIA_SEND_TIMEOUT" variable
+               (:constant-flag t
+                :line 366)
+                nil nil)
+            ("FX_DIA_UNKOWN_ERROR" variable
+               (:constant-flag t
+                :line 374)
+                nil nil)
+            ("FX_STATUS_UNSET" variable
+               (:constant-flag t
+                :line 389)
+                nil nil)
+            ("FX_STATUS_ONLINE" variable
+               (:constant-flag t
+                :line 398)
+                nil nil)
+            ("FX_STATUS_BUSY" variable
+               (:constant-flag t
+                :line 405)
+                nil nil)
+            ("FX_STATUS_OFFLINE" variable
+               (:constant-flag t
+                :line 412)
+                nil nil)
+            ("FX_STATUS_AWAY" variable
+               (:constant-flag t
+                :line 419)
+                nil nil)
+            ("FX_STATUS_MEETING" variable
+               (:constant-flag t
+                :line 426)
+                nil nil)
+            ("FX_STATUS_PHONE" variable
+               (:constant-flag t
+                :line 433)
+                nil nil)
+            ("FX_STATUS_DINNER" variable
+               (:constant-flag t
+                :line 440)
+                nil nil)
+            ("FX_STATUS_EXTENDED_AWAY" variable
+               (:constant-flag t
+                :line 447)
+                nil nil)
+            ("FX_STATUS_NUM_PRIMITIVES" variable
+               (:constant-flag t
+                :line 454)
+                nil nil)
+            ("FX_STATUS_WAITING_AUTH" variable
+               (:constant-flag t
+                :line 461)
+                nil nil)
+            ("FX_STATUS_REFUSE" variable
+               (:constant-flag t
+                :line 468)
+                nil nil)
+            ("FX_STATUS_BLACK" variable
+               (:constant-flag t
+                :line 475)
+                nil nil)
+            ("FX_STATUS_MOBILE" variable
+               (:constant-flag t
+                :line 482)
+                nil nil)
+            ("FX_STATUS_SMSEXTENED" variable
+               (:constant-flag t
+                :line 489)
+                nil nil)
+            ("FX_ACCOUNT_UPDATA_OK" variable
+               (:constant-flag t
+                :line 512)
+                nil nil)
+            ("FX_ADD_GROUP_OK" variable
+               (:constant-flag t
+                :line 519)
+                nil nil)
+            ("FX_ADD_GROUP_FAIL" variable
+               (:constant-flag t
+                :line 526)
+                nil nil)
+            ("FX_ADD_GROUP_TIMEOUT" variable
+               (:constant-flag t
+                :line 533)
+                nil nil)
+            ("FX_DEL_GROUP_OK" variable
+               (:constant-flag t
+                :line 540)
+                nil nil)
+            ("FX_DEL_GROUP_FAIL" variable
+               (:constant-flag t
+                :line 547)
+                nil nil)
+            ("FX_DEL_GROUP_TIMEOUT" variable
+               (:constant-flag t
+                :line 554)
+                nil nil)
+            ("FX_RENAME_GROUP_OK" variable
+               (:constant-flag t
+                :line 561)
+                nil nil)
+            ("FX_RENAME_GROUP_FAIL" variable
+               (:constant-flag t
+                :line 568)
+                nil nil)
+            ("FX_RENAME_GROUP_TIMEOUT" variable
+               (:constant-flag t
+                :line 575)
+                nil nil)
+            ("FX_SET_BUDDY_INFO_OK" variable
+               (:constant-flag t
+                :line 582)
+                nil nil)
+            ("FX_SET_BUDDY_INFO_FAIL" variable
+               (:constant-flag t
+                :line 589)
+                nil nil)
+            ("FX_SET_BUDDY_INFO_TIMEOUT" variable
+               (:constant-flag t
+                :line 596)
+                nil nil)
+            ("FX_ADDACCOUNT_APP" variable
+               (:constant-flag t
+                :line 603)
+                nil nil)
+            ("FX_ADD_BUDDY_OK" variable
+               (:constant-flag t
+                :line 610)
+                nil nil)
+            ("FX_SYS_ERR_NETWORK" variable
+               (:constant-flag t
+                :line 618)
+                nil nil)
+            ("FX_SYS_DEREGISTERED" variable
+               (:constant-flag t
+                :line 627)
+                nil nil)
+            ("FX_SET_STATE_OK" variable
+               (:constant-flag t
+                :line 634)
+                nil nil)
+            ("FX_SET_STATE_FAIL" variable
+               (:constant-flag t
+                :line 640)
+                nil nil)
+            ("FX_SET_STATE_TIMEOUT" variable
+               (:constant-flag t
+                :line 646)
+                nil nil)
+            ("FX_SET_IMPRESA_OK" variable
+               (:constant-flag t
+                :line 653)
+                nil nil)
+            ("FX_SET_IMPRESA_FAIL" variable
+               (:constant-flag t
+                :line 660)
+                nil nil)
+            ("FX_SET_NICKNAME_OK" variable
+               (:constant-flag t
+                :line 667)
+                nil nil)
+            ("FX_SET_NICKNAME_FAIL" variable
+               (:constant-flag t
+                :line 674)
+                nil nil)
+            ("FX_SET_REFUSE_SMS_DAY_OK" variable
+               (:constant-flag t
+                :line 681)
+                nil nil)
+            ("FX_SET_REFUSE_SMS_DAY_FAIL" variable
+               (:constant-flag t
+                :line 688)
+                nil nil)
+            ("FX_ADD_BLACKLIST_OK" variable
+               (:constant-flag t
+                :line 697)
+                nil nil)
+            ("FX_ADD_BLACKLIST_FAIL" variable
+               (:constant-flag t
+                :line 706)
+                nil nil)
+            ("FX_ADD_BLACKLIST_TIMEOUT" variable
+               (:constant-flag t
+                :line 713)
+                nil nil)
+            ("FX_REMOVE_BLACKLIST_OK" variable
+               (:constant-flag t
+                :line 722)
+                nil nil)
+            ("FX_REMOVE_BLACKLIST_FAIL" variable
+               (:constant-flag t
+                :line 731)
+                nil nil)
+            ("FX_REMOVE_BLACKLIST_TIMEOUT" variable
+               (:constant-flag t
+                :line 738)
+                nil nil)
+            ("FX_SET_SCH_SMS_FAIL" variable
+               (:constant-flag t
+                :line 745)
+                nil nil)
+            ("FX_SET_SCH_SMS_OK" variable
+               (:constant-flag t
+                :line 753)
+                nil nil)
+            ("FX_SET_SCH_SMS_TIMEOUT" variable
+               (:constant-flag t
+                :line 760)
+                nil nil)
+            ("FX_DEL_SCH_SMS_FAIL" variable
+               (:constant-flag t
+                :line 767)
+                nil nil)
+            ("FX_DEL_SCH_SMS_OK" variable
+               (:constant-flag t
+                :line 774)
+                nil nil)
+            ("FX_DEL_SCH_SMS_TIMEOUT" variable
+               (:constant-flag t
+                :line 781)
+                nil nil)
+            ("FX_DEL_BUDDY_OK" variable
+               (:constant-flag t
+                :line 790)
+                nil nil)
+            ("FX_DEL_BUDDY_FAIL" variable
+               (:constant-flag t
+                :line 799)
+                nil nil)
+            ("FX_DEL_BUDDY_TIMEOUT" variable
+               (:constant-flag t
+                :line 806)
+                nil nil)
+            ("FX_MOVE_GROUP_OK" variable
+               (:constant-flag t
+                :line 813)
+                nil nil)
+            ("FX_MOVE_GROUP_FAIL" variable
+               (:constant-flag t
+                :line 820)
+                nil nil)
+            ("FX_RECEIVE_FILE" variable
+               (:constant-flag t
+                :line 829)
+                nil nil)
+            ("FX_CURRENT_VERSION" variable
+               (:constant-flag t
+                :line 837)
+                nil nil)
+            ("FX_GET_QUNLIST_OK" variable
+               (:constant-flag t
+                :line 851)
+                nil nil)
+            ("FX_GET_QUNLIST_FAIL" variable
+               (:constant-flag t
+                :line 858)
+                nil nil)
+            ("FX_QUN_GP_OK" variable
+               (:constant-flag t
+                :line 865)
+                nil nil)
+            ("FX_QUN_SEND_OK" variable
+               (:constant-flag t
+                :line 872)
+                nil nil)
+            ("FX_QUN_SEND_TIMEOUT" variable
+               (:constant-flag t
+                :line 879)
+                nil nil)
+            ("FX_QUN_SEND_FAIL" variable
+               (:constant-flag t
+                :line 886)
+                nil nil)
+            ("FX_QUN_SMS_OK" variable
+               (:constant-flag t
+                :line 893)
+                nil nil)
+            ("FX_QUN_SMS_TIMEOUT" variable
+               (:constant-flag t
+                :line 900)
+                nil nil)
+            ("FX_QUN_SMS_FAIL" variable
+               (:constant-flag t
+                :line 907)
+                nil nil)
+            ("FX_QUN_SMS_FAIL_LIMIT" variable
+               (:constant-flag t
+                :line 914)
+                nil nil)
+            ("FX_NET_OK" variable
+               (:constant-flag t
+                :line 927)
+                nil nil))          
+    :file "event.h"
+    :pointmax 11687
+    :fsize 18634
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax '((TYPEDEF 11493 . 11500))
+    :lexical-table 
+        '(("HIWORD" (spp-arg-list ("l") 8297 . 8300) . ((semantic-list "((WORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8311 . 8350)))
+          ("MIN" (spp-arg-list ("x" "y") 9409 . 9415) . ((semantic-list "(((x) < (y))?(x):(y))" 9426 . 9447)))
+          ("ABS" (spp-arg-list ("x") 9552 . 9555) . ((semantic-list "(((x)<0) ? -(x) : (x))" 9569 . 9591)))
+          ("NULL" . ((semantic-list "((void*) 0)" 5769 . 5780)))
+          ("TOUPPER" (spp-arg-list ("c") 10515 . 10518) . ((semantic-list "(ISLOWER (c) ? (c) - 'a' + 'A' : (c))" 10520 . 10557)))
+          ("MAKEWORD" (spp-arg-list ("low" "high") 7954 . 7965) . ((semantic-list "((WORD)(((BYTE)((low) & 0xff )) | (((WORD)((BYTE) ((high) & 0xff ))) << 8)))" 7966 . 8042)))
+          ("ISSPACE" (spp-arg-list ("c") 9908 . 9911) . ((semantic-list "((c) == ' ' || (c) == '\\f' || (c) == '\\n' || \\
+	(c) == '\\r' || (c) == '\\t' || (c) == '\\v')" 9913 . 10003)))
+          ("LOSWORD" (spp-arg-list ("l") 8470 . 8473) . ((semantic-list "((SWORD)(DWORD)(l))" 8483 . 8502)))
+          ("_LIBFETION_COMMON_H")
+          ("FETION_BYTEORDER" . ((symbol "FETION_LIL_ENDIAN" 4701 . 4718)))
+          ("LOBYTE" (spp-arg-list ("w") 7667 . 7670) . ((semantic-list "((BYTE)(w))" 7681 . 7692)))
+          ("ISUPPER" (spp-arg-list ("c") 10108 . 10111) . ((semantic-list "((c) >= 'A' && (c) <= 'Z')" 10113 . 10139)))
+          ("ENABLE" (spp-arg-list ("FEATURE") 847 . 856) . ((semantic-list "(defined( ENABLE_##FEATURE ) && ENABLE_##FEATURE)" 857 . 906)))
+          ("HIBYTE" (spp-arg-list ("w") 7798 . 7801) . ((semantic-list "((BYTE)(((WORD)(w) >> 8) & 0xFF))" 7812 . 7845)))
+          ("TOLOWER" (spp-arg-list ("c") 10665 . 10668) . ((semantic-list "(ISUPPER (c) ? (c) - 'A' + 'a' : (c))" 10670 . 10707)))
+          ("TABLESIZE" (spp-arg-list ("table") 9089 . 9096) . ((semantic-list "(sizeof(table)/sizeof(table[0]))" 9100 . 9132)))
+          ("TRUE" . ((semantic-list "(1)" 5595 . 5598)))
+          ("FETION_BIG_ENDIAN" . ((number "4321" 3673 . 3677)))
+          ("MAKELONG" (spp-arg-list ("low" "high") 8792 . 8803) . ((semantic-list "((DWORD)(((WORD)(low)) | (((DWORD)((WORD)(high))) << 16)))" 8804 . 8862)))
+          ("ISLOWER" (spp-arg-list ("c") 10244 . 10247) . ((semantic-list "((c) >= 'a' && (c) <= 'z')" 10249 . 10275)))
+          ("FETION_LIL_ENDIAN" . ((number "1234" 3584 . 3588)))
+          ("FX_EXPORT")
+          ("HISWORD" (spp-arg-list ("l") 8623 . 8626) . ((semantic-list "((SWORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8636 . 8676)))
+          ("MAX" (spp-arg-list ("x" "y") 9261 . 9267) . ((semantic-list "(((x) > (y))?(x):(y))" 9278 . 9299)))
+          ("ISALPHA" (spp-arg-list ("c") 10374 . 10377) . ((semantic-list "(ISUPPER (c) || ISLOWER (c))" 10379 . 10407)))
+          ("FALSE" . ((semantic-list "(0)" 5501 . 5504)))
+          ("LOWORD" (spp-arg-list ("l") 8153 . 8156) . ((semantic-list "((WORD)(DWORD)(l))" 8167 . 8185)))
+          ("CLAMP" (spp-arg-list ("x" "low" "high") 9733 . 9747) . ((semantic-list "(((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))" 9749 . 9806)))
+          )
+
+    )
+   (semanticdb-table "datastruct.h"
+    :tags 
+        '( ("_LIBFETION_DATASTRUCT_H_" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("GCompareFunc" type
+               (:type "typedef"
+                :line 33)
+                nil nil)
+            ("GCompareDataFunc" type
+               (:type "typedef"
+                :line 34)
+                nil nil)
+            ("GFunc" type
+               (:type "typedef"
+                :line 36)
+                nil nil)
+            ("_DList" type
+               (:type "struct"
+                :line 44
+                :members 
+                  ( ("data" variable
+                       (:protection "public"
+                        :line 47)
+                        nil nil)
+                    ("next" variable
+                       (:protection "public"
+                        :line 49)
+                        nil nil))                  )
+                nil nil)
+            ("DList" type
+               (:type "typedef"
+                :line 50)
+                nil nil)
+            ("d_list_alloc" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 52
+                :prototype-flag t)
+                nil nil)
+            ("d_list_free" function
+               (:arguments (nil)
+                :line 53
+                :prototype-flag t)
+                nil nil)
+            ("d_list_append" function
+               (:arguments (nil nil)
+                :line 54
+                :prototype-flag t)
+                nil nil)
+            ("d_list_last" function
+               (:arguments (nil)
+                :line 55
+                :prototype-flag t)
+                nil nil)
+            ("d_list_prepend" function
+               (:arguments (nil nil)
+                :line 56
+                :prototype-flag t)
+                nil nil)
+            ("d_list_insert" function
+               (:arguments (nil nil ("position" variable (:type "int") nil nil))
+                :line 58
+                :prototype-flag t)
+                nil nil)
+            ("d_list_insert_sorted" function
+               (:arguments (nil nil ("func" variable (:type "GCompareFunc") nil nil))
+                :line 66
+                :prototype-flag t)
+                nil nil)
+            ("d_list_insert_sorted_with_data" function
+               (:arguments (nil nil ("func" variable (:type "GCompareDataFunc") nil nil) nil)
+                :line 67
+                :prototype-flag t)
+                nil nil)
+            ("d_list_insert_before" function
+               (:arguments (nil nil nil)
+                :line 68
+                :prototype-flag t)
+                nil nil)
+            ("d_list_concat" function
+               (:arguments (nil nil)
+                :line 71
+                :prototype-flag t)
+                nil nil)
+            ("d_list_remove" function
+               (:arguments (nil nil)
+                :line 73
+                :prototype-flag t)
+                nil nil)
+            ("d_list_remove_all" function
+               (:arguments (nil nil)
+                :line 75
+                :prototype-flag t)
+                nil nil)
+            ("d_list_remove_link" function
+               (:arguments (nil nil)
+                :line 77
+                :prototype-flag t)
+                nil nil)
+            ("d_list_delete_link" function
+               (:arguments (nil nil)
+                :line 79
+                :prototype-flag t)
+                nil nil)
+            ("d_list_reverse" function
+               (:arguments (nil)
+                :line 81
+                :prototype-flag t)
+                nil nil)
+            ("d_list_copy" function
+               (:arguments (nil)
+                :line 82
+                :prototype-flag t)
+                nil nil)
+            ("d_list_nth" function
+               (:arguments (nil nil)
+                :line 83
+                :prototype-flag t)
+                nil nil)
+            ("d_list_find" function
+               (:arguments (nil nil)
+                :line 85
+                :prototype-flag t)
+                nil nil)
+            ("d_list_find_custom" function
+               (:arguments (nil nil nil)
+                :line 87
+                :prototype-flag t)
+                nil nil)
+            ("d_list_position" function
+               (:arguments (nil nil)
+                :line 90
+                :prototype-flag t)
+                nil nil)
+            ("d_list_index" function
+               (:arguments (nil nil)
+                :line 92
+                :prototype-flag t)
+                nil nil)
+            ("d_list_length" function
+               (:arguments (nil)
+                :line 95
+                :prototype-flag t)
+                nil nil)
+            ("d_list_foreach" function
+               (:arguments (nil nil nil)
+                :line 96
+                :prototype-flag t)
+                nil nil)
+            ("d_list_sort" function
+               (:arguments (nil nil)
+                :line 99
+                :prototype-flag t)
+                nil nil)
+            ("d_list_sort_with_data" function
+               (:arguments (nil nil nil)
+                :line 101
+                :prototype-flag t)
+                nil nil)
+            ("d_list_nth_data" function
+               (:arguments (nil nil)
+                :line 104
+                :prototype-flag t)
+                nil nil)
+            ("d_list_next" variable
+               (:constant-flag t
+                :line 107)
+                nil nil)
+            ("d_list_push_allocator" function
+               (:arguments (nil)
+                :line 110
+                :prototype-flag t)
+                nil nil)
+            ("d_list_pop_allocator" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 111
+                :prototype-flag t)
+                nil nil)
+            ("_fetion_msg" type
+               (:members 
+                  ( ("uid" variable
+                       (:protection "public"
+                        :line 124)
+                        nil nil)
+                    ("message" variable
+                       (:protection "public"
+                        :line 126)
+                        nil nil)
+                    ("msgformat" variable
+                       (:protection "public"
+                        :line 128)
+                        nil nil)
+                    ("msgtime" variable
+                       (:protection "public"
+                        :line 130)
+                        nil nil)
+                    ("ext_id" variable
+                       (:protection "public"
+                        :line 132)
+                        nil nil))                  
+                :line 122
+                :type "struct")
+                nil nil)
+            ("Fetion_MSG" type
+               (:type "typedef"
+                :line 133)
+                nil nil)
+            ("_fetion_schedule_sms" type
+               (:members 
+                  ( ("id" variable
+                       (:protection "public"
+                        :line 143)
+                        nil nil)
+                    ("version" variable
+                       (:protection "public"
+                        :line 145)
+                        nil nil)
+                    ("send_time" variable
+                       (:protection "public"
+                        :line 147)
+                        nil nil)
+                    ("message" variable
+                       (:protection "public"
+                        :line 149)
+                        nil nil)
+                    ("receivers" variable
+                       (:protection "public"
+                        :line 161)
+                        nil nil))                  
+                :line 141
+                :type "struct")
+                nil nil)
+            ("Fetion_Schedule_SMS" type
+               (:type "typedef"
+                :line 162)
+                nil nil)
+            ("PROXY_DIRECT" variable
+               (:constant-flag t
+                :line 172)
+                nil nil)
+            ("PROXY_HTTP" variable
+               (:constant-flag t
+                :line 174)
+                nil nil)
+            ("PROXY_SOCKS4" variable
+               (:constant-flag t
+                :line 176)
+                nil nil)
+            ("PROXY_SOCKS5" variable
+               (:constant-flag t
+                :line 178)
+                nil nil)
+            ("PROXY_MAX" variable
+               (:constant-flag t
+                :line 179)
+                nil nil)
+            ("PROXY_TYPE" type
+               (:type "typedef"
+                :line 180)
+                nil nil)
+            ("_PROXY_ITEM" type
+               (:members 
+                  ( ("host" variable
+                       (:protection "public"
+                        :line 189)
+                        nil nil)
+                    ("port" variable
+                       (:protection "public"
+                        :line 191)
+                        nil nil)
+                    ("name" variable
+                       (:protection "public"
+                        :line 193)
+                        nil nil)
+                    ("pwd" variable
+                       (:protection "public"
+                        :line 195)
+                        nil nil)
+                    ("type" variable
+                       (:protection "public"
+                        :line 197)
+                        nil nil))                  
+                :line 187
+                :type "struct")
+                nil nil)
+            ("PROXY_ITEM" type
+               (:type "typedef"
+                :line 198)
+                nil nil)
+            ("FTION_UTYPE_UNSET" variable
+               (:constant-flag t
+                :line 208)
+                nil nil)
+            ("FTION_UTYPE_PC" variable
+               (:constant-flag t
+                :line 209)
+                nil nil)
+            ("FTION_UTYPE_MOBLIE" variable
+               (:constant-flag t
+                :line 210)
+                nil nil)
+            ("Ftion_USER_TYPE" type
+               (:type "typedef"
+                :line 211)
+                nil nil)
+            ("_fetion_personal" type
+               (:members 
+                  ( ("nickname" variable
+                       (:protection "public"
+                        :line 221)
+                        nil nil)
+                    ("impresa" variable
+                       (:protection "public"
+                        :line 223)
+                        nil nil)
+                    ("gender" variable
+                       (:protection "public"
+                        :line 225)
+                        nil nil)
+                    ("nation" variable
+                       (:protection "public"
+                        :line 227)
+                        nil nil)
+                    ("province" variable
+                       (:protection "public"
+                        :line 229)
+                        nil nil)
+                    ("city" variable
+                       (:protection "public"
+                        :line 231)
+                        nil nil)
+                    ("ivr_enabled" variable
+                       (:protection "public"
+                        :line 232)
+                        nil nil)
+                    ("portrait_crc" variable
+                       (:protection "public"
+                        :line 234)
+                        nil nil)
+                    ("provisioning" variable
+                       (:protection "public"
+                        :line 235)
+                        nil nil)
+                    ("mobile_no" variable
+                       (:protection "public"
+                        :line 237)
+                        nil nil)
+                    ("name" variable
+                       (:protection "public"
+                        :line 239)
+                        nil nil)
+                    ("birth_date" variable
+                       (:protection "public"
+                        :line 241)
+                        nil nil)
+                    ("birthday_valid" variable
+                       (:protection "public"
+                        :line 242)
+                        nil nil)
+                    ("lunar_animal" variable
+                       (:protection "public"
+                        :line 244)
+                        nil nil)
+                    ("horoscope" variable
+                       (:protection "public"
+                        :line 246)
+                        nil nil)
+                    ("profile" variable
+                       (:protection "public"
+                        :line 248)
+                        nil nil)
+                    ("blood_type" variable
+                       (:protection "public"
+                        :line 250)
+                        nil nil)
+                    ("occupation" variable
+                       (:protection "public"
+                        :line 252)
+                        nil nil)
+                    ("hobby" variable
+                       (:protection "public"
+                        :line 254)
+                        nil nil)
+                    ("personal_email" variable
+                       (:protection "public"
+                        :line 256)
+                        nil nil)
+                    ("work_email" variable
+                       (:protection "public"
+                        :line 258)
+                        nil nil)
+                    ("other_email" variable
+                       (:protection "public"
+                        :line 260)
+                        nil nil)
+                    ("primary_email" variable
+                       (:protection "public"
+                        :line 262)
+                        nil nil)
+                    ("job_title" variable
+                       (:protection "public"
+                        :line 264)
+                        nil nil)
+                    ("home_phone" variable
+                       (:protection "public"
+                        :line 266)
+                        nil nil)
+                    ("work_phone" variable
+                       (:protection "public"
+                        :line 268)
+                        nil nil)
+                    ("other_phone" variable
+                       (:protection "public"
+                        :line 270)
+                        nil nil)
+                    ("company" variable
+                       (:protection "public"
+                        :line 272)
+                        nil nil)
+                    ("company_website" variable
+                       (:protection "public"
+                        :line 274)
+                        nil nil)
+                    ("match_enabled" variable
+                       (:protection "public"
+                        :line 276)
+                        nil nil)
+                    ("refuse_sms_day" variable
+                       (:protection "public"
+                        :line 278)
+                        nil nil))                  
+                :line 218
+                :type "struct")
+                nil nil)
+            ("Fetion_Personal" type
+               (:type "typedef"
+                :line 279)
+                nil nil)
+            ("_fetion_group" type
+               (:type "struct"
+                :line 286
+                :members 
+                  ( ("id" variable
+                       (:protection "public"
+                        :line 288)
+                        nil nil)
+                    ("name" variable
+                       (:protection "public"
+                        :line 290)
+                        nil nil))                  )
+                nil nil)
+            ("Fetion_Group" type
+               (:type "typedef"
+                :line 291)
+                nil nil)
+            ("_fetion_account" type
+               (:members 
+                  ( ("id" variable
+                       (:protection "public"
+                        :line 300)
+                        nil nil)
+                    ("uri" variable
+                       (:protection "public"
+                        :line 302)
+                        nil nil)
+                    ("local_name" variable
+                       (:protection "public"
+                        :line 304)
+                        nil nil)
+                    ("buddy_lists" variable
+                       (:protection "public"
+                        :line 306)
+                        nil nil)
+                    ("group_id" variable
+                       (:protection "public"
+                        :line 307)
+                        nil nil)
+                    ("relation_status" variable
+                       (:protection "public"
+                        :line 308)
+                        nil nil)
+                    ("online_notify" variable
+                       (:protection "public"
+                        :line 309)
+                        nil nil)
+                    ("status_code" variable
+                       (:protection "public"
+                        :line 310)
+                        nil nil)
+                    ("online_status" variable
+                       (:protection "public"
+                        :line 314)
+                        nil nil)
+                    ("portrait_crc" variable
+                       (:protection "public"
+                        :line 315)
+                        nil nil)
+                    ("personal" variable
+                       (:protection "public"
+                        :line 319)
+                        nil nil)
+                    ("usr_type" variable
+                       (:protection "public"
+                        :line 320)
+                        nil nil)
+                    ("device_type" variable
+                       (:protection "public"
+                        :line 321)
+                        nil nil))                  
+                :line 298
+                :type "struct")
+                nil nil)
+            ("Fetion_Account" type
+               (:type "typedef"
+                :line 322)
+                nil nil)
+            ("_fetion_black" type
+               (:members 
+                  ( ("uid" variable
+                       (:protection "public"
+                        :line 331)
+                        nil nil)
+                    ("uri" variable
+                       (:protection "public"
+                        :line 333)
+                        nil nil)
+                    ("local_name" variable
+                       (:protection "public"
+                        :line 335)
+                        nil nil))                  
+                :line 329
+                :type "struct")
+                nil nil)
+            ("Fetion_Black" type
+               (:type "typedef"
+                :line 336)
+                nil nil)
+            ("Fetion_QunMember" type
+               (:type "typedef"
+                :line 338)
+                nil nil)
+            ("_fetion_qun_member" type
+               (:members 
+                  ( ("uri" variable
+                       (:protection "public"
+                        :line 340)
+                        nil nil)
+                    ("id" variable
+                       (:protection "public"
+                        :line 341)
+                        nil nil)
+                    ("nickname" variable
+                       (:protection "public"
+                        :line 342)
+                        nil nil)
+                    ("iicnickname" variable
+                       (:protection "public"
+                        :line 343)
+                        nil nil)
+                    ("identity" variable
+                       (:protection "public"
+                        :line 344)
+                        nil nil)
+                    ("state" variable
+                       (:protection "public"
+                        :line 345)
+                        nil nil)
+                    ("client_type" variable
+                       (:protection "public"
+                        :line 346)
+                        nil nil))                  
+                :line 339
+                :type "struct")
+                nil nil)
+            ("Fetion_QunInfo" type
+               (:type "typedef"
+                :line 349)
+                nil nil)
+            ("_fetion_qun_info" type
+               (:type "struct"
+                :line 350
+                :members 
+                  ( ("uri" variable
+                       (:protection "public"
+                        :line 351)
+                        nil nil)
+                    ("group_attributes_version" variable
+                       (:protection "public"
+                        :line 352)
+                        nil nil)
+                    ("name" variable
+                       (:protection "public"
+                        :line 353)
+                        nil nil)
+                    ("category" variable
+                       (:protection "public"
+                        :line 354)
+                        nil nil)
+                    ("introduce" variable
+                       (:protection "public"
+                        :line 355)
+                        nil nil)
+                    ("bulletin" variable
+                       (:protection "public"
+                        :line 356)
+                        nil nil)
+                    ("portrait_crc" variable
+                       (:protection "public"
+                        :line 357)
+                        nil nil)
+                    ("searchable" variable
+                       (:protection "public"
+                        :line 358)
+                        nil nil)
+                    ("current_member_count" variable
+                       (:protection "public"
+                        :line 359)
+                        nil nil)
+                    ("limit_member_count" variable
+                       (:protection "public"
+                        :line 360)
+                        nil nil)
+                    ("group_activity" variable
+                       (:protection "public"
+                        :line 361)
+                        nil nil)
+                    ("QunMember" variable
+                       (:protection "public"
+                        :line 362)
+                        nil nil))                  )
+                nil nil)
+            ("Fetion_Qun" type
+               (:type "typedef"
+                :line 365)
+                nil nil)
+            ("_fetion_qun" type
+               (:type "struct"
+                :line 366
+                :members 
+                  ( ("id" variable
+                       (:protection "public"
+                        :line 367)
+                        nil nil)
+                    ("uri" variable
+                       (:protection "public"
+                        :line 368)
+                        nil nil)
+                    ("identity" variable
+                       (:protection "public"
+                        :line 369)
+                        nil nil)
+                    ("quninfo" variable
+                       (:protection "public"
+                        :line 370)
+                        nil nil))                  )
+                nil nil)
+            ("_fetion_blist" type
+               (:members 
+                  ( ("group" variable
+                       (:protection "public"
+                        :line 383)
+                        nil nil)
+                    ("account" variable
+                       (:protection "public"
+                        :line 388)
+                        nil nil)
+                    ("blacklist" variable
+                       (:protection "public"
+                        :line 393)
+                        nil nil)
+                    ("qun" variable
+                       (:protection "public"
+                        :line 399)
+                        nil nil)
+                    ("account_count" variable
+                       (:protection "public"
+                        :line 401)
+                        nil nil))                  
+                :line 378
+                :type "struct")
+                nil nil)
+            ("Fetion_BList" type
+               (:type "typedef"
+                :line 402)
+                nil nil)
+            ("free_fetion_personal" function
+               (:arguments (nil)
+                :line 404
+                :prototype-flag t)
+                nil nil)
+            ("free_fetion_account" function
+               (:arguments (nil)
+                :line 405
+                :prototype-flag t)
+                nil nil)
+            ("free_fetion_group" function
+               (:arguments (nil)
+                :line 406
+                :prototype-flag t)
+                nil nil)
+            ("copy_fetion_personal" function
+               (:arguments (nil)
+                :line 408
+                :prototype-flag t)
+                nil nil)
+            ("copy_fetion_account" function
+               (:arguments (nil)
+                :line 409
+                :prototype-flag t)
+                nil nil)
+            ("copy_fetion_group" function
+               (:arguments (nil)
+                :line 410
+                :prototype-flag t)
+                nil nil)
+            ("free_fetion_blist" function
+               (:arguments (nil)
+                :line 414
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_add_group" function
+               (:arguments (nil nil)
+                :line 416
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_add_account" function
+               (:arguments (nil nil)
+                :line 417
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_get_group" function
+               (:arguments (nil)
+                :line 419
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_get_account" function
+               (:arguments (nil)
+                :line 420
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_get_account_by_id" function
+               (:arguments (nil nil)
+                :line 422
+                :prototype-flag t)
+                nil nil)
+            ("fetion_blist_get_uri_by_id" function
+               (:arguments (nil nil)
+                :line 424
+                :prototype-flag t)
+                nil nil)
+            ("AUTH_WAIT" variable
+               (:constant-flag t
+                :line 427)
+                nil nil)
+            ("AUTH_OK" variable
+               (:constant-flag t
+                :line 428)
+                nil nil)
+            ("AUTH_REFUS" variable
+               (:constant-flag t
+                :line 429)
+                nil nil))          
+    :file "datastruct.h"
+    :pointmax 11687
+    :fsize 11081
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax '((TYPEDEF 11493 . 11500))
+    :lexical-table 
+        '(("HIWORD" (spp-arg-list ("l") 8297 . 8300) . ((semantic-list "((WORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8311 . 8350)))
+          ("MIN" (spp-arg-list ("x" "y") 9409 . 9415) . ((semantic-list "(((x) < (y))?(x):(y))" 9426 . 9447)))
+          ("ABS" (spp-arg-list ("x") 9552 . 9555) . ((semantic-list "(((x)<0) ? -(x) : (x))" 9569 . 9591)))
+          ("NULL" . ((semantic-list "((void*) 0)" 5769 . 5780)))
+          ("TOUPPER" (spp-arg-list ("c") 10515 . 10518) . ((semantic-list "(ISLOWER (c) ? (c) - 'a' + 'A' : (c))" 10520 . 10557)))
+          ("MAKEWORD" (spp-arg-list ("low" "high") 7954 . 7965) . ((semantic-list "((WORD)(((BYTE)((low) & 0xff )) | (((WORD)((BYTE) ((high) & 0xff ))) << 8)))" 7966 . 8042)))
+          ("ISSPACE" (spp-arg-list ("c") 9908 . 9911) . ((semantic-list "((c) == ' ' || (c) == '\\f' || (c) == '\\n' || \\
+	(c) == '\\r' || (c) == '\\t' || (c) == '\\v')" 9913 . 10003)))
+          ("LOSWORD" (spp-arg-list ("l") 8470 . 8473) . ((semantic-list "((SWORD)(DWORD)(l))" 8483 . 8502)))
+          ("_LIBFETION_COMMON_H")
+          ("FETION_BYTEORDER" . ((symbol "FETION_LIL_ENDIAN" 4701 . 4718)))
+          ("LOBYTE" (spp-arg-list ("w") 7667 . 7670) . ((semantic-list "((BYTE)(w))" 7681 . 7692)))
+          ("ISUPPER" (spp-arg-list ("c") 10108 . 10111) . ((semantic-list "((c) >= 'A' && (c) <= 'Z')" 10113 . 10139)))
+          ("ENABLE" (spp-arg-list ("FEATURE") 847 . 856) . ((semantic-list "(defined( ENABLE_##FEATURE ) && ENABLE_##FEATURE)" 857 . 906)))
+          ("HIBYTE" (spp-arg-list ("w") 7798 . 7801) . ((semantic-list "((BYTE)(((WORD)(w) >> 8) & 0xFF))" 7812 . 7845)))
+          ("TOLOWER" (spp-arg-list ("c") 10665 . 10668) . ((semantic-list "(ISUPPER (c) ? (c) - 'A' + 'a' : (c))" 10670 . 10707)))
+          ("TABLESIZE" (spp-arg-list ("table") 9089 . 9096) . ((semantic-list "(sizeof(table)/sizeof(table[0]))" 9100 . 9132)))
+          ("TRUE" . ((semantic-list "(1)" 5595 . 5598)))
+          ("FETION_BIG_ENDIAN" . ((number "4321" 3673 . 3677)))
+          ("MAKELONG" (spp-arg-list ("low" "high") 8792 . 8803) . ((semantic-list "((DWORD)(((WORD)(low)) | (((DWORD)((WORD)(high))) << 16)))" 8804 . 8862)))
+          ("ISLOWER" (spp-arg-list ("c") 10244 . 10247) . ((semantic-list "((c) >= 'a' && (c) <= 'z')" 10249 . 10275)))
+          ("FETION_LIL_ENDIAN" . ((number "1234" 3584 . 3588)))
+          ("FX_EXPORT")
+          ("HISWORD" (spp-arg-list ("l") 8623 . 8626) . ((semantic-list "((SWORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8636 . 8676)))
+          ("MAX" (spp-arg-list ("x" "y") 9261 . 9267) . ((semantic-list "(((x) > (y))?(x):(y))" 9278 . 9299)))
+          ("ISALPHA" (spp-arg-list ("c") 10374 . 10377) . ((semantic-list "(ISUPPER (c) || ISLOWER (c))" 10379 . 10407)))
+          ("FALSE" . ((semantic-list "(0)" 5501 . 5504)))
+          ("LOWORD" (spp-arg-list ("l") 8153 . 8156) . ((semantic-list "((WORD)(DWORD)(l))" 8167 . 8185)))
+          ("CLAMP" (spp-arg-list ("x" "low" "high") 9733 . 9747) . ((semantic-list "(((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))" 9749 . 9806)))
+          )
+
+    )
+   (semanticdb-table "libfetion.h"
+    :tags 
+        '( ("_LIB_FETION_H" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("common.h" include (:line 23) nil nil)
+            ("event.h" include (:line 24) nil nil)
+            ("libfetion/common.h" include (:line 26) nil nil)
+            ("libfetion/event.h" include (:line 27) nil nil)
+            ("libfetion/datastruct.h" include (:line 28) nil nil)
+            ("fx_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 195
+                :prototype-flag t)
+                nil nil)
+            ("fx_terminate" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 205
+                :prototype-flag t)
+                nil nil)
+            ("fx_close_network" function
+               (:line 214
+                :prototype-flag t)
+                nil nil)
+            ("fs_login" function
+               (:arguments (nil nil)
+                :line 245
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_login_status" function
+               (:arguments (nil)
+                :line 267
+                :prototype-flag t)
+                nil nil)
+            ("fx_cancel_login" function
+               (:line 279
+                :prototype-flag t)
+                nil nil)
+            ("fx_login" function
+               (:arguments (nil nil nil nil)
+                :line 299
+                :prototype-flag t)
+                nil nil)
+            ("fx_relogin" function
+               (:arguments 
+                  ( ("func" variable (:type "EventListener") nil nil)
+                    nil)                  
+                :line 306
+                :prototype-flag t)
+                nil nil)
+            ("fx_loginout" function
+               (:line 316
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_system_msg_cb" function
+               (:arguments 
+                  ( ("func" variable (:type "EventListener") nil nil)
+                    nil)                  
+                :line 350
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_msg" function
+               (:arguments 
+                  ( ("uid" variable (:type "long") nil nil))                  
+                :line 372
+                :prototype-flag t)
+                nil nil)
+            ("fx_destroy_msg" function
+               (:arguments (nil)
+                :line 383
+                :prototype-flag t)
+                nil nil)
+            ("fs_send_sms" function
+               (:arguments (nil nil)
+                :line 408
+                :prototype-flag t)
+                nil nil)
+            ("fs_send_sms_by_mobile_no" function
+               (:arguments (nil nil)
+                :line 422
+                :prototype-flag t)
+                nil nil)
+            ("fs_send_sms_to_self" function
+               (:arguments (nil)
+                :line 435
+                :prototype-flag t)
+                nil nil)
+            ("fx_send_sms" function
+               (:arguments (nil nil nil nil)
+                :line 462
+                :prototype-flag t)
+                nil nil)
+            ("fx_send_sms_to_self" function
+               (:arguments (nil nil nil)
+                :line 481
+                :prototype-flag t)
+                nil nil)
+            ("fx_send_sms_by_mobile_no" function
+               (:arguments (nil nil nil nil)
+                :line 501
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_longsms" function
+               (:arguments 
+                  ( ("bl" variable (:type "BOOL") nil nil))                  
+                :line 512
+                :prototype-flag t)
+                nil nil)
+            ("fs_begin_dialog" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil))                  
+                :line 543
+                :prototype-flag t)
+                nil nil)
+            ("fs_dialog_send" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil)
+                    nil)                  
+                :line 555
+                :prototype-flag t)
+                nil nil)
+            ("fs_end_dialog" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil))                  
+                :line 566
+                :prototype-flag t)
+                nil nil)
+            ("fx_begin_dialog" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil)
+                    nil
+                    nil)                  
+                :line 589
+                :prototype-flag t)
+                nil nil)
+            ("fx_dialog_send" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil)
+                    nil
+                    nil
+                    nil)                  
+                :line 600
+                :prototype-flag t)
+                nil nil)
+            ("fx_end_dialog" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil))                  
+                :line 612
+                :prototype-flag t)
+                nil nil)
+            ("fx_data_get_smlist" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 653
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_schedulesms_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "int") nil nil))                  
+                :line 670
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_schedule_sms" function
+               (:arguments (nil nil nil nil nil)
+                :line 683
+                :prototype-flag t)
+                nil nil)
+            ("fx_delete_schedule_sms" function
+               (:arguments (nil nil nil)
+                :line 694
+                :prototype-flag t)
+                nil nil)
+            ("fx_covert_schedule_receiver_to_string" function
+               (:arguments (nil)
+                :line 705
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_uid" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 721
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_passwd" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 731
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_show_name" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 741
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_uri" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 751
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_mobilenum" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 761
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_usr_score" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 769
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_user_state" function
+               (:arguments 
+                  ( ("state" variable (:type "int") nil nil)
+                    nil
+                    nil
+                    nil)                  
+                :line 783
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_user_state" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 792
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_user_impresa" function
+               (:arguments (nil nil nil)
+                :line 803
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_user_nickname" function
+               (:arguments (nil nil nil)
+                :line 813
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_user_refuse_sms_day" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 822
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_user_refuse_sms_day" function
+               (:arguments 
+                  ( ("day" variable (:type "int") nil nil)
+                    nil
+                    nil)                  
+                :line 833
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_expirestime" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 846
+                :prototype-flag t)
+                nil nil)
+            ("fx_data_get_PersonalInfo" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 856
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_group" function
+               (:line 906
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_first_account" function
+               (:line 930
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_next_account" function
+               (:arguments (nil)
+                :line 951
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_blacklist" function
+               (:line 981
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_qun" function
+               (:line 1013
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_account_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1024
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_qun_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1034
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_pc_user_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1043
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_qun_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1051
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_pc_user_by_account" function
+               (:arguments (nil)
+                :line 1059
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_authed_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1069
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_authed_by_account" function
+               (:arguments (nil)
+                :line 1080
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_InBlacklist_by_id" function
+               (:arguments (nil)
+                :line 1090
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_InBlacklist_by_account" function
+               (:arguments (nil)
+                :line 1100
+                :prototype-flag t)
+                nil nil)
+            ("fx_move_group_buddy_by_id" function
+               (:arguments 
+                  ( ("uid" variable (:type "long") nil nil)
+                    nil
+                    nil
+                    nil)                  
+                :line 1114
+                :prototype-flag t)
+                nil nil)
+            ("fx_move_group_buddy" function
+               (:arguments (nil nil nil nil)
+                :line 1127
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_on_line_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1135
+                :prototype-flag t)
+                nil nil)
+            ("fx_is_on_line_by_account" function
+               (:arguments (nil)
+                :line 1143
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_online_status_by_id" function
+               (:arguments (nil)
+                :line 1151
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_online_status_by_account" function
+               (:arguments (nil)
+                :line 1160
+                :prototype-flag t)
+                nil nil)
+            ("fx_islogin_by_mobile" function
+               (:arguments (nil)
+                :line 1169
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_refuse_sms_day" function
+               (:arguments (nil)
+                :line 1177
+                :prototype-flag t)
+                nil nil)
+            ("fx_update_account_info_by_id" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1187
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_account_show_name" function
+               (:arguments (nil nil)
+                :line 1203
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_qun_show_name" function
+               (:arguments (nil)
+                :line 1217
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_account_group_id" function
+               (:arguments (nil)
+                :line 1231
+                :prototype-flag t)
+                nil nil)
+            ("fs_rename_buddylist" function
+               (:arguments 
+                  ( ("id" variable (:type "int") nil nil)
+                    nil)                  
+                :line 1251
+                :prototype-flag t)
+                nil nil)
+            ("fs_delete_buddylist" function
+               (:arguments 
+                  ( ("id" variable (:type "int") nil nil))                  
+                :line 1261
+                :prototype-flag t)
+                nil nil)
+            ("fx_rename_buddylist" function
+               (:arguments 
+                  ( ("id" variable (:type "int") nil nil)
+                    nil
+                    nil
+                    nil)                  
+                :line 1280
+                :prototype-flag t)
+                nil nil)
+            ("fx_add_buddylist" function
+               (:arguments (nil nil nil)
+                :line 1292
+                :prototype-flag t)
+                nil nil)
+            ("fx_add_buddy_by_uid" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 1307
+                :prototype-flag t)
+                nil nil)
+            ("fx_add_buddy_by_mobile" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 1323
+                :prototype-flag t)
+                nil nil)
+            ("fx_handleContactRequest" function
+               (:arguments (nil nil nil nil)
+                :line 1337
+                :prototype-flag t)
+                nil nil)
+            ("fx_delete_buddylist" function
+               (:arguments 
+                  ( ("id" variable (:type "int") nil nil)
+                    nil
+                    nil)                  
+                :line 1349
+                :prototype-flag t)
+                nil nil)
+            ("fs_set_buddyinfo" function
+               (:arguments 
+                  ( ("uid" variable (:type "long") nil nil)
+                    nil)                  
+                :line 1367
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_buddyinfo" function
+               (:arguments 
+                  ( ("uid" variable (:type "long") nil nil)
+                    nil
+                    nil
+                    nil)                  
+                :line 1388
+                :prototype-flag t)
+                nil nil)
+            ("fx_delete_buddy_by_id" function
+               (:arguments 
+                  ( ("uid" variable (:type "long") nil nil)
+                    nil
+                    nil)                  
+                :line 1400
+                :prototype-flag t)
+                nil nil)
+            ("fx_delete_buddy_by_account" function
+               (:arguments (nil nil nil)
+                :line 1412
+                :prototype-flag t)
+                nil nil)
+            ("fx_addto_blacklist_by_id" function
+               (:arguments (nil nil nil)
+                :line 1424
+                :prototype-flag t)
+                nil nil)
+            ("fx_addto_blacklist_by_account" function
+               (:arguments (nil nil nil)
+                :line 1436
+                :prototype-flag t)
+                nil nil)
+            ("fx_addto_blacklist_by_uri" function
+               (:arguments (nil nil nil)
+                :line 1448
+                :prototype-flag t)
+                nil nil)
+            ("fx_removefrom_blacklist_by_id" function
+               (:arguments (nil nil nil)
+                :line 1459
+                :prototype-flag t)
+                nil nil)
+            ("fx_removefrom_blacklist_by_account" function
+               (:arguments (nil nil nil)
+                :line 1468
+                :prototype-flag t)
+                nil nil)
+            ("fx_removefrom_blacklist_by_uri" function
+               (:arguments (nil nil nil)
+                :line 1477
+                :prototype-flag t)
+                nil nil)
+            ("fx_send_nudge" function
+               (:arguments 
+                  ( ("who" variable (:type "long") nil nil))                  
+                :line 1497
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_serve_address" function
+               (:arguments (nil)
+                :line 1510
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_unknow_serve_address" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1522
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_serve_address" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1532
+                :prototype-flag t)
+                nil nil)
+            ("fx_set_proxy" function
+               (:arguments (nil)
+                :line 1543
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_proxy" function
+               (:line 1553
+                :prototype-flag t)
+                nil nil)
+            ("fx_setProxyEnabled" function
+               (:arguments 
+                  ( ("status" variable (:type "BOOL") nil nil))                  
+                :line 1563
+                :prototype-flag t)
+                nil nil)
+            ("fx_proxyEnabled" function
+               (:line 1573
+                :prototype-flag t)
+                nil nil)
+            ("fx_test_network" function
+               (:arguments (nil nil nil)
+                :line 1586
+                :prototype-flag t)
+                nil nil)
+            ("fx_msg_no_format" function
+               (:arguments (nil)
+                :line 1603
+                :prototype-flag t)
+                nil nil)
+            ("fx_msg_qt_format" function
+               (:arguments (nil)
+                :line 1615
+                :prototype-flag t)
+                nil nil)
+            ("fx_get_original_ID" function
+               (:arguments 
+                  ( ("id" variable (:type "long") nil nil))                  
+                :line 1628
+                :prototype-flag t)
+                nil nil))          
+    :file "libfetion.h"
+    :pointmax 11687
+    :fsize 45342
+    :lastmodtime '(19019 31037)
+    :unmatched-syntax '((TYPEDEF 11493 . 11500))
+    :lexical-table 
+        '(("HIWORD" (spp-arg-list ("l") 8297 . 8300) . ((semantic-list "((WORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8311 . 8350)))
+          ("MIN" (spp-arg-list ("x" "y") 9409 . 9415) . ((semantic-list "(((x) < (y))?(x):(y))" 9426 . 9447)))
+          ("ABS" (spp-arg-list ("x") 9552 . 9555) . ((semantic-list "(((x)<0) ? -(x) : (x))" 9569 . 9591)))
+          ("NULL" . ((semantic-list "((void*) 0)" 5769 . 5780)))
+          ("TOUPPER" (spp-arg-list ("c") 10515 . 10518) . ((semantic-list "(ISLOWER (c) ? (c) - 'a' + 'A' : (c))" 10520 . 10557)))
+          ("MAKEWORD" (spp-arg-list ("low" "high") 7954 . 7965) . ((semantic-list "((WORD)(((BYTE)((low) & 0xff )) | (((WORD)((BYTE) ((high) & 0xff ))) << 8)))" 7966 . 8042)))
+          ("ISSPACE" (spp-arg-list ("c") 9908 . 9911) . ((semantic-list "((c) == ' ' || (c) == '\\f' || (c) == '\\n' || \\
+	(c) == '\\r' || (c) == '\\t' || (c) == '\\v')" 9913 . 10003)))
+          ("LOSWORD" (spp-arg-list ("l") 8470 . 8473) . ((semantic-list "((SWORD)(DWORD)(l))" 8483 . 8502)))
+          ("_LIBFETION_COMMON_H")
+          ("FETION_BYTEORDER" . ((symbol "FETION_LIL_ENDIAN" 4701 . 4718)))
+          ("LOBYTE" (spp-arg-list ("w") 7667 . 7670) . ((semantic-list "((BYTE)(w))" 7681 . 7692)))
+          ("ISUPPER" (spp-arg-list ("c") 10108 . 10111) . ((semantic-list "((c) >= 'A' && (c) <= 'Z')" 10113 . 10139)))
+          ("ENABLE" (spp-arg-list ("FEATURE") 847 . 856) . ((semantic-list "(defined( ENABLE_##FEATURE ) && ENABLE_##FEATURE)" 857 . 906)))
+          ("HIBYTE" (spp-arg-list ("w") 7798 . 7801) . ((semantic-list "((BYTE)(((WORD)(w) >> 8) & 0xFF))" 7812 . 7845)))
+          ("TOLOWER" (spp-arg-list ("c") 10665 . 10668) . ((semantic-list "(ISUPPER (c) ? (c) - 'A' + 'a' : (c))" 10670 . 10707)))
+          ("TABLESIZE" (spp-arg-list ("table") 9089 . 9096) . ((semantic-list "(sizeof(table)/sizeof(table[0]))" 9100 . 9132)))
+          ("TRUE" . ((semantic-list "(1)" 5595 . 5598)))
+          ("FETION_BIG_ENDIAN" . ((number "4321" 3673 . 3677)))
+          ("MAKELONG" (spp-arg-list ("low" "high") 8792 . 8803) . ((semantic-list "((DWORD)(((WORD)(low)) | (((DWORD)((WORD)(high))) << 16)))" 8804 . 8862)))
+          ("ISLOWER" (spp-arg-list ("c") 10244 . 10247) . ((semantic-list "((c) >= 'a' && (c) <= 'z')" 10249 . 10275)))
+          ("FETION_LIL_ENDIAN" . ((number "1234" 3584 . 3588)))
+          ("FX_EXPORT")
+          ("HISWORD" (spp-arg-list ("l") 8623 . 8626) . ((semantic-list "((SWORD)((((DWORD)(l)) >> 16) & 0xFFFF))" 8636 . 8676)))
+          ("MAX" (spp-arg-list ("x" "y") 9261 . 9267) . ((semantic-list "(((x) > (y))?(x):(y))" 9278 . 9299)))
+          ("ISALPHA" (spp-arg-list ("c") 10374 . 10377) . ((semantic-list "(ISUPPER (c) || ISLOWER (c))" 10379 . 10407)))
+          ("FALSE" . ((semantic-list "(0)" 5501 . 5504)))
+          ("LOWORD" (spp-arg-list ("l") 8153 . 8156) . ((semantic-list "((WORD)(DWORD)(l))" 8167 . 8185)))
+          ("CLAMP" (spp-arg-list ("x" "low" "high") 9733 . 9747) . ((semantic-list "(((x) > (high)) ? (high) : (((x) < (low)) ? (low) : (x)))" 9749 . 9806)))
+          )
+
+    )
+   )
+  :file "!home!risent!Downloads!temp!linux_fetion_v1.0!libfetion!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

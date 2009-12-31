@@ -1,0 +1,354 @@
+;; Object eim-2.4/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "eim-2.4/"
+  :tables (list 
+   (semanticdb-table "eim-py.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-py" package nil nil [968 985])
+            ("cl" include nil nil [1007 1020])
+            ("eim" include nil nil [1022 1036])
+            ("eim-extra" include nil nil [1037 1057])
+            ("eim-py-shenmu" variable (:default-value (quote ("b" "p" "m" "f" "d" "t" "n" "l" "g" "k" "h" "j" "q" "x" "z" "c" "s" "zh" "ch" "sh" "r" "y" "w"))) nil [1082 1205])
+            ("eim-py-yunmu" variable (:default-value (quote ("a" "o" "e" "i" "u" "v" "ai" "ei" "ui" "ao" "ou" "iu" "ie" "ia" "ua" "ve" "er" "an" "en" "in" "un" "vn" "ang" "iong" "eng" "ing" "ong" "uan" "uang" "ian" "iang" "iao" "ue" "uai" "uo"))) nil [1206 1440])
+            ("eim-py-valid-yunmu" variable (:default-value (quote ("a" "o" "e" "ai" "ei" "ui" "ao" "ou" "er" "an" "en" "ang" "eng"))) nil [1441 1564])
+            ("eim-py-load-hook" variable nil nil [1566 1595])
+            ("eim-py-initialized" variable nil nil [1596 1627])
+            ("eim-py-punctuation-list" variable nil nil [1628 1664])
+            ("eim-py-package" variable nil nil [1665 1692])
+            ("eim-py-char-table" variable (:default-value (make-vector 1511 nil)) nil [1693 1742])
+            ("eim-py-pos" variable nil nil [1744 1767])
+            ("eim-py-pylist" variable nil nil [1768 1794])
+            ("eim-py-handle-string" function nil nil [1818 2850])
+            ("eim-py-format-page" function nil nil [2852 4169])
+            ("eim-py-pylist-to-string" function (:arguments ("pylist")) nil [4171 4317])
+            ("eim-py-get-sm" function (:arguments ("py")) nil [4336 4875])
+            ("eim-py-get-ym" function (:arguments ("py")) nil [4877 5567])
+            ("eim-py-get-charpy" function (:arguments ("py")) nil [5569 5974])
+            ("eim-py-split-string" function (:arguments ("py")) nil [5988 6591])
+            ("eim-py-validp" function (:arguments ("pylist")) nil [6593 6936])
+            ("eim-py-user-divide-pos" function (:arguments ("py")) nil [6938 7215])
+            ("eim-py-restore-user-divide" function (:arguments ("py" "pos")) nil [7217 7722])
+            ("eim-py-get-choices" function (:arguments ("pylist")) nil [7737 8531])
+            ("eim-py-possible-words" function (:arguments ("wordspy")) nil [8533 9262])
+            ("eim-py-possible-words-py" function (:arguments ("pylist")) nil [9264 10515])
+            ("eim-py-match-word" function (:arguments ("wordlist" "wordspy")) nil [10517 11762])
+            ("eim-py-essential-py" function (:arguments ("py")) nil [11764 11885])
+            ("eim-py-match-py" function (:arguments ("word" "pylist")) nil [11913 12980])
+            ("eim-py-intern-word" function (:arguments ("word" "py")) nil [12982 13664])
+            ("eim-py-create-word" function (:arguments ("word" "pylist")) nil [13666 13905])
+            ("eim-py-rearrange" function (:arguments ("word" "pylist")) nil [13907 14158])
+            ("eim-py-rearrange-1" function (:arguments ("word" "py")) nil [14160 14227])
+            ("eim-py-han-stringp" function (:arguments ("str")) nil [14229 14527])
+            ("eim-py-select-current" function nil nil [14543 15697])
+            ("eim-py-number-select" function (:user-visible-flag t) nil [15699 16470])
+            ("eim-py-next-page" function (:arguments ("arg")) nil [16472 16859])
+            ("eim-py-previous-page" function (:arguments ("arg")) nil [16861 16944])
+            ("eim-py-quit-no-clear" function nil nil [16946 17148])
+            ("eim-py-backward-kill-py" function nil nil [17150 17348])
+            ("eim-py-translate" function (:arguments ("char")) nil [17368 17451])
+            ("eim-py-activate-function" function nil nil [17453 17693])
+            ("eim-py-get" function (:arguments ("code")) nil [17712 18224])
+            ("eim-py-get-char-code" function (:arguments ("char")) nil [18226 18306])
+            ("eim-py-make-char-table" function (:arguments ("chars")) nil [18308 18599])
+            ("eim-py-save-file" function (:user-visible-flag t) nil [18601 18919])
+            ("unless" code nil nil [18935 51378]))          
+    :file "eim-py.el"
+    :pointmax 51461
+    :fsize 66684
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1020 . 1021) (symbol 987 . 1004) (open-paren 986 . 987))
+    )
+   (semanticdb-table "eim.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim" package nil nil [1326 1340])
+            ("cl" include nil nil [1362 1375])
+            ("help-mode" include nil nil [1377 1397])
+            ("eim-version" variable (:default-value "2.4") nil [1399 1425])
+            ("when" code nil nil [1452 1651])
+            ("when" code nil nil [1653 2056])
+            ("eim" customgroup (:user-visible-flag t) nil [2082 2143])
+            ("eim-page-length" variable (:default-value 7) nil [2144 2182])
+            ("eim-string-face" variable
+               (:default-value (quote ((t (:underline t))))
+                :type "face")
+                nil [2184 2277])
+            ("eim-package-list" variable nil nil [2302 2344])
+            ("eim-current-package" variable (:default-value (make-vector 5 nil)) nil [2345 2654])
+            ("eim-first-char" variable (:default-value (number-sequence 97 122)) nil [2655 2719])
+            ("eim-total-char" variable (:default-value (number-sequence 97 122)) nil [2720 2777])
+            ("eim-do-completion" variable (:default-value t) nil [2778 2818])
+            ("eim-current-key" variable nil nil [2820 2857])
+            ("eim-current-str" variable nil nil [2858 2895])
+            ("eim-current-choices" variable nil nil [2896 3149])
+            ("eim-current-pos" variable nil nil [3150 3214])
+            ("eim-guidance-str" variable nil nil [3215 3256])
+            ("eim-translating" variable nil nil [3257 3297])
+            ("eim-overlay" variable nil nil [3298 3342])
+            ("eim-guidance-frame" variable nil nil [3343 3374])
+            ("eim-guidance-buf" variable nil nil [3375 3404])
+            ("eim-load-hook" variable nil nil [3406 3432])
+            ("eim-active-hook" variable nil nil [3433 3461])
+            ("eim-stop-function" variable nil nil [3463 3493])
+            ("eim-translate-function" variable nil nil [3494 3529])
+            ("eim-add-completion-function" variable nil nil [3530 3570])
+            ("eim-format-function" variable (:default-value (quote eim-format)) nil [3571 3611])
+            ("eim-handle-function" variable (:default-value (quote eim-handle-string)) nil [3612 3659])
+            ("eim-use-tooltip" variable (:default-value (not (or noninteractive emacs-basic-display (not (display-graphic-p)) (not (fboundp (quote x-show-tip)))))) nil [3661 3884])
+            ("eim-tooltip-timeout" variable (:default-value 15) nil [3885 3916])
+            ("eim-buffer-name-format" variable (:default-value " *%s*") nil [3918 3993])
+            ("eim-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (i 32)) (while (< i 127) (define-key map (char-to-string i) (quote eim-self-insert-command)) (setq i (1+ i))) (setq i 128) (while (< i 256) (define-key map (vector i) (quote eim-self-insert-command)) (setq i (1+ i))) (dolist (i (number-sequence 49 57)) (define-key map (char-to-string i) (quote eim-number-select))) (define-key map " " (quote eim-select-current)) (define-key map [backspace] (quote eim-delete-last-char)) (define-key map [delete] (quote eim-delete-last-char)) (define-key map "" (quote eim-delete-last-char)) (define-key map "" (quote eim-next-page)) (define-key map "" (quote eim-previous-page)) (define-key map "" (quote eim-quit-no-clear)) (define-key map "" (quote eim-quit-clear)) (define-key map "" (quote eim-quit-clear)) map)) nil [3995 4848])
+            ("eim-local-variable-list" variable (:default-value (quote (eim-current-package eim-page-length eim-first-char eim-total-char eim-do-completion eim-current-key eim-current-str eim-current-choices eim-current-pos eim-guidance-str eim-translating eim-overlay eim-guidance-frame eim-guidance-buf eim-load-hook eim-active-hook eim-translate-function eim-format-function eim-handle-function eim-add-completion-function eim-stop-function input-method-function inactivate-current-input-method-function describe-current-input-method-function))) nil [4850 5494])
+            ("dolist" code nil nil [5496 5600])
+            ("eim-package-name" function nil nil [5626 5687])
+            ("eim-buffer-list" function nil nil [5689 5749])
+            ("eim-history" function nil nil [5751 5940])
+            ("eim-mode-map" function nil nil [5942 5999])
+            ("eim-options" function nil nil [6001 6057])
+            ("eim-active-function" function nil nil [6059 6123])
+            ("eim-set-package-name" function (:arguments ("name")) nil [6125 6199])
+            ("eim-set-buffer-list" function (:arguments ("list")) nil [6201 6274])
+            ("eim-set-history" function (:arguments ("history")) nil [6276 6351])
+            ("eim-set-mode-map" function (:arguments ("map")) nil [6353 6421])
+            ("eim-set-options" function (:arguments ("options")) nil [6423 6498])
+            ("eim-set-active-function" function (:arguments ("func")) nil [6500 6577])
+            ("eim-get-option" function (:arguments ("option")) nil [6579 6647])
+            ("eim-set-option" function (:arguments ("option" "flag")) nil [6648 6871])
+            ("eim-load-file" function (:arguments ("file")) nil [6899 7559])
+            ("eim-read-file" function (:arguments ("file" "name" "&optional" "read-param")) nil [7561 7960])
+            ("eim-section-region" function (:arguments ("sec")) nil [7962 8540])
+            ("eim-read-parameters" function nil nil [8542 8857])
+            ("eim-delete-region" function nil nil [8883 9107])
+            ("when" code nil nil [9161 9788])
+            ("eim-subseq" function (:arguments ("list" "from" "&optional" "to")) nil [9790 9923])
+            ("eim-mod" function (:arguments ("x" "y")) nil [9925 10061])
+            ("eim-string-emptyp" function (:arguments ("str")) nil [10063 10119])
+            ("eim-line-content" function (:arguments ("&optional" "seperaters" "omit-nulls")) nil [10121 10489])
+            ("eim-delete-line" function nil nil [10491 10656])
+            ("eim-append-string" function (:arguments ("str")) nil [10658 10780])
+            ("eim-get" function (:arguments ("code")) nil [10800 11771])
+            ("eim-completions" function (:arguments ("code" "completions")) nil [11773 12284])
+            ("eim-bisearch-word" function (:arguments ("code" "start" "end")) nil [12286 12728])
+            ("eim-code-at-point" function nil nil [12730 13075])
+            ("eim-check-buffers" function nil nil [13093 13734])
+            ("eim-install-variable" function nil nil [13736 14228])
+            ("eim-use-package" function (:arguments ("package-name" "&optional" "word-file" "active-func")) nil [14253 16238])
+            ("eim-inactivate" function nil nil [16240 16335])
+            ("eim-help" function (:arguments ("&optional" "package")) nil [16337 17390])
+            ("eim-choice" function (:arguments ("choice")) nil [17411 17493])
+            ("eim-add-completion" function nil nil [17495 17693])
+            ("eim-format" function (:arguments ("key" "cp" "tp" "choice")) nil [17695 18000])
+            ("eim-format-page" function nil nil [18002 19217])
+            ("eim-current-page" function nil nil [19219 19294])
+            ("eim-total-page" function nil nil [19296 19388])
+            ("eim-page-start" function nil nil [19390 19556])
+            ("eim-page-end" function (:arguments ("&optional" "finish")) nil [19558 19967])
+            ("eim-next-page" function (:arguments ("arg")) nil [19985 20390])
+            ("eim-previous-page" function (:arguments ("arg")) nil [20392 20469])
+            ("eim-delete-last-char" function nil nil [20471 20734])
+            ("eim-self-insert-command" function (:user-visible-flag t) nil [20736 21265])
+            ("eim-select-current" function (:user-visible-flag t) nil [21267 21595])
+            ("eim-remember-select" function (:arguments ("&optional" "pos")) nil [21597 22009])
+            ("eim-number-select" function (:user-visible-flag t) nil [22011 22525])
+            ("eim-quit-clear" function nil nil [22527 22626])
+            ("eim-quit-no-clear" function nil nil [22628 22743])
+            ("eim-terminate-translation" function nil nil [22745 22986])
+            ("eim-handle-string" function nil nil [23013 23512])
+            ("eim-translate" function (:arguments ("char")) nil [23514 23654])
+            ("eim-exit-from-minibuffer" function nil nil [23712 23878])
+            ("eim-setup-overlays" function nil nil [23880 24154])
+            ("eim-delete-overlays" function nil nil [24156 24285])
+            ("eim-show" function nil nil [24287 25690])
+            ("eim-make-guidance-frame" function nil nil [25692 26400])
+            ("eim-minibuffer-message" function (:arguments ("string")) nil [26402 26738])
+            ("eim-input-method" function (:arguments ("key")) nil [26740 27853])
+            ("eim-start-translation" function (:arguments ("key")) nil [27855 30442])
+            ("eim-input-string-to-events" function (:arguments ("str")) nil [30444 31022])
+            ("eim-advice" function (:arguments ("args")) nil [31024 31211])
+            ("global-set-key" code nil nil [31213 31254])
+            ("eim-frame-posn-at-point" function (:arguments ("&optional" "position" "window")) nil [31286 31819])
+            ("eim-tooltip-face" variable
+               (:default-value (quote ((((class color)) :inherit tooltip)))
+                :type "face")
+                nil [31821 31925])
+            ("eim-show-tooltip" function (:arguments ("text")) nil [31927 33653])
+            ("eim-create-word-file" function (:user-visible-flag t) nil [33682 34607])
+            ("eim-build-table" function nil nil [34624 35918]))          
+    :file "eim.el"
+    :pointmax 35943
+    :fsize 37658
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eim-extra.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-extra" package nil nil [1088 1108])
+            ("cl" include nil nil [1130 1143])
+            ("eim" include nil nil [1145 1159])
+            ("eim-punc-escape-list" variable (:default-value (number-sequence 48 57)) nil [1161 1328])
+            ("eim-insert-ascii-char" variable
+               (:user-visible-flag t
+                :default-value (cons 59 "；"))
+                nil [1329 1412])
+            ("eim-punc-translate-p" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [1414 1492])
+            ("eim-read-punctuation" function (:arguments ("package")) nil [1519 2104])
+            ("eim-punc-translate" function (:arguments ("punc-list" "char")) nil [2106 3010])
+            ("eim-punc-translate-toggle" function (:arguments ("arg")) nil [3012 3207])
+            ("eim-insert-ascii" function nil nil [3241 3842])
+            ("eim-load-history" function (:arguments ("history-file" "package")) nil [3872 4465])
+            ("eim-save-history" function (:arguments ("history-file" "package")) nil [4467 4962])
+            ("eim-quick-select-1" function (:user-visible-flag t) nil [4982 5470])
+            ("eim-quick-select-2" function (:user-visible-flag t) nil [5472 5965])
+            ("eim-describe-char" function (:arguments ("pos" "package")) nil [5967 7012])
+            ("eim-make-char-table" function (:arguments ("chars" "table")) nil [7031 7220])
+            ("eim-get-char-code" function (:arguments ("char" "table")) nil [7222 7361]))          
+    :file "eim-extra.el"
+    :pointmax 7390
+    :fsize 7805
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1143 . 1144) (symbol 1110 . 1127) (open-paren 1109 . 1110))
+    )
+   (semanticdb-table "eim-wb-gb2312.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-make-char-table" code nil nil [36 86378]))          
+    :file "eim-wb-gb2312.el"
+    :pointmax 86379
+    :fsize 100276
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eim-eb-map.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-make-char-table" code nil nil [36 86144]))          
+    :file "eim-eb-map.el"
+    :pointmax 86145
+    :fsize 100711
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eim-eb.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cl" include nil nil [1062 1075])
+            ("eim-table" include nil nil [1078 1098])
+            ("eim-eb-user-file" variable nil nil [1100 1129])
+            ("eim-eb-history-file" variable nil nil [1130 1162])
+            ("eim-eb-package" variable nil nil [1163 1190])
+            ("eim-eb-punctuation-list" variable nil nil [1191 1227])
+            ("eim-eb-load-hook" variable nil nil [1228 1257])
+            ("eim-eb-initialized" variable nil nil [1258 1289])
+            ("eim-eb-char-table" variable (:default-value (make-vector 1511 0)) nil [1290 1337])
+            ("eim-eb-create-word" function (:arguments ("word")) nil [1339 2201])
+            ("unless" code nil nil [2203 3038])
+            ("eim-eb" package nil nil [3040 3057]))          
+    :file "eim-eb.el"
+    :pointmax 3082
+    :fsize 3081
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1075 . 1076) (symbol 1042 . 1059) (open-paren 1041 . 1042))
+    )
+   (semanticdb-table "eim-wb-gbk.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-make-char-table" code nil nil [36 239114]))          
+    :file "eim-wb-gbk.el"
+    :pointmax 239115
+    :fsize 281543
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eim-table.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cl" include nil nil [1529 1542])
+            ("eim" include nil nil [1544 1558])
+            ("eim-extra" include nil nil [1559 1579])
+            ("eim-table-translate" function (:arguments ("char")) nil [1581 1715])
+            ("eim-table-get-char-code" function (:arguments ("char")) nil [1717 1811])
+            ("eim-table-format" function (:arguments ("key" "cp" "tp" "choice")) nil [1813 2590])
+            ("eim-table-add-completion" function nil nil [2603 4105])
+            ("eim-table-stop-function" function nil nil [4107 4286])
+            ("eim-table-active-function" function nil nil [4288 4536])
+            ("eim-table-add-user-file" function (:arguments ("file")) nil [4595 5507])
+            ("eim-table-add-user-char" function nil nil [5509 6030])
+            ("eim-table-load-history" function (:arguments ("his-file")) nil [6032 6290])
+            ("eim-table-save-history" function nil nil [6292 7022])
+            ("eim-table-show-completion" function nil nil [7037 7911])
+            ("eim-table-minibuffer-map" variable nil nil [7921 7958])
+            ("eim-table-save-always" variable nil nil [7959 7993])
+            ("when" code nil nil [7994 8317])
+            ("eim-table-minibuffer-forward-char" function nil nil [8329 8561])
+            ("eim-table-minibuffer-backward-char" function nil nil [8563 8866])
+            ("eim-table-add-word" function (:user-visible-flag t) nil [8868 10519])
+            ("add-hook" code nil nil [10521 10572])
+            ("eim-table" package nil nil [10574 10594]))          
+    :file "eim-table.el"
+    :pointmax 10622
+    :fsize 10745
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1542 . 1543) (symbol 1509 . 1526) (open-paren 1508 . 1509))
+    )
+   (semanticdb-table "eim-wb.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cl" include nil nil [1090 1103])
+            ("eim-table" include nil nil [1106 1126])
+            ("eim-wb" customgroup (:user-visible-flag t) nil [1128 1189])
+            ("eim-wb-history-file" variable (:default-value "~/.emacs.d/wbx-history") nil [1193 1294])
+            ("eim-wb-user-file" variable (:default-value "mywb.txt") nil [1296 1378])
+            ("eim-wb-save-always" variable nil nil [1380 1496])
+            ("eim-wb-add-all-completion-limit" variable (:default-value 3) nil [1498 1605])
+            ("eim-wb-load-hook" variable nil nil [1607 1636])
+            ("eim-wb-package" variable nil nil [1637 1664])
+            ("eim-wb-char-table" variable (:default-value (make-vector 1511 0)) nil [1665 1712])
+            ("eim-wb-punctuation-list" variable nil nil [1713 1749])
+            ("eim-wb-initialized" variable nil nil [1750 1781])
+            ("eim-wb-create-word" function (:arguments ("word")) nil [1783 2645])
+            ("unless" code nil nil [2661 3778])
+            ("eim-wb" package nil nil [3780 3797]))          
+    :file "eim-wb.el"
+    :pointmax 3822
+    :fsize 4045
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1103 . 1104) (symbol 1070 . 1087) (open-paren 1069 . 1070))
+    )
+   (semanticdb-table "eim-cj-chars.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("eim-make-char-table" code nil nil [36 276591]))          
+    :file "eim-cj-chars.el"
+    :pointmax 276592
+    :fsize 318883
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eim-cj.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("cl" include nil nil [1062 1075])
+            ("eim-table" include nil nil [1078 1098])
+            ("eim-cj-package" variable nil nil [1100 1127])
+            ("eim-cj-punctuation-list" variable nil nil [1128 1164])
+            ("eim-cj-initialized" variable nil nil [1165 1196])
+            ("eim-cj-load-hook" variable nil nil [1197 1226])
+            ("eim-cj-char-table" variable (:default-value (make-vector 1511 0)) nil [1227 1274])
+            ("unless" code nil nil [1276 1869])
+            ("eim-cj" package nil nil [1871 1888]))          
+    :file "eim-cj.el"
+    :pointmax 1913
+    :fsize 1912
+    :lastmodtime '(18453 13554)
+    :unmatched-syntax '((close-paren 1075 . 1076) (symbol 1042 . 1059) (open-paren 1041 . 1042))
+    )
+   )
+  :file "!home!risent!.emacs.d!site-lisp!eim-2.4!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

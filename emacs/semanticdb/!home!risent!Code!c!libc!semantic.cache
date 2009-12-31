@@ -1,0 +1,20 @@
+;; Object libc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "libc/"
+  :tables (list 
+   (semanticdb-table "time_test.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("time.h" include (:system-flag t) nil [1 18])
+            ("main" function (:type "int") nil [20 266]))          
+    :file "time_test.c"
+    :pointmax 267
+    :fsize 266
+    :lastmodtime '(19258 51327)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!c!libc!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,9 @@
+;; Object .tomboy/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file ".tomboy/"
+  :tables (list 
+    )
+  :file "!home!risent!.tomboy!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,168 @@
+;; Object emacs-lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "emacs-lisp/"
+  :tables (list 
+   (semanticdb-table "lisp-mode.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("font-lock-comment-face" variable nil nil [1065 1096])
+            ("font-lock-doc-face" variable nil nil [1097 1124])
+            ("font-lock-keywords-case-fold-search" variable nil nil [1125 1169])
+            ("font-lock-string-face" variable nil nil [1170 1200])
+            ("lisp-mode-abbrev-table" variable nil nil [1202 1237])
+            ("define-abbrev-table" code nil nil [1239 1287])
+            ("emacs-lisp-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (let ((i 0)) (while (< i 48) (modify-syntax-entry i "_   " table) (setq i (1+ i))) (setq i (1+ 57)) (while (< i 65) (modify-syntax-entry i "_   " table) (setq i (1+ i))) (setq i (1+ 90)) (while (< i 97) (modify-syntax-entry i "_   " table) (setq i (1+ i))) (setq i (1+ 122)) (while (< i 128) (modify-syntax-entry i "_   " table) (setq i (1+ i))) (modify-syntax-entry 32 "    " table) (modify-syntax-entry 2208 "    " table) (modify-syntax-entry 9 "    " table) (modify-syntax-entry 12 "    " table) (modify-syntax-entry 10 ">   " table) (modify-syntax-entry 59 "<   " table) (modify-syntax-entry 96 "'   " table) (modify-syntax-entry 39 "'   " table) (modify-syntax-entry 44 "'   " table) (modify-syntax-entry 64 "'   " table) (modify-syntax-entry 46 "_   " table) (modify-syntax-entry 35 "'   " table) (modify-syntax-entry 34 "\"    " table) (modify-syntax-entry 92 "\\   " table) (modify-syntax-entry 40 "()  " table) (modify-syntax-entry 41 ")(  " table) (modify-syntax-entry 91 "(]  " table) (modify-syntax-entry 93 ")[  " table)) table)) nil [1289 2925])
+            ("lisp-mode-syntax-table" variable (:default-value (let ((table (copy-syntax-table emacs-lisp-mode-syntax-table))) (modify-syntax-entry 91 "_   " table) (modify-syntax-entry 93 "_   " table) (modify-syntax-entry 35 "' 14b" table) (modify-syntax-entry 124 "\" 23bn" table) table)) nil [2927 3247])
+            ("lisp-imenu-generic-expression" variable (:default-value (list (list nil (purecopy (concat "^\\s-*(" (eval-when-compile (regexp-opt (quote ("defun" "defun*" "defsubst" "defmacro" "defadvice" "define-skeleton" "define-minor-mode" "define-global-minor-mode" "define-globalized-minor-mode" "define-derived-mode" "define-generic-mode" "define-compiler-macro" "define-modify-macro" "defsetf" "define-setf-expander" "define-method-combination" "defgeneric" "defmethod")) t)) "\\s-+\\(\\(\\sw\\|\\s_\\)+\\)")) 2) (list (purecopy "Variables") (purecopy (concat "^\\s-*(" (eval-when-compile (regexp-opt (quote ("defvar" "defconst" "defconstant" "defcustom" "defparameter" "define-symbol-macro")) t)) "\\s-+\\(\\(\\sw\\|\\s_\\)+\\)")) 2) (list (purecopy "Types") (purecopy (concat "^\\s-*(" (eval-when-compile (regexp-opt (quote ("defgroup" "deftheme" "deftype" "defstruct" "defclass" "define-condition" "define-widget" "defface" "defpackage")) t)) "\\s-+'?\\(\\(\\sw\\|\\s_\\)+\\)")) 2))) nil [3249 4420])
+            ("put" code nil nil [4485 4518])
+            ("put" code nil nil [4519 4552])
+            ("put" code nil nil [4553 4587])
+            ("put" code nil nil [4588 4621])
+            ("put" code nil nil [4622 4656])
+            ("put" code nil nil [4657 4690])
+            ("put" code nil nil [4691 4723])
+            ("put" code nil nil [4724 4757])
+            ("put" code nil nil [4758 4791])
+            ("put" code nil nil [4792 4826])
+            ("put" code nil nil [4827 4860])
+            ("put" code nil nil [4861 4895])
+            ("put" code nil nil [4896 4936])
+            ("put" code nil nil [4937 4981])
+            ("put" code nil nil [4982 5030])
+            ("put" code nil nil [5031 5084])
+            ("put" code nil nil [5085 5127])
+            ("put" code nil nil [5128 5182])
+            ("put" code nil nil [5183 5232])
+            ("put" code nil nil [5233 5286])
+            ("put" code nil nil [5287 5331])
+            ("put" code nil nil [5332 5378])
+            ("put" code nil nil [5379 5421])
+            ("put" code nil nil [5422 5468])
+            ("put" code nil nil [5469 5500])
+            ("put" code nil nil [5501 5534])
+            ("put" code nil nil [5535 5571])
+            ("put" code nil nil [5572 5612])
+            ("put" code nil nil [5613 5666])
+            ("lisp-doc-string-elt-property" variable (:default-value (quote doc-string-elt)) nil [5668 5785])
+            ("lisp-font-lock-syntactic-face-function" function (:arguments ("state")) nil [5787 7560])
+            ("lisp-mode-variables" function (:arguments ("&optional" "lisp-syntax" "keywords-case-insensitive")) nil [7562 10519])
+            ("lisp-outline-level" function nil nil [10521 10703])
+            ("lisp-mode-shared-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote indent-sexp)) (define-key map "" (quote backward-delete-char-untabify)) map)) nil [10705 11187])
+            ("emacs-lisp-mode-map" variable (:default-value (let ((map (make-sparse-keymap "Emacs-Lisp")) (menu-map (make-sparse-keymap "Emacs-Lisp")) (lint-map (make-sparse-keymap)) (prof-map (make-sparse-keymap)) (tracing-map (make-sparse-keymap))) (set-keymap-parent map lisp-mode-shared-map) (define-key map "	" (quote completion-at-point)) (define-key map "" (quote eval-defun)) (define-key map "" (quote indent-pp-sexp)) (define-key map [menu-bar emacs-lisp] (cons (purecopy "Emacs-Lisp") menu-map)) (define-key menu-map [eldoc] (\` (menu-item (\, (purecopy "Auto-Display Documentation Strings")) eldoc-mode :button (:toggle bound-and-true-p eldoc-mode) :help (\, (purecopy "Display the documentation string for the item under cursor"))))) (define-key menu-map [checkdoc] (\` (menu-item (\, (purecopy "Check Documentation Strings")) checkdoc :help (\, (purecopy "Check documentation strings for style requirements"))))) (define-key menu-map [re-builder] (\` (menu-item (\, (purecopy "Construct Regexp")) re-builder :help (\, (purecopy "Construct a regexp interactively"))))) (define-key menu-map [tracing] (cons (purecopy "Tracing") tracing-map)) (define-key tracing-map [tr-a] (\` (menu-item (\, (purecopy "Untrace all")) untrace-all :help (\, (purecopy "Untrace all currently traced functions"))))) (define-key tracing-map [tr-uf] (\` (menu-item (\, (purecopy "Untrace function...")) untrace-function :help (\, (purecopy "Untrace function, and possibly activate all remaining advice"))))) (define-key tracing-map [tr-sep] menu-bar-separator) (define-key tracing-map [tr-q] (\` (menu-item (\, (purecopy "Trace function quietly...")) trace-function-background :help (\, (purecopy "Trace the function with trace output going quietly to a buffer"))))) (define-key tracing-map [tr-f] (\` (menu-item (\, (purecopy "Trace function...")) trace-function :help (\, (purecopy "Trace the function given as an argument"))))) (define-key menu-map [profiling] (cons (purecopy "Profiling") prof-map)) (define-key prof-map [prof-restall] (\` (menu-item (\, (purecopy "Remove Instrumentation for All Functions")) elp-restore-all :help (\, (purecopy "Restore the original definitions of all functions being profiled"))))) (define-key prof-map [prof-restfunc] (\` (menu-item (\, (purecopy "Remove Instrumentation for Function...")) elp-restore-function :help (\, (purecopy "Restore an instrumented function to its original definition"))))) (define-key prof-map [sep-rem] menu-bar-separator) (define-key prof-map [prof-resall] (\` (menu-item (\, (purecopy "Reset Counters for All Functions")) elp-reset-all :help (\, (purecopy "Reset the profiling information for all functions being profiled"))))) (define-key prof-map [prof-resfunc] (\` (menu-item (\, (purecopy "Reset Counters for Function...")) elp-reset-function :help (\, (purecopy "Reset the profiling information for a function"))))) (define-key prof-map [prof-res] (\` (menu-item (\, (purecopy "Show Profiling Results")) elp-results :help (\, (purecopy "Display current profiling results"))))) (define-key prof-map [prof-pack] (\` (menu-item (\, (purecopy "Instrument Package...")) elp-instrument-package :help (\, (purecopy "Instrument for profiling all function that start with a prefix"))))) (define-key prof-map [prof-func] (\` (menu-item (\, (purecopy "Instrument Function...")) elp-instrument-function :help (\, (purecopy "Instrument a function for profiling"))))) (define-key menu-map [lint] (cons (purecopy "Linting") lint-map)) (define-key lint-map [lint-di] (\` (menu-item (\, (purecopy "Lint Directory...")) elint-directory :help (\, (purecopy "Lint a directory"))))) (define-key lint-map [lint-f] (\` (menu-item (\, (purecopy "Lint File...")) elint-file :help (\, (purecopy "Lint a file"))))) (define-key lint-map [lint-b] (\` (menu-item (\, (purecopy "Lint Buffer")) elint-current-buffer :help (\, (purecopy "Lint the current buffer"))))) (define-key lint-map [lint-d] (\` (menu-item (\, (purecopy "Lint Defun")) elint-defun :help (\, (purecopy "Lint the function at point"))))) (define-key menu-map [edebug-defun] (\` (menu-item (\, (purecopy "Instrument Function for Debugging")) edebug-defun :help (\, (purecopy "Evaluate the top level form point is in, stepping through with Edebug")) :keys (\, (purecopy "C-u C-M-x"))))) (define-key menu-map [separator-byte] menu-bar-separator) (define-key menu-map [disas] (\` (menu-item (\, (purecopy "Disassemble byte compiled object...")) disassemble :help (\, (purecopy "Print disassembled code for OBJECT in a buffer"))))) (define-key menu-map [byte-recompile] (\` (menu-item (\, (purecopy "Byte-recompile Directory...")) byte-recompile-directory :help (\, (purecopy "Recompile every `.el' file in DIRECTORY that needs recompilation"))))) (define-key menu-map [emacs-byte-compile-and-load] (\` (menu-item (\, (purecopy "Byte-compile And Load")) emacs-lisp-byte-compile-and-load :help (\, (purecopy "Byte-compile the current file (if it has changed), then load compiled code"))))) (define-key menu-map [byte-compile] (\` (menu-item (\, (purecopy "Byte-compile This File")) emacs-lisp-byte-compile :help (\, (purecopy "Byte compile the file containing the current buffer"))))) (define-key menu-map [separator-eval] menu-bar-separator) (define-key menu-map [ielm] (\` (menu-item (\, (purecopy "Interactive Expression Evaluation")) ielm :help (\, (purecopy "Interactively evaluate Emacs Lisp expressions"))))) (define-key menu-map [eval-buffer] (\` (menu-item (\, (purecopy "Evaluate Buffer")) eval-buffer :help (\, (purecopy "Execute the current buffer as Lisp code"))))) (define-key menu-map [eval-region] (\` (menu-item (\, (purecopy "Evaluate Region")) eval-region :help (\, (purecopy "Execute the region as Lisp code")) :enable mark-active))) (define-key menu-map [eval-sexp] (\` (menu-item (\, (purecopy "Evaluate Last S-expression")) eval-last-sexp :help (\, (purecopy "Evaluate sexp before point; print value in minibuffer"))))) (define-key menu-map [separator-format] menu-bar-separator) (define-key menu-map [comment-region] (\` (menu-item (\, (purecopy "Comment Out Region")) comment-region :help (\, (purecopy "Comment or uncomment each line in the region")) :enable mark-active))) (define-key menu-map [indent-region] (\` (menu-item (\, (purecopy "Indent Region")) indent-region :help (\, (purecopy "Indent each nonblank line in the region")) :enable mark-active))) (define-key menu-map [indent-line] (\` (menu-item (\, (purecopy "Indent Line")) lisp-indent-line))) map)) nil [11189 17876])
+            ("emacs-lisp-byte-compile" function (:user-visible-flag t) nil [17878 18107])
+            ("emacs-lisp-byte-compile-and-load" function (:user-visible-flag t) nil [18109 18756])
+            ("emacs-lisp-mode-hook" variable nil nil [18758 18944])
+            ("lisp-mode-hook" variable nil nil [18946 19081])
+            ("lisp-interaction-mode-hook" variable nil nil [19083 19237])
+            ("define-derived-mode" code nil nil [19239 19747])
+            ("lisp-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap "Lisp"))) (set-keymap-parent map lisp-mode-shared-map) (define-key map "" (quote lisp-eval-defun)) (define-key map "" (quote run-lisp)) (define-key map [menu-bar lisp] (cons (purecopy "Lisp") menu-map)) (define-key menu-map [run-lisp] (\` (menu-item (\, (purecopy "Run inferior Lisp")) run-lisp :help (\, (purecopy "Run an inferior Lisp process, input and output via buffer `*inferior-lisp*'"))))) (define-key menu-map [ev-def] (\` (menu-item (\, (purecopy "Eval defun")) lisp-eval-defun :help (\, (purecopy "Send the current defun to the Lisp process made by M-x run-lisp"))))) (define-key menu-map [ind-sexp] (\` (menu-item (\, (purecopy "Indent sexp")) indent-sexp :help (\, (purecopy "Indent each line of the list starting just after point"))))) map)) nil [19749 20719])
+            ("lisp-mode" function (:user-visible-flag t) nil [20721 21558])
+            ("put" code nil nil [21559 21625])
+            ("lisp-find-tag-default" function nil nil [21627 21819])
+            ("defalias" code nil nil [21848 21887])
+            ("lisp-eval-defun" function
+               (:user-visible-flag t
+                :arguments ("&optional" "and-go"))
+                nil [21935 22102])
+            ("lisp-interaction-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap "Lisp-Interaction"))) (set-keymap-parent map lisp-mode-shared-map) (define-key map "" (quote eval-defun)) (define-key map "" (quote indent-pp-sexp)) (define-key map "	" (quote completion-at-point)) (define-key map "
+" (quote eval-print-last-sexp)) (define-key map [menu-bar lisp-interaction] (cons (purecopy "Lisp-Interaction") menu-map)) (define-key menu-map [eval-defun] (\` (menu-item (\, (purecopy "Evaluate Defun")) eval-defun :help (\, (purecopy "Evaluate the top-level form containing point, or after point"))))) (define-key menu-map [eval-print-last-sexp] (\` (menu-item (\, (purecopy "Evaluate and print")) eval-print-last-sexp :help (\, (purecopy "Evaluate sexp before point; print value into current buffer"))))) (define-key menu-map [edebug-defun-lisp-interaction] (\` (menu-item (\, (purecopy "Instrument Function for Debugging")) edebug-defun :help (\, (purecopy "Evaluate the top level form point is in, stepping through with Edebug")) :keys (\, (purecopy "C-u C-M-x"))))) (define-key menu-map [indent-pp-sexp] (\` (menu-item (\, (purecopy "Indent or Pretty-Print")) indent-pp-sexp :help (\, (purecopy "Indent each line of the list starting just after point, or prettyprint it"))))) (define-key menu-map [complete-symbol] (\` (menu-item (\, (purecopy "Complete Lisp Symbol")) completion-at-point :help (\, (purecopy "Perform completion on Lisp symbol preceding point"))))) map)) nil [22104 23727])
+            ("lisp-interaction-mode-abbrev-table" variable (:default-value lisp-mode-abbrev-table) nil [23729 23795])
+            ("define-derived-mode" code nil nil [23796 24433])
+            ("eval-print-last-sexp" function (:user-visible-flag t) nil [24435 24911])
+            ("last-sexp-setup-props" function (:arguments ("beg" "end" "value" "alt1" "alt2")) nil [24914 25689])
+            ("last-sexp-toggle-display" function
+               (:user-visible-flag t
+                :arguments ("&optional" "arg"))
+                nil [25692 26465])
+            ("prin1-char" function (:arguments ("char")) nil [26467 27584])
+            ("preceding-sexp" function nil nil [27587 29183])
+            ("eval-last-sexp-1" function (:arguments ("eval-last-sexp-arg-internal")) nil [29186 29485])
+            ("eval-last-sexp-print-value" function (:arguments ("value")) nil [29488 30179])
+            ("eval-last-sexp-fake-value" variable (:default-value (make-symbol "t")) nil [30182 30234])
+            ("eval-last-sexp" function
+               (:user-visible-flag t
+                :arguments ("eval-last-sexp-arg-internal"))
+                nil [30236 31061])
+            ("eval-defun-1" function (:arguments ("form")) nil [31063 32993])
+            ("eval-defun-2" function (:user-visible-flag t) nil [32995 34633])
+            ("eval-defun" function
+               (:user-visible-flag t
+                :arguments ("edebug-it"))
+                nil [34635 36172])
+            ("define-obsolete-function-alias" code nil nil [36231 36319])
+            ("define-obsolete-function-alias" code nil nil [36320 36394])
+            ("lisp-indent-offset" variable nil nil [36396 36557])
+            ("put" code nil nil [36558 36649])
+            ("lisp-indent-function" variable (:default-value (quote lisp-indent-function)) nil [36651 37023])
+            ("lisp-indent-line" function
+               (:user-visible-flag t
+                :arguments ("&optional" "whole-exp"))
+                nil [37025 38507])
+            ("calculate-lisp-indent-last-sexp" variable nil nil [38509 38549])
+            ("calculate-lisp-indent" function (:arguments ("&optional" "parse-start")) nil [38551 45252])
+            ("lisp-indent-function" function (:arguments ("indent-point" "state")) nil [45254 47736])
+            ("lisp-body-indent" variable (:default-value 2) nil [47738 47870])
+            ("put" code nil nil [47871 47925])
+            ("lisp-indent-specform" function (:arguments ("count" "state" "indent-point" "normal-indent")) nil [47927 50229])
+            ("lisp-indent-defform" function (:arguments ("state" "indent-point")) nil [50231 50457])
+            ("put" code nil nil [50677 50719])
+            ("put" code nil nil [50720 50764])
+            ("put" code nil nil [50765 50801])
+            ("put" code nil nil [50802 50838])
+            ("put" code nil nil [50839 50875])
+            ("put" code nil nil [50876 50921])
+            ("put" code nil nil [50922 50974])
+            ("put" code nil nil [50975 51026])
+            ("put" code nil nil [51027 51074])
+            ("put" code nil nil [51075 51121])
+            ("put" code nil nil [51122 51172])
+            ("put" code nil nil [51173 51223])
+            ("put" code nil nil [51224 51281])
+            ("put" code nil nil [51282 51334])
+            ("put" code nil nil [51335 51380])
+            ("put" code nil nil [51381 51428])
+            ("put" code nil nil [51429 51477])
+            ("put" code nil nil [51478 51526])
+            ("put" code nil nil [51527 51561])
+            ("put" code nil nil [51562 51597])
+            ("put" code nil nil [51598 51634])
+            ("put" code nil nil [51635 51668])
+            ("put" code nil nil [51669 51707])
+            ("put" code nil nil [51708 51744])
+            ("put" code nil nil [51745 51790])
+            ("put" code nil nil [51791 51836])
+            ("put" code nil nil [51837 51894])
+            ("put" code nil nil [51895 51941])
+            ("put" code nil nil [51942 51979])
+            ("put" code nil nil [51980 52018])
+            ("put" code nil nil [52019 52054])
+            ("put" code nil nil [52055 52092])
+            ("indent-sexp" function
+               (:user-visible-flag t
+                :arguments ("&optional" "endpos"))
+                nil [52094 55905])
+            ("indent-pp-sexp" function
+               (:user-visible-flag t
+                :arguments ("&optional" "arg"))
+                nil [55907 56361])
+            ("emacs-lisp-docstring-fill-column" variable (:default-value 65) nil [56402 56715])
+            ("lisp-fill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("&optional" "justify"))
+                nil [56717 59399])
+            ("indent-code-rigidly" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "arg" "&optional" "nochange-regexp"))
+                nil [59401 60565])
+            ("lisp-mode" package nil nil [60567 60587]))          
+    :file "lisp-mode.el"
+    :pointmax 60666
+    :fsize 60665
+    :lastmodtime '(19229 39178)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!share!emacs!23.1.90!lisp!emacs-lisp!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

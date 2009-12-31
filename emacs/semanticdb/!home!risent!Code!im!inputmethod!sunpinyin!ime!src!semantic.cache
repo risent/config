@@ -1,0 +1,4712 @@
+;; Object src/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "src/"
+  :tables (list 
+   (semanticdb-table "imi_view.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("imi_view.h" include nil nil [2178 2199])
+            ("imi_view_modern.h" include nil nil [2200 2228])
+            ("imi_view_classic.h" include nil nil [2229 2258])
+            ("CIMIView::s_CandiWindowSize" variable
+               (:default-value "6"
+                :type "int")
+                nil [2260 2296])
+            ("CIMIViewFactory::sm_mapInit" variable
+               (:default-value "0"
+                :type "int")
+                nil [2297 2333])
+            ("halfPunc2Full" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("TWCHAR" type nil nil nil)
+                          ("TWCHAR" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2335 2383])
+            ("halfSimbol2Full" variable
+               (:typemodifiers ("static")
+                :type ("std::map" type
+                     (:template-specifier 
+                        ( ("TWCHAR" type nil nil nil)
+                          ("TWCHAR" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2384 2434])
+            ("termPuncs" variable
+               (:typemodifiers ("static")
+                :type ("std::set" type
+                     (:template-specifier 
+                        ( ("TWCHAR" type nil nil nil))                        
+                      :type "class")
+                      nil nil))
+                nil [2435 2479])
+            ("wc_RightDblQuote" variable
+               (:typemodifiers ("static")
+                :type ("TWCHAR" type (:type "class") nil nil))
+                nil [2480 2531])
+            ("initSimbolPuncMap" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2585 2590]))                  
+                :type "void")
+                nil [2533 2591])
+            ("createView" function
+               (:pointer 1
+                :parent "CIMIViewFactory"
+                :arguments 
+                  ( ("viewType" variable (:type "int") (reparse-symbol arg-sub-list) [2666 2679]))                  
+                :type ("CIMIView" type (:type "class") nil nil))
+                nil [2627 2935])
+            ("CIMIView" function
+               (:constructor-flag t
+                :parent "CIMIView"
+                :type ("CIMIView" type (:type "class") nil nil))
+                nil [2937 3107])
+            ("CIMIView" function
+               (:destructor-flag t
+                :parent "CIMIView"
+                :type "void")
+                nil [3109 3167])
+            ("setPreference" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("pp" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CIMIOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3198 3220]))                  
+                :type "void")
+                nil [3169 3312])
+            ("getViewType" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3340 3345]))                  
+                :type "int")
+                nil [3314 3387])
+            ("attachIC" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("pIC" variable
+                       (:pointer 1
+                        :type ("CIMIContext" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3413 3430]))                  
+                :type "void")
+                nil [3389 3451])
+            ("clearIC" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [3480 3485]))                  
+                :type "unsigned int")
+                nil [3453 3521])
+            ("updateWindows" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3552 3570]))                  
+                :type "void")
+                nil [3523 3578])
+            ("onKeyEvent" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3605 3622])
+                    ("keyvalue" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3623 3641])
+                    ("modifier" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3642 3660]))                  
+                :type "int")
+                nil [3580 3682])
+            ("setStatusAttrValue" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3718 3726])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [3727 3737]))                  
+                :type "void")
+                nil [3684 4288])
+            ("getStatusAttrValue" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [4323 4331]))                  
+                :type "int")
+                nil [4290 4599])
+            ("isPuncChar" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type ("TWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4627 4638]))                  
+                :type "bool")
+                nil [4601 4703])
+            ("isTermPuncWide" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("wc" variable (:type ("TWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4735 4745]))                  
+                :type "bool")
+                nil [4705 4801])
+            ("isSimbolChar" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type ("TWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4831 4842]))                  
+                :type "bool")
+                nil [4803 4911])
+            ("getFullPunc" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type ("TWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4942 4953]))                  
+                :type ("TWCHAR" type (:type "class") nil nil))
+                nil [4913 5302])
+            ("getFullSimbol" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type ("TWCHAR" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5335 5346]))                  
+                :type ("TWCHAR" type (:type "class") nil nil))
+                nil [5304 5507])
+            ("initSimbolPuncMap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [5571 5576]))                  
+                :type "void")
+                nil [5541 7741])
+            ("getPreeditString" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("ps" variable (:type ("IPreeditString" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7775 7794]))                  
+                :type "void")
+                nil [7743 7814])
+            ("getCandidateList" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("cl" variable (:type ("ICandidateList" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7848 7867])
+                    ("start" variable (:type "int") (reparse-symbol arg-sub-list) [7868 7878])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [7879 7888]))                  
+                :type "void")
+                nil [7816 7908])
+            ("getInputString" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("s" variable (:type ("wstring" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7940 7951]))                  
+                :type "void")
+                nil [7910 7970])
+            ("onCandidatePageRequest" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("pgno" variable (:type "int") (reparse-symbol arg-sub-list) [8009 8018])
+                    ("relative" variable (:type "bool") (reparse-symbol arg-sub-list) [8019 8033]))                  
+                :type "int")
+                nil [7972 8051])
+            ("onCandidateSelectRequest" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("index" variable (:type "int") (reparse-symbol arg-sub-list) [8092 8102]))                  
+                :type "int")
+                nil [8053 8120]))          
+    :file "imi_view.cpp"
+    :pointmax 8121
+    :fsize 8182
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_view.h"
+    :tags 
+        '( ("SUNPY_IMI_SESSION_VIEW_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("imi_options.h" include (:line 43) nil nil)
+            ("imi_context.h" include (:line 45) nil nil)
+            ("imi_winHandler.h" include (:line 46) nil nil)
+            ("imi_uiobjects.h" include (:line 47) nil nil)
+            ("CIMIViewFactory" type
+               (:members 
+                  ( ("sm_mapInit" variable
+                       (:protection "private"
+                        :line 52)
+                        nil nil))                  
+                :line 51
+                :type "class")
+                nil nil)
+            ("SVT_NONE" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("SVT_MODERN" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("SVT_CLASSIC" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("createView" function
+               (:parent "CIMIViewFactory"
+                :arguments 
+                  ( ("viewType" variable (:type "int") nil nil))                  
+                :line 61
+                :prototype-flag t
+                :protection "public")
+                nil nil)
+            ("CIMIView" type
+               (:type "class"
+                :line 64)
+                nil nil)
+            ("KEYEVENT_USED" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("PREEDIT_MASK" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("CANDIDATE_MASK" variable
+               (:constant-flag t
+                :line 69)
+                nil nil)
+            ("s_CandiWindowSize" variable
+               (:parent "CIMIView"
+                :line 73
+                :protection "public")
+                nil nil)
+            ("CIMIView" function
+               (:parent "CIMIView"
+                :protection "public"
+                :prototype-flag t
+                :line 76
+                :constructor-flag t)
+                nil nil)
+            ("getPreference" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 79
+                :protection "public")
+                nil nil)
+            ("attachWinHandler" function
+               (:parent "CIMIView"
+                :arguments (nil)
+                :line 82
+                :protection "public")
+                nil nil)
+            ("getWinHandler" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 85
+                :protection "public")
+                nil nil)
+            ("getIC" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 88
+                :protection "public")
+                nil nil)
+            ("CIMIView" function
+               (:parent "CIMIView"
+                :protection "public"
+                :line 93
+                :prototype-flag t
+                :typemodifiers "virtual"
+                :destructor-flag t)
+                nil nil)
+            ("getViewType" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 95
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("setPreference" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 97
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("attachIC" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 99
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("clearIC" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 101
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("updateWindows" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 103
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("setStatusAttrValue" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 105
+                :arguments 
+                  ( ("key" variable (:type "int") nil nil)
+                    nil)                  
+                :protection "public")
+                nil nil)
+            ("onKeyEvent" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 107
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil)                  
+                :protection "public")
+                nil nil)
+            ("onCandidatePageRequest" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 109
+                :arguments 
+                  ( ("pgno" variable (:type "int") nil nil)
+                    nil)                  
+                :protection "public")
+                nil nil)
+            ("onCandidateSelectRequest" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 111
+                :arguments 
+                  ( ("index" variable (:type "int") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("getStatusAttrValue" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 113
+                :arguments 
+                  ( ("key" variable (:type "int") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("getInputString" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 118
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("getPreeditString" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 120
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("getCandidateList" function
+               (:parent "CIMIView"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 122
+                :arguments (nil nil nil)
+                :protection "public")
+                nil nil)
+            ("isPuncChar" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "TWCHAR") nil nil))                  
+                :line 129
+                :prototype-flag t
+                :protection "protected")
+                nil nil)
+            ("isSimbolChar" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "TWCHAR") nil nil))                  
+                :line 133
+                :prototype-flag t
+                :protection "protected")
+                nil nil)
+            ("isTermPuncWide" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("wc" variable (:type "TWCHAR") nil nil))                  
+                :line 137
+                :prototype-flag t
+                :protection "protected")
+                nil nil)
+            ("getFullPunc" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "TWCHAR") nil nil))                  
+                :line 143
+                :prototype-flag t
+                :protection "protected")
+                nil nil)
+            ("getFullSimbol" function
+               (:parent "CIMIView"
+                :arguments 
+                  ( ("key" variable (:type "TWCHAR") nil nil))                  
+                :line 147
+                :prototype-flag t
+                :protection "protected")
+                nil nil)
+            ("m_pIC" variable
+               (:parent "CIMIView"
+                :line 152
+                :protection "protected")
+                nil nil)
+            ("mp_winHandler" variable
+               (:parent "CIMIView"
+                :line 153
+                :protection "protected")
+                nil nil)
+            ("m_CN" variable
+               (:parent "CIMIView"
+                :line 157
+                :protection "protected")
+                nil nil)
+            ("m_FullPunc" variable
+               (:parent "CIMIView"
+                :line 158
+                :protection "protected")
+                nil nil)
+            ("m_FullSimbol" variable
+               (:parent "CIMIView"
+                :line 159
+                :protection "protected")
+                nil nil)
+            ("m_bRightFullDblQuote" variable
+               (:parent "CIMIView"
+                :line 160
+                :protection "protected")
+                nil nil)
+            ("m_pPref" variable
+               (:parent "CIMIView"
+                :line 162
+                :protection "protected")
+                nil nil))          
+    :file "imi_view.h"
+    :pointmax 8121
+    :fsize 4856
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_view_modern.h"
+    :tags 
+        '( ("SUNPY_IMI_MODERN_VIEW_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("imi_view.h" include (:line 43) nil nil)
+            ("CIMIModernView" type
+               (:type "class"
+                :line 45
+                :members 
+                  ( ("CIMIModernView" function
+                       (:constructor-flag t
+                        :line 47
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CIMIModernView" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 49
+                        :protection "public")
+                        nil nil)
+                    ("getViewType" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          
+                        :line 51
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("attachIC" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 53
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("clearIC" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          
+                        :line 55
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("updateWindows" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 57
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("setStatusAttrValue" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("key" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 59
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onKeyEvent" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil)                          
+                        :line 61
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onCandidatePageRequest" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("pgno" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 63
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onCandidateSelectRequest" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("index" variable (:type "int") nil nil))                          
+                        :line 65
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getPreeditString" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 67
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCandidateList" function
+                       (:protection "public"
+                        :arguments (nil nil nil)
+                        :line 69
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("cancelSyllable" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 80
+                        :arguments (nil))
+                        nil nil)
+                    ("convertSyllable" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 94
+                        :arguments 
+                          ( ("boundaryType" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("makeSelection" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 104
+                        :arguments 
+                          ( ("idx" variable (:type "int") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("eraseBone" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 117
+                        :arguments 
+                          ( ("boneIt" variable (:type "CSkeletonIter") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("insertNonPinyinBone" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 126
+                        :arguments (nil nil))
+                        nil nil)
+                    ("doCommit" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 135
+                        :arguments (nil))
+                        nil nil)
+                    ("tryCommitLeftSentence" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 139
+                        :arguments (nil))
+                        nil nil)
+                    ("commitChar" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 143
+                        :arguments 
+                          ( ("ch" variable (:type "TWCHAR") nil nil))                          )
+                        nil nil)
+                    ("getSentence" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 152
+                        :arguments (nil nil nil))
+                        nil nil)
+                    ("pressKeyOnSyllable" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 161
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("pressKeyOnSentence" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 168
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("pressNormalKey" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 180
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("m_SyllableStr" variable
+                       (:protection "protected"
+                        :line 192)
+                        nil nil)
+                    ("m_bNewSyll" variable
+                       (:protection "protected"
+                        :line 195)
+                        nil nil)
+                    ("m_SyllBone" variable
+                       (:protection "protected"
+                        :line 201)
+                        nil nil)
+                    ("m_CandiList" variable
+                       (:protection "protected"
+                        :line 204)
+                        nil nil)
+                    ("m_CandiFirst" variable
+                       (:protection "protected"
+                        :line 207)
+                        nil nil)
+                    ("m_CursorIdx" variable
+                       (:protection "protected"
+                        :line 210)
+                        nil nil))                  )
+                nil nil))          
+    :file "imi_view_modern.h"
+    :pointmax 8121
+    :fsize 7831
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_view_classic.h"
+    :tags 
+        '( ("SUNPY_IMI_CLASSIC_VIEW_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("imi_view.h" include (:line 43) nil nil)
+            ("CIMIClassicView" type
+               (:type "class"
+                :line 45
+                :members 
+                  ( ("CIMIClassicView" function
+                       (:constructor-flag t
+                        :line 47
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CIMIClassicView" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 49
+                        :protection "public")
+                        nil nil)
+                    ("getViewType" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          
+                        :line 51
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("attachIC" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 53
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("clearIC" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          
+                        :line 55
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("updateWindows" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 57
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onKeyEvent" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil)                          
+                        :line 59
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onCandidatePageRequest" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("pgno" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 61
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("onCandidateSelectRequest" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("index" variable (:type "int") nil nil))                          
+                        :line 63
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getPreeditString" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 71
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCandidateList" function
+                       (:protection "public"
+                        :arguments (nil nil nil)
+                        :line 73
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("pressNormalKey" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 79
+                        :arguments 
+                          ( ("keyvalue" variable (:type "unsigned") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("makeSelection" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 87
+                        :arguments 
+                          ( ("idx" variable (:type "int") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("moveLeft" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 100
+                        :arguments (nil nil))
+                        nil nil)
+                    ("moveLeftSyllable" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 103
+                        :arguments (nil nil))
+                        nil nil)
+                    ("moveHome" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 106
+                        :arguments (nil nil))
+                        nil nil)
+                    ("moveRight" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 109
+                        :arguments (nil))
+                        nil nil)
+                    ("moveRightSyllable" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 112
+                        :arguments (nil))
+                        nil nil)
+                    ("moveEnd" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 115
+                        :arguments (nil))
+                        nil nil)
+                    ("erase" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 126
+                        :arguments 
+                          ( ("bLeft" variable (:type "bool") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("insertPinyin" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 134
+                        :arguments (nil nil))
+                        nil nil)
+                    ("insertNormalChar" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 143
+                        :arguments 
+                          ( ("boneType" variable (:type "int") nil nil)
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("insertBoundary" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 151
+                        :arguments (nil))
+                        nil nil)
+                    ("doCommit" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 161
+                        :arguments (nil))
+                        nil nil)
+                    ("commitChar" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 165
+                        :arguments 
+                          ( ("ch" variable (:type "TWCHAR") nil nil))                          )
+                        nil nil)
+                    ("getSentence" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 175
+                        :arguments (nil nil))
+                        nil nil)
+                    ("m_CursorBone" variable
+                       (:protection "private"
+                        :line 180)
+                        nil nil)
+                    ("m_CursorIdx" variable
+                       (:protection "private"
+                        :line 183)
+                        nil nil)
+                    ("m_CandiBone" variable
+                       (:protection "private"
+                        :line 186)
+                        nil nil)
+                    ("m_CandiList" variable
+                       (:protection "private"
+                        :line 189)
+                        nil nil)
+                    ("m_CandiFirst" variable
+                       (:protection "private"
+                        :line 192)
+                        nil nil)
+                    ("m_TailSentence" variable
+                       (:protection "private"
+                        :line 195)
+                        nil nil)
+                    ("getCandidates" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 199)
+                        nil nil)
+                    ("cursorAtTail" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 202)
+                        nil nil))                  )
+                nil nil))          
+    :file "imi_view_classic.h"
+    :pointmax 8121
+    :fsize 6927
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "portability.h"
+    :tags 
+        '( ("___SUN_SLM_PORTABILITY_H___" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("config.h" include (:line 42) nil nil)
+            ("host_os.h" include (:line 45) nil nil)
+            ("string" include (:line 47) nil nil)
+            ("cstring" include (:line 48) nil nil)
+            ("DEBUG_print" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("DEBUG_print" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("DEBUG_print" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("DEBUG_print" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("TDoubleAnatomy" type
+               (:type "union"
+                :line 64)
+                nil nil)
+            ("TDoubleAnatomy" function
+               (:protection "public"
+                :line 66
+                :arguments 
+                  ( ("d" variable (:type "double") nil nil))                  )
+                nil nil)
+            ("getExp" function
+               (:protection "public"
+                :line 70
+                :arguments 
+                  ( ("" variable (:type "void") nil nil)
+                    nil)                  )
+                nil nil)
+            ("getValue" function
+               (:protection "public"
+                :line 74
+                :arguments 
+                  ( ("" variable (:type "void") nil nil)
+                    nil)                  )
+                nil nil)
+            ("clearExp" function
+               (:protection "public"
+                :line 78
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("m_value" variable
+               (:protection "public"
+                :line 82)
+                nil nil)
+            ("TAnony" type
+               (:protection "public"
+                :line 83
+                :type "struct")
+                nil nil)
+            ("m_other2" variable
+               (:parent "TDoubleAnatomy::TAnony"
+                :line 85
+                :protection "public")
+                nil nil)
+            ("m_other1" variable
+               (:parent "TDoubleAnatomy::TAnony"
+                :line 86
+                :protection "public")
+                nil nil)
+            ("m_exp" variable
+               (:parent "TDoubleAnatomy::TAnony"
+                :line 87
+                :protection "public")
+                nil nil)
+            ("m_neg" variable
+               (:parent "TDoubleAnatomy::TAnony"
+                :line 88
+                :protection "public")
+                nil nil)
+            ("anony" variable
+               (:protection "public"
+                :line 95)
+                nil nil)
+            ("TWCHAR" type
+               (:type "typedef"
+                :line 102)
+                nil nil)
+            ("TWCHAR_ICONV_NAME" variable
+               (:constant-flag t
+                :line 105)
+                nil nil)
+            ("TWCHAR_ICONV_NAME" variable
+               (:constant-flag t
+                :line 107)
+                nil nil)
+            ("TSIMWordId" type
+               (:type "typedef"
+                :line 110)
+                nil nil)
+            ("SIM_ID_NOT_CHAR" variable
+               (:constant-flag t
+                :line 112)
+                nil nil)
+            ("TSIMChar" type
+               (:type "class"
+                :line 114
+                :members 
+                  ( ("TSIMChar" function
+                       (:constructor-flag t
+                        :line 116
+                        :protection "public")
+                        nil nil)
+                    ("TSIMChar" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 119
+                        :protection "public")
+                        nil nil)
+                    ("TSIMChar" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 122
+                        :protection "public")
+                        nil nil)
+                    ("TSIMChar" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 125
+                        :protection "public")
+                        nil nil)
+                    ("operator unsigned int" function
+                       (:protection "public"
+                        :line 134
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator bool" function
+                       (:protection "public"
+                        :line 137
+                        :arguments (nil))
+                        nil nil)
+                    ("operator =" function
+                       (:protection "public"
+                        :line 140
+                        :arguments (nil))
+                        nil nil)
+                    ("operator ==" function
+                       (:protection "public"
+                        :line 143
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator !=" function
+                       (:protection "public"
+                        :line 146
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator <" function
+                       (:protection "public"
+                        :line 149
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator >" function
+                       (:protection "public"
+                        :line 152
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator <=" function
+                       (:protection "public"
+                        :line 155
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator >=" function
+                       (:protection "public"
+                        :line 158
+                        :arguments (nil nil))
+                        nil nil)
+                    ("m_ch" variable
+                       (:protection "private"
+                        :line 162)
+                        nil nil))                  )
+                nil nil)
+            ("SIM_ID_NOT_WORD" variable (:line 165) nil nil)
+            ("SIM_ID_UNKNOWN_CN" variable (:line 166) nil nil)
+            ("SIM_ID_SEN_TOKEN" variable (:line 167) nil nil)
+            ("SIM_ID_DIGIT" variable (:line 168) nil nil)
+            ("SIM_ID_SIMBOL" variable (:line 169) nil nil)
+            ("SIM_ID_DUMMY_WORD" variable (:line 170) nil nil)
+            ("SIM_ID_NONWORD" variable (:line 171) nil nil)
+            ("SIM_ID_ALLWORD" variable (:line 172) nil nil)
+            ("SIM_ID_REALWORD_START" variable (:line 173) nil nil)
+            ("SIM_ID_CNWORD_START" variable (:line 174) nil nil)
+            ("WCH_NULL" variable (:line 176) nil nil)
+            ("WCH_RETURN" variable (:line 177) nil nil)
+            ("WCH_TAB" variable (:line 178) nil nil)
+            ("WCH_SPACE" variable (:line 179) nil nil)
+            ("WCH_LESSTHAN" variable (:line 180) nil nil)
+            ("WCH_GREATERTHAN" variable (:line 181) nil nil)
+            ("WCH_DOUBLESPACE" variable (:line 183) nil nil)
+            ("WCH_JUHAO" variable (:line 184) nil nil)
+            ("WCH_WENHAO" variable (:line 185) nil nil)
+            ("WCH_TANHAO" variable (:line 186) nil nil)
+            ("WCH_FENHAO" variable (:line 187) nil nil)
+            ("WCH_MAOHAO" variable (:line 188) nil nil)
+            ("WCH_DOUHAO" variable (:line 189) nil nil)
+            ("WCH_ZUOKUOHAO" variable (:line 190) nil nil)
+            ("WCH_YOUKUOHAO" variable (:line 191) nil nil)
+            ("WCH_SHENGLUEHAO" variable (:line 192) nil nil)
+            ("MBSTOWCS" function
+               (:arguments (nil nil nil)
+                :line 195
+                :prototype-flag t)
+                nil nil)
+            ("WCSTOMBS" function
+               (:arguments (nil nil nil)
+                :line 197
+                :prototype-flag t)
+                nil nil)
+            ("WCSLEN" function
+               (:arguments (nil)
+                :line 199
+                :prototype-flag t)
+                nil nil)
+            ("std" type
+               (:members 
+                  ( ("string_char_traits" type
+                       (:members 
+                          ( ("char_type" type
+                               (:protection "public"
+                                :line 210
+                                :type "typedef")
+                                nil nil)
+                            ("int_type" type
+                               (:protection "public"
+                                :line 211
+                                :type "typedef")
+                                nil nil)
+                            ("off_type" type
+                               (:protection "public"
+                                :line 213
+                                :type "typedef")
+                                nil nil)
+                            ("pos_type" type
+                               (:protection "public"
+                                :line 214
+                                :type "typedef")
+                                nil nil)
+                            ("state_type" type
+                               (:protection "public"
+                                :line 215
+                                :type "typedef")
+                                nil nil)
+                            ("assign" function
+                               (:protection "public"
+                                :line 219
+                                :arguments (nil nil))
+                                nil nil)
+                            ("eq" function
+                               (:protection "public"
+                                :line 223
+                                :arguments (nil nil))
+                                nil nil)
+                            ("lt" function
+                               (:protection "public"
+                                :line 227
+                                :arguments (nil nil))
+                                nil nil)
+                            ("compare" function
+                               (:protection "public"
+                                :line 231
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("length" function
+                               (:protection "public"
+                                :line 245
+                                :arguments (nil))
+                                nil nil)
+                            ("copy" function
+                               (:protection "public"
+                                :line 249
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("move" function
+                               (:protection "public"
+                                :line 255
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("find" function
+                               (:protection "public"
+                                :line 262
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("to_char_type" function
+                               (:protection "public"
+                                :line 272
+                                :arguments (nil))
+                                nil nil)
+                            ("to_int_type" function
+                               (:protection "public"
+                                :line 275
+                                :arguments (nil))
+                                nil nil)
+                            ("eq_int_type" function
+                               (:protection "public"
+                                :line 278
+                                :arguments (nil nil))
+                                nil nil)
+                            ("eof" function
+                               (:protection "public"
+                                :line 282)
+                                nil nil)
+                            ("not_eof" function
+                               (:protection "public"
+                                :line 285
+                                :arguments (nil))
+                                nil nil)
+                            ("assign" function
+                               (:protection "public"
+                                :line 289
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("ne" function
+                               (:protection "public"
+                                :line 296
+                                :arguments (nil nil))
+                                nil nil)
+                            ("eos" function
+                               (:protection "public"
+                                :line 299)
+                                nil nil)
+                            ("is_del" function
+                               (:protection "public"
+                                :line 302
+                                :arguments (nil))
+                                nil nil)
+                            ("set" function
+                               (:protection "public"
+                                :line 305
+                                :arguments (nil nil nil))
+                                nil nil))                          
+                        :line 204
+                        :type "struct")
+                        nil nil))                  
+                :line 201
+                :type "namespace")
+                nil nil)
+            ("wstring" type
+               (:type "typedef"
+                :line 317)
+                nil nil)
+            ("wstring" type
+               (:type "class"
+                :line 319
+                :members 
+                  ( ("wstring" function
+                       (:constructor-flag t
+                        :line 322
+                        :protection "public")
+                        nil nil)
+                    ("wstring" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 323
+                        :protection "public")
+                        nil nil)
+                    ("wstring" function
+                       (:constructor-flag t
+                        :arguments (nil nil)
+                        :line 324
+                        :protection "public")
+                        nil nil)
+                    ("push_back" function
+                       (:protection "public"
+                        :line 325
+                        :arguments 
+                          ( ("c" variable (:type "TWCHAR") nil nil))                          )
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :line 326
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("c_str" function
+                       (:protection "public"
+                        :line 327
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil)
+                            nil)                          )
+                        nil nil))                  )
+                nil nil))          
+    :file "portability.h"
+    :pointmax 8121
+    :fsize 9955
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_options.h"
+    :tags 
+        '( ("_IMI_OPTIONS_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("CIMIOptions" type
+               (:type "class"
+                :line 43
+                :members 
+                  ( ("CIMIOptions" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 45
+                        :protection "public")
+                        nil nil)
+                    ("clone" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 47
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("operator ==" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 49
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("copy" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 51
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil))                  )
+                nil nil)
+            ("CSunpinyinOptions" type
+               (:members 
+                  ( ("CSunpinyinOptions" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 57
+                        :protection "public")
+                        nil nil)
+                    ("clone" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 59
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("operator ==" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 61
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("copy" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 63
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("m_ViewType" variable
+                       (:protection "public"
+                        :line 66)
+                        nil nil)
+                    ("m_GBK" variable
+                       (:protection "public"
+                        :line 67)
+                        nil nil)
+                    ("m_MinusAsPageUp" variable
+                       (:protection "public"
+                        :line 68)
+                        nil nil)
+                    ("m_CommaAsPageUp" variable
+                       (:protection "public"
+                        :line 69)
+                        nil nil)
+                    ("m_BracketAsPageUp" variable
+                       (:protection "public"
+                        :line 70)
+                        nil nil)
+                    ("m_MemoryPower" variable
+                       (:protection "public"
+                        :line 72)
+                        nil nil)
+                    ("m_ContextRanking" variable
+                       (:protection "public"
+                        :line 73)
+                        nil nil)
+                    ("m_LayoutVeritcal" variable
+                       (:protection "public"
+                        :line 74)
+                        nil nil)
+                    ("m_Fuzzy" variable
+                       (:protection "public"
+                        :line 75)
+                        nil nil)
+                    ("m_Fuzzy_zh" variable
+                       (:protection "public"
+                        :line 76)
+                        nil nil)
+                    ("m_Fuzzy_ch" variable
+                       (:protection "public"
+                        :line 77)
+                        nil nil)
+                    ("m_Fuzzy_sh" variable
+                       (:protection "public"
+                        :line 78)
+                        nil nil)
+                    ("m_Fuzzy_ln" variable
+                       (:protection "public"
+                        :line 79)
+                        nil nil)
+                    ("m_Fuzzy_fh" variable
+                       (:protection "public"
+                        :line 80)
+                        nil nil)
+                    ("m_Fuzzy_ang" variable
+                       (:protection "public"
+                        :line 81)
+                        nil nil)
+                    ("m_Fuzzy_eng" variable
+                       (:protection "public"
+                        :line 82)
+                        nil nil)
+                    ("m_Fuzzy_ing" variable
+                       (:protection "public"
+                        :line 83)
+                        nil nil)
+                    ("m_CandiWindowSize" variable
+                       (:protection "public"
+                        :line 85)
+                        nil nil)
+                    ("CSunpinyinOptions" function
+                       (:constructor-flag t
+                        :line 88
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("isPageUpKey" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 90
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("isPageDnKey" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 91
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil))                  
+                :line 54
+                :type "class")
+                nil nil))          
+    :file "imi_options.h"
+    :pointmax 8121
+    :fsize 3417
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_context.h"
+    :tags 
+        '( ("SUNPY_IMI_CONTEXT_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("config.h" include (:line 44) nil nil)
+            ("assert.h" include (:line 49) nil nil)
+            ("map" include (:line 53) nil nil)
+            ("vector" include (:line 54) nil nil)
+            ("list" include (:line 55) nil nil)
+            ("math.h" include (:line 56) nil nil)
+            ("imi_data.h" include (:line 58) nil nil)
+            ("ic_history.h" include (:line 59) nil nil)
+            ("UNKNOWN_WORD_ID" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("OOV_WORD_ID" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("SENTENCE_BREAKER_ID" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("TLongExpFloat" type
+               (:members 
+                  ( ("TLongExpFloat" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 67
+                        :protection "public")
+                        nil nil)
+                    ("TLongExpFloat" function
+                       (:constructor-flag t
+                        :arguments (nil nil)
+                        :line 69
+                        :protection "public")
+                        nil nil)
+                    ("TLongExpFloat" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("d" variable (:type "double") nil nil))                          
+                        :line 71
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("operator *" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 74
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator /" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 77
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator <" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 80
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator <=" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 83
+                        :arguments (nil nil))
+                        nil nil)
+                    ("operator ==" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 86
+                        :arguments (nil nil))
+                        nil nil)
+                    ("toString" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 89
+                        :arguments (nil nil))
+                        nil nil)
+                    ("toString" function
+                       (:protection "public"
+                        :line 92
+                        :arguments (nil nil))
+                        nil nil)
+                    ("log2" function
+                       (:protection "public"
+                        :line 96
+                        :arguments (nil))
+                        nil nil)
+                    ("m_base" variable
+                       (:protection "private"
+                        :line 105)
+                        nil nil)
+                    ("m_exp" variable
+                       (:protection "private"
+                        :line 106)
+                        nil nil))                  
+                :line 65
+                :type "struct")
+                nil nil)
+            ("TSentenceScore" type
+               (:type "typedef"
+                :line 114)
+                nil nil)
+            ("TSentenceScore" type
+               (:type "typedef"
+                :line 116)
+                nil nil)
+            ("CSkeleton" type
+               (:type "typedef"
+                :line 122)
+                nil nil)
+            ("CSkeletonIter" type
+               (:type "typedef"
+                :line 123)
+                nil nil)
+            ("CCandidates" type
+               (:type "typedef"
+                :line 124)
+                nil nil)
+            ("CCandidatesIter" type
+               (:type "typedef"
+                :line 125)
+                nil nil)
+            ("TCandiRank" type
+               (:type "union"
+                :line 130)
+                nil nil)
+            ("operator <" function
+               (:protection "public"
+                :line 133
+                :arguments (nil nil))
+                nil nil)
+            ("TCandiRank" function
+               (:protection "public"
+                :line 136)
+                nil nil)
+            ("TCandiRank" function
+               (:protection "public"
+                :prototype-flag t
+                :line 138
+                :arguments 
+                  ( ("user" variable (:type "bool") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("TCandiRank" function
+               (:protection "public"
+                :prototype-flag t
+                :line 141
+                :arguments 
+                  ( ("user" variable (:type "bool") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("m_all" variable
+               (:protection "protected"
+                :line 145)
+                nil nil)
+            ("TAnony" type
+               (:protection "protected"
+                :line 147
+                :type "struct")
+                nil nil)
+            ("m_cost" variable
+               (:parent "TCandiRank::TAnony"
+                :line 148
+                :protection "public")
+                nil nil)
+            ("m_lattice" variable
+               (:parent "TCandiRank::TAnony"
+                :line 149
+                :protection "public")
+                nil nil)
+            ("m_best" variable
+               (:parent "TCandiRank::TAnony"
+                :line 150
+                :protection "public")
+                nil nil)
+            ("m_len" variable
+               (:parent "TCandiRank::TAnony"
+                :line 151
+                :protection "public")
+                nil nil)
+            ("m_user" variable
+               (:parent "TCandiRank::TAnony"
+                :line 152
+                :protection "public")
+                nil nil)
+            ("anony" variable
+               (:protection "protected"
+                :line 153)
+                nil nil)
+            ("TAnony" type
+               (:protection "protected"
+                :line 155
+                :type "struct")
+                nil nil)
+            ("m_user" variable
+               (:parent "TCandiRank::TAnony"
+                :line 156
+                :protection "public")
+                nil nil)
+            ("m_len" variable
+               (:parent "TCandiRank::TAnony"
+                :line 157
+                :protection "public")
+                nil nil)
+            ("m_best" variable
+               (:parent "TCandiRank::TAnony"
+                :line 158
+                :protection "public")
+                nil nil)
+            ("m_lattice" variable
+               (:parent "TCandiRank::TAnony"
+                :line 159
+                :protection "public")
+                nil nil)
+            ("m_cost" variable
+               (:parent "TCandiRank::TAnony"
+                :line 160
+                :protection "public")
+                nil nil)
+            ("anony" variable
+               (:protection "protected"
+                :line 161)
+                nil nil)
+            ("CCandidate" type
+               (:members 
+                  ( ("m_BoneStart" variable
+                       (:protection "public"
+                        :line 175)
+                        nil nil)
+                    ("m_BoneEnd" variable
+                       (:protection "public"
+                        :line 176)
+                        nil nil)
+                    ("m_String" variable
+                       (:protection "public"
+                        :line 177)
+                        nil nil)
+                    ("CCandidate" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 180
+                        :protection "public")
+                        nil nil)
+                    ("CCandidate" function
+                       (:constructor-flag t
+                        :arguments (nil nil nil nil)
+                        :line 185
+                        :protection "public")
+                        nil nil)
+                    ("print" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 192
+                        :arguments (nil))
+                        nil nil)
+                    ("m_WordId" variable
+                       (:protection "protected"
+                        :line 195)
+                        nil nil))                  
+                :line 171
+                :type "class")
+                nil nil)
+            ("CBone" type
+               (:members 
+                  ( ("NODE_TYPE" type
+                       (:protection "public"
+                        :line 224
+                        :type "enum")
+                        nil nil))                  
+                :line 204
+                :type "class")
+                nil nil)
+            ("NODE_TAIL" variable
+               (:constant-flag t
+                :line 225)
+                nil nil)
+            ("CATE_PINYIN" variable
+               (:constant-flag t
+                :line 227)
+                nil nil)
+            ("NODE_PINYIN" variable
+               (:constant-flag t
+                :line 228)
+                nil nil)
+            ("NODE_INVALID_PINYIN" variable
+               (:constant-flag t
+                :line 229)
+                nil nil)
+            ("NODE_INCOMPLETE_PINYIN" variable
+               (:constant-flag t
+                :line 230)
+                nil nil)
+            ("CATE_OTHER" variable
+               (:constant-flag t
+                :line 233)
+                nil nil)
+            ("NODE_ASCII" variable
+               (:constant-flag t
+                :line 234)
+                nil nil)
+            ("NODE_PUNC" variable
+               (:constant-flag t
+                :line 235)
+                nil nil)
+            ("NODE_SIMBOL" variable
+               (:constant-flag t
+                :line 236)
+                nil nil)
+            ("NODE_DIGITAL" variable
+               (:constant-flag t
+                :line 237)
+                nil nil)
+            ("BOUNDARY_TYPE" type
+               (:parent "CBone"
+                :type "enum"
+                :line 246
+                :protection "public")
+                nil nil)
+            ("AUTO_BOUNDARY" variable
+               (:constant-flag t
+                :line 247)
+                nil nil)
+            ("ABSOLUTE_BOUNDARY" variable
+               (:constant-flag t
+                :line 248)
+                nil nil)
+            ("USER_BOUNDARY" variable
+               (:constant-flag t
+                :line 249)
+                nil nil)
+            ("m_BoneType" variable
+               (:parent "CBone"
+                :line 253
+                :protection "public")
+                nil nil)
+            ("m_BoundaryType" variable
+               (:parent "CBone"
+                :line 254
+                :protection "public")
+                nil nil)
+            ("m_String" variable
+               (:parent "CBone"
+                :line 255
+                :protection "public")
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :protection "public"
+                :prototype-flag t
+                :line 261
+                :arguments (nil)
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :protection "public"
+                :prototype-flag t
+                :line 268
+                :arguments (nil nil)
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :protection "public"
+                :prototype-flag t
+                :line 276
+                :arguments (nil nil nil)
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :protection "public"
+                :prototype-flag t
+                :line 285
+                :arguments (nil nil nil nil)
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :protection "public"
+                :prototype-flag t
+                :line 288
+                :destructor-flag t)
+                nil nil)
+            ("isPinyinNode" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 291
+                :protection "public")
+                nil nil)
+            ("isValidPinyinNode" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 295
+                :protection "public")
+                nil nil)
+            ("isUserBoundary" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 299
+                :protection "public")
+                nil nil)
+            ("isAutoBoundary" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 303
+                :protection "public")
+                nil nil)
+            ("isTailNode" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 307
+                :protection "public")
+                nil nil)
+            ("isUserSelectionStart" function
+               (:parent "CBone"
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 311
+                :prototype-flag t
+                :protection "public")
+                nil nil)
+            ("print" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 314
+                :prototype-flag t
+                :protection "public")
+                nil nil)
+            ("m_pInnerData" variable
+               (:parent "CBone"
+                :line 317
+                :protection "protected")
+                nil nil)
+            ("CIMIContext" type
+               (:members 
+                  ( ("CIMIContext" function
+                       (:constructor-flag t
+                        :line 359
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CIMIContext" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :line 365
+                        :protection "public")
+                        nil nil)
+                    ("setCoreData" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 378
+                        :arguments (nil))
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 393)
+                        nil nil)
+                    ("setHistoryMemory" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 396
+                        :arguments (nil))
+                        nil nil)
+                    ("getHistoryMemory" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 399)
+                        nil nil)
+                    ("print_lattice" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 403)
+                        nil nil)
+                    ("memorize" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 407
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("getSkeleton" function
+                       (:protection "public"
+                        :line 413
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("getLastBone" function
+                       (:protection "public"
+                        :line 428
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("getFirstBone" function
+                       (:protection "public"
+                        :line 436
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("isEmpty" function
+                       (:protection "public"
+                        :line 440
+                        :arguments 
+                          ( ("" variable (:type "void") nil nil))                          )
+                        nil nil)
+                    ("setNonCompleteSyllable" function
+                       (:protection "public"
+                        :line 465
+                        :arguments (nil))
+                        nil nil)
+                    ("canNonCompleteSyllable" function
+                       (:protection "public"
+                        :line 469)
+                        nil nil)
+                    ("setLeft2RightSelection" function
+                       (:protection "public"
+                        :line 478
+                        :arguments (nil))
+                        nil nil)
+                    ("isGBKEnabled" function
+                       (:protection "public"
+                        :line 482)
+                        nil nil)
+                    ("enableGBK" function
+                       (:protection "public"
+                        :line 486
+                        :arguments 
+                          ( ("enable" variable (:type "bool") nil nil))                          )
+                        nil nil)
+                    ("setHistoryPower" function
+                       (:protection "public"
+                        :line 490
+                        :arguments 
+                          ( ("power" variable (:type "int") nil nil))                          )
+                        nil nil)
+                    ("getHistoryPower" function
+                       (:protection "public"
+                        :line 494)
+                        nil nil)
+                    ("enableContextRanking" function
+                       (:protection "public"
+                        :line 498
+                        :arguments 
+                          ( ("enable" variable (:type "bool") nil nil))                          )
+                        nil nil)
+                    ("isContextRankingEnabled" function
+                       (:protection "public"
+                        :line 502)
+                        nil nil)
+                    ("isValidSyllable" function
+                       (:protection "public"
+                        :line 508
+                        :arguments (nil))
+                        nil nil)
+                    ("isValidSyllable" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 512
+                        :arguments (nil))
+                        nil nil)
+                    ("segPinyinSimplest" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 542
+                        :arguments (nil nil))
+                        nil nil)
+                    ("segPinyin" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 550
+                        :arguments 
+                          ( ("head1" variable (:type "CSkeletonIter") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("modify" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 573
+                        :arguments 
+                          ( ("boneStart" variable (:type "CSkeletonIter") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("modifyAndReseg" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 609
+                        :arguments 
+                          ( ("boneStart" variable (:type "CSkeletonIter") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("cancelSelection" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 642
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("cancelSelectionCover" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 661
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("makeSelection" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 714
+                        :arguments (nil))
+                        nil nil)
+                    ("getCandidates" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 742
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("getBestSentence" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 753
+                        :arguments (nil nil nil nil))
+                        nil nil)
+                    ("searchFrom" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 757
+                        :arguments 
+                          ( ("boneStart" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("m_Skeleton" variable
+                       (:protection "protected"
+                        :line 760)
+                        nil nil)
+                    ("m_EffectiveCandiBoneStart" variable
+                       (:protection "protected"
+                        :line 761)
+                        nil nil)
+                    ("m_EffectiveCandiBoneEnd" variable
+                       (:protection "protected"
+                        :line 762)
+                        nil nil)
+                    ("m_bNonCompleteSyllable" variable
+                       (:protection "protected"
+                        :line 764)
+                        nil nil)
+                    ("m_bStrictLeft2Right" variable
+                       (:protection "protected"
+                        :line 765)
+                        nil nil)
+                    ("m_bGBK" variable
+                       (:protection "protected"
+                        :line 766)
+                        nil nil)
+                    ("m_bGB18030" variable
+                       (:protection "protected"
+                        :line 767)
+                        nil nil)
+                    ("m_HistoryPower" variable
+                       (:protection "protected"
+                        :line 768)
+                        nil nil)
+                    ("m_ContextRanking" variable
+                       (:protection "protected"
+                        :line 769)
+                        nil nil)
+                    ("m_pModel" variable
+                       (:protection "protected"
+                        :line 771)
+                        nil nil)
+                    ("m_pPinyinTrie" variable
+                       (:protection "protected"
+                        :line 772)
+                        nil nil)
+                    ("m_pHistory" variable
+                       (:protection "protected"
+                        :line 774)
+                        nil nil)
+                    ("transferBetween" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 779
+                        :arguments 
+                          ( ("h" variable (:type "CSkeletonIter") nil nil)
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("buildLatticeStates" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 782
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardOnePinyinBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 785
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardPuncBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 788
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardPinyinBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 791
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardNonPinyinBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 794
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardInvalidBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 797
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil)
+                    ("forwardTailBone" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 800
+                        :arguments 
+                          ( ("bone" variable (:type "CSkeletonIter") nil nil))                          )
+                        nil nil))                  
+                :line 346
+                :type "class")
+                nil nil))          
+    :file "imi_context.h"
+    :pointmax 8121
+    :fsize 29314
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_winHandler.h"
+    :tags 
+        '( ("SUNPINYIN_IMI_WINHANDLER_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("imi_uiobjects.h" include (:line 43) nil nil)
+            ("imi_options.h" include (:line 44) nil nil)
+            ("iconv.h" include (:line 47) nil nil)
+            ("CIMIWinHandler" type
+               (:type "class"
+                :line 54)
+                nil nil)
+            ("STATUS_ID_CN" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("STATUS_ID_FULLPUNC" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("STATUS_ID_FULLSIMBOL" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("CIMIWinHandler" function
+               (:parent "CIMIWinHandler"
+                :protection "public"
+                :line 64
+                :constructor-flag t)
+                nil nil)
+            ("CIMIWinHandler" function
+               (:parent "CIMIWinHandler"
+                :protection "public"
+                :line 67
+                :prototype-flag t
+                :typemodifiers "virtual"
+                :destructor-flag t)
+                nil nil)
+            ("commit" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 70
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("throwBackKey" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 73
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil)                  
+                :protection "public")
+                nil nil)
+            ("updatePreedit" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 76
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("updateCandidates" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 79
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("updateStatus" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 82
+                :arguments 
+                  ( ("key" variable (:type "int") nil nil)
+                    nil)                  
+                :protection "public")
+                nil nil)
+            ("setOptions" function
+               (:parent "CIMIWinHandler"
+                :typemodifiers "virtual"
+                :prototype-flag t
+                :line 84
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("m_pPrefLink" variable
+               (:parent "CIMIWinHandler"
+                :line 89
+                :protection "protected")
+                nil nil))          
+    :file "imi_winHandler.h"
+    :pointmax 8121
+    :fsize 3295
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_uiobjects.h"
+    :tags 
+        '( ("SUNPINYIN_UI_OBJECTS_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("vector" include (:line 43) nil nil)
+            ("string" include (:line 44) nil nil)
+            ("imi_context.h" include (:line 46) nil nil)
+            ("IECharType" type
+               (:members 
+                  ( ("ECharType" type
+                       (:protection "public"
+                        :line 50
+                        :type "enum")
+                        nil nil))                  
+                :line 48
+                :type "class")
+                nil nil)
+            ("DONTCARE_CHAR" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("NORMAL_CHAR" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("PINYIN_CHAR" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("ASCII_CHAR" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("SIMBOL_CHAR" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("PUNC_CHAR" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("HANZI_CHAR" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("BOUNDARY" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("CONVERTED" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("USER_CHOICE" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("ILLEGAL" variable
+               (:constant-flag t
+                :line 64)
+                nil nil)
+            ("SELECTION" variable
+               (:constant-flag t
+                :line 65)
+                nil nil)
+            ("IPreeditString" type
+               (:members 
+                  ( ("CCharTypeVec" type
+                       (:protection "public"
+                        :line 72
+                        :type "typedef")
+                        nil nil)
+                    ("IPreeditString" function
+                       (:destructor-flag t
+                        :typemodifiers "pure virtual"
+                        :prototype-flag t
+                        :line 76
+                        :protection "public")
+                        nil nil)
+                    ("size" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 80
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("string" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 81
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("charTypeSize" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 82
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("charTypeAt" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("idx" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 83
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("caret" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 84
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("candi_start" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 85
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :line 94
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("getString" function
+                       (:protection "public"
+                        :line 95
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("getCharTypeVec" function
+                       (:protection "public"
+                        :line 96
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("setCaret" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("caret" variable (:type "int") nil nil))                          
+                        :line 97
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil)
+                    ("setCandiStart" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("s" variable (:type "int") nil nil))                          
+                        :line 98
+                        :prototype-flag t
+                        :typemodifiers "pure virtual")
+                        nil nil))                  
+                :line 70
+                :type "class")
+                nil nil)
+            ("CPreEditString" type
+               (:members 
+                  ( ("CPreEditString" function
+                       (:constructor-flag t
+                        :line 104
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CPreEditString" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 107
+                        :protection "public")
+                        nil nil)
+                    ("size" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 110
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("string" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 111
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("charTypeSize" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 112
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("charTypeAt" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("idx" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 113
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("caret" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 114
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candi_start" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 115
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :line 119
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getString" function
+                       (:protection "public"
+                        :line 120
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCharTypeVec" function
+                       (:protection "public"
+                        :line 121
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("setCaret" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("caret" variable (:type "int") nil nil))                          
+                        :line 122
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("setCandiStart" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("s" variable (:type "int") nil nil))                          
+                        :line 123
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("m_wstr" variable
+                       (:protection "protected"
+                        :line 127)
+                        nil nil)
+                    ("m_caret" variable
+                       (:protection "protected"
+                        :line 128)
+                        nil nil)
+                    ("m_candi_start" variable
+                       (:protection "protected"
+                        :line 129)
+                        nil nil)
+                    ("m_charTypes" variable
+                       (:protection "protected"
+                        :line 130)
+                        nil nil))                  
+                :line 102
+                :type "class")
+                nil nil)
+            ("ICandidateList" type
+               (:members 
+                  ( ("ECandidateType" type
+                       (:protection "public"
+                        :line 137
+                        :type "enum")
+                        nil nil))                  
+                :line 135
+                :type "class")
+                nil nil)
+            ("NORMAL_WORD" variable
+               (:constant-flag t
+                :line 138)
+                nil nil)
+            ("AS_INPUT" variable
+               (:constant-flag t
+                :line 139)
+                nil nil)
+            ("BEST_WORD" variable
+               (:constant-flag t
+                :line 140)
+                nil nil)
+            ("USER_SELECTED_WORD" variable
+               (:constant-flag t
+                :line 141)
+                nil nil)
+            ("BEST_TAIL" variable
+               (:constant-flag t
+                :line 142)
+                nil nil)
+            ("OTHER_BEST_TAIL" variable
+               (:constant-flag t
+                :line 143)
+                nil nil)
+            ("CCharTypeVec" type
+               (:parent "ICandidateList"
+                :type "typedef"
+                :line 146
+                :protection "public")
+                nil nil)
+            ("CCharTypeVecs" type
+               (:parent "ICandidateList"
+                :type "typedef"
+                :line 147
+                :protection "public")
+                nil nil)
+            ("CCandiStrings" type
+               (:parent "ICandidateList"
+                :type "typedef"
+                :line 148
+                :protection "public")
+                nil nil)
+            ("CCandiTypeVec" type
+               (:parent "ICandidateList"
+                :type "typedef"
+                :line 149
+                :protection "public")
+                nil nil)
+            ("ICandidateList" function
+               (:parent "ICandidateList"
+                :protection "public"
+                :line 153
+                :prototype-flag t
+                :typemodifiers "pure virtual"
+                :destructor-flag t)
+                nil nil)
+            ("size" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 157
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("total" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 158
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("first" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 159
+                :arguments (nil)
+                :protection "public")
+                nil nil)
+            ("candiType" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 161
+                :arguments (nil nil)
+                :protection "public")
+                nil nil)
+            ("candiSize" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 162
+                :arguments (nil nil)
+                :protection "public")
+                nil nil)
+            ("candiString" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 163
+                :arguments (nil nil)
+                :protection "public")
+                nil nil)
+            ("candiCharTypeSizeAt" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 165
+                :arguments (nil nil)
+                :protection "public")
+                nil nil)
+            ("candiCharTypeAt" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 166
+                :arguments (nil nil nil)
+                :protection "public")
+                nil nil)
+            ("clear" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 175
+                :protection "public")
+                nil nil)
+            ("setTotal" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 176
+                :arguments 
+                  ( ("total" variable (:type "int") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("setFirst" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 177
+                :arguments 
+                  ( ("first" variable (:type "int") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("reserve" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 179
+                :arguments 
+                  ( ("count" variable (:type "int") nil nil))                  
+                :protection "public")
+                nil nil)
+            ("getCandiStrings" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 180
+                :protection "public")
+                nil nil)
+            ("getCandiTypeVec" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 181
+                :protection "public")
+                nil nil)
+            ("getCharTypeVecs" function
+               (:parent "ICandidateList"
+                :typemodifiers "pure virtual"
+                :prototype-flag t
+                :line 182
+                :protection "public")
+                nil nil)
+            ("CCandidateList" type
+               (:type "class"
+                :line 186
+                :members 
+                  ( ("CCandidateList" function
+                       (:constructor-flag t
+                        :line 188
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CCandidateList" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 191
+                        :protection "public")
+                        nil nil)
+                    ("size" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 194
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("total" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 195
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("first" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 196
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candiType" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 198
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candiSize" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 199
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candiString" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 200
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candiCharTypeSizeAt" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 202
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("candiCharTypeAt" function
+                       (:protection "public"
+                        :arguments (nil nil nil)
+                        :line 203
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :line 207
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("setTotal" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("total" variable (:type "int") nil nil))                          
+                        :line 208
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("setFirst" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("first" variable (:type "int") nil nil))                          
+                        :line 209
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("reserve" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("count" variable (:type "int") nil nil))                          
+                        :line 210
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCandiStrings" function
+                       (:protection "public"
+                        :line 211
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCandiTypeVec" function
+                       (:protection "public"
+                        :line 212
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("getCharTypeVecs" function
+                       (:protection "public"
+                        :line 213
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("m_total" variable
+                       (:protection "protected"
+                        :line 217)
+                        nil nil)
+                    ("m_first" variable
+                       (:protection "protected"
+                        :line 218)
+                        nil nil)
+                    ("m_candiStrings" variable
+                       (:protection "protected"
+                        :line 219)
+                        nil nil)
+                    ("m_candiTypes" variable
+                       (:protection "protected"
+                        :line 220)
+                        nil nil)
+                    ("m_candiCharTypeVecs" variable
+                       (:protection "protected"
+                        :line 221)
+                        nil nil))                  )
+                nil nil))          
+    :file "imi_uiobjects.h"
+    :pointmax 8121
+    :fsize 10199
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_data.h"
+    :tags 
+        '( ("SUNPY_IMI_DATA_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("stdarg.h" include (:line 43) nil nil)
+            ("slm.h" include (:line 45) nil nil)
+            ("pytrie.h" include (:line 46) nil nil)
+            ("print_wide" function
+               (:arguments (nil)
+                :line 48
+                :prototype-flag t)
+                nil nil)
+            ("CIMIData" type
+               (:type "class"
+                :line 53
+                :members 
+                  ( ("CIMIData" function
+                       (:constructor-flag t
+                        :line 55
+                        :protection "public")
+                        nil nil)
+                    ("CIMIData" function
+                       (:destructor-flag t
+                        :line 58
+                        :protection "public")
+                        nil nil)
+                    ("getSlm" function
+                       (:protection "public"
+                        :line 62)
+                        nil nil)
+                    ("getPinyinTrie" function
+                       (:protection "public"
+                        :line 66)
+                        nil nil)
+                    ("loadResource" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 70
+                        :arguments (nil nil))
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 73)
+                        nil nil)
+                    ("m_pPinyinTrie" variable
+                       (:protection "public"
+                        :line 76)
+                        nil nil)
+                    ("m_pLM" variable
+                       (:protection "public"
+                        :line 77)
+                        nil nil))                  )
+                nil nil))          
+    :file "imi_data.h"
+    :pointmax 8121
+    :fsize 2820
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "ic_history.h"
+    :tags 
+        '( ("_SUNPINYIN_CONTEXT_HISTORY_H" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("map" include (:line 43) nil nil)
+            ("deque" include (:line 44) nil nil)
+            ("set" include (:line 45) nil nil)
+            ("CICHistory" type
+               (:type "class"
+                :line 50
+                :members 
+                  ( ("DCWID" variable
+                       (:protection "public"
+                        :line 53)
+                        nil nil)
+                    ("CICHistory" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 55
+                        :protection "public")
+                        nil nil)
+                    ("seenBefore" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 57
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("memorize" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 62
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("pr" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 70
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("pr" function
+                       (:protection "public"
+                        :arguments (nil nil nil)
+                        :line 78
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("bufferize" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 88
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("loadFromBuffer" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 98
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil))                  )
+                nil nil)
+            ("CBigramHistory" type
+               (:members 
+                  ( ("initClass" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 103)
+                        nil nil)
+                    ("CBigramHistory" function
+                       (:constructor-flag t
+                        :line 105
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("CBigramHistory" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 107
+                        :protection "public")
+                        nil nil)
+                    ("seenBefore" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 109
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("memorize" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 111
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("pr" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 118
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("pr" function
+                       (:protection "public"
+                        :arguments (nil nil nil)
+                        :line 125
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("bufferize" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 128
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("loadFromBuffer" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 131
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("TWordId" type
+                       (:protection "protected"
+                        :line 134
+                        :type "typedef")
+                        nil nil)
+                    ("TBigram" type
+                       (:protection "protected"
+                        :line 135
+                        :type "typedef")
+                        nil nil)
+                    ("TUnigram" type
+                       (:protection "protected"
+                        :line 136
+                        :type "typedef")
+                        nil nil)
+                    ("TBigramPool" type
+                       (:protection "protected"
+                        :line 137
+                        :type "typedef")
+                        nil nil)
+                    ("TUnigramPool" type
+                       (:protection "protected"
+                        :line 138
+                        :type "typedef")
+                        nil nil)
+                    ("TContextMemory" type
+                       (:protection "protected"
+                        :line 139
+                        :type "typedef")
+                        nil nil)
+                    ("contxt_memory_size" variable
+                       (:protection "protected"
+                        :line 141)
+                        nil nil)
+                    ("m_memory" variable
+                       (:protection "protected"
+                        :line 143)
+                        nil nil)
+                    ("m_unifreq" variable
+                       (:protection "protected"
+                        :line 144)
+                        nil nil)
+                    ("m_bifreq" variable
+                       (:protection "protected"
+                        :line 145)
+                        nil nil)
+                    ("s_stopWords" variable
+                       (:protection "protected"
+                        :line 147)
+                        nil nil)
+                    ("pr" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 150
+                        :arguments (nil))
+                        nil nil)
+                    ("uniFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 151
+                        :arguments (nil))
+                        nil nil)
+                    ("biFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 152
+                        :arguments (nil))
+                        nil nil)
+                    ("decUniFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 154
+                        :arguments (nil))
+                        nil nil)
+                    ("decBiFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 155
+                        :arguments (nil))
+                        nil nil)
+                    ("incUniFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 156
+                        :arguments (nil))
+                        nil nil)
+                    ("incBiFreq" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 157
+                        :arguments (nil))
+                        nil nil))                  
+                :line 101
+                :type "class")
+                nil nil))          
+    :file "ic_history.h"
+    :pointmax 8121
+    :fsize 5914
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "ic_history.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("algorithm" include (:line 41) nil nil)
+            ("ic_history.h" include (:line 42) nil nil)
+            ("stdint.h" include (:line 43) nil nil)
+            ("DCWID" variable
+               (:parent "CICHistory"
+                :line 45)
+                nil nil)
+            ("CICHistory" function
+               (:parent "CICHistory"
+                :line 47
+                :destructor-flag t)
+                nil nil)
+            ("seenBefore" function
+               (:parent "CICHistory"
+                :line 51
+                :arguments (nil))
+                nil nil)
+            ("memorize" function
+               (:parent "CICHistory"
+                :line 56
+                :arguments (nil nil))
+                nil nil)
+            ("pr" function
+               (:parent "CICHistory"
+                :line 61
+                :arguments (nil nil))
+                nil nil)
+            ("pr" function
+               (:parent "CICHistory"
+                :line 66
+                :arguments (nil nil nil))
+                nil nil)
+            ("bufferize" function
+               (:parent "CICHistory"
+                :line 71
+                :arguments (nil nil))
+                nil nil)
+            ("loadFromBuffer" function
+               (:parent "CICHistory"
+                :line 78
+                :arguments (nil nil))
+                nil nil)
+            ("bBigramHistoryInited" variable (:line 84) nil nil)
+            ("contxt_memory_size" variable
+               (:parent "CBigramHistory"
+                :line 85)
+                nil nil)
+            ("s_stopWords" variable
+               (:parent "CBigramHistory"
+                :line 86)
+                nil nil)
+            ("initClass" function
+               (:parent "CBigramHistory"
+                :line 95)
+                nil nil)
+            ("CBigramHistory" function
+               (:parent "CBigramHistory"
+                :line 126
+                :constructor-flag t)
+                nil nil)
+            ("CBigramHistory" function
+               (:parent "CBigramHistory"
+                :line 131
+                :destructor-flag t)
+                nil nil)
+            ("memorize" function
+               (:parent "CBigramHistory"
+                :line 135
+                :arguments (nil nil))
+                nil nil)
+            ("pr" function
+               (:parent "CBigramHistory"
+                :line 172
+                :arguments (nil nil))
+                nil nil)
+            ("pr" function
+               (:parent "CBigramHistory"
+                :line 184
+                :arguments (nil nil nil))
+                nil nil)
+            ("swap16" function
+               (:arguments (nil)
+                :line 193)
+                nil nil)
+            ("swap32" function
+               (:arguments (nil)
+                :line 198)
+                nil nil)
+            ("bufferize" function
+               (:parent "CBigramHistory"
+                :line 203
+                :arguments (nil nil))
+                nil nil)
+            ("loadFromBuffer" function
+               (:parent "CBigramHistory"
+                :line 227
+                :arguments (nil nil))
+                nil nil)
+            ("pr" function
+               (:parent "CBigramHistory"
+                :line 252
+                :arguments (nil))
+                nil nil)
+            ("uniFreq" function
+               (:parent "CBigramHistory"
+                :line 264
+                :arguments (nil))
+                nil nil)
+            ("biFreq" function
+               (:parent "CBigramHistory"
+                :line 277
+                :arguments (nil))
+                nil nil)
+            ("decUniFreq" function
+               (:parent "CBigramHistory"
+                :line 291
+                :arguments (nil))
+                nil nil)
+            ("seenBefore" function
+               (:parent "CBigramHistory"
+                :line 302
+                :arguments (nil))
+                nil nil)
+            ("decBiFreq" function
+               (:parent "CBigramHistory"
+                :line 308
+                :arguments (nil))
+                nil nil)
+            ("incUniFreq" function
+               (:parent "CBigramHistory"
+                :line 319
+                :arguments (nil))
+                nil nil)
+            ("incBiFreq" function
+               (:parent "CBigramHistory"
+                :line 325
+                :arguments (nil))
+                nil nil))          
+    :file "ic_history.cpp"
+    :pointmax 8121
+    :fsize 9406
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "lattice_states.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("lattice_states.h" include (:line 42) nil nil)
+            ("imi_data.h" include (:line 43) nil nil)
+            ("print" function
+               (:parent "CBoneInnerData"
+                :line 46
+                :arguments (nil))
+                nil nil)
+            ("print" function
+               (:parent "TLatticeState"
+                :line 72
+                :arguments (nil))
+                nil nil)
+            ("beam_width" variable
+               (:parent "CLatticeStates"
+                :line 86)
+                nil nil)
+            ("clear" function
+               (:parent "CLatticeStates"
+                :line 94)
+                nil nil)
+            ("push_back" function
+               (:parent "CLatticeStates"
+                :line 125
+                :arguments (nil))
+                nil nil)
+            ("bubbleUp" function
+               (:parent "CLatticeStates"
+                :line 162
+                :arguments 
+                  ( ("idxInHeap" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("ironDown" function
+               (:parent "CLatticeStates"
+                :line 188
+                :arguments 
+                  ( ("idxInHeap" variable (:type "int") nil nil))                  )
+                nil nil))          
+    :file "lattice_states.cpp"
+    :pointmax 8121
+    :fsize 7499
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_context.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("algorithm" include (:line 42) nil nil)
+            ("imi_context.h" include (:line 43) nil nil)
+            ("lattice_states.h" include (:line 44) nil nil)
+            ("TSkelCursor" type
+               (:type "class"
+                :line 47
+                :members 
+                  ( ("TPos" type
+                       (:members 
+                          ( ("m_bone" variable
+                               (:protection "public"
+                                :line 50)
+                                nil nil)
+                            ("m_idx" variable
+                               (:protection "public"
+                                :line 51)
+                                nil nil)
+                            ("TPos" function
+                               (:constructor-flag t
+                                :arguments (nil nil)
+                                :line 52
+                                :protection "public")
+                                nil nil))                          
+                        :type "struct"
+                        :line 49
+                        :protection "public")
+                        nil nil)
+                    ("TSkelCursor" function
+                       (:constructor-flag t
+                        :arguments 
+                          ( ("h1" variable (:type "CSkeletonIter") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil)                          
+                        :line 57
+                        :protection "public")
+                        nil nil)
+                    ("isPinyin" function
+                       (:protection "public"
+                        :line 62
+                        :arguments (nil))
+                        nil nil)
+                    ("isBreakAfter" function
+                       (:protection "public"
+                        :line 66
+                        :arguments (nil))
+                        nil nil)
+                    ("isBreakAfter" function
+                       (:protection "public"
+                        :line 70
+                        :arguments (nil nil))
+                        nil nil)
+                    ("isUserBreakAfter" function
+                       (:protection "public"
+                        :line 74
+                        :arguments (nil))
+                        nil nil)
+                    ("isUserBreakAfter" function
+                       (:protection "public"
+                        :line 80
+                        :arguments (nil nil))
+                        nil nil)
+                    ("getChar" function
+                       (:protection "public"
+                        :line 86)
+                        nil nil)
+                    ("getChar" function
+                       (:protection "public"
+                        :line 93
+                        :arguments (nil nil))
+                        nil nil)
+                    ("next" function
+                       (:protection "public"
+                        :line 97
+                        :arguments (nil))
+                        nil nil)
+                    ("nextBone" function
+                       (:protection "public"
+                        :line 107)
+                        nil nil)
+                    ("hasNext" function
+                       (:protection "public"
+                        :line 118)
+                        nil nil)
+                    ("atFirstLink" function
+                       (:protection "public"
+                        :line 125
+                        :arguments (nil))
+                        nil nil)
+                    ("getPosition" function
+                       (:protection "public"
+                        :line 129
+                        :arguments (nil))
+                        nil nil)
+                    ("setPosition" function
+                       (:protection "public"
+                        :line 136
+                        :arguments (nil))
+                        nil nil)
+                    ("ensureCursor" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 140
+                        :arguments (nil))
+                        nil nil)
+                    ("m_h1" variable
+                       (:protection "protected"
+                        :line 143)
+                        nil nil)
+                    ("m_h2" variable
+                       (:protection "protected"
+                        :line 143)
+                        nil nil)
+                    ("m_t1" variable
+                       (:protection "protected"
+                        :line 143)
+                        nil nil)
+                    ("m_t2" variable
+                       (:protection "protected"
+                        :line 143)
+                        nil nil)
+                    ("m_bone" variable
+                       (:protection "protected"
+                        :line 144)
+                        nil nil)
+                    ("m_iLink" variable
+                       (:protection "protected"
+                        :line 145)
+                        nil nil)
+                    ("m_idx" variable
+                       (:protection "protected"
+                        :line 145)
+                        nil nil)
+                    ("ensureCursor" function
+                       (:protection "protected"
+                        :prototype-flag t
+                        :line 149)
+                        nil nil)
+                    ("ensureCursor" function (:line 153) nil nil)
+                    ("ensureCursor" function
+                       (:arguments (nil)
+                        :line 171)
+                        nil nil))                  )
+                nil nil)
+            ("isLocatedBefore" function
+               (:arguments 
+                  ( ("target" variable (:type "forwardIt") nil nil)
+                    nil
+                    nil)                  
+                :line 206)
+                nil nil)
+            ("CIMIContext" function
+               (:parent "CIMIContext"
+                :line 214
+                :constructor-flag t)
+                nil nil)
+            ("setCoreData" function
+               (:parent "CIMIContext"
+                :line 223
+                :arguments (nil))
+                nil nil)
+            ("clear" function
+               (:parent "CIMIContext"
+                :line 230)
+                nil nil)
+            ("isYuanYinChar" function
+               (:arguments 
+                  ( ("wc" variable (:type "TWCHAR") nil nil))                  
+                :line 248)
+                nil nil)
+            ("cancelSelection" function
+               (:parent "CIMIContext"
+                :line 255
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                    nil)                  )
+                nil nil)
+            ("cancelSelectionCover" function
+               (:parent "CIMIContext"
+                :line 278
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                    nil)                  )
+                nil nil)
+            ("makeSelection" function
+               (:parent "CIMIContext"
+                :line 303
+                :arguments (nil))
+                nil nil)
+            ("modify" function
+               (:parent "CIMIContext"
+                :line 325
+                :arguments 
+                  ( ("boneStart" variable (:type "CSkeletonIter") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("isValidSyllable" function
+               (:parent "CIMIContext"
+                :line 435
+                :arguments (nil))
+                nil nil)
+            ("segPinyinSimplest" function
+               (:parent "CIMIContext"
+                :line 442
+                :arguments (nil nil))
+                nil nil)
+            ("TCandiRank" function
+               (:parent "TCandiRank"
+                :arguments 
+                  ( ("user" variable (:type "bool") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  
+                :line 565
+                :constructor-flag t)
+                nil nil)
+            ("TCandiRank" function
+               (:parent "TCandiRank"
+                :arguments 
+                  ( ("user" variable (:type "bool") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  
+                :line 589
+                :constructor-flag t)
+                nil nil)
+            ("TCandiPair" type
+               (:members 
+                  ( ("m_Candi" variable
+                       (:protection "public"
+                        :line 600)
+                        nil nil)
+                    ("m_Rank" variable
+                       (:protection "public"
+                        :line 601)
+                        nil nil)
+                    ("TCandiPair" function
+                       (:constructor-flag t
+                        :line 603
+                        :protection "public")
+                        nil nil))                  
+                :line 599
+                :type "struct")
+                nil nil)
+            ("TCandiPairPtr" type
+               (:members 
+                  ( ("m_Ptr" variable
+                       (:protection "public"
+                        :line 607)
+                        nil nil)
+                    ("TCandiPairPtr" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 609
+                        :protection "public")
+                        nil nil)
+                    ("operator <" function
+                       (:protection "public"
+                        :line 613
+                        :arguments (nil nil))
+                        nil nil))                  
+                :line 606
+                :type "struct")
+                nil nil)
+            ("getCandidates" function
+               (:parent "CIMIContext"
+                :line 619
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil)
+                    nil)                  )
+                nil nil)
+            ("getBestSentence" function
+               (:parent "CIMIContext"
+                :line 732
+                :arguments (nil nil nil nil))
+                nil nil)
+            ("searchFrom" function
+               (:parent "CIMIContext"
+                :line 789
+                :arguments 
+                  ( ("boneStart" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("min_ts" variable (:line 862) nil nil)
+            ("s_history_distribution" variable (:line 865) nil nil)
+            ("transferBetween" function
+               (:parent "CIMIContext"
+                :line 870
+                :arguments 
+                  ( ("h" variable (:type "CSkeletonIter") nil nil)
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("buildLatticeStates" function
+               (:parent "CIMIContext"
+                :line 954
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardOnePinyinBone" function
+               (:parent "CIMIContext"
+                :line 1042
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardPinyinBone" function
+               (:parent "CIMIContext"
+                :line 1074
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardInvalidBone" function
+               (:parent "CIMIContext"
+                :line 1091
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardPuncBone" function
+               (:parent "CIMIContext"
+                :line 1102
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardNonPinyinBone" function
+               (:parent "CIMIContext"
+                :line 1115
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("forwardTailBone" function
+               (:parent "CIMIContext"
+                :line 1127
+                :arguments 
+                  ( ("bone" variable (:type "CSkeletonIter") nil nil))                  )
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :arguments (nil)
+                :line 1137
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :arguments 
+                  ( ("boundType" variable (:type "int") nil nil)
+                    nil)                  
+                :line 1143
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :arguments (nil nil nil)
+                :line 1149
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :arguments (nil nil nil nil)
+                :line 1155
+                :constructor-flag t)
+                nil nil)
+            ("CBone" function
+               (:parent "CBone"
+                :line 1161
+                :destructor-flag t)
+                nil nil)
+            ("isUserSelectionStart" function
+               (:parent "CBone"
+                :line 1168
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("cursorMapping" function
+               (:arguments 
+                  ( ("head1" variable (:type "CSkeletonIter") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil)                  
+                :line 1175)
+                nil nil)
+            ("modifyAndReseg" function
+               (:parent "CIMIContext"
+                :line 1238
+                :arguments 
+                  ( ("boneStart" variable (:type "CSkeletonIter") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("segPinyin" function
+               (:parent "CIMIContext"
+                :line 1309
+                :arguments 
+                  ( ("head1" variable (:type "CSkeletonIter") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("setHistoryMemory" function
+               (:parent "CIMIContext"
+                :line 1410
+                :arguments (nil))
+                nil nil)
+            ("getHistoryMemory" function
+               (:parent "CIMIContext"
+                :line 1416)
+                nil nil)
+            ("memorize" function
+               (:parent "CIMIContext"
+                :line 1421
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("print_lattice" function
+               (:parent "CIMIContext"
+                :line 1453)
+                nil nil)
+            ("print" function
+               (:parent "CBone"
+                :line 1467
+                :arguments (nil))
+                nil nil)
+            ("print" function
+               (:parent "CCandidate"
+                :line 1481
+                :arguments (nil))
+                nil nil)
+            ("TLongExpFloat" function
+               (:parent "TLongExpFloat"
+                :arguments 
+                  ( ("d" variable (:type "double") nil nil))                  
+                :line 1491
+                :constructor-flag t)
+                nil nil)
+            ("operator *" function
+               (:parent "TLongExpFloat"
+                :line 1505
+                :arguments (nil nil))
+                nil nil)
+            ("operator /" function
+               (:parent "TLongExpFloat"
+                :line 1514
+                :arguments (nil nil))
+                nil nil)
+            ("operator <" function
+               (:parent "TLongExpFloat"
+                :line 1523
+                :arguments (nil nil))
+                nil nil)
+            ("operator <=" function
+               (:parent "TLongExpFloat"
+                :line 1536
+                :arguments (nil nil))
+                nil nil)
+            ("operator ==" function
+               (:parent "TLongExpFloat"
+                :line 1549
+                :arguments (nil nil))
+                nil nil)
+            ("toString" function
+               (:parent "TLongExpFloat"
+                :line 1555
+                :arguments (nil nil))
+                nil nil))          
+    :file "imi_context.cpp"
+    :pointmax 8121
+    :fsize 52888
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_data.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("iconv.h" include (:line 43) nil nil)
+            ("portability.h" include (:line 45) nil nil)
+            ("imi_data.h" include (:line 48) nil nil)
+            ("print_wide" function
+               (:arguments (nil)
+                :line 51)
+                nil nil)
+            ("loadResource" function
+               (:parent "CIMIData"
+                :line 72
+                :arguments (nil nil))
+                nil nil)
+            ("clear" function
+               (:parent "CIMIData"
+                :line 102)
+                nil nil))          
+    :file "imi_data.cpp"
+    :pointmax 8121
+    :fsize 3612
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_view_classic.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("imi_view_classic.h" include (:line 42) nil nil)
+            ("imi_uiobjects.h" include (:line 43) nil nil)
+            ("imi_keys.h" include (:line 45) nil nil)
+            ("CIMIClassicView" function
+               (:parent "CIMIClassicView"
+                :line 47
+                :constructor-flag t)
+                nil nil)
+            ("CIMIClassicView" function
+               (:parent "CIMIClassicView"
+                :line 52
+                :destructor-flag t)
+                nil nil)
+            ("getViewType" function
+               (:parent "CIMIClassicView"
+                :line 56
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("attachIC" function
+               (:parent "CIMIClassicView"
+                :line 61
+                :arguments (nil))
+                nil nil)
+            ("clearIC" function
+               (:parent "CIMIClassicView"
+                :line 83
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("updateWindows" function
+               (:parent "CIMIClassicView"
+                :line 99
+                :arguments (nil))
+                nil nil)
+            ("commitChar" function
+               (:parent "CIMIClassicView"
+                :line 122
+                :arguments 
+                  ( ("ch" variable (:type "TWCHAR") nil nil))                  )
+                nil nil)
+            ("doCommit" function
+               (:parent "CIMIClassicView"
+                :line 130
+                :arguments 
+                  ( ("bConvert" variable (:type "bool") nil nil))                  )
+                nil nil)
+            ("onKeyEvent" function
+               (:parent "CIMIClassicView"
+                :line 153
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil)                  )
+                nil nil)
+            ("onCandidatePageRequest" function
+               (:parent "CIMIClassicView"
+                :line 304
+                :arguments 
+                  ( ("pgno" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("onCandidateSelectRequest" function
+               (:parent "CIMIClassicView"
+                :line 345
+                :arguments 
+                  ( ("index" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("pressNormalKey" function
+               (:parent "CIMIClassicView"
+                :line 358
+                :arguments 
+                  ( ("keyvalue" variable (:type "unsigned") nil nil)
+                    nil)                  )
+                nil nil)
+            ("moveLeft" function
+               (:parent "CIMIClassicView"
+                :line 379
+                :arguments (nil nil))
+                nil nil)
+            ("moveLeftSyllable" function
+               (:parent "CIMIClassicView"
+                :line 405
+                :arguments (nil nil))
+                nil nil)
+            ("moveHome" function
+               (:parent "CIMIClassicView"
+                :line 428
+                :arguments (nil nil))
+                nil nil)
+            ("moveRight" function
+               (:parent "CIMIClassicView"
+                :line 457
+                :arguments (nil))
+                nil nil)
+            ("moveRightSyllable" function
+               (:parent "CIMIClassicView"
+                :line 485
+                :arguments (nil))
+                nil nil)
+            ("moveEnd" function
+               (:parent "CIMIClassicView"
+                :line 504
+                :arguments (nil))
+                nil nil)
+            ("erase" function
+               (:parent "CIMIClassicView"
+                :line 518
+                :arguments 
+                  ( ("bLeft" variable (:type "bool") nil nil)
+                    nil)                  )
+                nil nil)
+            ("insertPinyin" function
+               (:parent "CIMIClassicView"
+                :line 573
+                :arguments (nil nil))
+                nil nil)
+            ("insertBoundary" function
+               (:parent "CIMIClassicView"
+                :line 613
+                :arguments (nil))
+                nil nil)
+            ("getSentence" function
+               (:parent "CIMIClassicView"
+                :line 704
+                :arguments (nil nil))
+                nil nil)
+            ("insertNormalChar" function
+               (:parent "CIMIClassicView"
+                :line 710
+                :arguments 
+                  ( ("boneType" variable (:type "int") nil nil)
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("getCandidates" function
+               (:parent "CIMIClassicView"
+                :line 744)
+                nil nil)
+            ("cursorAtTail" function
+               (:parent "CIMIClassicView"
+                :line 751)
+                nil nil)
+            ("makeSelection" function
+               (:parent "CIMIClassicView"
+                :line 762
+                :arguments 
+                  ( ("idx" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("getPreeditString" function
+               (:parent "CIMIClassicView"
+                :line 795
+                :arguments (nil))
+                nil nil)
+            ("getCandidateList" function
+               (:parent "CIMIClassicView"
+                :line 848
+                :arguments (nil nil nil))
+                nil nil))          
+    :file "imi_view_classic.cpp"
+    :pointmax 8121
+    :fsize 30302
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_options.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("imi_options.h" include nil nil [2178 2202])
+            ("imi_keys.h" include nil nil [2203 2224])
+            ("CIMIOptions" function
+               (:destructor-flag t
+                :parent "CIMIOptions"
+                :type "void")
+                nil [2226 2257])
+            ("CSunpinyinOptions" function
+               (:constructor-flag t
+                :parent "CSunpinyinOptions"
+                :type ("CSunpinyinOptions" type (:type "class") nil nil))
+                nil [2488 2875])
+            ("CSunpinyinOptions" function
+               (:destructor-flag t
+                :parent "CSunpinyinOptions"
+                :type "void")
+                nil [2878 2921])
+            ("clone" function
+               (:pointer 1
+                :parent "CSunpinyinOptions"
+                :type ("CIMIOptions" type (:type "class") nil nil))
+                nil [2923 3263])
+            ("copy" function
+               (:parent "CSunpinyinOptions"
+                :arguments 
+                  ( ("p2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CIMIOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3294 3316]))                  
+                :type "bool")
+                nil [3265 3477])
+            ("==" function
+               (:operator-flag t
+                :parent "CSunpinyinOptions"
+                :arguments 
+                  ( ("p2" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("CIMIOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3514 3536]))                  
+                :type "bool")
+                nil [3479 4767])
+            ("isPageUpKey" function
+               (:parent "CSunpinyinOptions"
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4805 4822])
+                    ("keychar" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4823 4840])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4841 4855]))                  
+                :type "bool")
+                nil [4769 5196])
+            ("isPageDnKey" function
+               (:parent "CSunpinyinOptions"
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5234 5251])
+                    ("keychar" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5252 5269])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5270 5284]))                  
+                :type "bool")
+                nil [5198 5629]))          
+    :file "imi_options.cpp"
+    :pointmax 5630
+    :fsize 5629
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "imi_view_modern.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("locale.h" include (:line 42) nil nil)
+            ("ctype.h" include (:line 43) nil nil)
+            ("imi_view_modern.h" include (:line 45) nil nil)
+            ("imi_uiobjects.h" include (:line 46) nil nil)
+            ("imi_keys.h" include (:line 48) nil nil)
+            ("CIMIModernView" function
+               (:parent "CIMIModernView"
+                :line 50
+                :constructor-flag t)
+                nil nil)
+            ("CIMIModernView" function
+               (:parent "CIMIModernView"
+                :line 56
+                :destructor-flag t)
+                nil nil)
+            ("getViewType" function
+               (:parent "CIMIModernView"
+                :line 61
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("attachIC" function
+               (:parent "CIMIModernView"
+                :line 66
+                :arguments (nil))
+                nil nil)
+            ("clearIC" function
+               (:parent "CIMIModernView"
+                :line 88
+                :arguments 
+                  ( ("" variable (:type "void") nil nil))                  )
+                nil nil)
+            ("setStatusAttrValue" function
+               (:parent "CIMIModernView"
+                :line 106
+                :arguments 
+                  ( ("key" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("onKeyEvent" function
+               (:parent "CIMIModernView"
+                :line 141
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil)                  )
+                nil nil)
+            ("getPreeditString" function
+               (:parent "CIMIModernView"
+                :line 188
+                :arguments (nil))
+                nil nil)
+            ("getCandidateList" function
+               (:parent "CIMIModernView"
+                :line 208
+                :arguments (nil nil nil))
+                nil nil)
+            ("updateWindows" function
+               (:parent "CIMIModernView"
+                :line 227
+                :arguments (nil))
+                nil nil)
+            ("cancelSyllable" function
+               (:parent "CIMIModernView"
+                :line 248
+                :arguments (nil))
+                nil nil)
+            ("convertSyllable" function
+               (:parent "CIMIModernView"
+                :line 257
+                :arguments 
+                  ( ("boundaryType" variable (:type "int") nil nil)
+                    nil
+                    nil)                  )
+                nil nil)
+            ("makeSelection" function
+               (:parent "CIMIModernView"
+                :line 288
+                :arguments 
+                  ( ("idx" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("eraseBone" function
+               (:parent "CIMIModernView"
+                :line 302
+                :arguments 
+                  ( ("boneIt" variable (:type "CSkeletonIter") nil nil)
+                    nil)                  )
+                nil nil)
+            ("insertNonPinyinBone" function
+               (:parent "CIMIModernView"
+                :line 316
+                :arguments (nil nil))
+                nil nil)
+            ("doCommit" function
+               (:parent "CIMIModernView"
+                :line 330
+                :arguments 
+                  ( ("bConvert" variable (:type "bool") nil nil))                  )
+                nil nil)
+            ("tryCommitLeftSentence" function
+               (:parent "CIMIModernView"
+                :line 350
+                :arguments (nil))
+                nil nil)
+            ("commitChar" function
+               (:parent "CIMIModernView"
+                :line 380
+                :arguments 
+                  ( ("ch" variable (:type "TWCHAR") nil nil))                  )
+                nil nil)
+            ("getSentence" function
+               (:parent "CIMIModernView"
+                :line 388
+                :arguments (nil nil nil))
+                nil nil)
+            ("pressKeyOnSyllable" function
+               (:parent "CIMIModernView"
+                :line 431
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("pressKeyOnSentence" function
+               (:parent "CIMIModernView"
+                :line 551
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil
+                    nil)                  )
+                nil nil)
+            ("onCandidatePageRequest" function
+               (:parent "CIMIModernView"
+                :line 654
+                :arguments 
+                  ( ("pgno" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("onCandidateSelectRequest" function
+               (:parent "CIMIModernView"
+                :line 695
+                :arguments 
+                  ( ("index" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("pressNormalKey" function
+               (:parent "CIMIModernView"
+                :line 724
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil
+                    nil)                  )
+                nil nil))          
+    :file "imi_view_modern.cpp"
+    :pointmax 8121
+    :fsize 24927
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "portability.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("portability.h" include (:line 42) nil nil)
+            ("iconv.h" include (:line 46) nil nil)
+            ("MBSTOWCS" function
+               (:arguments (nil nil nil)
+                :line 54)
+                nil nil)
+            ("WCSTOMBS" function
+               (:arguments (nil nil nil)
+                :line 80)
+                nil nil)
+            ("MBSTOWCS" function
+               (:arguments (nil nil nil)
+                :line 101)
+                nil nil)
+            ("WCSTOMBS" function
+               (:arguments (nil nil nil)
+                :line 129)
+                nil nil)
+            ("WCSLEN" function
+               (:arguments (nil)
+                :line 160)
+                nil nil))          
+    :file "portability.cpp"
+    :pointmax 8121
+    :fsize 5461
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_uiobjects.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("imi_uiobjects.h" include (:line 42) nil nil)
+            ("algorithm" include (:line 44) nil nil)
+            ("MAX_CANDI_COUNT_PER_WINDOW" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("MAX_STRING_LEN_CANDI_PREEDIT" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("IPreeditString" function
+               (:parent "IPreeditString"
+                :line 49
+                :destructor-flag t)
+                nil nil)
+            ("CPreEditString" function
+               (:parent "CPreEditString"
+                :line 53
+                :constructor-flag t)
+                nil nil)
+            ("CPreEditString" function
+               (:parent "CPreEditString"
+                :line 59
+                :destructor-flag t)
+                nil nil)
+            ("size" function
+               (:parent "CPreEditString"
+                :line 64
+                :arguments (nil))
+                nil nil)
+            ("string" function
+               (:parent "CPreEditString"
+                :line 70
+                :arguments (nil))
+                nil nil)
+            ("charTypeSize" function
+               (:parent "CPreEditString"
+                :line 76
+                :arguments (nil))
+                nil nil)
+            ("charTypeAt" function
+               (:parent "CPreEditString"
+                :line 82
+                :arguments 
+                  ( ("idx" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil)
+            ("caret" function
+               (:parent "CPreEditString"
+                :line 88
+                :arguments (nil))
+                nil nil)
+            ("candi_start" function
+               (:parent "CPreEditString"
+                :line 94
+                :arguments (nil))
+                nil nil)
+            ("clear" function
+               (:parent "CPreEditString"
+                :line 100)
+                nil nil)
+            ("getString" function
+               (:parent "CPreEditString"
+                :line 108)
+                nil nil)
+            ("getCharTypeVec" function
+               (:parent "CPreEditString"
+                :line 114)
+                nil nil)
+            ("setCaret" function
+               (:parent "CPreEditString"
+                :line 120
+                :arguments 
+                  ( ("caret" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("setCandiStart" function
+               (:parent "CPreEditString"
+                :line 126
+                :arguments (nil))
+                nil nil)
+            ("ICandidateList" function
+               (:parent "ICandidateList"
+                :line 131
+                :destructor-flag t)
+                nil nil)
+            ("CCandidateList" function
+               (:parent "CCandidateList"
+                :line 135
+                :constructor-flag t)
+                nil nil)
+            ("CCandidateList" function
+               (:parent "CCandidateList"
+                :line 141
+                :destructor-flag t)
+                nil nil)
+            ("size" function
+               (:parent "CCandidateList"
+                :line 146
+                :arguments (nil))
+                nil nil)
+            ("total" function
+               (:parent "CCandidateList"
+                :line 152
+                :arguments (nil))
+                nil nil)
+            ("first" function
+               (:parent "CCandidateList"
+                :line 158
+                :arguments (nil))
+                nil nil)
+            ("setTotal" function
+               (:parent "CCandidateList"
+                :line 164
+                :arguments 
+                  ( ("total" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("setFirst" function
+               (:parent "CCandidateList"
+                :line 170
+                :arguments 
+                  ( ("first" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("candiType" function
+               (:parent "CCandidateList"
+                :line 176
+                :arguments (nil nil))
+                nil nil)
+            ("candiSize" function
+               (:parent "CCandidateList"
+                :line 182
+                :arguments (nil nil))
+                nil nil)
+            ("candiString" function
+               (:parent "CCandidateList"
+                :line 188
+                :arguments (nil nil))
+                nil nil)
+            ("candiCharTypeSizeAt" function
+               (:parent "CCandidateList"
+                :line 194
+                :arguments (nil nil))
+                nil nil)
+            ("candiCharTypeAt" function
+               (:parent "CCandidateList"
+                :line 203
+                :arguments (nil nil nil))
+                nil nil)
+            ("clear" function
+               (:parent "CCandidateList"
+                :line 210)
+                nil nil)
+            ("reserve" function
+               (:parent "CCandidateList"
+                :line 219
+                :arguments 
+                  ( ("count" variable (:type "int") nil nil))                  )
+                nil nil)
+            ("getCandiStrings" function
+               (:parent "CCandidateList"
+                :line 227)
+                nil nil)
+            ("getCandiTypeVec" function
+               (:parent "CCandidateList"
+                :line 233)
+                nil nil)
+            ("getCharTypeVecs" function
+               (:parent "CCandidateList"
+                :line 239)
+                nil nil))          
+    :file "imi_uiobjects.cpp"
+    :pointmax 8121
+    :fsize 5465
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_winHandler.cpp"
+    :tags 
+        '( ("config.h" include (:line 39) nil nil)
+            ("imi_winHandler.h" include (:line 42) nil nil)
+            ("imi_view.h" include (:line 43) nil nil)
+            ("CIMIWinHandler" function
+               (:parent "CIMIWinHandler"
+                :line 45
+                :destructor-flag t)
+                nil nil)
+            ("setOptions" function
+               (:parent "CIMIWinHandler"
+                :line 50
+                :arguments (nil))
+                nil nil)
+            ("commit" function
+               (:parent "CIMIWinHandler"
+                :line 56
+                :arguments (nil))
+                nil nil)
+            ("updatePreedit" function
+               (:parent "CIMIWinHandler"
+                :line 63
+                :arguments (nil))
+                nil nil)
+            ("updateCandidates" function
+               (:parent "CIMIWinHandler"
+                :line 73
+                :arguments (nil))
+                nil nil)
+            ("throwBackKey" function
+               (:parent "CIMIWinHandler"
+                :line 87
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned") nil nil)
+                    nil
+                    nil)                  )
+                nil nil)
+            ("updateStatus" function
+               (:parent "CIMIWinHandler"
+                :line 96
+                :arguments 
+                  ( ("key" variable (:type "int") nil nil)
+                    nil)                  )
+                nil nil))          
+    :file "imi_winHandler.cpp"
+    :pointmax 8121
+    :fsize 3558
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   (semanticdb-table "imi_keys.h"
+    :file "imi_keys.h"
+    :fsize 2647
+    :lastmodtime '(19082 13868)
+    )
+   (semanticdb-table "host_os.h"
+    :file "host_os.h"
+    :fsize 21
+    :lastmodtime '(19082 16488)
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!src!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

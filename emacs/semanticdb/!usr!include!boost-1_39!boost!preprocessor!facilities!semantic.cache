@@ -1,0 +1,42 @@
+;; Object facilities/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "facilities/"
+  :tables (list 
+   (semanticdb-table "identity.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_FACILITIES_IDENTITY_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("boost/preprocessor/facilities/empty.hpp" include (:line 17) nil nil)
+            ("BOOST_PP_IDENTITY" variable
+               (:constant-flag t
+                :line 21)
+                nil nil))          
+    :file "identity.hpp"
+    :pointmax 286
+    :fsize 606
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "empty.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_FACILITIES_EMPTY_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("BOOST_PP_EMPTY" variable
+               (:constant-flag t
+                :line 19)
+                nil nil))          
+    :file "empty.hpp"
+    :pointmax 286
+    :fsize 516
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!facilities!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

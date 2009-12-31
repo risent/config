@@ -1,0 +1,128 @@
+set nu
+"set title
+"set background=dark
+set sts=4 
+set fileencodings=utf-8,gb18030,gkb,gb2312
+"set auto read when a file is change by out side
+set autoread
+"Have the  mouse enabled all the time
+set mouse=a
+""enable 256 color
+set t_Co=256
+"set the backspace
+set backspace=eol,start,indent
+
+" cancle the backups
+set nobackup
+
+" turn off the swap file
+set noswapfile
+set guifont=Monaco\ 12
+set guioptions-=m
+set guioptions-=T
+
+set grepprg=grep\ -nH\ $*
+set iskeyword+=:
+
+" doesn't break line in a word
+set lbr
+
+filetype plugin indent on
+filetype indent on
+
+"configure for ebuild-edting
+au BufRead,BufNewFile *.e{build,class} let is_bash=1|setfiletype sh
+au BufRead,BufNewFile *.e{build,class} set ts=4 sw=4 noexpandtab
+
+" set the time shorcut kerboard map 
+imap <silent> <C-D><C-D> <C-R>=strftime("%e %b %Y")<CR>
+imap <silent> <C-T><C-T> <C-R>=strftime("%l:%M %p")<CR>
+" Latex
+let g:tex_flavor='latex'
+set grepprg=grep\ -nH\ $*
+
+" set the c/c++,java  programming shorcut 
+map <F6> :make <Return>
+au FileType c,h,cpp,c++ imap #i #include <
+au FileType c,h,cpp,c++,java imap ( ()<LEFT>
+au FileType c,h,cpp,c++,java imap ) <c-r>=ClosePair(')')<CR>
+au FileType c,h,cpp,c++,java imap [ []<LEFT>
+au FileType c,h,cpp,c++,java imap ] <c-r>=ClosePair(']')<CR>
+au FileType c,h,cpp,c++,java imap { {}<LEFT><CR><ESC>O
+" au filetype c,h,cpp,c++,java imap { {}<left><cr><esc>o
+" au filetype c,h,cpp,c++,java imap } <c-r>=closepair('}')<cr>
+
+" set the python programming shorcut
+let g:pydiction_location = '/home/risent/.vimfiles/pydiction/complete-dict'
+let g:pydiction_menu_height = 20
+"autocmd FileType python setlocal omnifunc=pysmell#Complete
+autocmd FileType python set et nu sw=4 sts=4 tabstop=4
+au FileType python map <F12> :!python % <Return>
+au FileType python imap ( ()<LEFT>
+au FileType python imap ) <c-r>=ClosePair(')')<cr>
+au FileType python imap [ []<LEFT>
+au FileType python imap ] <c-r>=ClosePair(']')<CR>
+au FileType python imap { {}<LEFT>
+au FileType python imap } <c-r>=ClosePair('}')<CR>
+
+" set tabstop
+au filetype c,h,cpp,c++,java set et nu sw=4 sts=4 tabstop=4
+" close pair function
+function! ClosePair(char)
+    if getline('.')[col('.')-1]==a:char
+		return "\<Right>"
+	else
+		return a:char
+	endif
+endfunction
+" set cscope
+if has("cscope")
+	set csprg=/usr/bin/cscope
+	set csto=0
+	set cst
+	set nocsverb
+	" add any database in current directory
+	if filereadable("cscope.out")
+	    cs add cscope.out
+	" else add database pointed to by environment
+	elseif $CSCOPE_DB != ""
+	    cs add $CSCOPE_DB
+	endif
+	set csverb
+endif
+nmap <C-@>s :cs find s <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>g :cs find g <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>c :cs find c <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>t :cs find t <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>e :cs find e <C-R>=expand("<cword>")<CR><CR>
+nmap <C-@>f :cs find f <C-R>=expand("<cfile>")<CR><CR>
+nmap <C-@>i :cs find i ^<C-R>=expand("<cfile>")<CR>$<CR>
+nmap <C-@>d :cs find d <C-R>=expand("<cword>")<CR><CR>
+" end cscope settings
+"
+" set newtrw
+let g:netrw_winsize = 30
+nmap <silent> <leader>fe :Sexplore!<cr>
+
+" set for snippets
+runtime! ftplugin/django_*_snipperts.vim
+
+" set TgaList
+map <F9> :TlistToggle<CR>
+let Tlist_Exit_OnlyWindow = 1
+
+" set status
+"set ls=2
+"set statusline=%<%f\ %m%=\ %h%r\ %-19([%p%%]\ %3l,%02c%03V%)%y
+"highlight StatusLine term=bold,reverse cterm=bold,reverse
+""set laststatus=2
+"set statusline=%4*%<\ %1*[%F]
+"set statusline+=%4*\ %5*[%{&encoding}, " encoding
+"set statusline+=%{&fileformat}]%m " file format
+"set statusline+=%4*%=\ %6*%y%4*\ %3*%l%4*,\ %3*%c%4*\ \<\ %2*%P%4*\ \>
+"highlight User1 ctermfg=red
+"highlight User2 term=underline cterm=underline ctermfg=green
+"highlight User3 term=underline cterm=underline ctermfg=yellow
+"highlight User4 term=underline cterm=underline ctermfg=white
+"highlight User5 ctermfg=cyan
+"highlight User6 ctermfg=white

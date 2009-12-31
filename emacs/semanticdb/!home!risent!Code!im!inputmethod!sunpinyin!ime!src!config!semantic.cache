@@ -1,0 +1,29 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "linux.h"
+    :tags 
+        '( ("____HOST_OS_H____" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("LINUX_OS" variable
+               (:constant-flag t
+                :line 41)
+                nil nil)
+            ("TIConvSrcPtr" type
+               (:type "typedef"
+                :line 43)
+                nil nil))          
+    :file "linux.h"
+    :pointmax 8121
+    :fsize 2238
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax '((semantic-list 2610 . 2625) (symbol 2601 . 2610) (string 2611 . 2624) (symbol 2594 . 2600) (string 2611 . 2624) (punctuation 2593 . 2594))
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!src!config!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

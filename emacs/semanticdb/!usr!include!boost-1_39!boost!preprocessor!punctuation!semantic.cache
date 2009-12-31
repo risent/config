@@ -1,0 +1,53 @@
+;; Object punctuation/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "punctuation/"
+  :tables (list 
+   (semanticdb-table "comma_if.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_IF_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 17) nil nil)
+            ("boost/preprocessor/control/if.hpp" include (:line 18) nil nil)
+            ("boost/preprocessor/facilities/empty.hpp" include (:line 19) nil nil)
+            ("boost/preprocessor/punctuation/comma.hpp" include (:line 20) nil nil)
+            ("BOOST_PP_COMMA_IF" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_COMMA_IF" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("BOOST_PP_COMMA_IF_I" variable
+               (:constant-flag t
+                :line 28)
+                nil nil))          
+    :file "comma_if.hpp"
+    :pointmax 286
+    :fsize 1012
+    :lastmodtime '(19085 43079)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "comma.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_PUNCTUATION_COMMA_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("BOOST_PP_COMMA" variable
+               (:constant-flag t
+                :line 19)
+                nil nil))          
+    :file "comma.hpp"
+    :pointmax 286
+    :fsize 520
+    :lastmodtime '(19085 43079)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!punctuation!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

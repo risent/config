@@ -1,0 +1,91 @@
+;; Object message_styles/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "message_styles/"
+  :tables (list 
+   (semanticdb-table "Template.html"
+    :major-mode 'html-mode
+    :tags 
+        '( ("//Appending new content to the message view
+		function appendMessage(html) {
+			shouldScroll = nearBottom();
+		
+			//Remove any existing insertion point
+			insert = document.getElementById("insert");
+			if(insert) insert.parentNode.removeChild(insert);
+
+			//Append the new message to the bottom of our chat block
+			chat = document.getElementById("Chat");
+			range = document.createRange();
+			range.selectNode(chat);
+			documentFragment = range.createContextualFragment(html);
+			chat.appendChild(documentFragment);
+			
+			alignChat(shouldScroll);
+		}
+		function appendMessageNoScroll(html) {
+			//Remove any existing insertion point
+			insert = document.getElementById("insert");
+			if(insert) insert.parentNode.removeChild(insert);
+
+			//Append the new message to the bottom of our chat block
+			chat = document.getElementById("Chat");
+			range = document.createRange();
+			range.selectNode(chat);
+			documentFragment = range.createContextualFragment(html);
+			chat.appendChild(documentFragment);
+		}
+		function appendNextMessage(html){
+			shouldScroll = nearBottom();
+
+			//Locate the insertion point
+			insert = document.getElementById("insert");
+		
+			//make new node
+			range = document.createRange();
+			range.selectNode(insert.parentNode);
+			newNode = range.createContextualFragment(html);
+
+			//swap
+			insert.parentNode.replaceChild(newNode,insert);
+			
+			alignChat(shouldScroll);
+		}
+		function appendNextMessageNoScroll(html){
+			//Locate the insertion point
+			insert = document.getElementById("insert");
+		
+			//make new node
+			range = document.createRange();
+			range.selectNode(insert.parentNode);
+			newNode = range.createContextualFragment(html);
+
+			//swap
+			insert.parentNode.replaceChild(newNode,insert);
+		}
+		
+		//Auto-scroll to bottom.  Use nearBottom to determine if a scrollToBottom is desired.
+		function nearBottom() {
+			return ( document.body.scrollTop >= ( document.body.offsetHeight - ( window.innerHeight * 1.2 ) ) );
+		}
+		function scrollToBottom() {
+			document.body.scrollTop = document.body.offsetHeight;
+		}
+
+		//Dynamically exchange the active stylesheet
+		function setStylesheet( id, url ) {
+			code = "<style id=\"" + id + "\" type=\"text/css\" media=\"screen,print\">";
+			if( url.length ) code += "@import url( \"" + url + "\" );";
+			code += "" section nil nil [196 4908])
+            ("%@
+<div id="Chat">" section nil nil [4908 5013]))          
+    :file "Template.html"
+    :pointmax 5013
+    :fsize 5012
+    :lastmodtime '(19115 5718)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!.purple!message_styles!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

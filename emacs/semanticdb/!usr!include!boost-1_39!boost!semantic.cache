@@ -1,0 +1,2442 @@
+;; Object boost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "boost/"
+  :tables (list 
+   (semanticdb-table "lexical_cast.hpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("BOOST_LEXICAL_CAST_INCLUDED" variable (:constant-flag t) nil [45 72])
+            ("climits" include (:system-flag t) nil [659 677])
+            ("cstddef" include (:system-flag t) nil [678 696])
+            ("istream" include (:system-flag t) nil [697 715])
+            ("string" include (:system-flag t) nil [716 733])
+            ("typeinfo" include (:system-flag t) nil [734 753])
+            ("exception" include (:system-flag t) nil [754 774])
+            ("boost/config.hpp" include (:system-flag t) nil [775 802])
+            ("boost/limits.hpp" include (:system-flag t) nil [803 830])
+            ("boost/mpl/if.hpp" include (:system-flag t) nil [831 858])
+            ("boost/throw_exception.hpp" include (:system-flag t) nil [859 895])
+            ("boost/type_traits/is_pointer.hpp" include (:system-flag t) nil [896 939])
+            ("boost/type_traits/make_unsigned.hpp" include (:system-flag t) nil [940 986])
+            ("boost/call_traits.hpp" include (:system-flag t) nil [987 1019])
+            ("boost/static_assert.hpp" include (:system-flag t) nil [1020 1054])
+            ("boost/detail/lcast_precision.hpp" include (:system-flag t) nil [1055 1098])
+            ("boost/detail/workaround.hpp" include (:system-flag t) nil [1099 1137])
+            ("locale" include (:system-flag t) nil [1167 1184])
+            ("sstream" include (:system-flag t) nil [1249 1267])
+            ("BOOST_LCAST_NO_WCHAR_T" variable (:constant-flag t) nil [1397 1419])
+            ("boost" type
+               (:members 
+                  ( ("bad_lexical_cast" type
+                       (:superclasses 
+                          ( ("std::bad_cast" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil)
+                            ("std::exception" type
+                               (:protection "public"
+                                :type "class")
+                                nil nil))                          
+                        :members 
+                          ( ("public" label nil (reparse-symbol classsubparts) [1749 1756])
+                            ("bad_lexical_cast" function
+                               (:constructor-flag t
+                                :type ("bad_lexical_cast" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1765 1951])
+                            ("bad_lexical_cast" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("source_type_arg" variable
+                                       (:constant-flag t
+                                        :type ("std::type_info" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [1991 2029])
+                                    ("target_type_arg" variable
+                                       (:constant-flag t
+                                        :type ("std::type_info" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [2042 2080]))                                  
+                                :type ("bad_lexical_cast" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [1961 2165])
+                            ("source_type" function
+                               (:constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2175 2264])
+                            ("target_type" function
+                               (:constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2273 2362])
+                            ("what" function
+                               (:pointer 1
+                                :typemodifiers ("virtual")
+                                :constant-flag t
+                                :type "char")
+                                (reparse-symbol classsubparts) [2372 2547])
+                            ("bad_lexical_cast" function
+                               (:destructor-flag t
+                                :typemodifiers ("virtual")
+                                :type "void")
+                                (reparse-symbol classsubparts) [2556 2611])
+                            ("private" label nil (reparse-symbol classsubparts) [2616 2624])
+                            ("source" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2633 2662])
+                            ("target" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("std::type_info" type (:type "class") nil nil))
+                                (reparse-symbol classsubparts) [2671 2700]))                          
+                        :type "class")
+                        (reparse-symbol namespacesubparts) [1513 2707])
+                    ("detail" type
+                       (:members 
+                          ( ("stream_char" type
+                               (:template 
+                                  ( ("Type" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("char")
+                                        :superclasses "char"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [2865 2883]))                                  )
+                                (reparse-symbol namespacesubparts) [2792 2894])
+                            ("stream_char" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("CharT" type (:type "class") nil nil)
+                                        :superclasses "CharT"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3092 3111]))                                  
+                                :template-specifier 
+                                  ( ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [2953 3122])
+                            ("stream_char" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("wchar_t")
+                                        :superclasses "wchar_t"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3274 3295]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3205 3306])
+                            ("stream_char" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("wchar_t")
+                                        :superclasses "wchar_t"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3394 3415]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type (:pointer 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3323 3426])
+                            ("stream_char" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("wchar_t")
+                                        :superclasses "wchar_t"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3513 3534]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type
+                                       (:pointer 1
+                                        :constant-flag t)
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3436 3545])
+                            ("widest_char" type
+                               (:template 
+                                  ( ("TargetChar" type (:type "class") nil nil)
+                                    ("SourceChar" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("TargetChar" type (:type "class") nil nil)
+                                        :superclasses "TargetChar"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3833 3857]))                                  )
+                                (reparse-symbol namespacesubparts) [3733 3868])
+                            ("widest_char" type
+                               (:type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("wchar_t")
+                                        :superclasses "wchar_t"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [3953 3974]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("wchar_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [3878 3985]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [2713 3991])
+                    ("detail" type
+                       (:members 
+                          ( ("deduce_char_traits" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Target" type (:type "class") nil nil)
+                                    ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("std::char_traits" type
+                                             (:template-specifier 
+                                                ( ("CharT" type nil nil nil))                                                
+                                              :type "class")
+                                              nil nil)
+                                        :superclasses "std::char_traits"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4214 4251]))                                  )
+                                (reparse-symbol namespacesubparts) [4108 4262])
+                            ("deduce_char_traits" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil)
+                                    ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Traits" type (:type "class") nil nil)
+                                        :superclasses "Traits"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4548 4568]))                                  
+                                :template-specifier 
+                                  ( ("CharT" type nil nil nil)
+                                    ("std::basic_string" type nil nil nil)
+                                    ("Source" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4272 4579])
+                            ("deduce_char_traits" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Target" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Traits" type (:type "class") nil nil)
+                                        :superclasses "Traits"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [4865 4885]))                                  
+                                :template-specifier 
+                                  ( ("CharT" type nil nil nil)
+                                    ("Target" type nil nil nil)
+                                    ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4589 4896])
+                            ("deduce_char_traits" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc1" type (:type "class") nil nil)
+                                    ("Alloc2" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("Traits" type (:type "class") nil nil)
+                                        :superclasses "Traits"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [5216 5236]))                                  
+                                :template-specifier 
+                                  ( ("CharT" type nil nil nil)
+                                    ("std::basic_string" type nil nil nil)
+                                    ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [4906 5247]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [3997 5260])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_src_length" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6125 6137])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6138 6145]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6103 6149])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6266 6297]))                                  )
+                                (reparse-symbol namespacesubparts) [5902 6308])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6417 6429])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6430 6437]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6395 6441])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6454 6485]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("bool" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6318 6496])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6605 6617])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6618 6625]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [6583 6629])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [6642 6673]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("char" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [6506 6684])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7167 7179])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7180 7187]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7145 7191])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7204 7235]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("bool" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7065 7246])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7358 7370])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7371 7378]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7336 7382])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7395 7426]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("char" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7256 7437])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7587 7599])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7600 7607]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7565 7611])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7624 7655]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("wchar_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7482 7666])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7796 7808])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7809 7816]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7774 7820])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [7833 7864]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("char" type
+                                       (:pointer 1
+                                        :constant-flag t)
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7690 7875])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7985 7997])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7998 8005]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [7963 8009])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8022 8053]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("char" type (:pointer 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [7885 8064])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8217 8229])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8230 8237]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8195 8241])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8254 8285]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("wchar_t" type
+                                       (:pointer 1
+                                        :constant-flag t)
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8105 8296])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8412 8424])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8425 8432]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8390 8436])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8449 8480]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("wchar_t" type (:pointer 1) nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8306 8491])
+                            ("lcast_src_length" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8730 8742])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8743 8750]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [8708 8754])
+                                    ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [8767 8798]))                                  
+                                :template-specifier 
+                                  ( ("CharT" type nil nil nil)
+                                    ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [8557 8809])
+                            ("lcast_src_length_integral" type
+                               (:template 
+                                  ( ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10124 10136])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10137 10144])
+                                            ("" variable (:type ("std::numeric_limits::is_signed" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10163 10203])
+                                            ("" variable (:type ("std::numeric_limits::is_specialized" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10222 10267])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("std::numeric_limits::digits10" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [10294 10335]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [10102 10352]))                                  )
+                                (reparse-symbol namespacesubparts) [9969 10504])
+                            ("BOOST_LCAST_DEF1" variable (:constant-flag t) (reparse-symbol namespacesubparts) [10514 10530])
+                            ("BOOST_LCAST_DEF" variable (:constant-flag t) (reparse-symbol namespacesubparts) [10798 10813])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10919 10941])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10950 10981])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [10990 11010])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11019 11048])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11057 11078])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) nil))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_integral" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("T" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [11087 11117])
+                            ("lcast_src_length_floating" type
+                               (:template 
+                                  ( ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_ASSERT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::numeric_limits::max_exponent10" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12088 12133])
+                                            ("" variable (:type ("std::numeric_limits::min_exponent10" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12167 12212]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12047 12241])
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12276 12288])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12289 12296])
+                                            ("" variable (:type ("lcast_precision" type
+                                                 (:template-specifier 
+                                                    ( ("Source" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [12321 12345])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12346 12353]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [12254 12374]))                                  )
+                                (reparse-symbol namespacesubparts) [11961 12385])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12517 12548]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("float" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12395 12559])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12693 12724]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12569 12735])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [12879 12910]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil)
+                                    ("long double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12745 12921])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13067 13098]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("float" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [12958 13105])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13222 13253]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13111 13260])
+                            ("lcast_src_length" type
+                               (:type "struct"
+                                :members 
+                                  ( ("check_coverage" function
+                                       (:typemodifiers ("static")
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [13387 13418]))                                  
+                                :superclasses 
+                                  ( ("lcast_src_length_floating" type
+                                       (:protection "unspecified"
+                                        :type "class")
+                                        nil nil))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil)
+                                    ("long double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13266 13425]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [5266 13529])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_char_constants" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :prototype t)
+                                (reparse-symbol namespacesubparts) [13591 13644])
+                            ("lcast_char_constants" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [13751 13756])
+                                            ("" variable (:type ("zero" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13757 13764]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13729 13770])
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [13805 13810])
+                                            ("" variable (:type ("minus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13811 13818]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13783 13824]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13654 13835])
+                            ("lcast_char_constants" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [13976 13984])
+                                            ("" variable (:type ("zero" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13985 13992]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [13954 13999])
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [14034 14042])
+                                            ("" variable (:type ("minus" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14043 14050]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [14012 14057]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [13876 14068]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [13535 14081])
+                    ("detail" type
+                       (:members 
+                          ( ("lexical_streambuf_fake" type (:type "struct") (reparse-symbol namespacesubparts) [14144 14194]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [14087 14200])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_to_unsigned" function
+                               (:arguments 
+                                  ( ("value" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14591 14599]))                                  
+                                :type ("type" type (:type "class") nil nil))
+                                (reparse-symbol namespacesubparts) [14568 14813]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [14206 14923])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_put_unsigned" function
+                               (:template 
+                                  ( ("Traits" type (:type "class") nil nil)
+                                    ("T" type (:type "class") nil nil)
+                                    ("CharT" type (:type "class") nil nil))                                  
+                                :type ("CharT" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("n" variable (:type ("T" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15061 15065])
+                                    ("finish" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [15066 15080]))                                  
+                                :pointer 1)
+                                (reparse-symbol namespacesubparts) [14982 17190]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [14929 17196])
+                    ("detail" type
+                       (:members 
+                          ( ("lexical_stream" type
+                               (:template 
+                                  ( ("Target" type (:type "class") nil nil)
+                                    ("Source" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("private" label nil (reparse-symbol classsubparts) [17391 17399])
+                                    ("char_type" variable (:type ("type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [17547 17562])
+                                    ("traits_type" type
+                                       (:typedef ("Traits" type (:type "class") nil nil)
+                                        :superclasses "Traits"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [17576 17603])
+                                    ("public" label nil (reparse-symbol classsubparts) [17613 17620])
+                                    ("lexical_stream" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17648 17660])
+                                            ("" variable
+                                               (:pointer 1
+                                                :type ("char_type" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [17664 17676]))                                          
+                                        :type ("lexical_stream" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [17633 17825])
+                                    ("lexical_stream" function
+                                       (:destructor-flag t
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [17838 17995])
+                                    ("<<" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("input" variable
+                                               (:constant-flag t
+                                                :type ("Source" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [18024 18044]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [18008 18122])
+                                    (">>" function
+                                       (:template 
+                                          ( ("InputStreamable" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("output" variable (:type ("InputStreamable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18198 18222]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [18135 18740])
+                                    (">>" function
+                                       (:operator-flag t
+                                        :arguments 
+                                          ( ("output" variable (:type ("std::basic_string" type
+                                                 (:template-specifier 
+                                                    ( ("char_type" type nil nil nil)
+                                                      ("traits_type" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [19293 19342]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [19277 19442])
+                                    (">>" function
+                                       (:template 
+                                          ( ("Alloc" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("out" variable (:type ("std::basic_string" type
+                                                 (:template-specifier 
+                                                    ( ("char_type" type nil nil nil)
+                                                      ("traits_type" type nil nil nil)
+                                                      ("Alloc" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [19506 19558]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [19456 19743])
+                                    ("private" label nil (reparse-symbol classsubparts) [19759 19767])
+                                    ("stream" variable (:type ("std::basic_stringstream" type
+                                         (:template-specifier 
+                                            ( ("char_type" type nil nil nil)
+                                              ("traits_type" type nil nil nil))                                            
+                                          :type "class")
+                                          nil nil)) (reparse-symbol classsubparts) [19965 20019]))                                  )
+                                (reparse-symbol namespacesubparts) [17284 20049]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [17202 20055])
+                    ("detail" type
+                       (:members 
+                          ( ("lexical_stream_limited_src" type
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "class"
+                                :members 
+                                  ( ("start" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20707 20720])
+                                    ("finish" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [20733 20747])
+                                    ("private" label nil (reparse-symbol classsubparts) [20757 20765])
+                                    ("widen_and_assign" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [20808 20815])
+                                            ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [20816 20824]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20779 20892])
+                                    ("widen_and_assign" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [20966 20977])
+                                            ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [20978 20986]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [20937 21216])
+                                    ("widen_and_assign" function
+                                       (:typemodifiers ("static")
+                                        :arguments 
+                                          ( ("p" variable
+                                               (:pointer 1
+                                                :type "wchar_t")
+                                                (reparse-symbol arg-sub-list) [21259 21270])
+                                            ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [21271 21282]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21230 21350])
+                                    ("widen_and_assign" function
+                                       (:prototype-flag t
+                                        :typemodifiers ("static")
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :type "char")
+                                                (reparse-symbol arg-sub-list) [21393 21399])
+                                            ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [21400 21411]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21364 21412])
+                                    ("lcast_put" function
+                                       (:template 
+                                          ( ("OutputStreamable" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("input" variable
+                                               (:constant-flag t
+                                                :type ("OutputStreamable" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21506 21536]))                                          )
+                                        (reparse-symbol classsubparts) [21446 21883])
+                                    ("lexical_stream_limited_src" function
+                                       (:prototype-flag t
+                                        :constructor-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:constant-flag t
+                                                :type ("lexical_stream_limited_src" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [21950 21984]))                                          
+                                        :type ("lexical_stream_limited_src" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [21923 21985])
+                                    ("=" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:constant-flag t
+                                                :type ("lexical_stream_limited_src" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22013 22047]))                                          
+                                        :type "void")
+                                        (reparse-symbol classsubparts) [21998 22048])
+                                    ("public" label nil (reparse-symbol classsubparts) [22058 22065])
+                                    ("lexical_stream_limited_src" function
+                                       (:constructor-flag t
+                                        :arguments 
+                                          ( ("sta" variable
+                                               (:pointer 1
+                                                :type ("CharT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22106 22117])
+                                            ("fin" variable
+                                               (:pointer 1
+                                                :type ("CharT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22118 22129]))                                          
+                                        :type ("lexical_stream_limited_src" type (:type "class") nil nil))
+                                        (reparse-symbol classsubparts) [22079 22199])
+                                    ("public" label nil (reparse-symbol classsubparts) [22209 22216])
+                                    ("<<" function
+                                       (:template 
+                                          ( ("Alloc" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("str" variable
+                                               (:constant-flag t
+                                                :type ("std::basic_string" type
+                                                     (:template-specifier 
+                                                        ( ("CharT" type nil nil nil)
+                                                          ("Traits" type nil nil nil)
+                                                          ("Alloc" type nil nil nil))                                                        
+                                                      :type "class")
+                                                      nil nil))
+                                                (reparse-symbol arg-sub-list) [22290 22339]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [22240 22499])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [22529 22534]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22513 22535])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "char") (reparse-symbol arg-sub-list) [22564 22569]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22548 22570])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [22676 22684]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22660 22685])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable
+                                               (:pointer 1
+                                                :constant-flag t
+                                                :type ("CharT" type (:type "class") nil nil))
+                                                (reparse-symbol arg-sub-list) [22721 22734]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22705 22735])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "short") (reparse-symbol arg-sub-list) [22764 22770]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22748 22771])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "int") (reparse-symbol arg-sub-list) [22800 22804]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22784 22805])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "long") (reparse-symbol arg-sub-list) [22834 22839]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22818 22840])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [22869 22884]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22853 22885])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [22914 22927]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22898 22928])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [22957 22971]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [22941 22972])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "float") (reparse-symbol arg-sub-list) [23400 23406]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [23384 23407])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "double") (reparse-symbol arg-sub-list) [23436 23443]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [23420 23444])
+                                    ("<<" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "long double") (reparse-symbol arg-sub-list) [23473 23485]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [23457 23486])
+                                    ("public" label nil (reparse-symbol classsubparts) [23496 23503])
+                                    (">>" function
+                                       (:template 
+                                          ( ("InputStreamable" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("output" variable (:type ("InputStreamable" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23712 23736]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [23649 24701])
+                                    (">>" function
+                                       (:prototype-flag t
+                                        :operator-flag t
+                                        :arguments 
+                                          ( ("" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24731 24738]))                                          
+                                        :type "bool")
+                                        (reparse-symbol classsubparts) [24715 24739])
+                                    (">>" function
+                                       (:template 
+                                          ( ("Alloc" type (:type "class") nil nil))                                          
+                                        :type "bool"
+                                        :arguments 
+                                          ( ("str" variable (:type ("std::basic_string" type
+                                                 (:template-specifier 
+                                                    ( ("CharT" type nil nil nil)
+                                                      ("Traits" type nil nil nil)
+                                                      ("Alloc" type nil nil nil))                                                    
+                                                  :type "class")
+                                                  nil nil)) (reparse-symbol arg-sub-list) [25040 25083]))                                          
+                                        :operator-flag t)
+                                        (reparse-symbol classsubparts) [24990 25183]))                                  
+                                :superclasses 
+                                  ( ("Base" type
+                                       (:protection "public"
+                                        :type "class")
+                                        nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [20183 25201])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("value" variable (:type "bool") (reparse-symbol arg-sub-list) [25357 25368]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [25211 25702])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("ch" variable (:type "char") (reparse-symbol arg-sub-list) [25858 25866]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [25712 25984])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("ch" variable (:type "wchar_t") (reparse-symbol arg-sub-list) [26217 26228]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [26071 26346])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "short") (reparse-symbol arg-sub-list) [26509 26517]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [26363 26834])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "int") (reparse-symbol arg-sub-list) [26990 26996]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [26844 27313])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "long") (reparse-symbol arg-sub-list) [27469 27476]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [27323 27793])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [29002 29019]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [28856 29123])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [29279 29294]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [29133 29398])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("n" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [29554 29570]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [29408 29674])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("val" variable (:type "float") (reparse-symbol arg-sub-list) [30467 30477]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [30321 30538])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("val" variable (:type "double") (reparse-symbol arg-sub-list) [30694 30705]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [30548 30766])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("val" variable (:type "long double") (reparse-symbol arg-sub-list) [30922 30938]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [30776 30999])
+                            ("<<" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("str" variable
+                                       (:pointer 1
+                                        :constant-flag t
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [31155 31172]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [31009 31312])
+                            (">>" function
+                               (:template 
+                                  ( ("CharT" type (:type "class") nil nil)
+                                    ("Base" type (:type "class") nil nil)
+                                    ("Traits" type (:type "class") nil nil))                                  
+                                :type "bool"
+                                :arguments 
+                                  ( ("output" variable (:type ("CharT" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31468 31482]))                                  
+                                :typemodifiers ("inline")
+                                :parent "lexical_stream_limited_src"
+                                :operator-flag t)
+                                (reparse-symbol namespacesubparts) [31322 31643]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [20061 32257])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_streambuf_for_source" type
+                               (:template 
+                                  ( ("Source" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [32512 32517])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32518 32525])
+                                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32526 32532]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [32490 32533]))                                  )
+                                (reparse-symbol namespacesubparts) [32403 32544])
+                            ("lcast_streambuf_for_source" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [32658 32663])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32664 32671])
+                                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32672 32677]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [32636 32678]))                                  
+                                :template-specifier 
+                                  ( ("float" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [32554 32689])
+                            ("lcast_streambuf_for_source" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [32805 32810])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32811 32818])
+                                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32819 32824]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [32783 32825]))                                  
+                                :template-specifier 
+                                  ( ("double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [32700 32836])
+                            ("lcast_streambuf_for_source" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [32958 32963])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32964 32971])
+                                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32972 32977]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [32936 32978]))                                  
+                                :template-specifier 
+                                  ( ("long double" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [32848 32989]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [32263 32995])
+                    ("detail" type
+                       (:members 
+                          ( ("lcast_streambuf_for_target" type
+                               (:template 
+                                  ( ("Target" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [33250 33255])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33256 33263])
+                                            ("" variable (:type ("true" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33264 33269]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [33228 33270]))                                  )
+                                (reparse-symbol namespacesubparts) [33141 33281])
+                            ("lcast_streambuf_for_target" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [33394 33399])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33400 33407])
+                                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33408 33414]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [33372 33415]))                                  
+                                :template-specifier 
+                                  ( ("char" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [33291 33426])
+                            ("lcast_streambuf_for_target" type
+                               (:type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [33619 33624])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33625 33632])
+                                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33633 33639]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [33597 33640]))                                  
+                                :template-specifier 
+                                  ( ("wchar_t" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [33513 33651])
+                            ("lcast_streambuf_for_target" type
+                               (:template 
+                                  ( ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [33899 33904])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33905 33912])
+                                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33913 33919]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [33877 33920]))                                  
+                                :template-specifier 
+                                  ( ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [33717 33931])
+                            ("lcast_streambuf_for_target" type
+                               (:template 
+                                  ( ("Traits" type (:type "class") nil nil)
+                                    ("Alloc" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:prototype-flag t
+                                        :arguments 
+                                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [34157 34162])
+                                            ("" variable (:type ("value" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34163 34170])
+                                            ("" variable (:type ("false" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [34171 34177]))                                          
+                                        :type "int")
+                                        (reparse-symbol classsubparts) [34135 34178]))                                  
+                                :template-specifier 
+                                  ( ("std::basic_string" type nil nil nil))                                  )
+                                (reparse-symbol namespacesubparts) [33972 34189]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [33001 34557])
+                    ("detail" type
+                       (:members 
+                          ( ("array_to_pointer_decay" type
+                               (:template 
+                                  ( ("T" type (:type "class") nil nil))                                  
+                                :type "struct"
+                                :members 
+                                  ( ("type" type
+                                       (:typedef ("T" type (:type "class") nil nil)
+                                        :superclasses "T"
+                                        :type "typedef")
+                                        (reparse-symbol classsubparts) [34766 34781]))                                  )
+                                (reparse-symbol namespacesubparts) [34688 34792])
+                            ("lexical_cast" function
+                               (:template 
+                                  ( ("Target" type (:type "class") nil nil)
+                                    ("Source" type (:type "class") nil nil)
+                                    ("bool" type nil nil nil)
+                                    ("CharT" type (:type "class") nil nil))                                  
+                                :type ("Target" type (:type "class") nil nil)
+                                :arguments 
+                                  ( ("boost::call_traits::param_type" variable (:type ("BOOST_DEDUCED_TYPENAME" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35178 35243])
+                                    ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35240 35244])
+                                    ("buf" variable
+                                       (:pointer 1
+                                        :type ("CharT" type (:type "class") nil nil))
+                                        (reparse-symbol arg-sub-list) [35257 35268])
+                                    ("src_len" variable (:type ("std::size_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [35269 35289]))                                  )
+                                (reparse-symbol namespacesubparts) [34945 36797]))                          
+                        :type "namespace")
+                        (reparse-symbol namespacesubparts) [34657 36803])
+                    ("lexical_cast" function
+                       (:template 
+                          ( ("Target" type (:type "class") nil nil)
+                            ("Source" type (:type "class") nil nil))                          
+                        :type ("Target" type (:type "class") nil nil)
+                        :arguments 
+                          ( ("arg" variable
+                               (:constant-flag t
+                                :type ("Source" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [36883 36901]))                          
+                        :typemodifiers ("inline"))
+                        (reparse-symbol namespacesubparts) [36809 37467]))                  
+                :type "namespace")
+                nil [1428 38247]))          
+    :file "lexical_cast.hpp"
+    :pointmax 38528
+    :fsize 38527
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax '((punctuation 34934 . 34935) (semantic-list 34887 . 34934) (punctuation 34877 . 34878) (semantic-list 34874 . 34877) (symbol 34873 . 34874) (punctuation 34872 . 34873) (symbol 34850 . 34872) (STRUCT 34843 . 34849) (punctuation 34833 . 34834) (symbol 34832 . 34833) (symbol 34825 . 34831) (punctuation 34824 . 34825) (punctuation 34823 . 34824) (symbol 34820 . 34823) (punctuation 34818 . 34819) (symbol 34817 . 34818) (CLASS 34811 . 34816) (punctuation 34810 . 34811) (TEMPLATE 34802 . 34810) (punctuation 34169 . 34170) (punctuation 33911 . 33912) (punctuation 33631 . 33632) (punctuation 33406 . 33407) (punctuation 33262 . 33263) (punctuation 32970 . 32971) (punctuation 32817 . 32818) (punctuation 32670 . 32671) (punctuation 32524 . 32525) (number 17677 . 17678) (punctuation 17675 . 17676) (number 17661 . 17662) (punctuation 17659 . 17660) (punctuation 17546 . 17547) (punctuation 17545 . 17546) (punctuation 17544 . 17545) (symbol 17540 . 17544) (punctuation 17539 . 17540) (punctuation 17538 . 17539) (punctuation 17537 . 17538) (symbol 17531 . 17537) (punctuation 17530 . 17531) (symbol 17519 . 17530) (TYPENAME 17510 . 17518) (punctuation 17492 . 17493) (symbol 17488 . 17492) (punctuation 17487 . 17488) (punctuation 17486 . 17487) (punctuation 17485 . 17486) (symbol 17479 . 17485) (punctuation 17478 . 17479) (symbol 17467 . 17478) (TYPENAME 17458 . 17466) (punctuation 17440 . 17441) (symbol 17429 . 17440) (TYPENAME 17420 . 17428) (TYPEDEF 17412 . 17419) (semantic-list 14853 . 14860) (symbol 14846 . 14853) (symbol 14839 . 14845) (punctuation 14837 . 14838) (punctuation 14567 . 14568) (punctuation 14566 . 14567) (punctuation 14565 . 14566) (symbol 14564 . 14565) (punctuation 14563 . 14564) (symbol 14550 . 14563) (symbol 14527 . 14549) (INLINE 14512 . 14518) (punctuation 14502 . 14503) (symbol 14501 . 14502) (CLASS 14495 . 14500) (punctuation 14494 . 14495) (TEMPLATE 14486 . 14494) (semantic-list 14393 . 14411) (symbol 14386 . 14393) (number 14405 . 14409) (punctuation 14403 . 14404) (symbol 14379 . 14385) (number 14405 . 14409) (punctuation 14403 . 14404) (punctuation 14377 . 14378) (semantic-list 14289 . 14297) (symbol 14282 . 14289) (symbol 14275 . 14281) (punctuation 14273 . 14274) (string 14051 . 14055) (punctuation 14049 . 14050) (string 13993 . 13997) (punctuation 13991 . 13992) (string 13819 . 13822) (punctuation 13817 . 13818) (string 13765 . 13768) (punctuation 13763 . 13764) (number 12354 . 12355) (punctuation 12352 . 12353) (punctuation 12345 . 12346) (punctuation 12344 . 12345) (punctuation 12319 . 12320) (number 12317 . 12318) (punctuation 12295 . 12296) (number 12215 . 12222) (punctuation 12214 . 12215) (punctuation 12212 . 12213) (punctuation 12211 . 12212) (punctuation 12145 . 12146) (punctuation 12144 . 12145) (number 12136 . 12143) (punctuation 12133 . 12134) (punctuation 12132 . 12133) (punctuation ";" 11087 . 11117) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "<" 11087 . 11117) (symbol "lcast_src_length_integral" 11087 . 11117) (punctuation ":" 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "," 11087 . 11117) (punctuation "<" 11087 . 11117) (symbol "lcast_src_length" 11087 . 11117) (STRUCT "struct" 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "<" 11087 . 11117) (TEMPLATE "template" 11087 . 11117) (punctuation ";" 11057 . 11078) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "<" 11057 . 11078) (symbol "lcast_src_length_integral" 11057 . 11078) (punctuation ":" 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "," 11057 . 11078) (punctuation "<" 11057 . 11078) (symbol "lcast_src_length" 11057 . 11078) (STRUCT "struct" 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "<" 11057 . 11078) (TEMPLATE "template" 11057 . 11078) (punctuation ";" 11019 . 11048) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "<" 11019 . 11048) (symbol "lcast_src_length_integral" 11019 . 11048) (punctuation ":" 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "," 11019 . 11048) (punctuation "<" 11019 . 11048) (symbol "lcast_src_length" 11019 . 11048) (STRUCT "struct" 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "<" 11019 . 11048) (TEMPLATE "template" 11019 . 11048) (punctuation ";" 10990 . 11010) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "<" 10990 . 11010) (symbol "lcast_src_length_integral" 10990 . 11010) (punctuation ":" 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "," 10990 . 11010) (punctuation "<" 10990 . 11010) (symbol "lcast_src_length" 10990 . 11010) (STRUCT "struct" 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "<" 10990 . 11010) (TEMPLATE "template" 10990 . 11010) (punctuation ";" 10950 . 10981) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "<" 10950 . 10981) (symbol "lcast_src_length_integral" 10950 . 10981) (punctuation ":" 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "," 10950 . 10981) (punctuation "<" 10950 . 10981) (symbol "lcast_src_length" 10950 . 10981) (STRUCT "struct" 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "<" 10950 . 10981) (TEMPLATE "template" 10950 . 10981) (punctuation ";" 10919 . 10941) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "<" 10919 . 10941) (symbol "lcast_src_length_integral" 10919 . 10941) (punctuation ":" 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "," 10919 . 10941) (punctuation "<" 10919 . 10941) (symbol "lcast_src_length" 10919 . 10941) (STRUCT "struct" 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "<" 10919 . 10941) (TEMPLATE "template" 10919 . 10941) (number 10334 . 10335) (punctuation 10266 . 10267) (punctuation 10202 . 10203) (punctuation 10143 . 10144) (number 8751 . 8752) (punctuation 8749 . 8750) (number 8433 . 8434) (punctuation 8431 . 8432) (number 8238 . 8239) (punctuation 8236 . 8237) (number 8006 . 8007) (punctuation 8004 . 8005) (number 7817 . 7818) (punctuation 7815 . 7816) (number 7608 . 7609) (punctuation 7606 . 7607) (number 7379 . 7380) (punctuation 7377 . 7378) (number 7188 . 7189) (punctuation 7186 . 7187) (number 6626 . 6627) (punctuation 6624 . 6625) (number 6438 . 6439) (punctuation 6436 . 6437) (number 6146 . 6147) (punctuation 6144 . 6145) (number 17677 . 17678) (punctuation 17675 . 17676) (number 17661 . 17662) (punctuation 17659 . 17660) (punctuation 17546 . 17547) (punctuation 17545 . 17546) (punctuation 17544 . 17545) (symbol 17540 . 17544) (punctuation 17539 . 17540) (punctuation 17538 . 17539) (punctuation 17537 . 17538) (symbol 17531 . 17537) (punctuation 17530 . 17531) (symbol 17519 . 17530) (TYPENAME 17510 . 17518) (punctuation 17492 . 17493) (symbol 17488 . 17492) (punctuation 17487 . 17488) (punctuation 17486 . 17487) (punctuation 17485 . 17486) (symbol 17479 . 17485) (punctuation 17478 . 17479) (symbol 17467 . 17478) (TYPENAME 17458 . 17466) (punctuation 17440 . 17441) (symbol 17429 . 17440) (TYPENAME 17420 . 17428) (TYPEDEF 17412 . 17419) (semantic-list 14853 . 14860) (symbol 14846 . 14853) (symbol 14839 . 14845) (punctuation 14837 . 14838) (punctuation 14567 . 14568) (punctuation 14566 . 14567) (punctuation 14565 . 14566) (symbol 14564 . 14565) (punctuation 14563 . 14564) (symbol 14550 . 14563) (symbol 14527 . 14549) (INLINE 14512 . 14518) (punctuation 14502 . 14503) (symbol 14501 . 14502) (CLASS 14495 . 14500) (punctuation 14494 . 14495) (TEMPLATE 14486 . 14494) (semantic-list 14393 . 14411) (symbol 14386 . 14393) (number 14405 . 14409) (punctuation 14403 . 14404) (symbol 14379 . 14385) (number 14405 . 14409) (punctuation 14403 . 14404) (punctuation 14377 . 14378) (semantic-list 14289 . 14297) (symbol 14282 . 14289) (symbol 14275 . 14281) (punctuation 14273 . 14274) (string 14051 . 14055) (punctuation 14049 . 14050) (string 13993 . 13997) (punctuation 13991 . 13992) (string 13819 . 13822) (punctuation 13817 . 13818) (string 13765 . 13768) (punctuation 13763 . 13764) (number 12354 . 12355) (punctuation 12352 . 12353) (punctuation 12345 . 12346) (punctuation 12344 . 12345) (punctuation 12319 . 12320) (number 12317 . 12318) (punctuation 12295 . 12296) (number 12215 . 12222) (punctuation 12214 . 12215) (punctuation 12212 . 12213) (punctuation 12211 . 12212) (punctuation 12145 . 12146) (punctuation 12144 . 12145) (number 12136 . 12143) (punctuation 12133 . 12134) (punctuation 12132 . 12133) (punctuation ";" 11087 . 11117) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "<" 11087 . 11117) (symbol "lcast_src_length_integral" 11087 . 11117) (punctuation ":" 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "," 11087 . 11117) (punctuation "<" 11087 . 11117) (symbol "lcast_src_length" 11087 . 11117) (STRUCT "struct" 11087 . 11117) (punctuation ">" 11087 . 11117) (punctuation "<" 11087 . 11117) (TEMPLATE "template" 11087 . 11117) (punctuation ";" 11057 . 11078) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "<" 11057 . 11078) (symbol "lcast_src_length_integral" 11057 . 11078) (punctuation ":" 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "," 11057 . 11078) (punctuation "<" 11057 . 11078) (symbol "lcast_src_length" 11057 . 11078) (STRUCT "struct" 11057 . 11078) (punctuation ">" 11057 . 11078) (punctuation "<" 11057 . 11078) (TEMPLATE "template" 11057 . 11078) (punctuation ";" 11019 . 11048) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "<" 11019 . 11048) (symbol "lcast_src_length_integral" 11019 . 11048) (punctuation ":" 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "," 11019 . 11048) (punctuation "<" 11019 . 11048) (symbol "lcast_src_length" 11019 . 11048) (STRUCT "struct" 11019 . 11048) (punctuation ">" 11019 . 11048) (punctuation "<" 11019 . 11048) (TEMPLATE "template" 11019 . 11048) (punctuation ";" 10990 . 11010) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "<" 10990 . 11010) (symbol "lcast_src_length_integral" 10990 . 11010) (punctuation ":" 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "," 10990 . 11010) (punctuation "<" 10990 . 11010) (symbol "lcast_src_length" 10990 . 11010) (STRUCT "struct" 10990 . 11010) (punctuation ">" 10990 . 11010) (punctuation "<" 10990 . 11010) (TEMPLATE "template" 10990 . 11010) (punctuation ";" 10950 . 10981) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "<" 10950 . 10981) (symbol "lcast_src_length_integral" 10950 . 10981) (punctuation ":" 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "," 10950 . 10981) (punctuation "<" 10950 . 10981) (symbol "lcast_src_length" 10950 . 10981) (STRUCT "struct" 10950 . 10981) (punctuation ">" 10950 . 10981) (punctuation "<" 10950 . 10981) (TEMPLATE "template" 10950 . 10981) (punctuation ";" 10919 . 10941) (semantic-list #("{ static void check_coverage() {} }" 0 1 (macros (("T") ("CharT")))) 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "<" 10919 . 10941) (symbol "lcast_src_length_integral" 10919 . 10941) (punctuation ":" 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "," 10919 . 10941) (punctuation "<" 10919 . 10941) (symbol "lcast_src_length" 10919 . 10941) (STRUCT "struct" 10919 . 10941) (punctuation ">" 10919 . 10941) (punctuation "<" 10919 . 10941) (TEMPLATE "template" 10919 . 10941) (number 10334 . 10335) (punctuation 10266 . 10267) (punctuation 10202 . 10203) (punctuation 10143 . 10144) (number 8751 . 8752) (punctuation 8749 . 8750) (number 8433 . 8434) (punctuation 8431 . 8432) (number 8238 . 8239) (punctuation 8236 . 8237) (number 8006 . 8007) (punctuation 8004 . 8005) (number 7817 . 7818) (punctuation 7815 . 7816) (number 7608 . 7609) (punctuation 7606 . 7607) (number 7379 . 7380) (punctuation 7377 . 7378) (number 7188 . 7189) (punctuation 7186 . 7187) (number 6626 . 6627) (punctuation 6624 . 6625) (number 6438 . 6439) (punctuation 6436 . 6437) (number 6146 . 6147) (punctuation 6144 . 6145))
+    :lexical-table 
+        '(("BOOST_LEXICAL_CAST_INCLUDED")
+          )
+
+    )
+   (semanticdb-table "exception"
+    :tags nil
+    :file "exception"
+    :pointmax 286
+    :fsize 4096
+    :lastmodtime '(19085 43127)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "config.hpp"
+    :tags 
+        '( ("BOOST_CONFIG_HPP" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("BOOST_USER_CONFIG" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("boost/config/select_compiler_config.hpp" include (:line 31) nil nil)
+            ("boost/config/select_stdlib_config.hpp" include (:line 40) nil nil)
+            ("boost/config/select_platform_config.hpp" include (:line 49) nil nil)
+            ("boost/config/suffix.hpp" include (:line 57) nil nil))          
+    :file "config.hpp"
+    :pointmax 286
+    :fsize 2050
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "limits.hpp"
+    :tags 
+        '( ("BOOST_LIMITS" variable
+               (:constant-flag t
+                :line 12)
+                nil nil)
+            ("boost/config.hpp" include (:line 14) nil nil)
+            ("boost/detail/limits.hpp" include (:line 17) nil nil)
+            ("limits" include (:line 19) nil nil)
+            ("BOOST_LLT" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_ULLT" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("BOOST_LLT" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("BOOST_ULLT" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("climits" include (:line 33) nil nil)
+            ("std" type
+               (:type "namespace"
+                :line 35
+                :members 
+                  ( ("numeric_limits" type
+                       (:type "class"
+                        :line 38
+                        :members 
+                          ( ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 42
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 44)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 45)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 47)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 48)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 50)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 51)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 53)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 54)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 56
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil
+                                    nil
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 57
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil
+                                    nil
+                                    nil
+                                    nil
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 58
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 59
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 60
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 61
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("epsilon" function
+                               (:protection "public"
+                                :line 62)
+                                nil nil)
+                            ("round_error" function
+                               (:protection "public"
+                                :line 63)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 65
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 66
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 67
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 68
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 70
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 71
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 72
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 73
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 74
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("infinity" function
+                               (:protection "public"
+                                :line 75)
+                                nil nil)
+                            ("quiet_NaN" function
+                               (:protection "public"
+                                :line 76)
+                                nil nil)
+                            ("signaling_NaN" function
+                               (:protection "public"
+                                :line 77)
+                                nil nil)
+                            ("denorm_min" function
+                               (:protection "public"
+                                :line 78)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 80
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 81
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 82
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 84
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 85
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 86
+                                :arguments (nil nil))
+                                nil nil))                          )
+                        nil nil)
+                    ("numeric_limits" type
+                       (:type "class"
+                        :line 91
+                        :members 
+                          ( ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 95
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 97)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 98)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 100)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 101)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 103)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 104)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 106)
+                                nil nil)
+                            ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                               (:protection "public"
+                                :line 107)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 109
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil
+                                    nil
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 110
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil
+                                    nil
+                                    nil
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 111
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 112
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 113
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 114
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("epsilon" function
+                               (:protection "public"
+                                :line 115)
+                                nil nil)
+                            ("round_error" function
+                               (:protection "public"
+                                :line 116)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 118
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 119
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 120
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 121
+                                :arguments 
+                                  ( ("" variable (:type "int") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 123
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 124
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 125
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 126
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 127
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("infinity" function
+                               (:protection "public"
+                                :line 128)
+                                nil nil)
+                            ("quiet_NaN" function
+                               (:protection "public"
+                                :line 129)
+                                nil nil)
+                            ("signaling_NaN" function
+                               (:protection "public"
+                                :line 130)
+                                nil nil)
+                            ("denorm_min" function
+                               (:protection "public"
+                                :line 131)
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 133
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 134
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 135
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 137
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 138
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil)
+                            ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 139
+                                :arguments (nil nil))
+                                nil nil))                          )
+                        nil nil))                  )
+                nil nil))          
+    :file "limits.hpp"
+    :pointmax 286
+    :fsize 6119
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "throw_exception.hpp"
+    :tags 
+        '( ("BOOST_THROW_EXCEPTION_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("boost/config.hpp" include (:line 23) nil nil)
+            ("boost/detail/workaround.hpp" include (:line 24) nil nil)
+            ("exception" include (:line 25) nil nil)
+            ("BOOST_EXCEPTION_DISABLE" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("BOOST_EXCEPTION_DISABLE" variable
+               (:constant-flag t
+                :line 32)
+                nil nil)
+            ("boost/exception/exception.hpp" include (:line 36) nil nil)
+            ("boost/current_function.hpp" include (:line 37) nil nil)
+            ("BOOST_THROW_EXCEPTION" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_THROW_EXCEPTION" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("throw_exception" function
+                       (:arguments (nil)
+                        :line 51
+                        :prototype-flag t)
+                        nil nil))                  
+                :line 46
+                :type "namespace")
+                nil nil))          
+    :file "throw_exception.hpp"
+    :pointmax 286
+    :fsize 2055
+    :lastmodtime '(19085 43059)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "call_traits.hpp"
+    :tags 
+        '( ("BOOST_CALL_TRAITS_HPP" variable
+               (:constant-flag t
+                :line 12)
+                nil nil)
+            ("boost/config.hpp" include (:line 15) nil nil)
+            ("boost/detail/ob_call_traits.hpp" include (:line 19) nil nil)
+            ("boost/detail/call_traits.hpp" include (:line 21) nil nil))          
+    :file "call_traits.hpp"
+    :pointmax 286
+    :fsize 773
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "static_assert.hpp"
+    :tags 
+        '( ("BOOST_STATIC_ASSERT_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("boost/config.hpp" include (:line 17) nil nil)
+            ("boost/detail/workaround.hpp" include (:line 18) nil nil)
+            ("BOOST_BUGGY_INTEGRAL_CONSTANT_EXPRESSIONS" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_SA_GCC_WORKAROUND" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("BOOST_STATIC_ASSERT_BOOL_CAST" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("BOOST_STATIC_ASSERT_BOOL_CAST" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("STATIC_ASSERTION_FAILURE" type
+                       (:type "struct"
+                        :line 50)
+                        nil nil))                  
+                :line 45
+                :type "namespace")
+                nil nil)
+            ("value" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("static_assert_test" type
+               (:parent "boost"
+                :line 53
+                :type "struct")
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 84)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 101)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 110)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("BOOST_STATIC_ASSERT" variable
+               (:constant-flag t
+                :line 124)
+                nil nil))          
+    :file "static_assert.hpp"
+    :pointmax 286
+    :fsize 5061
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "current_function.hpp"
+    :tags 
+        '( ("BOOST_CURRENT_FUNCTION_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("current_function_helper" function (:line 28) nil nil))                          
+                        :line 25
+                        :type "namespace")
+                        nil nil))                  
+                :line 22
+                :type "namespace")
+                nil nil)
+            ("BOOST_CURRENT_FUNCTION" variable
+               (:constant-flag t
+                :line 33)
+                nil nil))          
+    :file "current_function.hpp"
+    :pointmax 286
+    :fsize 1490
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "integer_traits.hpp"
+    :tags 
+        '( ("BOOST_INTEGER_TRAITS_HPP" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("boost/config.hpp" include (:line 19) nil nil)
+            ("boost/limits.hpp" include (:line 20) nil nil)
+            ("limits.h" include (:line 23) nil nil)
+            ("wchar.h" include (:line 27) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("integer_traits" type
+                       (:members 
+                          ( ("BOOST_STATIC_CONSTANT" function
+                               (:protection "public"
+                                :prototype-flag t
+                                :line 36
+                                :arguments 
+                                  ( ("" variable (:type "bool") nil nil)
+                                    nil)                                  )
+                                nil nil))                          
+                        :line 33
+                        :type "class")
+                        nil nil)
+                    ("detail" type
+                       (:members 
+                          ( ("integer_traits_base" type
+                               (:type "class"
+                                :line 41
+                                :members 
+                                  ( ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 44
+                                        :arguments 
+                                          ( ("" variable (:type "bool") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 45
+                                        :arguments 
+                                          ( ("" variable (:type "T") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 46
+                                        :arguments 
+                                          ( ("" variable (:type "T") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("is_integral" variable (:line 52) nil nil)
+                                    ("const_min" variable (:line 55) nil nil)
+                                    ("const_max" variable (:line 58) nil nil))                                  )
+                                nil nil))                          
+                        :line 39
+                        :type "namespace")
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 64)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 70)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 76)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 82)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 89)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 123)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 129)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 135)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 141)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 147)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 153)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 162)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 168)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 176)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 178)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 186)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 192)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 200)
+                        nil nil)
+                    ("integer_traits" type
+                       (:type "class"
+                        :line 206)
+                        nil nil))                  
+                :line 31
+                :type "namespace")
+                nil nil))          
+    :file "integer_traits.hpp"
+    :pointmax 286
+    :fsize 7928
+    :lastmodtime '(19085 43059)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "assert.hpp"
+    :tags 
+        '( ("BOOST_ASSERT" variable
+               (:constant-flag t
+                :line 16)
+                nil nil)
+            ("BOOST_ASSERT" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("boost/current_function.hpp" include (:line 24) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("assertion_failed" function
+                       (:arguments (nil nil nil nil)
+                        :line 29
+                        :prototype-flag t)
+                        nil nil))                  
+                :line 26
+                :type "namespace")
+                nil nil)
+            ("BOOST_ASSERT" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("assert.h" include (:line 36) nil nil)
+            ("BOOST_ASSERT" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("BOOST_VERIFY" variable
+               (:constant-flag t
+                :line 40)
+                nil nil)
+            ("BOOST_VERIFY" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("BOOST_VERIFY" variable
+               (:constant-flag t
+                :line 48)
+                nil nil))          
+    :file "assert.hpp"
+    :pointmax 286
+    :fsize 1274
+    :lastmodtime '(19085 43059)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "type.hpp"
+    :tags 
+        '( ("BOOST_TYPE_DWA20010120_HPP" variable
+               (:constant-flag t
+                :line 7)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("type" type
+                       (:type "struct"
+                        :line 14)
+                        nil nil))                  
+                :line 9
+                :type "namespace")
+                nil nil))          
+    :file "type.hpp"
+    :pointmax 286
+    :fsize 481
+    :lastmodtime '(19085 43058)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "non_type.hpp"
+    :tags 
+        '( ("BOOST_NON_TYPE_HPP_GP_20030417" variable
+               (:constant-flag t
+                :line 12)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("non_type" type
+                       (:type "struct"
+                        :line 21)
+                        nil nil))                  
+                :line 15
+                :type "namespace")
+                nil nil))          
+    :file "non_type.hpp"
+    :pointmax 286
+    :fsize 619
+    :lastmodtime '(19085 43059)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

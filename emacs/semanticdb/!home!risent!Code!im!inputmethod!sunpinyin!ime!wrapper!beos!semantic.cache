@@ -1,0 +1,18 @@
+;; Object beos/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "beos/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags nil
+    :file "Makefile.am"
+    :pointmax 5826
+    :fsize 5825
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!wrapper!beos!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

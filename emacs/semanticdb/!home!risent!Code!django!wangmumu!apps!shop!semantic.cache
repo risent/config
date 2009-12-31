@@ -1,0 +1,186 @@
+;; Object shop/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "shop/"
+  :tables (list 
+   (semanticdb-table "views.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.http" include nil nil [51 87])
+            ("django.template.loader" include nil nil [89 136])
+            ("django.template" include nil nil [137 172])
+            ("models" include nil nil [173 226])
+            ("django" include nil nil [227 251])
+            ("django.http" include nil nil [252 296])
+            ("django.shortcuts" include nil nil [297 344])
+            ("django.contrib.auth.forms" include nil nil [345 399])
+            ("index" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [411 418]))              ) nil [401 588])
+            ("product_list" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [606 613]))              ) nil [589 760])
+            ("base_test" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [775 782]))              ) nil [761 965])
+            ("register" function (:arguments 
+              ( ("request" variable nil (reparse-symbol function_parameters) [979 986]))              ) nil [966 1429]))          
+    :file "views.py"
+    :pointmax 1430
+    :fsize 1429
+    :lastmodtime '(19167 58917)
+    :unmatched-syntax '((INDENT_BLOCK 1052 . 1429) (NEWLINE 1051 . 1052) (COLON 1050 . 1051) (IF 1024 . 1026) (ASSIGN 1042 . 1043))
+    )
+   (semanticdb-table "models.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("django.db" include nil nil [1 29])
+            ("django.contrib.auth.models" include nil nil [30 73])
+            ("Profile" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("user" variable nil (reparse-symbol indented_block_body) [135 178])
+                    ("city" variable nil (reparse-symbol indented_block_body) [184 222])
+                    ("address" variable nil (reparse-symbol indented_block_body) [227 269])
+                    ("postcode" variable nil (reparse-symbol indented_block_body) [274 315])
+                    ("card_type" variable nil (reparse-symbol indented_block_body) [320 363])
+                    ("card_no" variable nil (reparse-symbol indented_block_body) [368 409])
+                    ("level" variable nil (reparse-symbol indented_block_body) [414 453])
+                    ("amount" variable nil (reparse-symbol indented_block_body) [458 486])
+                    ("phone" variable nil (reparse-symbol indented_block_body) [491 518])
+                    ("state" variable nil (reparse-symbol indented_block_body) [523 552])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [578 582]))                      ) (reparse-symbol indented_block_body) [562 610]))                  
+                :type "class")
+                nil [102 610])
+            ("SuperType" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [652 691])
+                    ("name" variable nil (reparse-symbol indented_block_body) [696 734])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [756 760]))                      ) (reparse-symbol indented_block_body) [740 788])
+                    ("get_name" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [806 810]))                      ) (reparse-symbol indented_block_body) [793 838])
+                    ("get_id" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [854 858]))                      ) (reparse-symbol indented_block_body) [843 884]))                  
+                :type "class")
+                nil [617 884])
+            ("MidType" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [918 957])
+                    ("name" variable nil (reparse-symbol indented_block_body) [962 1000])
+                    ("super_type" variable nil (reparse-symbol indented_block_body) [1005 1048])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1070 1074]))                      ) (reparse-symbol indented_block_body) [1054 1102]))                  
+                :type "class")
+                nil [885 1102])
+            ("SubType" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1136 1175])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1180 1218])
+                    ("super_type" variable nil (reparse-symbol indented_block_body) [1223 1264])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1286 1290]))                      ) (reparse-symbol indented_block_body) [1270 1318]))                  
+                :type "class")
+                nil [1103 1318])
+            ("Product" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( (""""Define the product"""" code nil (reparse-symbol indented_block_body) [1352 1376])
+                    ("UPLOAD_ROOT" variable nil (reparse-symbol indented_block_body) [1381 1410])
+                    ("id" variable nil (reparse-symbol indented_block_body) [1415 1454])
+                    ("type" variable nil (reparse-symbol indented_block_body) [1459 1499])
+                    ("name" variable nil (reparse-symbol indented_block_body) [1504 1542])
+                    ("description" variable nil (reparse-symbol indented_block_body) [1547 1579])
+                    ("in_price" variable nil (reparse-symbol indented_block_body) [1584 1614])
+                    ("unit_price" variable nil (reparse-symbol indented_block_body) [1619 1651])
+                    ("current_price" variable nil (reparse-symbol indented_block_body) [1656 1691])
+                    ("image" variable nil (reparse-symbol indented_block_body) [1696 1744])
+                    ("in_date" variable nil (reparse-symbol indented_block_body) [1749 1794])
+                    ("is_discount" variable nil (reparse-symbol indented_block_body) [1799 1833])
+                    ("is_new" variable nil (reparse-symbol indented_block_body) [1838 1868])
+                    ("is_hot" variable nil (reparse-symbol indented_block_body) [1873 1903])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1925 1929]))                      ) (reparse-symbol indented_block_body) [1909 1957]))                  
+                :type "class")
+                nil [1319 1957])
+            ("Order" type
+               (:superclasses ("models.Model")
+                :members 
+                  ( ("id" variable nil (reparse-symbol indented_block_body) [1990 2029])
+                    ("number" variable nil (reparse-symbol indented_block_body) [2034 2069])
+                    ("name" variable nil (reparse-symbol indented_block_body) [2074 2112])
+                    ("username" variable nil (reparse-symbol indented_block_body) [2117 2159])
+                    ("postcode" variable nil (reparse-symbol indented_block_body) [2164 2205])
+                    ("telephone" variable nil (reparse-symbol indented_block_body) [2210 2253])
+                    ("mobilephone" variable nil (reparse-symbol indented_block_body) [2258 2303])
+                    ("address" variable nil (reparse-symbol indented_block_body) [2308 2349])
+                    ("deliver_mode" variable nil (reparse-symbol indented_block_body) [2354 2400])
+                    ("discountter" variable nil (reparse-symbol indented_block_body) [2405 2438])
+                    ("order_date" variable nil (reparse-symbol indented_block_body) [2443 2491])
+                    ("exec_state" variable nil (reparse-symbol indented_block_body) [2496 2530])
+                    ("remark" variable nil (reparse-symbol indented_block_body) [2535 2576])
+                    ("__unicode__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2598 2602]))                      ) (reparse-symbol indented_block_body) [2582 2630]))                  
+                :type "class")
+                nil [1959 2630]))          
+    :file "models.py"
+    :pointmax 2631
+    :fsize 2630
+    :lastmodtime '(19165 2338)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "__init__.py"
+    :major-mode 'python-mode
+    :tags nil
+    :file "__init__.py"
+    :pointmax 1
+    :fsize 0
+    :lastmodtime '(19161 35745)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tests.py"
+    :major-mode 'python-mode
+    :tags 
+        '( (""""
+This file demonstrates two different styles of tests (one doctest and one
+unittest). These will both pass when you run "manage.py test".
+
+Replace these with more appropriate tests for your application.
+"""" code nil nil [1 210])
+            ("django.test" include nil nil [212 244])
+            ("SimpleTest" type
+               (:superclasses ("TestCase")
+                :members 
+                  ( ("test_basic_addition" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [302 306]))                      ) (reparse-symbol indented_block_body) [278 414]))                  
+                :type "class")
+                nil [246 414])
+            ("__test__" variable nil nil [415 513]))          
+    :file "tests.py"
+    :pointmax 515
+    :fsize 514
+    :lastmodtime '(19161 35745)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "admin.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("wangmumu.apps.shop.models" include nil nil [1 91])
+            ("django.contrib" include nil nil [92 124])
+            ("admin" code nil nil [126 154])
+            ("admin" code nil nil [155 185])
+            ("admin" code nil nil [186 214])
+            ("admin" code nil nil [215 243])
+            ("admin" code nil nil [244 272])
+            ("admin" code nil nil [273 299]))          
+    :file "admin.py"
+    :pointmax 300
+    :fsize 299
+    :lastmodtime '(19165 2121)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!django!wangmumu!apps!shop!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

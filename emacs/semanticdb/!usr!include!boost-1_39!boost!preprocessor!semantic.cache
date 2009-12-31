@@ -1,0 +1,137 @@
+;; Object preprocessor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "preprocessor/"
+  :tables (list 
+   (semanticdb-table "inc.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_INC_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:line 15) nil nil))          
+    :file "inc.hpp"
+    :pointmax 286
+    :fsize 736
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cat.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_CAT_HPP" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 17) nil nil)
+            ("BOOST_PP_CAT" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("BOOST_PP_CAT" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_PP_CAT_OO" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_CAT_I" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("BOOST_PP_CAT_I" variable
+               (:constant-flag t
+                :line 31)
+                nil nil)
+            ("BOOST_PP_CAT_II" variable
+               (:constant-flag t
+                :line 32)
+                nil nil))          
+    :file "cat.hpp"
+    :pointmax 286
+    :fsize 951
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "iterate.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ITERATE_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/iteration/iterate.hpp" include (:line 15) nil nil))          
+    :file "iterate.hpp"
+    :pointmax 286
+    :fsize 747
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "enum_params.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ENUM_PARAMS_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/repetition/enum_params.hpp" include (:line 15) nil nil))          
+    :file "enum_params.hpp"
+    :pointmax 286
+    :fsize 760
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "comma_if.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_COMMA_IF_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/punctuation/comma_if.hpp" include (:line 15) nil nil))          
+    :file "comma_if.hpp"
+    :pointmax 286
+    :fsize 752
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "repeat.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_REPEAT_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/repetition/repeat.hpp" include (:line 15) nil nil))          
+    :file "repeat.hpp"
+    :pointmax 286
+    :fsize 745
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "identity.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_IDENTITY_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/facilities/identity.hpp" include (:line 15) nil nil))          
+    :file "identity.hpp"
+    :pointmax 286
+    :fsize 751
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "empty.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_EMPTY_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/facilities/empty.hpp" include (:line 15) nil nil))          
+    :file "empty.hpp"
+    :pointmax 286
+    :fsize 742
+    :lastmodtime '(19085 43060)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

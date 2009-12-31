@@ -1,0 +1,3058 @@
+;; Object ext2/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ext2/"
+  :tables (list 
+   (semanticdb-table "ext2.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/fs.h" include (:system-flag t) nil [1 22])
+            ("linux/ext2_fs.h" include (:system-flag t) nil [23 49])
+            ("ext2_mount_options" type
+               (:members 
+                  ( ("s_mount_opt" variable (:type "unsigned long") (reparse-symbol classsubparts) [109 135])
+                    ("s_resuid" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [137 152])
+                    ("s_resgid" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [154 169]))                  
+                :type "struct")
+                nil [80 172])
+            ("ext2_inode_info" type
+               (:members 
+                  ( ("i_data" variable
+                       (:dereference 1
+                        :type ("__le32" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [259 277])
+                    ("i_flags" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [279 293])
+                    ("i_faddr" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [295 309])
+                    ("i_frag_no" variable (:type ("__u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [311 326])
+                    ("i_frag_size" variable (:type ("__u8" type (:type "class") nil nil)) (reparse-symbol classsubparts) [328 345])
+                    ("i_state" variable (:type ("__u16" type (:type "class") nil nil)) (reparse-symbol classsubparts) [347 361])
+                    ("i_file_acl" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [363 380])
+                    ("i_dir_acl" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [382 398])
+                    ("i_dtime" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [400 414])
+                    ("i_block_group" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [735 755])
+                    ("i_block_alloc_info" variable
+                       (:pointer 1
+                        :type ("ext2_block_alloc_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [788 837])
+                    ("i_dir_start_lookup" variable (:type ("__u32" type (:type "class") nil nil)) (reparse-symbol classsubparts) [840 865])
+                    ("i_meta_lock" variable (:type ("rwlock_t" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1313 1334])
+                    ("truncate_mutex" variable (:type ("mutex" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1563 1591])
+                    ("vfs_inode" variable (:type ("inode" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1593 1616])
+                    ("i_orphan" variable (:type ("list_head" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [1618 1644]))                  
+                :type "struct")
+                nil [233 1678])
+            ("EXT2_STATE_NEW" variable (:constant-flag t) nil [1724 1738])
+            ("EXT2_I" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2011 2031]))                  
+                :type ("ext2_inode_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [1966 2099])
+            ("ext2_bg_has_super" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2145 2168])
+                    ("group" variable (:type "int") (reparse-symbol arg-sub-list) [2169 2179]))                  
+                :type "int")
+                nil [2116 2180])
+            ("ext2_bg_num_gdb" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2218 2241])
+                    ("group" variable (:type "int") (reparse-symbol arg-sub-list) [2242 2252]))                  
+                :type "unsigned long")
+                nil [2181 2253])
+            ("ext2_new_block" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2289 2304])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2305 2319])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2320 2326]))                  
+                :type ("ext2_fsblk_t" type (:type "class") nil nil))
+                nil [2254 2327])
+            ("ext2_new_blocks" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2364 2379])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2380 2394])
+                    ("" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [2399 2415])
+                    ("" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2416 2422]))                  
+                :type ("ext2_fsblk_t" type (:type "class") nil nil))
+                nil [2328 2423])
+            ("ext2_free_blocks" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2454 2469])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2470 2484])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [2494 2508]))                  
+                :type "void")
+                nil [2424 2509])
+            ("ext2_count_free_blocks" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2555 2576]))                  
+                :type "unsigned long")
+                nil [2510 2577])
+            ("ext2_count_dirs" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2616 2637]))                  
+                :type "unsigned long")
+                nil [2578 2638])
+            ("ext2_check_blocks_bitmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2677 2698]))                  
+                :type "void")
+                nil [2639 2699])
+            ("ext2_get_group_desc" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2752 2776])
+                    ("block_group" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2787 2812])
+                    ("bh" variable
+                       (:pointer 2
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2823 2848]))                  
+                :type ("ext2_group_desc" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2700 2849])
+            ("ext2_discard_reservation" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2888 2903]))                  
+                :type "void")
+                nil [2850 2904])
+            ("ext2_should_retry_alloc" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2940 2963])
+                    ("retries" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2964 2977]))                  
+                :type "int")
+                nil [2905 2978])
+            ("ext2_init_block_alloc_info" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3018 3033]))                  
+                :type "void")
+                nil [2979 3034])
+            ("ext2_rsv_window_add" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3067 3090])
+                    ("rsv" variable
+                       (:pointer 1
+                        :type ("ext2_reserve_window_node" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3091 3128]))                  
+                :type "void")
+                nil [3035 3129])
+            ("ext2_add_link" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3169 3185])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3186 3201]))                  
+                :type "int")
+                nil [3143 3202])
+            ("ext2_inode_by_name" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3235 3250])
+                    ("" variable
+                       (:pointer 1
+                        :type ("qstr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3251 3265]))                  
+                :type ("ino_t" type (:type "class") nil nil))
+                nil [3203 3266])
+            ("ext2_make_empty" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3294 3309])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3310 3325]))                  
+                :type "int")
+                nil [3267 3326])
+            ("ext2_find_entry" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3377 3392])
+                    ("" variable
+                       (:pointer 1
+                        :type ("qstr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3392 3406])
+                    ("" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3407 3422]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3327 3423])
+            ("ext2_delete_entry" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3454 3480])
+                    ("" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3481 3495]))                  
+                :type "int")
+                nil [3424 3496])
+            ("ext2_empty_dir" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3524 3539]))                  
+                :type "int")
+                nil [3497 3540])
+            ("ext2_dotdot" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3587 3602])
+                    ("" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3603 3618]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3541 3619])
+            ("ext2_set_link" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3646 3661])
+                    ("" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3662 3688])
+                    ("" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3689 3703])
+                    ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3704 3719]))                  
+                :type "void")
+                nil [3620 3720])
+            ("ext2_sync_file" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3763 3777])
+                    ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3778 3794])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3795 3799]))                  
+                :type "int")
+                nil [3736 3800])
+            ("ext2_new_inode" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3855 3870])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3871 3875]))                  
+                :type ("inode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [3817 3876])
+            ("ext2_free_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3906 3921]))                  
+                :type "void")
+                nil [3877 3922])
+            ("ext2_count_free_inodes" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3968 3989]))                  
+                :type "unsigned long")
+                nil [3923 3990])
+            ("ext2_check_inodes_bitmap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4029 4050]))                  
+                :type "void")
+                nil [3991 4051])
+            ("ext2_count_free" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4090 4111])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4112 4121]))                  
+                :type "unsigned long")
+                nil [4052 4122])
+            ("ext2_iget" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4170 4191])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4192 4206]))                  
+                :type ("inode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4138 4207])
+            ("ext2_write_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4237 4252])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4253 4257]))                  
+                :type "int")
+                nil [4208 4258])
+            ("ext2_delete_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4290 4305]))                  
+                :type "void")
+                nil [4259 4306])
+            ("ext2_sync_inode" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4335 4350]))                  
+                :type "int")
+                nil [4307 4351])
+            ("ext2_get_block" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4378 4393])
+                    ("" variable (:type ("sector_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4394 4403])
+                    ("" variable
+                       (:pointer 1
+                        :type ("buffer_head" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4404 4425])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4426 4430]))                  
+                :type "int")
+                nil [4352 4431])
+            ("ext2_truncate" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4459 4474]))                  
+                :type "void")
+                nil [4432 4475])
+            ("ext2_setattr" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4501 4517])
+                    ("" variable
+                       (:pointer 1
+                        :type ("iattr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4518 4533]))                  
+                :type "int")
+                nil [4476 4534])
+            ("ext2_set_inode_flags" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4568 4588]))                  
+                :type "void")
+                nil [4535 4589])
+            ("ext2_get_inode_flags" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("ext2_inode_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4623 4648]))                  
+                :type "void")
+                nil [4590 4649])
+            ("ext2_fiemap" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4673 4693])
+                    ("fieinfo" variable
+                       (:pointer 1
+                        :type ("fiemap_extent_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4694 4729])
+                    ("start" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4739 4749])
+                    ("len" variable (:type ("u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4750 4758]))                  
+                :type "int")
+                nil [4650 4759])
+            ("__ext2_write_begin" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("file" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4783 4801])
+                    ("mapping" variable
+                       (:pointer 1
+                        :type ("address_space" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4802 4832])
+                    ("pos" variable (:type ("loff_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4835 4846])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4847 4860])
+                    ("flags" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4861 4876])
+                    ("pagep" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4879 4899])
+                    ("fsdata" variable
+                       (:pointer 2
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [4900 4914]))                  
+                :type "int")
+                nil [4760 4915])
+            ("ext2_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4954 4968])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [4969 4982])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4983 4997]))                  
+                :type "long")
+                nil [4931 4998])
+            ("ext2_compat_ioctl" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5029 5043])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5044 5057])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [5058 5072]))                  
+                :type "long")
+                nil [4999 5073])
+            ("ext2_get_parent" function
+               (:prototype-flag t
+                :pointer 1
+                :arguments 
+                  ( ("child" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5120 5141]))                  
+                :type ("dentry" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5089 5142])
+            ("ext2_error" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5182 5203])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5204 5217])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5218 5231])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5232 5236]))                  
+                :type "void")
+                nil [5158 5278])
+            ("ext2_warning" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5305 5326])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5327 5340])
+                    ("" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5341 5354])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [5355 5359]))                  
+                :type "void")
+                nil [5279 5401])
+            ("ext2_update_dynamic_rev" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5439 5462]))                  
+                :type "void")
+                nil [5402 5463])
+            ("ext2_write_super" function
+               (:prototype-flag t
+                :typemodifiers ("extern")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5494 5515]))                  
+                :type "void")
+                nil [5464 5516])
+            ("ext2_dir_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5569 5625])
+            ("ext2_file_inode_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5640 5704])
+            ("ext2_file_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5705 5762])
+            ("ext2_xip_file_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5763 5824])
+            ("ext2_aops" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("address_space_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5840 5895])
+            ("ext2_aops_xip" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("address_space_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5896 5955])
+            ("ext2_nobh_aops" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("address_space_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [5956 6016])
+            ("ext2_dir_inode_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6032 6095])
+            ("ext2_special_inode_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6096 6163])
+            ("ext2_fast_symlink_inode_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6181 6253])
+            ("ext2_symlink_inode_operations" variable
+               (:typemodifiers ("extern")
+                :constant-flag t
+                :type ("inode_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [6254 6321])
+            ("ext2_group_first_block_no" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("sb" variable
+                       (:pointer 1
+                        :type ("super_block" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6376 6399])
+                    ("group_no" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [6400 6423]))                  
+                :type ("ext2_fsblk_t" type (:type "class") nil nil))
+                nil [6323 6542]))          
+    :file "ext2.h"
+    :pointmax 6543
+    :fsize 6542
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("EXT2_STATE_NEW" . ((number "0x00000001" 1741 . 1751)))
+          )
+
+    )
+   (semanticdb-table "dir.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("ext2.h" include nil nil [547 564])
+            ("linux/buffer_head.h" include (:system-flag t) nil [565 595])
+            ("linux/pagemap.h" include (:system-flag t) nil [596 622])
+            ("linux/swap.h" include (:system-flag t) nil [623 646])
+            ("ext2_dirent" type
+               (:typedef ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "ext2_dir_entry_2"
+                :type "typedef")
+                nil [648 692])
+            ("ext2_rec_len_from_disk" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("dlen" variable (:type ("__le16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [740 752]))                  
+                :type "unsigned int")
+                nil [694 853])
+            ("ext2_rec_len_to_disk" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [897 910]))                  
+                :type ("__le16" type (:type "class") nil nil))
+                nil [855 1036])
+            ("ext2_chunk_size" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1195 1215]))                  
+                :type "unsigned int")
+                nil [1156 1253])
+            ("ext2_put_page" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1288 1306]))                  
+                :type "void")
+                nil [1255 1352])
+            ("dir_pages" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1392 1412]))                  
+                :type "unsigned long")
+                nil [1354 1477])
+            ("ext2_last_byte" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1608 1628])
+                    ("page_nr" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [1629 1651]))                  
+                :type "unsigned int")
+                nil [1577 1820])
+            ("ext2_commit_chunk" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [1851 1869])
+                    ("pos" variable (:type ("loff_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1870 1881])
+                    ("len" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [1882 1895]))                  
+                :type "int")
+                nil [1822 2315])
+            ("ext2_check_page" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2345 2363])
+                    ("quiet" variable (:type "int") (reparse-symbol arg-sub-list) [2364 2374]))                  
+                :type "void")
+                nil [2317 4486])
+            ("ext2_get_page" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4523 4541])
+                    ("n" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [4542 4558])
+                    ("quiet" variable (:type "int") (reparse-symbol arg-sub-list) [4566 4576]))                  
+                :type ("page" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [4488 4888])
+            ("ext2_match" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("len" variable (:type "int") (reparse-symbol arg-sub-list) [5069 5077])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5078 5102])
+                    ("de" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5108 5137]))                  
+                :type "int")
+                nil [5039 5246])
+            ("ext2_next_entry" function
+               (:pointer 1
+                :typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("ext2_dirent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5346 5361]))                  
+                :type ("ext2_dirent" type (:type "class") nil nil))
+                nil [5303 5441])
+            ("ext2_validate_entry" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("base" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [5487 5498])
+                    ("offset" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5499 5515])
+                    ("mask" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [5516 5530]))                  
+                :type "unsigned int")
+                nil [5443 5760])
+            ("ext2_filetype_table" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	[EXT2_FT_UNKNOWN]	= DT_UNKNOWN,
+	[EXT2_FT_REG_FILE]	= DT_REG,
+	[EXT2_FT_DIR]		= DT_DIR,
+	[EXT2_FT_CHRDEV]	= DT_CHR,
+	[EXT2_FT_BLKDEV]	= DT_BLK,
+	[EXT2_FT_FIFO]		= DT_FIFO,
+	[EXT2_FT_SOCK]		= DT_SOCK,
+	[EXT2_FT_SYMLINK]	= DT_LNK,
+}"
+                :type "unsigned char")
+                nil [5762 6052])
+            ("S_SHIFT" variable (:constant-flag t) nil [6062 6069])
+            ("ext2_type_by_mode" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+	[S_IFREG >> S_SHIFT]	= EXT2_FT_REG_FILE,
+	[S_IFDIR >> S_SHIFT]	= EXT2_FT_DIR,
+	[S_IFCHR >> S_SHIFT]	= EXT2_FT_CHRDEV,
+	[S_IFBLK >> S_SHIFT]	= EXT2_FT_BLKDEV,
+	[S_IFIFO >> S_SHIFT]	= EXT2_FT_FIFO,
+	[S_IFSOCK >> S_SHIFT]	= EXT2_FT_SOCK,
+	[S_IFLNK >> S_SHIFT]	= EXT2_FT_SYMLINK,
+}"
+                :type "unsigned char")
+                nil [6073 6414])
+            ("ext2_set_de_type" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("de" variable
+                       (:pointer 1
+                        :type ("ext2_dirent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6452 6468])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6469 6489]))                  
+                :type "void")
+                nil [6416 6690])
+            ("ext2_readdir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("filp" variable
+                       (:pointer 1
+                        :type ("file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6717 6736])
+                    ("dirent" variable
+                       (:pointer 1
+                        :type "void")
+                        (reparse-symbol arg-sub-list) [6737 6751])
+                    ("filldir" variable (:type ("filldir_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6752 6770]))                  
+                :type "int")
+                nil [6692 8683])
+            ("ext2_find_entry" function
+               (:pointer 1
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9004 9023])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("qstr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9027 9046])
+                    ("res_page" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9047 9071]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [8962 10465])
+            ("ext2_dotdot" function
+               (:pointer 1
+                :arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10506 10524])
+                    ("p" variable
+                       (:pointer 2
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10525 10541]))                  
+                :type ("ext2_dir_entry_2" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [10467 10728])
+            ("ext2_inode_by_name" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10755 10773])
+                    ("child" variable
+                       (:pointer 1
+                        :type ("qstr" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10774 10793]))                  
+                :type ("ino_t" type (:type "class") nil nil))
+                nil [10730 10990])
+            ("ext2_set_link" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11035 11053])
+                    ("de" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11054 11082])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11086 11104])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11105 11125]))                  
+                :type "void")
+                nil [11016 11654])
+            ("ext2_add_link" function
+               (:arguments 
+                  ( ("dentry" variable
+                       (:pointer 1
+                        :type ("dentry" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11703 11725])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [11726 11746]))                  
+                :type "int")
+                nil [11684 14172])
+            ("ext2_delete_entry" function
+               (:arguments 
+                  ( ("dir" variable
+                       (:pointer 1
+                        :type ("ext2_dir_entry_2" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14332 14362])
+                    ("page" variable
+                       (:pointer 1
+                        :type ("page" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14363 14383]))                  
+                :type "int")
+                nil [14309 15467])
+            ("ext2_make_empty" function
+               (:arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15536 15556])
+                    ("parent" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15557 15578]))                  
+                :type "int")
+                nil [15516 16625])
+            ("ext2_empty_dir" function
+               (:arguments 
+                  ( ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16724 16745]))                  
+                :type "int")
+                nil [16704 17781])
+            ("ext2_dir_operations" variable
+               (:constant-flag t
+                :default-value "{
+	.llseek		= generic_file_llseek,
+	.read		= generic_read_dir,
+	.readdir	= ext2_readdir,
+	.unlocked_ioctl = ext2_ioctl,
+#ifdef CONFIG_COMPAT
+	.compat_ioctl	= ext2_compat_ioctl,
+#endif
+	.fsync		= ext2_sync_file,
+}"
+                :type ("file_operations" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17783 18047]))          
+    :file "dir.c"
+    :pointmax 18048
+    :fsize 18047
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "fsync.c"
+    :tags 
+        '( ("ext2.h" include (:line 25) nil nil)
+            ("linux/buffer_head.h" include (:line 26) nil nil)
+            ("ext2_sync_file" function
+               (:arguments (nil nil nil)
+                :line 34)
+                nil nil))          
+    :file "fsync.c"
+    :pointmax 18048
+    :fsize 1365
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xattr_trusted.c"
+    :tags 
+        '( ("linux/module.h" include (:line 8) nil nil)
+            ("linux/string.h" include (:line 9) nil nil)
+            ("linux/capability.h" include (:line 10) nil nil)
+            ("linux/fs.h" include (:line 11) nil nil)
+            ("linux/ext2_fs.h" include (:line 12) nil nil)
+            ("xattr.h" include (:line 13) nil nil)
+            ("ext2_xattr_trusted_list" function
+               (:arguments (nil nil nil nil nil)
+                :line 16)
+                nil nil)
+            ("ext2_xattr_trusted_get" function
+               (:arguments (nil nil nil nil)
+                :line 34)
+                nil nil)
+            ("ext2_xattr_trusted_set" function
+               (:arguments (nil nil nil nil nil)
+                :line 44)
+                nil nil)
+            ("ext2_xattr_trusted_handler" variable (:line 53) nil nil))          
+    :file "xattr_trusted.c"
+    :pointmax 18048
+    :fsize 1485
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "inode.c"
+    :tags 
+        '( ("linux/smp_lock.h" include (:line 25) nil nil)
+            ("linux/time.h" include (:line 26) nil nil)
+            ("linux/highuid.h" include (:line 27) nil nil)
+            ("linux/pagemap.h" include (:line 28) nil nil)
+            ("linux/quotaops.h" include (:line 29) nil nil)
+            ("linux/module.h" include (:line 30) nil nil)
+            ("linux/writeback.h" include (:line 31) nil nil)
+            ("linux/buffer_head.h" include (:line 32) nil nil)
+            ("linux/mpage.h" include (:line 33) nil nil)
+            ("linux/fiemap.h" include (:line 34) nil nil)
+            ("linux/namei.h" include (:line 35) nil nil)
+            ("ext2.h" include (:line 36) nil nil)
+            ("acl.h" include (:line 37) nil nil)
+            ("xip.h" include (:line 38) nil nil)
+            ("ext2_update_inode" function
+               (:arguments (nil nil)
+                :line 44
+                :prototype-flag t)
+                nil nil)
+            ("ext2_inode_is_fast_symlink" function
+               (:arguments (nil)
+                :line 49)
+                nil nil)
+            ("ext2_delete_inode" function
+               (:arguments (nil)
+                :line 61)
+                nil nil)
+            ("p" variable
+               (:parent "__anon1"
+                :line 82
+                :protection "public")
+                nil nil)
+            ("key" variable
+               (:parent "__anon1"
+                :line 83
+                :protection "public")
+                nil nil)
+            ("bh" variable
+               (:parent "__anon1"
+                :line 84
+                :protection "public")
+                nil nil)
+            ("Indirect" type
+               (:type "typedef"
+                :line 85)
+                nil nil)
+            ("add_chain" function
+               (:arguments (nil nil nil)
+                :line 87)
+                nil nil)
+            ("verify_chain" function
+               (:arguments (nil nil)
+                :line 93)
+                nil nil)
+            ("ext2_block_to_path" function
+               (:arguments (nil nil nil nil)
+                :line 130)
+                nil nil)
+            ("ext2_get_branch" function
+               (:arguments (nil nil nil nil nil)
+                :line 199)
+                nil nil)
+            ("ext2_find_near" function
+               (:arguments (nil nil)
+                :line 259)
+                nil nil)
+            ("ext2_find_goal" function
+               (:arguments (nil nil nil)
+                :line 295)
+                nil nil)
+            ("ext2_blks_to_allocate" function
+               (:arguments (nil nil nil nil)
+                :line 327)
+                nil nil)
+            ("ext2_alloc_blocks" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 363)
+                nil nil)
+            ("ext2_alloc_branch" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 439)
+                nil nil)
+            ("ext2_splice_branch" function
+               (:arguments (nil nil nil nil nil)
+                :line 509)
+                nil nil)
+            ("ext2_get_blocks" function
+               (:arguments (nil nil nil nil nil)
+                :line 572)
+                nil nil)
+            ("ext2_get_block" function
+               (:arguments (nil nil nil nil)
+                :line 716)
+                nil nil)
+            ("ext2_fiemap" function
+               (:arguments (nil nil nil nil)
+                :line 729)
+                nil nil)
+            ("ext2_writepage" function
+               (:arguments (nil nil)
+                :line 736)
+                nil nil)
+            ("ext2_readpage" function
+               (:arguments (nil nil)
+                :line 741)
+                nil nil)
+            ("ext2_readpages" function
+               (:arguments (nil nil nil nil)
+                :line 747)
+                nil nil)
+            ("__ext2_write_begin" function
+               (:arguments (nil nil nil nil nil nil nil)
+                :line 753)
+                nil nil)
+            ("ext2_write_begin" function
+               (:arguments (nil nil nil nil nil nil nil)
+                :line 762)
+                nil nil)
+            ("ext2_nobh_write_begin" function
+               (:arguments (nil nil nil nil nil nil nil)
+                :line 771)
+                nil nil)
+            ("ext2_nobh_writepage" function
+               (:arguments (nil nil)
+                :line 784)
+                nil nil)
+            ("ext2_bmap" function
+               (:arguments (nil nil)
+                :line 790)
+                nil nil)
+            ("ext2_direct_IO" function
+               (:arguments 
+                  ( ("rw" variable (:type "int") nil nil)
+                    nil
+                    nil
+                    nil
+                    nil)                  
+                :line 796)
+                nil nil)
+            ("ext2_writepages" function
+               (:arguments (nil nil)
+                :line 807)
+                nil nil)
+            ("ext2_aops" variable (:line 812) nil nil)
+            ("ext2_aops_xip" variable (:line 826) nil nil)
+            ("ext2_nobh_aops" variable (:line 831) nil nil)
+            ("all_zeroes" function
+               (:arguments (nil nil)
+                :line 849)
+                nil nil)
+            ("ext2_find_shared" function
+               (:arguments (nil nil nil nil nil)
+                :line 891)
+                nil nil)
+            ("ext2_free_data" function
+               (:arguments (nil nil nil)
+                :line 950)
+                nil nil)
+            ("ext2_free_branches" function
+               (:arguments (nil nil nil nil)
+                :line 990)
+                nil nil)
+            ("ext2_truncate" function
+               (:arguments (nil)
+                :line 1025)
+                nil nil)
+            ("ext2_get_inode" function
+               (:arguments (nil nil nil)
+                :line 1134)
+                nil nil)
+            ("ext2_set_inode_flags" function
+               (:arguments (nil)
+                :line 1177)
+                nil nil)
+            ("ext2_get_inode_flags" function
+               (:arguments (nil)
+                :line 1195)
+                nil nil)
+            ("ext2_iget" function
+               (:arguments (nil nil)
+                :line 1213)
+                nil nil)
+            ("ext2_update_inode" function
+               (:arguments (nil nil)
+                :line 1340)
+                nil nil)
+            ("ext2_write_inode" function
+               (:arguments (nil nil)
+                :line 1445)
+                nil nil)
+            ("ext2_sync_inode" function
+               (:arguments (nil)
+                :line 1450)
+                nil nil)
+            ("ext2_setattr" function
+               (:arguments (nil nil)
+                :line 1459)
+                nil nil))          
+    :file "inode.c"
+    :pointmax 18048
+    :fsize 43804
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xattr.c"
+    :tags 
+        '( ("linux/buffer_head.h" include (:line 56) nil nil)
+            ("linux/module.h" include (:line 57) nil nil)
+            ("linux/init.h" include (:line 58) nil nil)
+            ("linux/slab.h" include (:line 59) nil nil)
+            ("linux/mbcache.h" include (:line 60) nil nil)
+            ("linux/quotaops.h" include (:line 61) nil nil)
+            ("linux/rwsem.h" include (:line 62) nil nil)
+            ("ext2.h" include (:line 63) nil nil)
+            ("xattr.h" include (:line 64) nil nil)
+            ("acl.h" include (:line 65) nil nil)
+            ("HDR" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("ENTRY" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("FIRST_ENTRY" variable
+               (:constant-flag t
+                :line 69)
+                nil nil)
+            ("IS_LAST_ENTRY" variable
+               (:constant-flag t
+                :line 70)
+                nil nil)
+            ("ea_idebug" variable
+               (:constant-flag t
+                :line 73)
+                nil nil)
+            ("ea_bdebug" variable
+               (:constant-flag t
+                :line 79)
+                nil nil)
+            ("ea_idebug" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("ea_bdebug" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("ext2_xattr_set2" function
+               (:arguments (nil nil nil)
+                :line 92
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_cache_insert" function
+               (:arguments (nil)
+                :line 95
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_cache_find" function
+               (:arguments (nil nil)
+                :line 96
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_rehash" function
+               (:arguments (nil nil)
+                :line 98
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_cache" variable (:line 101) nil nil)
+            ("ext2_xattr_handler_map" variable (:line 103) nil nil)
+            ("ext2_xattr_handlers" variable (:line 115) nil nil)
+            ("ext2_xattr_handler" function
+               (:arguments (nil)
+                :line 129)
+                nil nil)
+            ("ext2_xattr_get" function
+               (:arguments (nil nil nil nil nil)
+                :line 149)
+                nil nil)
+            ("ext2_xattr_list" function
+               (:arguments (nil nil nil)
+                :line 252)
+                nil nil)
+            ("ext2_listxattr" function
+               (:arguments (nil nil nil)
+                :line 331)
+                nil nil)
+            ("ext2_xattr_update_super_block" function
+               (:arguments (nil)
+                :line 340)
+                nil nil)
+            ("ext2_xattr_set" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 363)
+                nil nil)
+            ("ext2_xattr_set2" function
+               (:arguments (nil nil nil)
+                :line 626)
+                nil nil)
+            ("ext2_xattr_delete_inode" function
+               (:arguments (nil)
+                :line 755)
+                nil nil)
+            ("ext2_xattr_put_super" function
+               (:arguments (nil)
+                :line 812)
+                nil nil)
+            ("ext2_xattr_cache_insert" function
+               (:arguments (nil)
+                :line 827)
+                nil nil)
+            ("ext2_xattr_cmp" function
+               (:arguments (nil nil)
+                :line 861)
+                nil nil)
+            ("ext2_xattr_cache_find" function
+               (:arguments (nil nil)
+                :line 901)
+                nil nil)
+            ("NAME_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 948)
+                nil nil)
+            ("VALUE_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 949)
+                nil nil)
+            ("ext2_xattr_hash_entry" function
+               (:arguments (nil nil)
+                :line 956)
+                nil nil)
+            ("NAME_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 982)
+                nil nil)
+            ("VALUE_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 983)
+                nil nil)
+            ("BLOCK_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 985)
+                nil nil)
+            ("ext2_xattr_rehash" function
+               (:arguments (nil nil)
+                :line 992)
+                nil nil)
+            ("BLOCK_HASH_SHIFT" variable
+               (:constant-flag t
+                :line 1014)
+                nil nil)
+            ("init_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1017)
+                nil nil)
+            ("exit_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1028)
+                nil nil))          
+    :file "xattr.c"
+    :pointmax 18048
+    :fsize 28628
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "balloc.c"
+    :tags 
+        '( ("ext2.h" include (:line 14) nil nil)
+            ("linux/quotaops.h" include (:line 15) nil nil)
+            ("linux/sched.h" include (:line 16) nil nil)
+            ("linux/buffer_head.h" include (:line 17) nil nil)
+            ("linux/capability.h" include (:line 18) nil nil)
+            ("in_range" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("ext2_get_group_desc" function
+               (:arguments (nil nil nil)
+                :line 38)
+                nil nil)
+            ("ext2_valid_block_bitmap" function
+               (:arguments (nil nil nil nil)
+                :line 72)
+                nil nil)
+            ("read_block_bitmap" function
+               (:arguments (nil nil)
+                :line 123)
+                nil nil)
+            ("release_blocks" function
+               (:arguments (nil nil)
+                :line 161)
+                nil nil)
+            ("group_adjust_blocks" function
+               (:arguments (nil nil nil nil nil)
+                :line 171)
+                nil nil)
+            ("__rsv_window_dump" function
+               (:arguments (nil nil nil)
+                :line 209)
+                nil nil)
+            ("rsv_window_dump" variable
+               (:constant-flag t
+                :line 251)
+                nil nil)
+            ("rsv_window_dump" variable
+               (:constant-flag t
+                :line 254)
+                nil nil)
+            ("goal_in_my_reservation" function
+               (:arguments (nil nil nil nil)
+                :line 274)
+                nil nil)
+            ("search_reserve_window" function
+               (:arguments (nil nil)
+                :line 301)
+                nil nil)
+            ("ext2_rsv_window_add" function
+               (:arguments (nil nil)
+                :line 339)
+                nil nil)
+            ("rsv_window_remove" function
+               (:arguments (nil nil)
+                :line 378)
+                nil nil)
+            ("rsv_is_empty" function
+               (:arguments (nil)
+                :line 393)
+                nil nil)
+            ("ext2_init_block_alloc_info" function
+               (:arguments (nil)
+                :line 420)
+                nil nil)
+            ("ext2_discard_reservation" function
+               (:arguments (nil)
+                :line 461)
+                nil nil)
+            ("ext2_free_blocks" function
+               (:arguments (nil nil nil)
+                :line 486)
+                nil nil)
+            ("bitmap_search_next_usable_block" function
+               (:arguments (nil nil nil)
+                :line 586)
+                nil nil)
+            ("find_next_usable_block" function
+               (:arguments 
+                  ( ("start" variable (:type "int") nil nil)
+                    nil
+                    nil)                  
+                :line 610)
+                nil nil)
+            ("ext2_try_to_allocate" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 672)
+                nil nil)
+            ("find_next_reservable_window" function
+               (:arguments (nil nil nil nil nil)
+                :line 784)
+                nil nil)
+            ("alloc_new_reservation" function
+               (:arguments (nil nil nil nil nil)
+                :line 906)
+                nil nil)
+            ("try_to_extend_reservation" function
+               (:arguments (nil nil nil)
+                :line 1048)
+                nil nil)
+            ("ext2_try_to_allocate_with_rsv" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 1100)
+                nil nil)
+            ("ext2_has_free_blocks" function
+               (:arguments (nil)
+                :line 1189)
+                nil nil)
+            ("ext2_new_blocks" function
+               (:arguments (nil nil nil nil)
+                :line 1217)
+                nil nil)
+            ("ext2_new_block" function
+               (:arguments (nil nil nil)
+                :line 1428)
+                nil nil)
+            ("nibblemap" variable (:line 1437) nil nil)
+            ("ext2_count_free" function
+               (:arguments (nil nil)
+                :line 1439)
+                nil nil)
+            ("ext2_count_free_blocks" function
+               (:arguments (nil)
+                :line 1454)
+                nil nil)
+            ("test_root" function
+               (:arguments 
+                  ( ("a" variable (:type "int") nil nil)
+                    nil)                  
+                :line 1498)
+                nil nil)
+            ("ext2_group_sparse" function
+               (:arguments 
+                  ( ("group" variable (:type "int") nil nil))                  
+                :line 1507)
+                nil nil)
+            ("ext2_bg_has_super" function
+               (:arguments (nil nil)
+                :line 1523)
+                nil nil)
+            ("ext2_bg_num_gdb" function
+               (:arguments (nil nil)
+                :line 1540)
+                nil nil))          
+    :file "balloc.c"
+    :pointmax 18048
+    :fsize 45718
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "acl.h"
+    :tags 
+        '( ("linux/posix_acl_xattr.h" include (:line 7) nil nil)
+            ("EXT2_ACL_VERSION" variable
+               (:constant-flag t
+                :line 9)
+                nil nil)
+            ("e_tag" variable
+               (:parent "__anon1"
+                :line 12
+                :protection "public")
+                nil nil)
+            ("e_perm" variable
+               (:parent "__anon1"
+                :line 13
+                :protection "public")
+                nil nil)
+            ("e_id" variable
+               (:parent "__anon1"
+                :line 14
+                :protection "public")
+                nil nil)
+            ("ext2_acl_entry" type
+               (:type "typedef"
+                :line 15)
+                nil nil)
+            ("e_tag" variable
+               (:parent "__anon2"
+                :line 18
+                :protection "public")
+                nil nil)
+            ("e_perm" variable
+               (:parent "__anon2"
+                :line 19
+                :protection "public")
+                nil nil)
+            ("ext2_acl_entry_short" type
+               (:type "typedef"
+                :line 20)
+                nil nil)
+            ("a_version" variable
+               (:parent "__anon3"
+                :line 23
+                :protection "public")
+                nil nil)
+            ("ext2_acl_header" type
+               (:type "typedef"
+                :line 24)
+                nil nil)
+            ("ext2_acl_size" function
+               (:arguments 
+                  ( ("count" variable (:type "int") nil nil))                  
+                :line 26)
+                nil nil)
+            ("ext2_acl_count" function
+               (:arguments (nil)
+                :line 38)
+                nil nil)
+            ("EXT2_ACL_NOT_CACHED" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("ext2_permission" function
+               (:arguments (nil nil)
+                :line 61
+                :prototype-flag t)
+                nil nil)
+            ("ext2_acl_chmod" function
+               (:arguments (nil)
+                :line 62
+                :prototype-flag t)
+                nil nil)
+            ("ext2_init_acl" function
+               (:arguments (nil nil)
+                :line 63
+                :prototype-flag t)
+                nil nil)
+            ("linux/sched.h" include (:line 66) nil nil)
+            ("ext2_permission" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("ext2_get_acl" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("ext2_set_acl" variable
+               (:constant-flag t
+                :line 69)
+                nil nil)
+            ("ext2_acl_chmod" function
+               (:arguments (nil)
+                :line 72)
+                nil nil)
+            ("ext2_init_acl" function
+               (:arguments (nil nil)
+                :line 77)
+                nil nil))          
+    :file "acl.h"
+    :pointmax 18048
+    :fsize 1656
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xattr_user.c"
+    :tags 
+        '( ("linux/init.h" include (:line 8) nil nil)
+            ("linux/module.h" include (:line 9) nil nil)
+            ("linux/string.h" include (:line 10) nil nil)
+            ("ext2.h" include (:line 11) nil nil)
+            ("xattr.h" include (:line 12) nil nil)
+            ("ext2_xattr_user_list" function
+               (:arguments (nil nil nil nil nil)
+                :line 15)
+                nil nil)
+            ("ext2_xattr_user_get" function
+               (:arguments (nil nil nil nil)
+                :line 33)
+                nil nil)
+            ("ext2_xattr_user_set" function
+               (:arguments (nil nil nil nil nil)
+                :line 44)
+                nil nil)
+            ("ext2_xattr_user_handler" variable (:line 56) nil nil))          
+    :file "xattr_user.c"
+    :pointmax 18048
+    :fsize 1536
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "file.c"
+    :tags 
+        '( ("linux/time.h" include (:line 21) nil nil)
+            ("ext2.h" include (:line 22) nil nil)
+            ("xattr.h" include (:line 23) nil nil)
+            ("acl.h" include (:line 24) nil nil)
+            ("ext2_release_file" function
+               (:arguments (nil nil)
+                :line 31)
+                nil nil)
+            ("ext2_file_operations" variable (:line 45) nil nil)
+            ("ext2_xip_file_operations" variable (:line 64) nil nil)
+            ("ext2_file_inode_operations" variable (:line 79) nil nil))          
+    :file "file.c"
+    :pointmax 18048
+    :fsize 2312
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xattr.h"
+    :tags 
+        '( ("linux/init.h" include (:line 9) nil nil)
+            ("linux/xattr.h" include (:line 10) nil nil)
+            ("EXT2_XATTR_MAGIC" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("EXT2_XATTR_REFCOUNT_MAX" variable
+               (:constant-flag t
+                :line 16)
+                nil nil)
+            ("EXT2_XATTR_INDEX_USER" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("EXT2_XATTR_INDEX_POSIX_ACL_ACCESS" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("EXT2_XATTR_INDEX_POSIX_ACL_DEFAULT" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("EXT2_XATTR_INDEX_TRUSTED" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("EXT2_XATTR_INDEX_LUSTRE" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("EXT2_XATTR_INDEX_SECURITY" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("ext2_xattr_header" type
+               (:members 
+                  ( ("h_magic" variable
+                       (:protection "public"
+                        :line 27)
+                        nil nil)
+                    ("h_refcount" variable
+                       (:protection "public"
+                        :line 28)
+                        nil nil)
+                    ("h_blocks" variable
+                       (:protection "public"
+                        :line 29)
+                        nil nil)
+                    ("h_hash" variable
+                       (:protection "public"
+                        :line 30)
+                        nil nil)
+                    ("h_reserved" variable
+                       (:protection "public"
+                        :line 31)
+                        nil nil))                  
+                :line 26
+                :type "struct")
+                nil nil)
+            ("ext2_xattr_entry" type
+               (:members 
+                  ( ("e_name_len" variable
+                       (:protection "public"
+                        :line 35)
+                        nil nil)
+                    ("e_name_index" variable
+                       (:protection "public"
+                        :line 36)
+                        nil nil)
+                    ("e_value_offs" variable
+                       (:protection "public"
+                        :line 37)
+                        nil nil)
+                    ("e_value_block" variable
+                       (:protection "public"
+                        :line 38)
+                        nil nil)
+                    ("e_value_size" variable
+                       (:protection "public"
+                        :line 39)
+                        nil nil)
+                    ("e_hash" variable
+                       (:protection "public"
+                        :line 40)
+                        nil nil)
+                    ("e_name" variable
+                       (:protection "public"
+                        :line 41)
+                        nil nil))                  
+                :line 34
+                :type "struct")
+                nil nil)
+            ("EXT2_XATTR_PAD_BITS" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("EXT2_XATTR_PAD" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("EXT2_XATTR_ROUND" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("EXT2_XATTR_LEN" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("EXT2_XATTR_NEXT" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("EXT2_XATTR_SIZE" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("ext2_listxattr" function
+               (:arguments (nil nil nil)
+                :line 64
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_get" function
+               (:arguments (nil nil nil nil nil)
+                :line 66
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_set" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 67
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_delete_inode" function
+               (:arguments (nil)
+                :line 69
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_put_super" function
+               (:arguments (nil)
+                :line 70
+                :prototype-flag t)
+                nil nil)
+            ("init_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 72
+                :prototype-flag t)
+                nil nil)
+            ("exit_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 73
+                :prototype-flag t)
+                nil nil)
+            ("ext2_xattr_get" function
+               (:arguments (nil nil nil nil nil)
+                :line 80)
+                nil nil)
+            ("ext2_xattr_set" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 87)
+                nil nil)
+            ("ext2_xattr_delete_inode" function
+               (:arguments (nil)
+                :line 94)
+                nil nil)
+            ("ext2_xattr_put_super" function
+               (:arguments (nil)
+                :line 99)
+                nil nil)
+            ("init_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 104)
+                nil nil)
+            ("exit_ext2_xattr" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 110)
+                nil nil)
+            ("ext2_xattr_handlers" variable
+               (:constant-flag t
+                :line 114)
+                nil nil)
+            ("ext2_init_security" function
+               (:arguments (nil nil)
+                :line 119
+                :prototype-flag t)
+                nil nil)
+            ("ext2_init_security" function
+               (:arguments (nil nil)
+                :line 121)
+                nil nil))          
+    :file "xattr.h"
+    :pointmax 18048
+    :fsize 3416
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xattr_security.c"
+    :tags 
+        '( ("linux/module.h" include (:line 6) nil nil)
+            ("linux/string.h" include (:line 7) nil nil)
+            ("linux/fs.h" include (:line 8) nil nil)
+            ("linux/ext2_fs.h" include (:line 9) nil nil)
+            ("linux/security.h" include (:line 10) nil nil)
+            ("xattr.h" include (:line 11) nil nil)
+            ("ext2_xattr_security_list" function
+               (:arguments (nil nil nil nil nil)
+                :line 14)
+                nil nil)
+            ("ext2_xattr_security_get" function
+               (:arguments (nil nil nil nil)
+                :line 29)
+                nil nil)
+            ("ext2_xattr_security_set" function
+               (:arguments (nil nil nil nil nil)
+                :line 39)
+                nil nil)
+            ("ext2_init_security" function
+               (:arguments (nil nil)
+                :line 49)
+                nil nil)
+            ("ext2_xattr_security_handler" variable (:line 69) nil nil))          
+    :file "xattr_security.c"
+    :pointmax 18048
+    :fsize 1780
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "ioctl.c"
+    :tags 
+        '( ("ext2.h" include (:line 10) nil nil)
+            ("linux/capability.h" include (:line 11) nil nil)
+            ("linux/time.h" include (:line 12) nil nil)
+            ("linux/sched.h" include (:line 13) nil nil)
+            ("linux/compat.h" include (:line 14) nil nil)
+            ("linux/mount.h" include (:line 15) nil nil)
+            ("linux/smp_lock.h" include (:line 16) nil nil)
+            ("asm/current.h" include (:line 17) nil nil)
+            ("asm/uaccess.h" include (:line 18) nil nil)
+            ("ext2_ioctl" function
+               (:arguments (nil nil nil)
+                :line 21)
+                nil nil)
+            ("ext2_compat_ioctl" function
+               (:arguments (nil nil nil)
+                :line 158)
+                nil nil))          
+    :file "ioctl.c"
+    :pointmax 18048
+    :fsize 4396
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xip.h"
+    :tags 
+        '( ("ext2_xip_verify_sb" function
+               (:arguments (nil)
+                :line 9
+                :prototype-flag t)
+                nil nil)
+            ("ext2_clear_xip_target" function
+               (:arguments (nil nil)
+                :line 10
+                :prototype-flag t)
+                nil nil)
+            ("ext2_use_xip" function
+               (:arguments (nil)
+                :line 12)
+                nil nil)
+            ("ext2_get_xip_mem" function
+               (:arguments (nil nil nil nil nil)
+                :line 17
+                :prototype-flag t)
+                nil nil)
+            ("mapping_is_xip" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("mapping_is_xip" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("ext2_xip_verify_sb" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("ext2_use_xip" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("ext2_clear_xip_target" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("ext2_get_xip_mem" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "xip.h"
+    :pointmax 18048
+    :fsize 759
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "super.c"
+    :tags 
+        '( ("linux/module.h" include (:line 19) nil nil)
+            ("linux/string.h" include (:line 20) nil nil)
+            ("linux/fs.h" include (:line 21) nil nil)
+            ("linux/slab.h" include (:line 22) nil nil)
+            ("linux/init.h" include (:line 23) nil nil)
+            ("linux/blkdev.h" include (:line 24) nil nil)
+            ("linux/parser.h" include (:line 25) nil nil)
+            ("linux/random.h" include (:line 26) nil nil)
+            ("linux/buffer_head.h" include (:line 27) nil nil)
+            ("linux/exportfs.h" include (:line 28) nil nil)
+            ("linux/smp_lock.h" include (:line 29) nil nil)
+            ("linux/vfs.h" include (:line 30) nil nil)
+            ("linux/seq_file.h" include (:line 31) nil nil)
+            ("linux/mount.h" include (:line 32) nil nil)
+            ("linux/log2.h" include (:line 33) nil nil)
+            ("linux/quotaops.h" include (:line 34) nil nil)
+            ("asm/uaccess.h" include (:line 35) nil nil)
+            ("ext2.h" include (:line 36) nil nil)
+            ("xattr.h" include (:line 37) nil nil)
+            ("acl.h" include (:line 38) nil nil)
+            ("xip.h" include (:line 39) nil nil)
+            ("ext2_sync_super" function
+               (:arguments (nil nil)
+                :line 41
+                :prototype-flag t)
+                nil nil)
+            ("ext2_remount" function
+               (:arguments (nil nil nil)
+                :line 43
+                :prototype-flag t)
+                nil nil)
+            ("ext2_statfs" function
+               (:arguments (nil nil)
+                :line 44
+                :prototype-flag t)
+                nil nil)
+            ("ext2_error" function
+               (:arguments (nil nil nil nil)
+                :line 46)
+                nil nil)
+            ("ext2_warning" function
+               (:arguments (nil nil nil nil)
+                :line 73)
+                nil nil)
+            ("ext2_update_dynamic_rev" function
+               (:arguments (nil)
+                :line 86)
+                nil nil)
+            ("ext2_put_super" function
+               (:arguments (nil)
+                :line 111)
+                nil nil)
+            ("ext2_inode_cachep" variable (:line 141) nil nil)
+            ("ext2_alloc_inode" function
+               (:arguments (nil)
+                :line 143)
+                nil nil)
+            ("ext2_destroy_inode" function
+               (:arguments (nil)
+                :line 158)
+                nil nil)
+            ("init_once" function
+               (:arguments (nil)
+                :line 163)
+                nil nil)
+            ("init_inodecache" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 175)
+                nil nil)
+            ("destroy_inodecache" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 187)
+                nil nil)
+            ("ext2_clear_inode" function
+               (:arguments (nil)
+                :line 192)
+                nil nil)
+            ("ext2_show_options" function
+               (:arguments (nil nil)
+                :line 213)
+                nil nil)
+            ("ext2_quota_read" function
+               (:arguments (nil nil nil nil nil)
+                :line 296
+                :prototype-flag t)
+                nil nil)
+            ("ext2_quota_write" function
+               (:arguments (nil nil nil nil nil)
+                :line 297
+                :prototype-flag t)
+                nil nil)
+            ("ext2_sops" variable (:line 300) nil nil)
+            ("ext2_nfs_get_inode" function
+               (:arguments (nil nil nil)
+                :line 317)
+                nil nil)
+            ("ext2_fh_to_dentry" function
+               (:arguments (nil nil nil nil)
+                :line 343)
+                nil nil)
+            ("ext2_fh_to_parent" function
+               (:arguments (nil nil nil nil)
+                :line 350)
+                nil nil)
+            ("ext2_export_ops" variable (:line 362) nil nil)
+            ("get_sb_block" function
+               (:arguments (nil)
+                :line 368)
+                nil nil)
+            ("Opt_bsd_df" variable
+               (:constant-flag t
+                :line 389)
+                nil nil)
+            ("Opt_minix_df" variable
+               (:constant-flag t
+                :line 389)
+                nil nil)
+            ("Opt_grpid" variable
+               (:constant-flag t
+                :line 389)
+                nil nil)
+            ("Opt_nogrpid" variable
+               (:constant-flag t
+                :line 389)
+                nil nil)
+            ("Opt_resgid" variable
+               (:constant-flag t
+                :line 390)
+                nil nil)
+            ("Opt_resuid" variable
+               (:constant-flag t
+                :line 390)
+                nil nil)
+            ("Opt_sb" variable
+               (:constant-flag t
+                :line 390)
+                nil nil)
+            ("Opt_err_cont" variable
+               (:constant-flag t
+                :line 390)
+                nil nil)
+            ("Opt_err_panic" variable
+               (:constant-flag t
+                :line 390)
+                nil nil)
+            ("Opt_err_ro" variable
+               (:constant-flag t
+                :line 391)
+                nil nil)
+            ("Opt_nouid32" variable
+               (:constant-flag t
+                :line 391)
+                nil nil)
+            ("Opt_nocheck" variable
+               (:constant-flag t
+                :line 391)
+                nil nil)
+            ("Opt_debug" variable
+               (:constant-flag t
+                :line 391)
+                nil nil)
+            ("Opt_oldalloc" variable
+               (:constant-flag t
+                :line 392)
+                nil nil)
+            ("Opt_orlov" variable
+               (:constant-flag t
+                :line 392)
+                nil nil)
+            ("Opt_nobh" variable
+               (:constant-flag t
+                :line 392)
+                nil nil)
+            ("Opt_user_xattr" variable
+               (:constant-flag t
+                :line 392)
+                nil nil)
+            ("Opt_nouser_xattr" variable
+               (:constant-flag t
+                :line 392)
+                nil nil)
+            ("Opt_acl" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_noacl" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_xip" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_ignore" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_err" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_quota" variable
+               (:constant-flag t
+                :line 393)
+                nil nil)
+            ("Opt_usrquota" variable
+               (:constant-flag t
+                :line 394)
+                nil nil)
+            ("Opt_grpquota" variable
+               (:constant-flag t
+                :line 394)
+                nil nil)
+            ("Opt_reservation" variable
+               (:constant-flag t
+                :line 394)
+                nil nil)
+            ("Opt_noreservation" variable
+               (:constant-flag t
+                :line 394)
+                nil nil)
+            ("tokens" variable (:line 397) nil nil)
+            ("parse_options" function
+               (:arguments (nil nil)
+                :line 431)
+                nil nil)
+            ("ext2_setup_super" function
+               (:arguments (nil nil nil)
+                :line 577)
+                nil nil)
+            ("ext2_check_descriptors" function
+               (:arguments (nil)
+                :line 622)
+                nil nil)
+            ("ext2_max_size" function
+               (:arguments 
+                  ( ("bits" variable (:type "int") nil nil))                  
+                :line 677)
+                nil nil)
+            ("descriptor_loc" function
+               (:arguments (nil nil nil)
+                :line 719)
+                nil nil)
+            ("ext2_fill_super" function
+               (:arguments (nil nil nil)
+                :line 739)
+                nil nil)
+            ("ext2_commit_super" function
+               (:arguments (nil nil)
+                :line 1100)
+                nil nil)
+            ("ext2_sync_super" function
+               (:arguments (nil nil)
+                :line 1108)
+                nil nil)
+            ("ext2_write_super" function
+               (:arguments (nil)
+                :line 1129)
+                nil nil)
+            ("ext2_remount" function
+               (:arguments (nil nil nil)
+                :line 1150)
+                nil nil)
+            ("ext2_statfs" function
+               (:arguments (nil nil)
+                :line 1235)
+                nil nil)
+            ("ext2_get_sb" function
+               (:arguments (nil nil nil nil nil)
+                :line 1299)
+                nil nil)
+            ("ext2_quota_read" function
+               (:arguments (nil nil nil nil nil)
+                :line 1311)
+                nil nil)
+            ("ext2_quota_write" function
+               (:arguments (nil nil nil nil nil)
+                :line 1356)
+                nil nil)
+            ("ext2_fs_type" variable (:line 1413) nil nil)
+            ("init_ext2_fs" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1421)
+                nil nil)
+            ("exit_ext2_fs" function
+               (:arguments 
+                  ( ("" variable (:type "void") nil nil))                  
+                :line 1440)
+                nil nil))          
+    :file "super.c"
+    :pointmax 18048
+    :fsize 40483
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "xip.c"
+    :tags 
+        '( ("linux/mm.h" include (:line 8) nil nil)
+            ("linux/fs.h" include (:line 9) nil nil)
+            ("linux/genhd.h" include (:line 10) nil nil)
+            ("linux/buffer_head.h" include (:line 11) nil nil)
+            ("linux/ext2_fs_sb.h" include (:line 12) nil nil)
+            ("linux/ext2_fs.h" include (:line 13) nil nil)
+            ("linux/blkdev.h" include (:line 14) nil nil)
+            ("ext2.h" include (:line 15) nil nil)
+            ("xip.h" include (:line 16) nil nil)
+            ("__inode_direct_access" function
+               (:arguments (nil nil nil nil)
+                :line 19)
+                nil nil)
+            ("__ext2_get_block" function
+               (:arguments (nil nil nil nil)
+                :line 33)
+                nil nil)
+            ("ext2_clear_xip_target" function
+               (:arguments (nil nil)
+                :line 53)
+                nil nil)
+            ("ext2_xip_verify_sb" function
+               (:arguments (nil)
+                :line 65)
+                nil nil)
+            ("ext2_get_xip_mem" function
+               (:arguments (nil nil nil nil nil)
+                :line 77)
+                nil nil))          
+    :file "xip.c"
+    :pointmax 18048
+    :fsize 2065
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "namei.c"
+    :tags 
+        '( ("linux/pagemap.h" include (:line 33) nil nil)
+            ("ext2.h" include (:line 34) nil nil)
+            ("xattr.h" include (:line 35) nil nil)
+            ("acl.h" include (:line 36) nil nil)
+            ("xip.h" include (:line 37) nil nil)
+            ("ext2_add_nondir" function
+               (:arguments (nil nil)
+                :line 39)
+                nil nil)
+            ("ext2_lookup" function
+               (:arguments (nil nil nil)
+                :line 57)
+                nil nil)
+            ("ext2_get_parent" function
+               (:arguments (nil)
+                :line 75)
+                nil nil)
+            ("ext2_create" function
+               (:arguments (nil nil nil nil)
+                :line 92)
+                nil nil)
+            ("ext2_mknod" function
+               (:arguments (nil nil nil nil)
+                :line 114)
+                nil nil)
+            ("ext2_symlink" function
+               (:arguments (nil nil nil)
+                :line 135)
+                nil nil)
+            ("ext2_link" function
+               (:arguments (nil nil nil)
+                :line 180)
+                nil nil)
+            ("ext2_mkdir" function
+               (:arguments (nil nil nil)
+                :line 203)
+                nil nil)
+            ("ext2_unlink" function
+               (:arguments (nil nil)
+                :line 250)
+                nil nil)
+            ("ext2_rmdir" function
+               (:arguments (nil nil)
+                :line 272)
+                nil nil)
+            ("ext2_rename" function
+               (:arguments (nil nil nil nil)
+                :line 288)
+                nil nil)
+            ("ext2_dir_inode_operations" variable (:line 373) nil nil)
+            ("ext2_special_inode_operations" variable (:line 393) nil nil))          
+    :file "namei.c"
+    :pointmax 18048
+    :fsize 9423
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "ialloc.c"
+    :tags 
+        '( ("linux/quotaops.h" include (:line 15) nil nil)
+            ("linux/sched.h" include (:line 16) nil nil)
+            ("linux/backing-dev.h" include (:line 17) nil nil)
+            ("linux/buffer_head.h" include (:line 18) nil nil)
+            ("linux/random.h" include (:line 19) nil nil)
+            ("ext2.h" include (:line 20) nil nil)
+            ("xattr.h" include (:line 21) nil nil)
+            ("acl.h" include (:line 22) nil nil)
+            ("read_inode_bitmap" function
+               (:arguments (nil nil)
+                :line 46)
+                nil nil)
+            ("ext2_release_inode" function
+               (:arguments (nil nil nil)
+                :line 65)
+                nil nil)
+            ("ext2_free_inode" function
+               (:arguments (nil)
+                :line 104)
+                nil nil)
+            ("ext2_preread_inode" function
+               (:arguments (nil)
+                :line 173)
+                nil nil)
+            ("find_group_dir" function
+               (:arguments (nil nil)
+                :line 212)
+                nil nil)
+            ("INODE_COST" variable
+               (:constant-flag t
+                :line 263)
+                nil nil)
+            ("BLOCK_COST" variable
+               (:constant-flag t
+                :line 264)
+                nil nil)
+            ("find_group_orlov" function
+               (:arguments (nil nil)
+                :line 266)
+                nil nil)
+            ("find_group_other" function
+               (:arguments (nil nil)
+                :line 378)
+                nil nil)
+            ("ext2_new_inode" function
+               (:arguments (nil nil)
+                :line 438)
+                nil nil)
+            ("ext2_count_free_inodes" function
+               (:arguments (nil)
+                :line 624)
+                nil nil)
+            ("ext2_count_dirs" function
+               (:arguments (nil)
+                :line 670)
+                nil nil))          
+    :file "ialloc.c"
+    :pointmax 18048
+    :fsize 18872
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "symlink.c"
+    :tags 
+        '( ("ext2.h" include (:line 20) nil nil)
+            ("xattr.h" include (:line 21) nil nil)
+            ("linux/namei.h" include (:line 22) nil nil)
+            ("ext2_follow_link" function
+               (:arguments (nil nil)
+                :line 24)
+                nil nil)
+            ("ext2_symlink_inode_operations" variable (:line 31) nil nil)
+            ("ext2_fast_symlink_inode_operations" variable (:line 43) nil nil))          
+    :file "symlink.c"
+    :pointmax 18048
+    :fsize 1292
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   (semanticdb-table "acl.c"
+    :tags 
+        '( ("linux/capability.h" include (:line 7) nil nil)
+            ("linux/init.h" include (:line 8) nil nil)
+            ("linux/sched.h" include (:line 9) nil nil)
+            ("linux/slab.h" include (:line 10) nil nil)
+            ("linux/fs.h" include (:line 11) nil nil)
+            ("ext2.h" include (:line 12) nil nil)
+            ("xattr.h" include (:line 13) nil nil)
+            ("acl.h" include (:line 14) nil nil)
+            ("ext2_acl_from_disk" function
+               (:arguments (nil nil)
+                :line 20)
+                nil nil)
+            ("ext2_acl_to_disk" function
+               (:arguments (nil nil)
+                :line 85)
+                nil nil)
+            ("ext2_iget_acl" function
+               (:arguments (nil nil)
+                :line 129)
+                nil nil)
+            ("ext2_iset_acl" function
+               (:arguments (nil nil nil)
+                :line 142)
+                nil nil)
+            ("ext2_get_acl" function
+               (:arguments (nil nil)
+                :line 156)
+                nil nil)
+            ("ext2_set_acl" function
+               (:arguments (nil nil nil)
+                :line 218)
+                nil nil)
+            ("ext2_check_acl" function
+               (:arguments (nil nil)
+                :line 281)
+                nil nil)
+            ("ext2_permission" function
+               (:arguments (nil nil)
+                :line 297)
+                nil nil)
+            ("ext2_init_acl" function
+               (:arguments (nil nil)
+                :line 309)
+                nil nil)
+            ("ext2_acl_chmod" function
+               (:arguments (nil)
+                :line 368)
+                nil nil)
+            ("ext2_xattr_list_acl_access" function
+               (:arguments (nil nil nil nil nil)
+                :line 395)
+                nil nil)
+            ("ext2_xattr_list_acl_default" function
+               (:arguments (nil nil nil nil nil)
+                :line 408)
+                nil nil)
+            ("ext2_xattr_get_acl" function
+               (:arguments (nil nil nil nil)
+                :line 421)
+                nil nil)
+            ("ext2_xattr_get_acl_access" function
+               (:arguments (nil nil nil nil)
+                :line 441)
+                nil nil)
+            ("ext2_xattr_get_acl_default" function
+               (:arguments (nil nil nil nil)
+                :line 450)
+                nil nil)
+            ("ext2_xattr_set_acl" function
+               (:arguments (nil nil nil nil)
+                :line 459)
+                nil nil)
+            ("ext2_xattr_set_acl_access" function
+               (:arguments (nil nil nil nil nil)
+                :line 490)
+                nil nil)
+            ("ext2_xattr_set_acl_default" function
+               (:arguments (nil nil nil nil nil)
+                :line 499)
+                nil nil)
+            ("ext2_xattr_acl_access_handler" variable (:line 507) nil nil)
+            ("ext2_xattr_acl_default_handler" variable (:line 514) nil nil))          
+    :file "acl.c"
+    :pointmax 18048
+    :fsize 11752
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("S_SHIFT" . ((number "12" 6070 . 6072)))
+          )
+
+    )
+   )
+  :file "!usr!src!linux-2.6.30-gentoo-r5!fs!ext2!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

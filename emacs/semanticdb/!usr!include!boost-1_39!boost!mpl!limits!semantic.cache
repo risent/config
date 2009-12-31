@@ -1,0 +1,25 @@
+;; Object limits/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "limits/"
+  :tables (list 
+   (semanticdb-table "arity.hpp"
+    :tags 
+        '( ("BOOST_MPL_LIMITS_ARITY_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("BOOST_MPL_LIMIT_METAFUNCTION_ARITY" variable
+               (:constant-flag t
+                :line 18)
+                nil nil))          
+    :file "arity.hpp"
+    :pointmax 286
+    :fsize 639
+    :lastmodtime '(19085 43086)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!mpl!limits!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

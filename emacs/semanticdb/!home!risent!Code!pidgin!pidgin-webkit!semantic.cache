@@ -1,0 +1,781 @@
+;; Object pidgin-webkit/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pidgin-webkit/"
+  :tables (list 
+   (semanticdb-table "webkit.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("PLUGIN_ID" variable (:constant-flag t) nil [848 857])
+            ("PLUGIN_AUTHOR" variable (:constant-flag t) nil [886 899])
+            ("string.h" include (:system-flag t) nil [965 984])
+            ("gtk/gtk.h" include (:system-flag t) nil [985 1005])
+            ("webkit/webkitwebview.h" include (:system-flag t) nil [1028 1061])
+            ("webkit/webkitnetworkrequest.h" include (:system-flag t) nil [1062 1102])
+            ("purple.h" include (:system-flag t) nil [1125 1144])
+            ("gtkconv.h" include (:system-flag t) nil [1167 1187])
+            ("gtkimhtml.h" include (:system-flag t) nil [1188 1210])
+            ("gtkplugin.h" include (:system-flag t) nil [1211 1233])
+            ("gtkpluginpref.h" include (:system-flag t) nil [1234 1260])
+            ("gtkprefs.h" include (:system-flag t) nil [1261 1282])
+            ("gtkutils.h" include (:system-flag t) nil [1283 1304])
+            ("webkit.h" include nil nil [1325 1344])
+            ("prefs.h" include nil nil [1345 1363])
+            ("uiops" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL;"
+                :type ("PurpleConversationUiOps" type (:type "class") nil nil))
+                nil [1365 1410])
+            ("*default_write_conv" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1446 1471])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1478 1495])
+                    ("alias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1496 1514])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1521 1541])
+                    ("flags" variable (:type ("PurpleMessageFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1542 1567])
+                    ("mtime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1568 1581]))                  
+                :type "void")
+                nil [1412 1582])
+            ("*default_create_conversation" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1626 1651]))                  
+                :type "void")
+                nil [1583 1652])
+            ("*default_destroy_conversation" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1698 1723]))                  
+                :type "void")
+                nil [1654 1724])
+            ("pidgin_webkit_prefs_variant_cb" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [1769 1786])
+                    ("type" variable (:type ("PurplePrefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1787 1807])
+                    ("val" variable (:type ("gconstpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1814 1832])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [1833 1847]))                  
+                :type "void")
+                nil [1726 1848])
+            ("hack_and_get_widget_im" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gtkconv" variable
+                       (:pointer 1
+                        :type ("PidginConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1891 1919]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1850 1920])
+            ("hack_and_get_widget_chat" function
+               (:prototype-flag t
+                :pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gtkconv" variable
+                       (:pointer 1
+                        :type ("PidginConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1964 1992]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [1921 1993])
+            ("pidgin_webkit_write_conv_cb" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("webkit" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2028 2046])
+                    ("script" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2047 2060]))                  
+                :type "void")
+                nil [1995 2061])
+            ("pidgin_webkit_load_message_style" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2105 2110]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [2063 2111])
+            ("pidgin_webkit_unload_message_style" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2153 2158]))                  
+                :type "void")
+                nil [2113 2159])
+            ("PidginWebkit" type
+               (:typedef ("_PidginWebkit" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_PidginWebkit"
+                :type "typedef")
+                nil [2162 2204])
+            ("pending_script" type
+               (:typedef ("_pending_script" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil)
+                :superclasses "_pending_script"
+                :type "typedef")
+                nil [2205 2251])
+            ("_PidginWebkit" type
+               (:members 
+                  ( ("imhtml" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2277 2295])
+                    ("webkit" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2297 2315]))                  
+                :type "struct")
+                nil [2253 2318])
+            ("_pending_script" type
+               (:members 
+                  ( ("script" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [2346 2359])
+                    ("next" variable
+                       (:pointer 1
+                        :type ("_pending_script" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol classsubparts) [2361 2390]))                  
+                :type "struct")
+                nil [2320 2393])
+            ("webkits" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL;"
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [2395 2429])
+            ("pending_scripts" variable
+               (:pointer 1
+                :typemodifiers ("static")
+                :default-value "NULL;"
+                :type ("GHashTable" type (:type "class") nil nil))
+                nil [2457 2499])
+            ("template_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2580 2607])
+            ("header_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2674 2699])
+            ("footer_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2775 2800])
+            ("incoming_content_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2868 2903])
+            ("outgoing_content_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2937 2972])
+            ("incoming_next_content_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [2994 3034])
+            ("outgoing_next_content_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3124 3164])
+            ("status_html" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3189 3214])
+            ("basestyle_css" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3246 3273])
+            ("template_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3396 3424])
+            ("header_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3425 3451])
+            ("footer_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3452 3478])
+            ("incoming_content_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3479 3515])
+            ("outgoing_content_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3516 3552])
+            ("incoming_next_content_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3553 3594])
+            ("outgoing_next_content_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3595 3636])
+            ("status_html_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3637 3663])
+            ("basestyle_css_len" variable
+               (:default-value "0"
+                :type ("gsize" type (:type "class") nil nil))
+                nil [3664 3692])
+            ("style_dir" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3716 3739])
+            ("template_path" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3740 3767])
+            ("css_path" variable
+               (:pointer 1
+                :default-value "NULL;"
+                :type "char")
+                nil [3768 3790])
+            ("pref_style_handle" variable (:type ("guint" type (:type "class") nil nil)) nil [3813 3858])
+            ("pref_variant_handle" variable (:type ("guint" type (:type "class") nil nil)) nil [3813 3858])
+            ("replace_message_tokens" function
+               (:pointer 1
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3890 3901])
+                    ("len" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3902 3912])
+                    ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3913 3938])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3947 3964])
+                    ("alias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3965 3983])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [3992 4012])
+                    ("flags" variable (:type ("PurpleMessageFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4013 4038])
+                    ("mtime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4047 4060]))                  
+                :type "char")
+                nil [3861 8176])
+            ("replace_header_tokens" function
+               (:pointer 1
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [8206 8217])
+                    ("len" variable (:type ("gsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8218 8228])
+                    ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8229 8254]))                  
+                :type "char")
+                nil [8178 12238])
+            ("replace_template_tokens" function
+               (:pointer 1
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12270 12281])
+                    ("len" variable (:type "int") (reparse-symbol arg-sub-list) [12282 12290])
+                    ("header" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12291 12304])
+                    ("footer" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [12305 12318]))                  
+                :type "char")
+                nil [12240 13801])
+            ("pidgin_webkit_size_allocate_cb" function
+               (:arguments 
+                  ( ("webkit" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13958 13976])
+                    ("allocation" variable
+                       (:pointer 1
+                        :type ("GtkAllocation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13977 14003])
+                    ("gx" variable
+                       (:pointer 1
+                        :type ("PidginWebkit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14004 14021]))                  
+                :type "void")
+                nil [13922 14078])
+            ("webkit_load_started_cb" function
+               (:arguments 
+                  ( ("web_view" variable
+                       (:pointer 1
+                        :type ("WebKitWebView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14108 14132])
+                    ("frame" variable
+                       (:pointer 1
+                        :type ("WebKitWebFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14133 14155]))                  
+                :type "void")
+                nil [14080 14499])
+            ("webkit_load_finished_cb" function
+               (:arguments 
+                  ( ("web_view" variable
+                       (:pointer 1
+                        :type ("WebKitWebView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14530 14554])
+                    ("frame" variable
+                       (:pointer 1
+                        :type ("WebKitWebFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14555 14577]))                  
+                :type "void")
+                nil [14501 15398])
+            ("webkit_navigation_requested_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("web_view" variable
+                       (:pointer 1
+                        :type ("WebKitWebView" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15464 15488])
+                    ("frame" variable
+                       (:pointer 1
+                        :type ("WebKitWebFrame" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15489 15511])
+                    ("request" variable
+                       (:pointer 1
+                        :type ("WebKitNetworkRequest" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15516 15546]))                  
+                :type ("WebKitNavigationResponse" type (:type "class") nil nil))
+                nil [15401 15834])
+            ("pidgin_webkit_prefs_style_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [15877 15894])
+                    ("type" variable (:type ("PurplePrefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15895 15915])
+                    ("val" variable (:type ("gconstpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15921 15939])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15940 15954]))                  
+                :type "void")
+                nil [15836 17031])
+            ("pidgin_webkit_prefs_variant_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [17076 17093])
+                    ("type" variable (:type ("PurplePrefType" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17094 17114])
+                    ("val" variable (:type ("gconstpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17120 17138])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17139 17153]))                  
+                :type "void")
+                nil [17033 18290])
+            ("pidgin_webkit_conv_switched_cb" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("active_conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [18335 18367])
+                    ("data" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18368 18382]))                  
+                :type "void")
+                nil [18292 19342])
+            ("get_webkit" function
+               (:pointer 1
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19366 19391]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [19344 21305])
+            ("gtk_smiley_tree_lookup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("tree" variable
+                       (:pointer 1
+                        :type ("GtkSmileyTree" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21343 21363])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [21388 21408]))                  
+                :type ("gint" type (:type "class") nil nil))
+                nil [21307 23305])
+            ("gtk_imhtml_is_smiley" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("imhtml" variable
+                       (:pointer 1
+                        :type ("GtkIMHtml" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23345 23365])
+                    ("fonts" variable
+                       (:pointer 1
+                        :type ("GSList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23388 23407])
+                    ("text" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("gchar" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23430 23448])
+                    ("len" variable
+                       (:pointer 1
+                        :type ("gint" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23471 23488]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [23307 24010])
+            ("escape_message" function
+               (:pointer 1
+                :arguments 
+                  ( ("text" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [24033 24044])
+                    ("gx" variable
+                       (:pointer 1
+                        :type ("PidginWebkit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24045 24062]))                  
+                :type "char")
+                nil [24012 25557])
+            ("pidgin_webkit_write_conv_cb" function
+               (:arguments 
+                  ( ("webkit" variable
+                       (:pointer 1
+                        :type ("GtkWidget" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25592 25610])
+                    ("script" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25611 25624]))                  
+                :type "void")
+                nil [25559 25756])
+            ("pidgin_webkit_write_conv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25796 25821])
+                    ("name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25822 25839])
+                    ("alias" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25845 25863])
+                    ("message" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [25864 25884])
+                    ("flags" variable (:type ("PurpleMessageFlags" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25890 25915])
+                    ("mtime" variable (:type ("time_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25916 25929]))                  
+                :type "void")
+                nil [25759 31015])
+            ("hack_and_get_widget_im" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gtkconv" variable
+                       (:pointer 1
+                        :type ("PidginConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [31058 31086]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [31017 32272])
+            ("hack_and_get_widget_chat" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("gtkconv" variable
+                       (:pointer 1
+                        :type ("PidginConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [32317 32345]))                  
+                :type ("GtkWidget" type (:type "class") nil nil))
+                nil [32274 33917])
+            ("purple_conversation_use_webkit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [33962 33987]))                  
+                :type "void")
+                nil [33919 34764])
+            ("pidgin_webkit_create_conv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [34804 34829]))                  
+                :type "void")
+                nil [34766 34970])
+            ("pidgin_webkit_destroy_conv" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [35011 35036]))                  
+                :type "void")
+                nil [34972 35269])
+            ("pidgin_webkit_load_message_style" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [35313 35318]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [35271 40050])
+            ("pidgin_webkit_unload_message_style" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40092 40097]))                  
+                :type "void")
+                nil [40052 40416])
+            ("plugin_load" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("PurplePlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40447 40468]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [40419 41940])
+            ("remove_webkit" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("conv" variable
+                       (:pointer 1
+                        :type ("PurpleConversation" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41968 41993])
+                    ("gx" variable
+                       (:pointer 1
+                        :type ("PidginWebkit" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [41994 42011])
+                    ("null" variable (:type ("gpointer" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42016 42030]))                  
+                :type "void")
+                nil [41942 42378])
+            ("plugin_unload" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("PurplePlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [42410 42431]))                  
+                :type ("gboolean" type (:type "class") nil nil))
+                nil [42380 43008])
+            ("ui_info" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	plugin_config_frame,
+	0 /* page_num (Reserved) */
+}"
+                :type ("PidginPluginUiInfo" type (:type "class") nil nil))
+                nil [43010 43101])
+            ("info" variable
+               (:typemodifiers ("static")
+                :default-value "{
+	PURPLE_PLUGIN_MAGIC,		/* Magic		*/
+	PURPLE_MAJOR_VERSION,		/* Purple Major Version	*/
+	PURPLE_MINOR_VERSION,		/* Purple Minor Version	*/
+	PURPLE_PLUGIN_STANDARD,		/* plugin type		*/
+	PIDGIN_PLUGIN_TYPE,		/* ui requirement	*/
+	0,				/* flags		*/
+	NULL,				/* dependencies		*/
+	PURPLE_PRIORITY_DEFAULT,	/* priority		*/
+
+	PLUGIN_ID,			/* plugin id		*/
+	NULL,				/* name			*/
+	\"0.1\",				/* version		*/
+	NULL,				/* summary		*/
+	NULL,				/* description		*/
+	PLUGIN_AUTHOR,			/* author		*/
+	\"http://pidgin.im\",		/* website		*/
+
+	plugin_load,			/* load			*/
+	plugin_unload,			/* unload		*/
+	NULL,				/* destroy		*/
+
+	&ui_info,			/* ui_info		*/
+	NULL,				/* extra_info		*/
+	NULL,				/* prefs_info		*/
+	NULL,				/* actions		*/
+	NULL,				/* reserved 1		*/
+	NULL,				/* reserved 2		*/
+	NULL,				/* reserved 3		*/
+	NULL				/* reserved 4		*/
+}"
+                :type ("PurplePluginInfo" type (:type "class") nil nil))
+                nil [43103 43968])
+            ("init_plugin" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("plugin" variable
+                       (:pointer 1
+                        :type ("PurplePlugin" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [43994 44015]))                  
+                :type "void")
+                nil [43970 44400]))          
+    :file "webkit.c"
+    :pointmax 44448
+    :fsize 44447
+    :lastmodtime '(19080 15139)
+    :unmatched-syntax '((semantic-list 44420 . 44447) (symbol 44402 . 44420))
+    :lexical-table 
+        '(("PLUGIN_AUTHOR" . ((string "\"Simo Mattila <simo.h.mattila@gmail.com>\"" 901 . 942)))
+          ("PLUGIN_ID" . ((string "\"gtk-simom-webkit\"" 859 . 877)))
+          )
+
+    )
+   (semanticdb-table "webkit.h"
+    :tags 
+        '( ("_PIDGIN_WEBKIT_H_" variable
+               (:constant-flag t
+                :line 22)
+                nil nil))          
+    :file "webkit.h"
+    :pointmax 44448
+    :fsize 848
+    :lastmodtime '(19080 15139)
+    :unmatched-syntax '((semantic-list 44420 . 44447) (symbol 44402 . 44420))
+    :lexical-table 
+        '(("PLUGIN_AUTHOR" . ((string "\"Simo Mattila <simo.h.mattila@gmail.com>\"" 901 . 942)))
+          ("PLUGIN_ID" . ((string "\"gtk-simom-webkit\"" 859 . 877)))
+          )
+
+    )
+   (semanticdb-table "prefs.h"
+    :tags 
+        '( ("_PIDGIN_WEBKIT_PREFS_H_" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("gtkplugin.h" include (:line 24) nil nil)
+            ("plugin_config_frame" function
+               (:arguments (nil)
+                :line 26
+                :prototype-flag t)
+                nil nil))          
+    :file "prefs.h"
+    :pointmax 44448
+    :fsize 940
+    :lastmodtime '(19080 15139)
+    :unmatched-syntax '((semantic-list 44420 . 44447) (symbol 44402 . 44420))
+    :lexical-table 
+        '(("PLUGIN_AUTHOR" . ((string "\"Simo Mattila <simo.h.mattila@gmail.com>\"" 901 . 942)))
+          ("PLUGIN_ID" . ((string "\"gtk-simom-webkit\"" 859 . 877)))
+          )
+
+    )
+   (semanticdb-table "prefs.c"
+    :tags 
+        '( ("gtk/gtk.h" include (:line 21) nil nil)
+            ("dirent.h" include (:line 22) nil nil)
+            ("string.h" include (:line 23) nil nil)
+            ("purple.h" include (:line 25) nil nil)
+            ("prefs.h" include (:line 27) nil nil)
+            ("webkit.h" include (:line 28) nil nil)
+            ("TITLE_COLUMN" variable
+               (:constant-flag t
+                :line 31)
+                nil nil)
+            ("FILE_COLUMN" variable
+               (:constant-flag t
+                :line 32)
+                nil nil)
+            ("N_COLUMNS" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("tree_selection_changed_cb" function
+               (:arguments (nil nil)
+                :line 36)
+                nil nil)
+            ("fill_tree" function
+               (:arguments (nil nil)
+                :line 72)
+                nil nil)
+            ("plugin_config_frame" function
+               (:arguments (nil)
+                :line 178)
+                nil nil))          
+    :file "prefs.c"
+    :pointmax 44448
+    :fsize 6212
+    :lastmodtime '(19080 15139)
+    :unmatched-syntax '((semantic-list 44420 . 44447) (symbol 44402 . 44420))
+    :lexical-table 
+        '(("PLUGIN_AUTHOR" . ((string "\"Simo Mattila <simo.h.mattila@gmail.com>\"" 901 . 942)))
+          ("PLUGIN_ID" . ((string "\"gtk-simom-webkit\"" 859 . 877)))
+          )
+
+    )
+   )
+  :file "!home!risent!Code!pidgin!pidgin-webkit!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

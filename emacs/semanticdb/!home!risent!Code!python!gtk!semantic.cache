@@ -1,0 +1,95 @@
+;; Object gtk/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gtk/"
+  :tables (list 
+   (semanticdb-table "helloworld.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pygtk" include nil nil [48 60])
+            ("pygtk" code nil nil [61 81])
+            ("gtk" include nil nil [82 92])
+            ("HelloWorld" type
+               (:members 
+                  ( ("hello" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [123 127])
+                        ("widget" variable nil (reparse-symbol function_parameters) [129 135])
+                        ("data" variable nil (reparse-symbol function_parameters) [137 141]))                      ) (reparse-symbol indented_block_body) [113 170])
+                    ("delete_event" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [188 192])
+                        ("widget" variable nil (reparse-symbol function_parameters) [194 200])
+                        ("event" variable nil (reparse-symbol function_parameters) [202 207])
+                        ("data" variable nil (reparse-symbol function_parameters) [209 213]))                      ) (reparse-symbol indented_block_body) [171 268])
+                    ("destroy" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [281 285])
+                        ("widget" variable nil (reparse-symbol function_parameters) [287 293])
+                        ("data" variable nil (reparse-symbol function_parameters) [295 299]))                      ) (reparse-symbol indented_block_body) [269 325])
+                    ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [339 343]))                      ) (reparse-symbol indented_block_body) [326 904])
+                    ("main" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [914 918]))                      ) (reparse-symbol indented_block_body) [905 950]))                  
+                :type "class")
+                nil [94 950])
+            ("if" code nil nil [950 1013]))          
+    :file "helloworld.py"
+    :pointmax 1013
+    :fsize 1012
+    :lastmodtime '(19083 43349)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "base.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("pygtk" include nil nil [24 36])
+            ("pygtk" code nil nil [37 57])
+            ("gtk" include nil nil [58 68])
+            ("Base" type
+               (:members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [96 100]))                      ) (reparse-symbol indented_block_body) [83 172])
+                    ("main" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [183 187]))                      ) (reparse-symbol indented_block_body) [174 203]))                  
+                :type "class")
+                nil [70 203])
+            ("print" code nil nil [203 217])
+            ("if" code nil nil [218 273]))          
+    :file "base.py"
+    :pointmax 273
+    :fsize 272
+    :lastmodtime '(19096 54831)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "listview.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("gtk" include nil nil [35 45])
+            ("actresses" variable nil nil [47 298])
+            ("PyApp" type
+               (:superclasses ("gtk.Window")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [342 346]))                      ) (reparse-symbol indented_block_body) [329 1237])
+                    ("create_model" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1263 1267]))                      ) (reparse-symbol indented_block_body) [1246 1419])
+                    ("create_columns" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1442 1446])
+                        ("treeView" variable nil (reparse-symbol function_parameters) [1448 1456]))                      ) (reparse-symbol indented_block_body) [1423 2027])
+                    ("on_activated" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [2049 2053])
+                        ("widget" variable nil (reparse-symbol function_parameters) [2055 2061])
+                        ("row" variable nil (reparse-symbol function_parameters) [2063 2066])
+                        ("col" variable nil (reparse-symbol function_parameters) [2068 2071]))                      ) (reparse-symbol indented_block_body) [2032 2220]))                  
+                :type "class")
+                nil [300 2220])
+            ("PyApp" code nil nil [2221 2228])
+            ("gtk" code nil nil [2229 2239]))          
+    :file "listview.py"
+    :pointmax 2246
+    :fsize 2245
+    :lastmodtime '(19091 25862)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!python!gtk!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

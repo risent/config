@@ -1,0 +1,148 @@
+;; Object gnu/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "gnu/"
+  :tables (list 
+   (semanticdb-table "stubs.h"
+    :tags 
+        '( ("bits/wordsize.h" include (:line 4) nil nil)
+            ("gnu/stubs-32.h" include (:line 7) nil nil)
+            ("gnu/stubs-64.h" include (:line 9) nil nil))          
+    :file "stubs.h"
+    :pointmax 774
+    :fsize 315
+    :lastmodtime '(19231 24678)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stubs-32.h"
+    :tags 
+        '( ("__stub___kernel_cosl" variable
+               (:constant-flag t
+                :line 10)
+                nil nil)
+            ("__stub___kernel_sinl" variable
+               (:constant-flag t
+                :line 11)
+                nil nil)
+            ("__stub___kernel_tanl" variable
+               (:constant-flag t
+                :line 12)
+                nil nil)
+            ("__stub_chflags" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("__stub_fattach" variable
+               (:constant-flag t
+                :line 14)
+                nil nil)
+            ("__stub_fchflags" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("__stub_fdetach" variable
+               (:constant-flag t
+                :line 16)
+                nil nil)
+            ("__stub_gtty" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("__stub_lchmod" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("__stub_revoke" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("__stub_setlogin" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("__stub_sigreturn" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("__stub_sstk" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("__stub_stty" variable
+               (:constant-flag t
+                :line 23)
+                nil nil))          
+    :file "stubs-32.h"
+    :pointmax 774
+    :fsize 624
+    :lastmodtime '(19231 24564)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "stubs-64.h"
+    :tags 
+        '( ("__stub_bdflush" variable
+               (:constant-flag t
+                :line 10)
+                nil nil)
+            ("__stub_chflags" variable
+               (:constant-flag t
+                :line 11)
+                nil nil)
+            ("__stub_fattach" variable
+               (:constant-flag t
+                :line 12)
+                nil nil)
+            ("__stub_fchflags" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("__stub_fdetach" variable
+               (:constant-flag t
+                :line 14)
+                nil nil)
+            ("__stub_getmsg" variable
+               (:constant-flag t
+                :line 15)
+                nil nil)
+            ("__stub_gtty" variable
+               (:constant-flag t
+                :line 16)
+                nil nil)
+            ("__stub_lchmod" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("__stub_putmsg" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("__stub_revoke" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("__stub_setlogin" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("__stub_sigreturn" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("__stub_sstk" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("__stub_stty" variable
+               (:constant-flag t
+                :line 23)
+                nil nil))          
+    :file "stubs-64.h"
+    :pointmax 774
+    :fsize 604
+    :lastmodtime '(19231 24764)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!gnu!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

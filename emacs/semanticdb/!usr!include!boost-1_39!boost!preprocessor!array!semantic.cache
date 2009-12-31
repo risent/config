@@ -1,0 +1,97 @@
+;; Object array/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "array/"
+  :tables (list 
+   (semanticdb-table "elem.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_ELEM_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/array/data.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/array/size.hpp" include (:line 16) nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 17) nil nil)
+            ("boost/preprocessor/tuple/elem.hpp" include (:line 18) nil nil)
+            ("BOOST_PP_ARRAY_ELEM" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_PP_ARRAY_ELEM" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_ARRAY_ELEM_I" variable
+               (:constant-flag t
+                :line 26)
+                nil nil))          
+    :file "elem.hpp"
+    :pointmax 286
+    :fsize 1306
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "size.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_SIZE_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/tuple/elem.hpp" include (:line 16) nil nil)
+            ("BOOST_PP_ARRAY_SIZE" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_PP_ARRAY_SIZE" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_PP_ARRAY_SIZE_I" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_PP_ARRAY_SIZE_II" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "size.hpp"
+    :pointmax 286
+    :fsize 1158
+    :lastmodtime '(19085 43079)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "data.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ARRAY_DATA_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/config/config.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/tuple/elem.hpp" include (:line 16) nil nil)
+            ("BOOST_PP_ARRAY_DATA" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_PP_ARRAY_DATA" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_PP_ARRAY_DATA_I" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_PP_ARRAY_DATA_II" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "data.hpp"
+    :pointmax 286
+    :fsize 1158
+    :lastmodtime '(19085 43079)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!array!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

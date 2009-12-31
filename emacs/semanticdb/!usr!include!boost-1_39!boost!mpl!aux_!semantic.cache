@@ -1,0 +1,843 @@
+;; Object aux_/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "aux_/"
+  :tables (list 
+   (semanticdb-table "value_wknd.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_VALUE_WKND_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/static_cast.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/integral.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/eti.hpp" include (:line 19) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 20) nil nil)
+            ("boost/mpl/int.hpp" include (:line 25) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 27
+                                :members 
+                                  ( ("value_wknd" type
+                                       (:type "struct"
+                                        :line 28)
+                                        nil nil)
+                                    ("value_wknd" type
+                                       (:type "struct"
+                                        :line 34)
+                                        nil nil))                                  )
+                                nil nil))                          
+                        :line 27
+                        :type "namespace")
+                        nil nil))                  
+                :line 27
+                :type "namespace")
+                nil nil)
+            ("BOOST_MPL_AUX_VALUE_WKND" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("BOOST_MPL_AUX_MSVC_VALUE_WKND" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("BOOST_MPL_AUX_VALUE_WKND" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("BOOST_MPL_AUX_MSVC_VALUE_WKND" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("BOOST_MPL_AUX_VALUE_WKND" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("BOOST_MPL_AUX_MSVC_VALUE_WKND" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("BOOST_MPL_AUX_NESTED_VALUE_WKND" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("BOOST_MPL_AUX_NESTED_VALUE_WKND" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 73
+                                :members 
+                                  ( ("value_type_wknd" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 77
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 75
+                                        :type "struct")
+                                        nil nil)
+                                    ("value_type_wknd" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 83
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 81
+                                        :type "struct")
+                                        nil nil))                                  )
+                                nil nil))                          
+                        :line 73
+                        :type "namespace")
+                        nil nil))                  
+                :line 73
+                :type "namespace")
+                nil nil))          
+    :file "value_wknd.hpp"
+    :pointmax 286
+    :fsize 2138
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "static_cast.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_STATIC_CAST_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_AUX_STATIC_CAST" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("BOOST_MPL_AUX_STATIC_CAST" variable
+               (:constant-flag t
+                :line 24)
+                nil nil))          
+    :file "static_cast.hpp"
+    :pointmax 286
+    :fsize 878
+    :lastmodtime '(19085 43088)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "na_spec.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_NA_SPEC_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/lambda_fwd.hpp" include (:line 18) nil nil)
+            ("boost/mpl/int.hpp" include (:line 19) nil nil)
+            ("boost/mpl/bool.hpp" include (:line 20) nil nil)
+            ("boost/mpl/aux_/na.hpp" include (:line 21) nil nil)
+            ("boost/mpl/aux_/arity.hpp" include (:line 22) nil nil)
+            ("boost/mpl/aux_/template_arity_fwd.hpp" include (:line 23) nil nil)
+            ("boost/mpl/aux_/preprocessor/params.hpp" include (:line 26) nil nil)
+            ("boost/mpl/aux_/preprocessor/enum.hpp" include (:line 27) nil nil)
+            ("boost/mpl/aux_/preprocessor/def_params_tail.hpp" include (:line 28) nil nil)
+            ("boost/mpl/aux_/lambda_arity_param.hpp" include (:line 29) nil nil)
+            ("boost/mpl/aux_/config/dtp.hpp" include (:line 30) nil nil)
+            ("boost/mpl/aux_/config/eti.hpp" include (:line 31) nil nil)
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:line 32) nil nil)
+            ("boost/mpl/aux_/config/ttp.hpp" include (:line 33) nil nil)
+            ("boost/mpl/aux_/config/lambda.hpp" include (:line 34) nil nil)
+            ("boost/mpl/aux_/config/overload_resolution.hpp" include (:line 35) nil nil)
+            ("BOOST_MPL_AUX_NA_PARAMS" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_ARITY" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_ARITY" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_MAIN" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_LAMBDA" variable
+               (:constant-flag t
+                :line 75)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_LAMBDA" variable
+               (:constant-flag t
+                :line 98)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_TEMPLATE_ARITY" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_TEMPLATE_ARITY" variable
+               (:constant-flag t
+                :line 136)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_ETI" variable
+               (:constant-flag t
+                :line 140)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_ETI" variable
+               (:constant-flag t
+                :line 149)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_PARAM" variable
+               (:constant-flag t
+                :line 152)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC_NO_ETI" variable
+               (:constant-flag t
+                :line 154)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC" variable
+               (:constant-flag t
+                :line 161)
+                nil nil)
+            ("BOOST_MPL_AUX_NA_SPEC2" variable
+               (:constant-flag t
+                :line 166)
+                nil nil))          
+    :file "na_spec.hpp"
+    :pointmax 286
+    :fsize 4555
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lambda_support.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_LAMBDA_SUPPORT_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/lambda.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("boost/mpl/int_fwd.hpp" include (:line 26) nil nil)
+            ("boost/mpl/aux_/yes_no.hpp" include (:line 27) nil nil)
+            ("boost/mpl/aux_/na_fwd.hpp" include (:line 28) nil nil)
+            ("boost/mpl/aux_/preprocessor/params.hpp" include (:line 29) nil nil)
+            ("boost/mpl/aux_/preprocessor/enum.hpp" include (:line 30) nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 31) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 32) nil nil)
+            ("boost/preprocessor/tuple/to_list.hpp" include (:line 34) nil nil)
+            ("boost/preprocessor/list/for_each_i.hpp" include (:line 35) nil nil)
+            ("boost/preprocessor/inc.hpp" include (:line 36) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 37) nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_ARG_TYPEDEF_FUNC" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC" variable
+               (:constant-flag t
+                :line 72)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 83)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 97)
+                                nil nil))                          
+                        :line 97
+                        :type "namespace")
+                        nil nil))                  
+                :line 97
+                :type "namespace")
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_SPEC" variable
+               (:constant-flag t
+                :line 101)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_HAS_REBIND" variable
+               (:constant-flag t
+                :line 114)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_HAS_REBIND" variable
+               (:constant-flag t
+                :line 126)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT_HAS_REBIND" variable
+               (:constant-flag t
+                :line 134)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 138)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 151)
+                nil nil))          
+    :file "lambda_support.hpp"
+    :pointmax 286
+    :fsize 5473
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "na.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_NA_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/bool.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/na_fwd.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 19) nil nil)
+            ("boost/mpl/aux_/config/ctps.hpp" include (:line 20) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("is_na" type
+                               (:type "struct"
+                                :line 25)
+                                nil nil)
+                            ("is_na" type
+                               (:type "struct"
+                                :line 34)
+                                nil nil)
+                            ("is_not_na" type
+                               (:type "struct"
+                                :line 43)
+                                nil nil)
+                            ("is_not_na" type
+                               (:type "struct"
+                                :line 52)
+                                nil nil)
+                            ("if_na" type
+                               (:members 
+                                  ( ("type" type
+                                       (:protection "public"
+                                        :line 63
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 61
+                                :type "struct")
+                                nil nil)
+                            ("if_na" type
+                               (:members 
+                                  ( ("type" type
+                                       (:protection "public"
+                                        :line 68
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 66
+                                :type "struct")
+                                nil nil)
+                            ("if_na_impl" type
+                               (:members 
+                                  ( ("apply" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 75
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 73
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 71
+                                :type "struct")
+                                nil nil)
+                            ("if_na_impl" type
+                               (:members 
+                                  ( ("apply" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 83
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 81
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 79
+                                :type "struct")
+                                nil nil)
+                            ("if_na" type
+                               (:type "struct"
+                                :line 87)
+                                nil nil))                          
+                        :line 22
+                        :type "namespace")
+                        nil nil))                  
+                :line 22
+                :type "namespace")
+                nil nil))          
+    :file "na.hpp"
+    :pointmax 286
+    :fsize 1746
+    :lastmodtime '(19085 43088)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "arity.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_ARITY_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/dtp.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:line 21) nil nil)
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:line 22) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:members 
+                                  ( ("arity" type
+                                       (:members 
+                                          ( ("BOOST_STATIC_CONSTANT" function
+                                               (:protection "public"
+                                                :prototype-flag t
+                                                :line 32
+                                                :arguments 
+                                                  ( ("" variable (:type "int") nil nil)
+                                                    nil)                                                  )
+                                                nil nil))                                          
+                                        :line 30
+                                        :type "struct")
+                                        nil nil))                                  
+                                :line 24
+                                :type "namespace")
+                                nil nil))                          
+                        :line 24
+                        :type "namespace")
+                        nil nil))                  
+                :line 24
+                :type "namespace")
+                nil nil))          
+    :file "arity.hpp"
+    :pointmax 286
+    :fsize 1199
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "template_arity_fwd.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_TEMPLATE_ARITY_FWD_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 17)
+                                nil nil))                          
+                        :line 17
+                        :type "namespace")
+                        nil nil))                  
+                :line 17
+                :type "namespace")
+                nil nil))          
+    :file "template_arity_fwd.hpp"
+    :pointmax 286
+    :fsize 680
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lambda_arity_param.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_LAMBDA_ARITY_PARAM_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/ttp.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_ARITY_PARAM" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("BOOST_MPL_AUX_LAMBDA_ARITY_PARAM" variable
+               (:constant-flag t
+                :line 22)
+                nil nil))          
+    :file "lambda_arity_param.hpp"
+    :pointmax 286
+    :fsize 813
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nttp_decl.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_NTTP_DECL_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/nttp.hpp" include (:line 17) nil nil)
+            ("_mpl_nttp_bool" type
+               (:type "typedef"
+                :line 21)
+                nil nil)
+            ("_mpl_nttp_int" type
+               (:type "typedef"
+                :line 22)
+                nil nil)
+            ("_mpl_nttp_unsigned" type
+               (:type "typedef"
+                :line 23)
+                nil nil)
+            ("_mpl_nttp_long" type
+               (:type "typedef"
+                :line 24)
+                nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 26) nil nil)
+            ("BOOST_MPL_AUX_NTTP_DECL" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("BOOST_MPL_AUX_NTTP_DECL" variable
+               (:constant-flag t
+                :line 31)
+                nil nil))          
+    :file "nttp_decl.hpp"
+    :pointmax 286
+    :fsize 952
+    :lastmodtime '(19085 43088)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "yes_no.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_YES_NO_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/arrays.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 19) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 20) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 23
+                                :members 
+                                  ( ("no_tag" type
+                                       (:type "typedef"
+                                        :line 25)
+                                        nil nil)
+                                    ("yes_tag" type
+                                       (:type "typedef"
+                                        :line 26)
+                                        nil nil)
+                                    ("yes_no_tag" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 30
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 28
+                                        :type "struct")
+                                        nil nil)
+                                    ("yes_no_tag" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 35
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 33
+                                        :type "struct")
+                                        nil nil)
+                                    ("weighted_tag" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 42
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 39
+                                        :type "struct")
+                                        nil nil)
+                                    ("weighted_tag" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 52
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :line 50
+                                        :type "struct")
+                                        nil nil))                                  )
+                                nil nil))                          
+                        :line 23
+                        :type "namespace")
+                        nil nil))                  
+                :line 23
+                :type "namespace")
+                nil nil))          
+    :file "yes_no.hpp"
+    :pointmax 286
+    :fsize 1285
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "na_fwd.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_NA_FWD_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/adl_barrier.hpp" include (:line 17) nil nil)
+            ("na" type
+               (:members 
+                  ( ("type" type
+                       (:protection "public"
+                        :line 24
+                        :type "typedef")
+                        nil nil))                  
+                :line 22
+                :type "struct")
+                nil nil)
+            ("value" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "na_fwd.hpp"
+    :pointmax 286
+    :fsize 778
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "integral_wrapper.hpp"
+    :tags 
+        '( ("boost/mpl/integral_c_tag.hpp" include (:line 16) nil nil)
+            ("boost/mpl/aux_/static_cast.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/nttp_decl.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/static_constant.hpp" include (:line 19) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 20) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 22) nil nil)
+            ("AUX_WRAPPER_NAME" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("AUX_WRAPPER_PARAMS" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("AUX_WRAPPER_INST" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("AUX_WRAPPER_INST" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("AUX_WRAPPER_NAME" type
+               (:type "struct"
+                :line 43
+                :members 
+                  ( ("BOOST_STATIC_CONSTANT" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 45
+                        :arguments (nil nil))
+                        nil nil)
+                    ("type" type
+                       (:protection "public"
+                        :line 49
+                        :type "typedef")
+                        nil nil)
+                    ("type" type
+                       (:protection "public"
+                        :line 51
+                        :type "typedef")
+                        nil nil)
+                    ("value_type" type
+                       (:protection "public"
+                        :line 53
+                        :type "typedef")
+                        nil nil)
+                    ("tag" type
+                       (:protection "public"
+                        :line 54
+                        :type "typedef")
+                        nil nil)
+                    ("BOOST_STATIC_CONSTANT" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 61
+                        :arguments (nil nil nil nil nil))
+                        nil nil)
+                    ("BOOST_STATIC_CONSTANT" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 62
+                        :arguments (nil nil nil nil nil))
+                        nil nil)
+                    ("next" type
+                       (:protection "public"
+                        :line 64
+                        :type "typedef")
+                        nil nil)
+                    ("prior" type
+                       (:protection "public"
+                        :line 65
+                        :type "typedef")
+                        nil nil)
+                    ("next" type
+                       (:protection "public"
+                        :line 69
+                        :type "typedef")
+                        nil nil)
+                    ("prior" type
+                       (:protection "public"
+                        :line 70
+                        :type "typedef")
+                        nil nil)
+                    ("next" type
+                       (:protection "public"
+                        :line 72
+                        :type "typedef")
+                        nil nil)
+                    ("prior" type
+                       (:protection "public"
+                        :line 73
+                        :type "typedef")
+                        nil nil)
+                    ("operator AUX_WRAPPER_VALUE_TYPE" function
+                       (:protection "public"
+                        :line 80
+                        :arguments (nil))
+                        nil nil))                  )
+                nil nil)
+            ("AUX_WRAPPER_INST" function
+               (:arguments 
+                  ( ("" variable (:type "N") nil nil))                  
+                :line 85
+                :prototype-flag t)
+                nil nil)
+            ("AUX_WRAPPER_NAME" variable
+               (:constant-flag t
+                :line 90)
+                nil nil)
+            ("AUX_WRAPPER_PARAMS" variable
+               (:constant-flag t
+                :line 91)
+                nil nil)
+            ("AUX_WRAPPER_INST" variable
+               (:constant-flag t
+                :line 92)
+                nil nil)
+            ("AUX_WRAPPER_VALUE_TYPE" variable
+               (:constant-flag t
+                :line 93)
+                nil nil))          
+    :file "integral_wrapper.hpp"
+    :pointmax 286
+    :fsize 3618
+    :lastmodtime '(19085 43087)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adl_barrier.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_ADL_BARRIER_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/adl.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/gcc.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 19) nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE_OPEN" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE_CLOSE" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_DECL" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE" type
+               (:members 
+                  ( ("aux" type
+                       (:type "namespace"
+                        :line 33)
+                        nil nil))                  
+                :line 33
+                :type "namespace")
+                nil nil)
+            ("boost" type
+               (:members 
+                  ( ("mpl" type
+                       (:members 
+                          ( ("aux" type
+                               (:type "namespace"
+                                :line 35)
+                                nil nil))                          
+                        :line 34
+                        :type "namespace")
+                        nil nil))                  
+                :line 34
+                :type "namespace")
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE" variable
+               (:constant-flag t
+                :line 41)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE_OPEN" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_NAMESPACE_CLOSE" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("BOOST_MPL_AUX_ADL_BARRIER_DECL" variable
+               (:constant-flag t
+                :line 44)
+                nil nil))          
+    :file "adl_barrier.hpp"
+    :pointmax 286
+    :fsize 1669
+    :lastmodtime '(19085 43088)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!mpl!aux_!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

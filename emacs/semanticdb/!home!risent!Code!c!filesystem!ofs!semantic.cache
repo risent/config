@@ -1,0 +1,1176 @@
+;; Object ofs/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "ofs/"
+  :tables (list 
+   (semanticdb-table "Makefile"
+    :major-mode 'makefile-gmake-mode
+    :tags 
+        '( ("ofs" function (:arguments ("bitmap.o" "dir.o" "file.o" "inode.o" "main.o" "namei.o" "rbtree.o" "super.o" "syscall.o" "cmd.o")) nil [1 103])
+            ("..c.o" function nil nil [103 121])
+            ("clean" function nil nil [121 152]))          
+    :file "Makefile"
+    :pointmax 152
+    :fsize 151
+    :lastmodtime '(19105 50744)
+    :unmatched-syntax '((shell-command 129 . 151) (bol 128 . 128))
+    )
+   (semanticdb-table "main.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("time.h" include (:system-flag t) nil [60 77])
+            ("cmd.h" include nil nil [78 94])
+            ("main" function (:type "int") nil [96 4595]))          
+    :file "main.c"
+    :pointmax 4596
+    :fsize 4595
+    :lastmodtime '(19106 17814)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "super.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("time.h" include (:system-flag t) nil [60 77])
+            ("ofs.h" include nil nil [78 94])
+            ("bitmap.h" include nil nil [95 114])
+            ("pwd" variable
+               (:pointer 1
+                :type ("inode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [157 175])
+            ("ofs_mount" function
+               (:pointer 1
+                :arguments 
+                  ( ("fs_name" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [203 223]))                  
+                :type ("fs_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [177 2021])
+            ("ofs_alloc_inode" function
+               (:pointer 1
+                :arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2100 2120]))                  
+                :type ("inode" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2070 2697])
+            ("ofs_destroy_inode" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2862 2882])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2882 2902]))                  
+                :type "void")
+                nil [2839 3012])
+            ("ofs_delete_inode" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3076 3096])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3096 3116]))                  
+                :type "void")
+                nil [3054 3225])
+            ("ofs_read_inode" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3274 3294])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3294 3314]))                  
+                :type "void")
+                nil [3254 3479])
+            ("ofs_write_inode" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3528 3548])
+                    ("inode" variable
+                       (:pointer 1
+                        :type ("inode" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3548 3568])
+                    ("wait" variable (:type "int") (reparse-symbol arg-sub-list) [3568 3577]))                  
+                :type "void")
+                nil [3507 3743])
+            ("ofs_alloc_block" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3767 3787]))                  
+                :type ("__u64" type (:type "class") nil nil))
+                nil [3745 4058])
+            ("ofs_free_block" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4080 4100])
+                    ("bno" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4100 4110]))                  
+                :type "void")
+                nil [4060 4210])
+            ("ofs_read_block" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4232 4252])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4252 4262])
+                    ("bno" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4262 4272]))                  
+                :type "void")
+                nil [4212 4412])
+            ("ofs_write_block" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4435 4455])
+                    ("buf" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [4455 4465])
+                    ("bno" variable (:type ("__u64" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4465 4475]))                  
+                :type "void")
+                nil [4414 4616])
+            ("ofs_write_imap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4645 4665]))                  
+                :type "void")
+                nil [4618 4808])
+            ("ofs_write_bmap" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4837 4857]))                  
+                :type "void")
+                nil [4810 5037])
+            ("ofs_destroy_cache" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5120 5140]))                  
+                :type "void")
+                nil [5097 5290])
+            ("ofs_write_super" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5313 5333]))                  
+                :type "void")
+                nil [5292 5433])
+            ("ofs_umount" function
+               (:arguments 
+                  ( ("fsi" variable
+                       (:pointer 1
+                        :type ("fs_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5451 5471]))                  
+                :type "void")
+                nil [5435 5673]))          
+    :file "super.c"
+    :pointmax 5674
+    :fsize 5673
+    :lastmodtime '(19106 20064)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ofs.h"
+    :tags 
+        '( ("__OFS_H__" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("stdio.h" include (:line 9) nil nil)
+            ("PAGE_SIZE" variable
+               (:constant-flag t
+                :line 11)
+                nil nil)
+            ("__u8" type
+               (:type "typedef"
+                :line 14)
+                nil nil)
+            ("__u16" type
+               (:type "typedef"
+                :line 15)
+                nil nil)
+            ("__u32" type
+               (:type "typedef"
+                :line 16)
+                nil nil)
+            ("__u64" type
+               (:type "typedef"
+                :line 17)
+                nil nil)
+            ("__s8" type
+               (:type "typedef"
+                :line 19)
+                nil nil)
+            ("__s16" type
+               (:type "typedef"
+                :line 20)
+                nil nil)
+            ("__s32" type
+               (:type "typedef"
+                :line 21)
+                nil nil)
+            ("__s64" type
+               (:type "typedef"
+                :line 22)
+                nil nil)
+            ("ROUNDUP" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("UPPER" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("OFS" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("OFS_FILE" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("OFS_SIZE" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("OFS_MAGIC" variable
+               (:constant-flag t
+                :line 35)
+                nil nil)
+            ("ofs_super_block" type
+               (:type "struct"
+                :line 41
+                :members 
+                  ( ("s_magic" variable
+                       (:protection "public"
+                        :line 42)
+                        nil nil)
+                    ("s_inode_size" variable
+                       (:protection "public"
+                        :line 43)
+                        nil nil)
+                    ("s_block_size" variable
+                       (:protection "public"
+                        :line 44)
+                        nil nil)
+                    ("s_mount_nr" variable
+                       (:protection "public"
+                        :line 45)
+                        nil nil)
+                    ("s_version" variable
+                       (:protection "public"
+                        :line 46)
+                        nil nil)
+                    ("s_size" variable
+                       (:protection "public"
+                        :line 47)
+                        nil nil)
+                    ("s_mkfs_time" variable
+                       (:protection "public"
+                        :line 48)
+                        nil nil)
+                    ("s_mount_time" variable
+                       (:protection "public"
+                        :line 49)
+                        nil nil)
+                    ("s_mtime" variable
+                       (:protection "public"
+                        :line 50)
+                        nil nil)
+                    ("s_itable_offset" variable
+                       (:protection "public"
+                        :line 51)
+                        nil nil)
+                    ("s_data_offset" variable
+                       (:protection "public"
+                        :line 52)
+                        nil nil)
+                    ("s_inodes" variable
+                       (:protection "public"
+                        :line 53)
+                        nil nil)
+                    ("s_blocks" variable
+                       (:protection "public"
+                        :line 54)
+                        nil nil)
+                    ("s_imap_blocks" variable
+                       (:protection "public"
+                        :line 55)
+                        nil nil)
+                    ("s_bmap_blocks" variable
+                       (:protection "public"
+                        :line 56)
+                        nil nil)
+                    ("s_free_inodes" variable
+                       (:protection "public"
+                        :line 57)
+                        nil nil)
+                    ("s_free_blocks" variable
+                       (:protection "public"
+                        :line 58)
+                        nil nil)
+                    ("s_uuid" variable
+                       (:protection "public"
+                        :line 59)
+                        nil nil)
+                    ("s_name" variable
+                       (:protection "public"
+                        :line 60)
+                        nil nil)
+                    ("s_padding" variable
+                       (:protection "public"
+                        :line 61)
+                        nil nil))                  )
+                nil nil)
+            ("OFS_ROOT_INO" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("OFS_DIR_BLOCKS" variable
+               (:constant-flag t
+                :line 70)
+                nil nil)
+            ("OFS_IDX_BLOCK" variable
+               (:constant-flag t
+                :line 71)
+                nil nil)
+            ("OFS_BLOCKS_NR" variable
+               (:constant-flag t
+                :line 72)
+                nil nil)
+            ("OFS_MAX_FILE_SIZE" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("OFS_MAX_ENTRIES" variable
+               (:constant-flag t
+                :line 76)
+                nil nil)
+            ("OFS_REG_MODE" variable
+               (:constant-flag t
+                :line 78)
+                nil nil)
+            ("OFS_DIR_MODE" variable
+               (:constant-flag t
+                :line 79)
+                nil nil)
+            ("OFS_MASK_REG" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("OFS_MASK_DIR" variable
+               (:constant-flag t
+                :line 82)
+                nil nil)
+            ("OFS_MASK_UR" variable
+               (:constant-flag t
+                :line 83)
+                nil nil)
+            ("OFS_MASK_UW" variable
+               (:constant-flag t
+                :line 84)
+                nil nil)
+            ("OFS_MASK_UX" variable
+               (:constant-flag t
+                :line 85)
+                nil nil)
+            ("OFS_MASK_GR" variable
+               (:constant-flag t
+                :line 86)
+                nil nil)
+            ("OFS_MASK_GW" variable
+               (:constant-flag t
+                :line 87)
+                nil nil)
+            ("OFS_MASK_GX" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("OFS_MASK_OR" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("OFS_MASK_OW" variable
+               (:constant-flag t
+                :line 90)
+                nil nil)
+            ("OFS_MASK_OX" variable
+               (:constant-flag t
+                :line 91)
+                nil nil)
+            ("ofs_inode" type
+               (:type "struct"
+                :line 93
+                :members 
+                  ( ("i_version" variable
+                       (:protection "public"
+                        :line 94)
+                        nil nil)
+                    ("i_mode" variable
+                       (:protection "public"
+                        :line 95)
+                        nil nil)
+                    ("i_uid" variable
+                       (:protection "public"
+                        :line 96)
+                        nil nil)
+                    ("i_gid" variable
+                       (:protection "public"
+                        :line 97)
+                        nil nil)
+                    ("i_links" variable
+                       (:protection "public"
+                        :line 98)
+                        nil nil)
+                    ("i_size" variable
+                       (:protection "public"
+                        :line 99)
+                        nil nil)
+                    ("i_atime" variable
+                       (:protection "public"
+                        :line 100)
+                        nil nil)
+                    ("i_mtime" variable
+                       (:protection "public"
+                        :line 101)
+                        nil nil)
+                    ("i_ctime" variable
+                       (:protection "public"
+                        :line 102)
+                        nil nil)
+                    ("i_block" variable
+                       (:protection "public"
+                        :line 103)
+                        nil nil))                  )
+                nil nil)
+            ("OFS_MAX_NAME_LEN" variable
+               (:constant-flag t
+                :line 111)
+                nil nil)
+            ("ofs_dentry" type
+               (:type "struct"
+                :line 113
+                :members 
+                  ( ("d_ino" variable
+                       (:protection "public"
+                        :line 114)
+                        nil nil)
+                    ("d_name" variable
+                       (:protection "public"
+                        :line 115)
+                        nil nil))                  )
+                nil nil)
+            ("OFS_STAT_CLEAN" variable
+               (:constant-flag t
+                :line 119)
+                nil nil)
+            ("dentry" type
+               (:type "struct"
+                :line 122
+                :members 
+                  ( ("d_ino" variable
+                       (:protection "public"
+                        :line 123)
+                        nil nil)
+                    ("no" variable
+                       (:parent "__anon1"
+                        :line 127
+                        :protection "public")
+                        nil nil)
+                    ("off" variable
+                       (:parent "__anon1"
+                        :line 128
+                        :protection "public")
+                        nil nil)
+                    ("d_pos" variable
+                       (:protection "public"
+                        :line 129)
+                        nil nil)
+                    ("d_flags" variable
+                       (:protection "public"
+                        :line 130)
+                        nil nil)
+                    ("d_inode" variable
+                       (:protection "public"
+                        :line 131)
+                        nil nil)
+                    ("d_parent" variable
+                       (:protection "public"
+                        :line 132)
+                        nil nil)
+                    ("d_prev" variable
+                       (:protection "public"
+                        :line 133)
+                        nil nil)
+                    ("d_next" variable
+                       (:protection "public"
+                        :line 133)
+                        nil nil)
+                    ("d_name" variable
+                       (:protection "public"
+                        :line 134)
+                        nil nil))                  )
+                nil nil)
+            ("inode" type
+               (:members 
+                  ( ("i_ino" variable
+                       (:protection "public"
+                        :line 139)
+                        nil nil)
+                    ("i_dents" variable
+                       (:protection "public"
+                        :line 140)
+                        nil nil)
+                    ("i_flags" variable
+                       (:protection "public"
+                        :line 141)
+                        nil nil)
+                    ("i_ip" variable
+                       (:protection "public"
+                        :line 142)
+                        nil nil)
+                    ("i_sub_de" variable
+                       (:protection "public"
+                        :line 143)
+                        nil nil))                  
+                :line 138
+                :type "struct")
+                nil nil)
+            ("file" type
+               (:members 
+                  ( ("f_dentry" variable
+                       (:protection "public"
+                        :line 148)
+                        nil nil)
+                    ("f_ptr" variable
+                       (:protection "public"
+                        :line 151)
+                        nil nil)
+                    ("f_pos" variable
+                       (:protection "public"
+                        :line 152)
+                        nil nil))                  
+                :line 147
+                :type "struct")
+                nil nil)
+            ("OFS_RBT_RED" variable
+               (:constant-flag t
+                :line 155)
+                nil nil)
+            ("OFS_RBT_BLACK" variable
+               (:constant-flag t
+                :line 156)
+                nil nil)
+            ("rbt_node" type
+               (:members 
+                  ( ("color" variable
+                       (:protection "public"
+                        :line 159)
+                        nil nil)
+                    ("inode" variable
+                       (:protection "public"
+                        :line 160)
+                        nil nil)
+                    ("left_child" variable
+                       (:protection "public"
+                        :line 161)
+                        nil nil)
+                    ("right_child" variable
+                       (:protection "public"
+                        :line 161)
+                        nil nil)
+                    ("parent" variable
+                       (:protection "public"
+                        :line 161)
+                        nil nil))                  
+                :line 158
+                :type "struct")
+                nil nil)
+            ("rbtree" type
+               (:members 
+                  ( ("root" variable
+                       (:protection "public"
+                        :line 165)
+                        nil nil))                  
+                :line 164
+                :type "struct")
+                nil nil)
+            ("fs_info" type
+               (:members 
+                  ( ("dev" variable
+                       (:protection "public"
+                        :line 170)
+                        nil nil)
+                    ("sb" variable
+                       (:protection "public"
+                        :line 171)
+                        nil nil)
+                    ("imap" variable
+                       (:protection "public"
+                        :line 172)
+                        nil nil)
+                    ("bmap" variable
+                       (:protection "public"
+                        :line 173)
+                        nil nil)
+                    ("root" variable
+                       (:protection "public"
+                        :line 174)
+                        nil nil)
+                    ("icache" variable
+                       (:protection "public"
+                        :line 175)
+                        nil nil)
+                    ("dcache" variable
+                       (:protection "public"
+                        :line 176)
+                        nil nil))                  
+                :line 169
+                :type "struct")
+                nil nil)
+            ("vfs_namei" function
+               (:arguments (nil nil nil)
+                :line 193
+                :prototype-flag t)
+                nil nil)
+            ("vfs_d_ancestor" function
+               (:arguments (nil nil nil)
+                :line 196
+                :prototype-flag t)
+                nil nil)
+            ("ofs_mount" function
+               (:arguments (nil)
+                :line 206
+                :prototype-flag t)
+                nil nil)
+            ("ofs_umount" function
+               (:arguments (nil)
+                :line 209
+                :prototype-flag t)
+                nil nil)
+            ("ofs_write_super" function
+               (:arguments (nil)
+                :line 212
+                :prototype-flag t)
+                nil nil)
+            ("ofs_alloc_inode" function
+               (:arguments (nil)
+                :line 215
+                :prototype-flag t)
+                nil nil)
+            ("ofs_destroy_inode" function
+               (:arguments (nil nil)
+                :line 218
+                :prototype-flag t)
+                nil nil)
+            ("ofs_delete_inode" function
+               (:arguments (nil nil)
+                :line 221
+                :prototype-flag t)
+                nil nil)
+            ("ofs_read_inode" function
+               (:arguments (nil nil)
+                :line 224
+                :prototype-flag t)
+                nil nil)
+            ("ofs_write_inode" function
+               (:arguments (nil nil ("wait" variable (:type "int") nil nil))
+                :line 227
+                :prototype-flag t)
+                nil nil)
+            ("ofs_lookup" function
+               (:arguments (nil nil nil)
+                :line 233
+                :prototype-flag t)
+                nil nil)
+            ("ofs_create" function
+               (:arguments (nil nil nil ("mode" variable (:type "int") nil nil))
+                :line 237
+                :prototype-flag t)
+                nil nil)
+            ("ofs_link" function
+               (:arguments (nil nil nil nil)
+                :line 242
+                :prototype-flag t)
+                nil nil)
+            ("ofs_unlink" function
+               (:arguments (nil nil nil)
+                :line 246
+                :prototype-flag t)
+                nil nil)
+            ("ofs_truncate" function
+               (:arguments (nil nil nil)
+                :line 250
+                :prototype-flag t)
+                nil nil)
+            ("ofs_mkdir" function
+               (:arguments (nil nil nil ("mode" variable (:type "int") nil nil))
+                :line 254
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rmdir" function
+               (:arguments (nil nil nil)
+                :line 258
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rename" function
+               (:arguments (nil nil nil nil nil)
+                :line 262
+                :prototype-flag t)
+                nil nil)
+            ("ofs_read" function
+               (:arguments (nil nil nil nil nil)
+                :line 270
+                :prototype-flag t)
+                nil nil)
+            ("ofs_write" function
+               (:arguments (nil nil nil nil nil)
+                :line 274
+                :prototype-flag t)
+                nil nil)
+            ("filldir_t" type
+               (:type "typedef"
+                :line 277)
+                nil nil)
+            ("ofs_readdir" function
+               (:arguments (nil nil nil nil)
+                :line 281
+                :prototype-flag t)
+                nil nil)
+            ("ofs_alloc_block" function
+               (:arguments (nil)
+                :line 288
+                :prototype-flag t)
+                nil nil)
+            ("ofs_free_block" function
+               (:arguments (nil nil)
+                :line 289
+                :prototype-flag t)
+                nil nil)
+            ("ofs_read_block" function
+               (:arguments (nil nil nil)
+                :line 290
+                :prototype-flag t)
+                nil nil)
+            ("ofs_write_block" function
+               (:arguments (nil nil nil)
+                :line 291
+                :prototype-flag t)
+                nil nil)
+            ("ofs_read_entry" function
+               (:arguments (nil nil)
+                :line 293
+                :prototype-flag t)
+                nil nil)
+            ("ofs_destroy_entry" function
+               (:arguments (nil nil)
+                :line 294
+                :prototype-flag t)
+                nil nil)
+            ("ofs_add_entry" function
+               (:arguments (nil nil nil)
+                :line 295
+                :prototype-flag t)
+                nil nil)
+            ("ofs_delete_entry" function
+               (:arguments (nil nil nil)
+                :line 297
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rbt_insert" function
+               (:arguments (nil nil)
+                :line 300
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rbt_delete" function
+               (:arguments (nil nil)
+                :line 301
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rbt_search" function
+               (:arguments (nil nil)
+                :line 302
+                :prototype-flag t)
+                nil nil)
+            ("ofs_rbt_erase" function
+               (:arguments (nil)
+                :line 303
+                :prototype-flag t)
+                nil nil))          
+    :file "ofs.h"
+    :pointmax 5674
+    :fsize 9959
+    :lastmodtime '(19106 16711)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "bitmap.h"
+    :tags 
+        '( ("__BITMAP_H__" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("ofs.h" include (:line 4) nil nil)
+            ("ofs_find_first_zero_bit" function
+               (:arguments (nil nil)
+                :line 6
+                :prototype-flag t)
+                nil nil)
+            ("ofs_set_bit" function
+               (:arguments (nil nil)
+                :line 7
+                :prototype-flag t)
+                nil nil)
+            ("ofs_clear_bit" function
+               (:arguments (nil nil)
+                :line 8
+                :prototype-flag t)
+                nil nil))          
+    :file "bitmap.h"
+    :pointmax 5674
+    :fsize 238
+    :lastmodtime '(19105 58156)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cmd.h"
+    :tags 
+        '( ("__CMD_H__" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("syscall.h" include (:line 9) nil nil)
+            ("cmd_ls" function
+               (:arguments (nil nil)
+                :line 12
+                :prototype-flag t)
+                nil nil)
+            ("cmd_cd" function
+               (:arguments (nil nil)
+                :line 15
+                :prototype-flag t)
+                nil nil)
+            ("cmd_create" function
+               (:arguments (nil nil)
+                :line 18
+                :prototype-flag t)
+                nil nil)
+            ("cmd_ln" function
+               (:arguments (nil nil nil)
+                :line 22
+                :prototype-flag t)
+                nil nil)
+            ("cmd_rm" function
+               (:arguments (nil nil)
+                :line 25
+                :prototype-flag t)
+                nil nil)
+            ("cmd_mkdir" function
+               (:arguments (nil nil)
+                :line 28
+                :prototype-flag t)
+                nil nil)
+            ("cmd_rmdir" function
+               (:arguments (nil nil)
+                :line 31
+                :prototype-flag t)
+                nil nil)
+            ("cmd_mv" function
+               (:arguments (nil nil nil)
+                :line 34
+                :prototype-flag t)
+                nil nil)
+            ("cmd_truncate" function
+               (:arguments (nil nil nil)
+                :line 37
+                :prototype-flag t)
+                nil nil)
+            ("cmd_read" function
+               (:arguments (nil nil nil nil nil)
+                :line 40
+                :prototype-flag t)
+                nil nil)
+            ("cmd_write" function
+               (:arguments (nil nil nil nil nil)
+                :line 43
+                :prototype-flag t)
+                nil nil)
+            ("cmd_get_pwd" function
+               (:arguments (nil nil)
+                :line 47
+                :prototype-flag t)
+                nil nil))          
+    :file "cmd.h"
+    :pointmax 4596
+    :fsize 1393
+    :lastmodtime '(19106 17798)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "syscall.h"
+    :tags 
+        '( ("__SYSCALL_H__" variable
+               (:constant-flag t
+                :line 2)
+                nil nil)
+            ("ofs.h" include (:line 9) nil nil)
+            ("sys_fsinfo" function
+               (:arguments (nil)
+                :line 12
+                :prototype-flag t)
+                nil nil)
+            ("sys_create" function
+               (:arguments (nil nil ("mode" variable (:type "int") nil nil))
+                :line 15
+                :prototype-flag t)
+                nil nil)
+            ("sys_truncate" function
+               (:arguments (nil nil nil)
+                :line 18
+                :prototype-flag t)
+                nil nil)
+            ("sys_mkdir" function
+               (:arguments (nil nil ("mode" variable (:type "int") nil nil))
+                :line 21
+                :prototype-flag t)
+                nil nil)
+            ("sys_rmdir" function
+               (:arguments (nil nil)
+                :line 24
+                :prototype-flag t)
+                nil nil)
+            ("sys_rename" function
+               (:arguments (nil nil nil)
+                :line 27
+                :prototype-flag t)
+                nil nil)
+            ("sys_chdir" function
+               (:arguments (nil nil)
+                :line 30
+                :prototype-flag t)
+                nil nil)
+            ("sys_read" function
+               (:arguments (nil nil nil nil nil)
+                :line 33
+                :prototype-flag t)
+                nil nil)
+            ("sys_write" function
+               (:arguments (nil nil nil nil nil)
+                :line 37
+                :prototype-flag t)
+                nil nil)
+            ("sys_link" function
+               (:arguments (nil nil nil)
+                :line 41
+                :prototype-flag t)
+                nil nil)
+            ("sys_unlink" function
+               (:arguments (nil nil)
+                :line 44
+                :prototype-flag t)
+                nil nil)
+            ("sys_dirent" type
+               (:type "struct"
+                :line 47
+                :members 
+                  ( ("d_ino" variable
+                       (:protection "public"
+                        :line 48)
+                        nil nil)
+                    ("d_off" variable
+                       (:protection "public"
+                        :line 49)
+                        nil nil)
+                    ("d_reclen" variable
+                       (:protection "public"
+                        :line 50)
+                        nil nil)
+                    ("d_name" variable
+                       (:protection "public"
+                        :line 52)
+                        nil nil))                  )
+                nil nil)
+            ("sde" variable
+               (:parent "__anon1"
+                :line 56
+                :protection "public")
+                nil nil)
+            ("dir" variable
+               (:parent "__anon1"
+                :line 57
+                :protection "public")
+                nil nil)
+            ("dp" variable
+               (:parent "__anon1"
+                :line 58
+                :protection "public")
+                nil nil)
+            ("flag" variable
+               (:parent "__anon1"
+                :line 59
+                :protection "public")
+                nil nil)
+            ("sys_DIR" type
+               (:type "typedef"
+                :line 60)
+                nil nil)
+            ("sys_opendir" function
+               (:arguments (nil nil)
+                :line 62
+                :prototype-flag t)
+                nil nil)
+            ("sys_readdir" function
+               (:arguments (nil nil)
+                :line 63
+                :prototype-flag t)
+                nil nil)
+            ("sys_closedir" function
+               (:arguments (nil nil)
+                :line 64
+                :prototype-flag t)
+                nil nil)
+            ("sys_stat" type
+               (:members 
+                  ( ("st_mode" variable
+                       (:protection "public"
+                        :line 68)
+                        nil nil)
+                    ("st_uid" variable
+                       (:protection "public"
+                        :line 69)
+                        nil nil)
+                    ("st_gid" variable
+                       (:protection "public"
+                        :line 70)
+                        nil nil)
+                    ("st_size" variable
+                       (:protection "public"
+                        :line 71)
+                        nil nil)
+                    ("st_nlink" variable
+                       (:protection "public"
+                        :line 72)
+                        nil nil)
+                    ("st_mtime" variable
+                       (:protection "public"
+                        :line 73)
+                        nil nil)
+                    ("st_atime" variable
+                       (:protection "public"
+                        :line 74)
+                        nil nil))                  
+                :line 67
+                :type "struct")
+                nil nil)
+            ("sys_stat" function
+               (:arguments (nil nil nil nil)
+                :line 78
+                :prototype-flag t)
+                nil nil)
+            ("sys_get_pwd" function
+               (:arguments (nil nil)
+                :line 81
+                :prototype-flag t)
+                nil nil))          
+    :file "syscall.h"
+    :pointmax 4596
+    :fsize 2767
+    :lastmodtime '(19106 17795)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!c!filesystem!ofs!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

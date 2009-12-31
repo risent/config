@@ -1,0 +1,18 @@
+;; Object cle/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "cle/"
+  :tables (list 
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags nil
+    :file "Makefile.am"
+    :pointmax 59
+    :fsize 58
+    :lastmodtime '(19082 13868)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!iiim!cle!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

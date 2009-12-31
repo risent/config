@@ -1,0 +1,142 @@
+;; Object innerclasses/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "innerclasses/"
+  :tables (list 
+   (semanticdb-table "Parcell.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("Parcell" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("Contents" type
+                       (:members 
+                          ( ("i" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [103 122])
+                            ("value" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [124 162]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [85 168])
+                    ("Destination" type
+                       (:members 
+                          ( ("label" variable
+                               (:typemodifiers ("private")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [194 215])
+                            ("Destination" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("whereTO" variable (:type "String") (reparse-symbol formal_parameters) [229 243]))                                  )
+                                (reparse-symbol class_member_declaration) [217 271])
+                            ("readLabel" function (:type "String") (reparse-symbol class_member_declaration) [273 315]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [173 321])
+                    ("ship" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dest" variable (:type "String") (reparse-symbol formal_parameters) [431 442]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [414 557])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [587 600]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [562 658]))                  
+                :type "class")
+                nil [58 660]))          
+    :file "Parcell.java"
+    :pointmax 661
+    :fsize 660
+    :lastmodtime '(19115 4025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Parcell2.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("Parcel2" type
+               (:typemodifiers ("public")
+                :type "class")
+                nil [75 100]))          
+    :file "Parcell2.java"
+    :pointmax 101
+    :fsize 100
+    :lastmodtime '(19116 38430)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Parcel2.java"
+    :major-mode 'jde-mode
+    :tags 
+        '( ("Parcel2" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("Contents" type
+                       (:members 
+                          ( ("i" variable
+                               (:typemodifiers ("private")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [103 122])
+                            ("value" function
+                               (:typemodifiers ("public")
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [124 162]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [85 168])
+                    ("Destination" type
+                       (:members 
+                          ( ("label" variable
+                               (:typemodifiers ("private")
+                                :type "String")
+                                (reparse-symbol class_member_declaration) [194 215])
+                            ("Destination" function
+                               (:constructor-flag t
+                                :arguments 
+                                  ( ("whereTO" variable (:type "String") (reparse-symbol formal_parameters) [229 243]))                                  )
+                                (reparse-symbol class_member_declaration) [217 271])
+                            ("readLabel" function (:type "String") (reparse-symbol class_member_declaration) [273 315]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [173 321])
+                    ("to" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("s" variable (:type "String") (reparse-symbol formal_parameters) [349 357]))                          
+                        :type "Destination")
+                        (reparse-symbol class_member_declaration) [327 394])
+                    ("contents" function
+                       (:typemodifiers ("public")
+                        :type "Contents")
+                        (reparse-symbol class_member_declaration) [400 458])
+                    ("ship" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("dest" variable (:type "String") (reparse-symbol formal_parameters) [481 492]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [464 607])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [637 650]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [612 854]))                  
+                :type "class")
+                nil [58 856]))          
+    :file "Parcel2.java"
+    :pointmax 857
+    :fsize 856
+    :lastmodtime '(19116 39028)
+    :unmatched-syntax '((RBRACE 859 . 860) (RBRACE 863 . 864) (IDENTIFIER 858 . 862))
+    )
+   )
+  :file "!home!risent!Code!java!thinkinginjava!innerclasses!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

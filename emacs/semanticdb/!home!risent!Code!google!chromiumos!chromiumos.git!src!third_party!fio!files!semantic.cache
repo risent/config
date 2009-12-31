@@ -1,0 +1,666 @@
+;; Object files/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "files/"
+  :tables (list 
+   (semanticdb-table "io_u.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("unistd.h" include (:system-flag t) nil [1 20])
+            ("fcntl.h" include (:system-flag t) nil [21 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("signal.h" include (:system-flag t) nil [60 79])
+            ("time.h" include (:system-flag t) nil [80 97])
+            ("assert.h" include (:system-flag t) nil [98 117])
+            ("fio.h" include nil nil [119 135])
+            ("hash.h" include nil nil [136 153])
+            ("verify.h" include nil nil [154 173])
+            ("io_completion_data" type
+               (:members 
+                  ( ("nr" variable (:type "int") (reparse-symbol classsubparts) [204 211])
+                    ("error" variable (:type "int") (reparse-symbol classsubparts) [229 239])
+                    ("bytes_done" variable
+                       (:dereference 1
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [256 284])
+                    ("time" variable (:type ("timeval" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol classsubparts) [299 319]))                  
+                :type "struct")
+                nil [175 336])
+            ("random_map_free" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("f" variable
+                       (:pointer 1
+                        :type ("fio_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [519 538])
+                    ("block" variable
+                       (:constant-flag t
+                        :type "unsigned long long")
+                        (reparse-symbol arg-sub-list) [539 570]))                  
+                :type "int")
+                nil [492 781])
+            ("mark_random_map" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [861 884])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [885 903]))                  
+                :type "void")
+                nil [833 1968])
+            ("last_block" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2007 2030])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("fio_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2031 2050])
+                    ("ddir" variable (:type ("fio_ddir" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2060 2079]))                  
+                :type "unsigned long long")
+                nil [1970 2425])
+            ("get_next_free_block" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2507 2530])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("fio_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2531 2550])
+                    ("ddir" variable (:type ("fio_ddir" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [2561 2580])
+                    ("b" variable
+                       (:pointer 1
+                        :type "unsigned long long")
+                        (reparse-symbol arg-sub-list) [2581 2603]))                  
+                :type "int")
+                nil [2476 3057])
+            ("get_next_rand_offset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3091 3114])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("fio_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [3115 3134])
+                    ("ddir" variable (:type ("fio_ddir" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [3139 3158])
+                    ("b" variable
+                       (:pointer 1
+                        :type "unsigned long long")
+                        (reparse-symbol arg-sub-list) [3159 3181]))                  
+                :type "int")
+                nil [3059 4251])
+            ("get_next_offset" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4456 4479])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [4480 4498]))                  
+                :type "int")
+                nil [4429 5535])
+            ("get_next_buflen" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5573 5596])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [5597 5615]))                  
+                :type "unsigned int")
+                nil [5537 6577])
+            ("set_rwmix_bytes" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6607 6630]))                  
+                :type "void")
+                nil [6579 6921])
+            ("get_rand_ddir" function
+               (:typemodifiers ("static" "inline")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [6965 6988]))                  
+                :type ("fio_ddir" type (:type "enum") nil nil))
+                nil [6923 7185])
+            ("rate_ddir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [7218 7241])
+                    ("ddir" variable (:type ("fio_ddir" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [7242 7261]))                  
+                :type ("fio_ddir" type (:type "enum") nil nil))
+                nil [7187 8210])
+            ("get_rw_ddir" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [8396 8419]))                  
+                :type ("fio_ddir" type (:type "enum") nil nil))
+                nil [8363 9411])
+            ("put_file_log" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9431 9454])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("fio_file" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9455 9474]))                  
+                :type "void")
+                nil [9413 9553])
+            ("put_io_u" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9569 9592])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9593 9611]))                  
+                :type "void")
+                nil [9555 9952])
+            ("clear_io_u" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9970 9993])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [9994 10012]))                  
+                :type "void")
+                nil [9954 10069])
+            ("requeue_io_u" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10089 10112])
+                    ("io_u" variable
+                       (:pointer 2
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10113 10132]))                  
+                :type "void")
+                nil [10071 10527])
+            ("fill_io_u" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10550 10573])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10574 10592]))                  
+                :type "int")
+                nil [10529 11846])
+            ("__io_u_mark_map" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("map" variable
+                       (:pointer 1
+                        :type "unsigned int")
+                        (reparse-symbol arg-sub-list) [11876 11894])
+                    ("nr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [11895 11911]))                  
+                :type "void")
+                nil [11848 12197])
+            ("io_u_mark_submit" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12221 12244])
+                    ("nr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12245 12261]))                  
+                :type "void")
+                nil [12199 12331])
+            ("io_u_mark_complete" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12357 12380])
+                    ("nr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12381 12397]))                  
+                :type "void")
+                nil [12333 12471])
+            ("io_u_mark_depth" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12494 12517])
+                    ("nr" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [12518 12534]))                  
+                :type "void")
+                nil [12473 12847])
+            ("io_u_mark_lat_usec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12880 12903])
+                    ("usec" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [12904 12923]))                  
+                :type "void")
+                nil [12849 13423])
+            ("io_u_mark_lat_msec" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [13456 13479])
+                    ("msec" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [13480 13499]))                  
+                :type "void")
+                nil [13425 14053])
+            ("io_u_mark_latency" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14085 14108])
+                    ("usec" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [14109 14128]))                  
+                :type "void")
+                nil [14055 14227])
+            ("get_next_file_rand" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [14333 14356])
+                    ("goodf" variable (:type ("fio_file_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [14365 14391])
+                    ("badf" variable (:type ("fio_file_flags" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [14400 14425]))                  
+                :type ("fio_file" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [14290 14981])
+            ("get_next_file_rr" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [15107 15130])
+                    ("goodf" variable (:type "int") (reparse-symbol arg-sub-list) [15131 15141])
+                    ("badf" variable (:type "int") (reparse-symbol arg-sub-list) [15148 15157]))                  
+                :type ("fio_file" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [15066 16011])
+            ("get_next_file" function
+               (:pointer 1
+                :typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16051 16074]))                  
+                :type ("fio_file" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [16013 16943])
+            ("set_io_u_file" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16970 16993])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [16994 17012]))                  
+                :type "int")
+                nil [16945 17411])
+            ("__get_io_u" function
+               (:pointer 1
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [17438 17461]))                  
+                :type ("io_u" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [17414 18259])
+            ("get_io_u" function
+               (:pointer 1
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [18437 18460]))                  
+                :type ("io_u" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [18415 19716])
+            ("io_u_log_error" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19738 19761])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [19762 19780]))                  
+                :type "void")
+                nil [19718 20140])
+            ("io_completed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20167 20190])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20191 20209])
+                    ("icd" variable
+                       (:pointer 1
+                        :type ("io_completion_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20214 20245]))                  
+                :type "void")
+                nil [20142 22227])
+            ("init_icd" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22250 22273])
+                    ("icd" variable
+                       (:pointer 1
+                        :type ("io_completion_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22274 22305])
+                    ("nr" variable (:type "int") (reparse-symbol arg-sub-list) [22313 22320]))                  
+                :type "void")
+                nil [22229 22484])
+            ("ios_completed" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22512 22535])
+                    ("icd" variable
+                       (:pointer 1
+                        :type ("io_completion_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22541 22572]))                  
+                :type "void")
+                nil [22486 22772])
+            ("io_u_sync_complete" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22852 22875])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [22876 22894])
+                    ("bytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [22904 22925]))                  
+                :type "int")
+                nil [22829 23260])
+            ("io_u_queued_complete" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [23363 23386])
+                    ("min_evts" variable (:type "int") (reparse-symbol arg-sub-list) [23387 23400])
+                    ("bytes" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol arg-sub-list) [23405 23426]))                  
+                :type "int")
+                nil [23338 24061])
+            ("io_u_queued" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24157 24180])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24181 24199]))                  
+                :type "void")
+                nil [24140 24392])
+            ("io_u_fill_buffer" function
+               (:arguments 
+                  ( ("td" variable
+                       (:pointer 1
+                        :type ("thread_data" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24462 24485])
+                    ("io_u" variable
+                       (:pointer 1
+                        :type ("io_u" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [24486 24504])
+                    ("max_bs" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [24513 24533]))                  
+                :type "void")
+                nil [24440 24723]))          
+    :file "io_u.c"
+    :pointmax 24724
+    :fsize 24723
+    :lastmodtime '(19205 62888)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!google!chromiumos!chromiumos.git!src!third_party!fio!files!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

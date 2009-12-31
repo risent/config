@@ -1,0 +1,1683 @@
+;; Object scim/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "scim/"
+  :tables (list 
+   (semanticdb-table "sunpinyin_imengine.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Uses_STL_AUTOPTR" variable (:constant-flag t) nil [2058 2074])
+            ("Uses_STL_FUNCTIONAL" variable (:constant-flag t) nil [2083 2102])
+            ("Uses_STL_VECTOR" variable (:constant-flag t) nil [2111 2126])
+            ("Uses_STL_IOSTREAM" variable (:constant-flag t) nil [2135 2152])
+            ("Uses_STL_FSTREAM" variable (:constant-flag t) nil [2161 2177])
+            ("Uses_STL_ALGORITHM" variable (:constant-flag t) nil [2186 2204])
+            ("Uses_STL_MAP" variable (:constant-flag t) nil [2213 2225])
+            ("Uses_STL_UTILITY" variable (:constant-flag t) nil [2234 2250])
+            ("Uses_STL_IOMANIP" variable (:constant-flag t) nil [2259 2275])
+            ("Uses_C_STDIO" variable (:constant-flag t) nil [2284 2296])
+            ("Uses_SCIM_UTILITY" variable (:constant-flag t) nil [2305 2322])
+            ("Uses_SCIM_IMENGINE" variable (:constant-flag t) nil [2331 2349])
+            ("Uses_SCIM_ICONV" variable (:constant-flag t) nil [2358 2373])
+            ("Uses_SCIM_CONFIG_BASE" variable (:constant-flag t) nil [2382 2403])
+            ("Uses_SCIM_CONFIG_PATH" variable (:constant-flag t) nil [2412 2433])
+            ("Uses_SCIM_LOOKUP_TABLE" variable (:constant-flag t) nil [2442 2464])
+            ("Uses_SCIM_DEBUG" variable (:constant-flag t) nil [2473 2488])
+            ("sys/types.h" include (:system-flag t) nil [2490 2512])
+            ("sys/stat.h" include (:system-flag t) nil [2513 2534])
+            ("unistd.h" include (:system-flag t) nil [2535 2554])
+            ("imi_options.h" include (:system-flag t) nil [2556 2580])
+            ("imi_view.h" include (:system-flag t) nil [2581 2602])
+            ("ic_history.h" include (:system-flag t) nil [2603 2626])
+            ("scim.h" include (:system-flag t) nil [2628 2645])
+            ("imi_scimwin.h" include nil nil [2647 2671])
+            ("sunpinyin_utils.h" include nil nil [2672 2700])
+            ("sunpinyin_keycode.h" include nil nil [2701 2731])
+            ("sunpinyin_lookup_table.h" include nil nil [2732 2767])
+            ("sunpinyin_imengine.h" include nil nil [2768 2799])
+            ("sunpinyin_imengine_config_keys.h" include nil nil [2800 2843])
+            ("sunpinyin_private.h" include nil nil [2844 2874])
+            ("SCIM_PROP_STATUS" variable (:constant-flag t) nil [2884 2900])
+            ("SCIM_PROP_LETTER" variable (:constant-flag t) nil [2955 2971])
+            ("SCIM_PROP_PUNCT" variable (:constant-flag t) nil [3026 3041])
+            ("SCIM_SUNPINYIN_DATADIR" variable (:constant-flag t) nil [3132 3154])
+            ("SCIM_ICONDIR" variable (:constant-flag t) nil [3235 3247])
+            ("SCIM_SUNPINYIN_ICON_FILE" variable (:constant-flag t) nil [3346 3370])
+            ("SCIM_FULL_LETTER_ICON" variable (:constant-flag t) nil [3430 3451])
+            ("SCIM_HALF_LETTER_ICON" variable (:constant-flag t) nil [3507 3528])
+            ("SCIM_FULL_PUNCT_ICON" variable (:constant-flag t) nil [3584 3604])
+            ("SCIM_HALF_PUNCT_ICON" variable (:constant-flag t) nil [3660 3680])
+            ("scim" using (:type ("scim" type (:type "class") nil nil)) nil [3729 3750])
+            ("CSunpinyinUserData" type
+               (:members 
+                  ( ("m_history" variable (:type ("CBigramHistory" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3783 3816])
+                    ("m_history_path" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3821 3859])
+                    ("m_user_data_directory" variable (:type ("String" type (:type "class") nil nil)) (reparse-symbol classsubparts) [3864 3909])
+                    ("public" label nil (reparse-symbol classsubparts) [3915 3922])
+                    ("CSunpinyinUserData" function
+                       (:constructor-flag t
+                        :type ("CSunpinyinUserData" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3931 4494])
+                    ("get_history" function
+                       (:pointer 1
+                        :type ("CBigramHistory" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [4504 4568])
+                    ("save_history" function (:type "bool") (reparse-symbol classsubparts) [4578 5204])
+                    ("load_history" function (:type "bool") (reparse-symbol classsubparts) [5214 5689])
+                    ("create_directory_if_necessary" function
+                       (:arguments 
+                          ( ("directory" variable
+                               (:constant-flag t
+                                :type ("String" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [5774 5798]))                          
+                        :type "bool")
+                        (reparse-symbol classsubparts) [5739 6050]))                  
+                :type "class")
+                nil [3752 6053])
+            ("_scim_pinyin_factory" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("IMEngineFactoryPointer" type (:type "class") nil nil))
+                nil [6055 6110])
+            ("_scim_config" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("ConfigPointer" type (:type "class") nil nil))
+                nil [6113 6151])
+            ("_status_property" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("Property" type (:type "class") nil nil))
+                nil [6153 6211])
+            ("_letter_property" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("Property" type (:type "class") nil nil))
+                nil [6212 6270])
+            ("_punct_property" function
+               (:prototype-flag t
+                :typemodifiers ("static")
+                :type ("Property" type (:type "class") nil nil))
+                nil [6271 6328])
+            ("scim_imengine_module_create_factory" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("IMEngineFactoryPointer" type (:type "class") nil nil)
+                :arguments 
+                  ( ("engine" variable (:type ("uint32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7548 7562]))                  )
+                (reparse-symbol extern-c-contents) [7488 8014])
+            ("scim_imengine_module_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type ("uint32" type (:type "class") nil nil)
+                :arguments 
+                  ( ("config" variable
+                       (:constant-flag t
+                        :type ("ConfigPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6727 6755]))                  )
+                (reparse-symbol extern-c-contents) [6693 7482])
+            ("scim_module_exit" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6600 6605]))                  )
+                (reparse-symbol extern-c-contents) [6577 6687])
+            ("scim_module_init" function
+               (:typemodifiers ("extern" "\"C\"")
+                :type "void"
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6370 6375]))                  )
+                (reparse-symbol extern-c-contents) [6347 6571])
+            ("SunPyFactory" function
+               (:constructor-flag t
+                :parent "SunPyFactory"
+                :arguments 
+                  ( ("config" variable
+                       (:constant-flag t
+                        :type ("ConfigPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8080 8108]))                  
+                :type ("SunPyFactory" type (:type "class") nil nil))
+                nil [8052 8500])
+            ("init" function
+               (:parent "SunPyFactory"
+                :type "bool")
+                nil [8502 8711])
+            ("load_user_config" function
+               (:parent "SunPyFactory"
+                :type "bool")
+                nil [8713 11275])
+            ("load_system_data" function
+               (:parent "SunPyFactory"
+                :type "bool")
+                nil [11629 12334])
+            ("load_user_data" function
+               (:parent "SunPyFactory"
+                :type "void")
+                nil [12336 12409])
+            ("SunPyFactory" function
+               (:destructor-flag t
+                :parent "SunPyFactory"
+                :type "void")
+                nil [12411 12621])
+            ("get_name" function
+               (:parent "SunPyFactory"
+                :type ("WideString" type (:type "class") nil nil))
+                nil [12623 12688])
+            ("get_authors" function
+               (:parent "SunPyFactory"
+                :type ("WideString" type (:type "class") nil nil))
+                nil [12690 12866])
+            ("get_credits" function
+               (:parent "SunPyFactory"
+                :type ("WideString" type (:type "class") nil nil))
+                nil [12868 13009])
+            ("get_help" function
+               (:parent "SunPyFactory"
+                :type ("WideString" type (:type "class") nil nil))
+                nil [13011 13725])
+            ("get_uuid" function
+               (:parent "SunPyFactory"
+                :type ("String" type (:type "class") nil nil))
+                nil [13727 13829])
+            ("get_icon_file" function
+               (:parent "SunPyFactory"
+                :type ("String" type (:type "class") nil nil))
+                nil [13831 13924])
+            ("create_instance" function
+               (:parent "SunPyFactory"
+                :arguments 
+                  ( ("encoding" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [13981 14004])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [14005 14012]))                  
+                :type ("IMEngineInstancePointer" type (:type "class") nil nil))
+                nil [13926 14165])
+            ("reload_config" function
+               (:parent "SunPyFactory"
+                :arguments 
+                  ( ("config" variable
+                       (:constant-flag t
+                        :type ("ConfigPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14201 14229]))                  
+                :type "void")
+                nil [14167 14312])
+            ("SunPyInstance" function
+               (:constructor-flag t
+                :parent "SunPyInstance"
+                :arguments 
+                  ( ("factory" variable
+                       (:pointer 1
+                        :type ("SunPyFactory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14379 14401])
+                    ("user_data" variable
+                       (:pointer 1
+                        :type ("CSunpinyinUserData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14432 14462])
+                    ("encoding" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [14493 14516])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [14547 14554]))                  
+                :type ("SunPyInstance" type (:type "class") nil nil))
+                nil [14349 15211])
+            ("SunPyInstance" function
+               (:destructor-flag t
+                :parent "SunPyInstance"
+                :type "void")
+                nil [15213 15419])
+            ("process_key_event" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("key" variable
+                       (:constant-flag t
+                        :type ("KeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [15460 15480]))                  
+                :type "bool")
+                nil [15421 16170])
+            ("try_process_key" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("key" variable
+                       (:constant-flag t
+                        :type ("SunKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [16208 16231]))                  
+                :type "bool")
+                nil [16172 16509])
+            ("select_candidate" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("item" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16549 16567]))                  
+                :type "void")
+                nil [16511 16644])
+            ("update_lookup_table_page_size" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("page_size" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [16697 16720]))                  
+                :type "void")
+                nil [16646 16943])
+            ("lookup_table_page_up" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [16945 17277])
+            ("lookup_page_up" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [17279 17416])
+            ("lookup_page_down" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [17418 17559])
+            ("lookup_table_page_down" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [17561 17903])
+            ("move_preedit_caret" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [17945 17966]))                  
+                :type "void")
+                nil [17905 17970])
+            ("reset" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [17972 18309])
+            ("focus_in" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [18311 19249])
+            ("focus_out" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [19251 19372])
+            ("trigger_property" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("property" variable
+                       (:constant-flag t
+                        :type ("String" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [19412 19435]))                  
+                :type "void")
+                nil [19374 20197])
+            ("init_lookup_table_labels" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [20200 20383])
+            ("initialize_all_properties" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [20385 20661])
+            ("refresh_all_properties" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [20663 21215])
+            ("refresh_status_property" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("cn" variable (:type "bool") (reparse-symbol arg-sub-list) [21262 21270]))                  
+                :type "void")
+                nil [21218 21487])
+            ("refresh_fullsimbol_property" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("full" variable (:type "bool") (reparse-symbol arg-sub-list) [21537 21547]))                  
+                :type "void")
+                nil [21489 21778])
+            ("refresh_fullpunc_property" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("full" variable (:type "bool") (reparse-symbol arg-sub-list) [21826 21836]))                  
+                :type "void")
+                nil [21780 21969])
+            ("try_switch_style" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("key" variable
+                       (:constant-flag t
+                        :type ("SunKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22063 22086]))                  
+                :type "bool")
+                nil [22026 22420])
+            ("try_switch_gbk" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("key" variable
+                       (:constant-flag t
+                        :type ("SunKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [22497 22520]))                  
+                :type "bool")
+                nil [22462 22972])
+            ("try_switch_cn" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("key" variable
+                       (:constant-flag t
+                        :type ("SunKeyEvent" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23008 23031]))                  
+                :type "bool")
+                nil [22974 23235])
+            ("create_session" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("pref" variable
+                       (:pointer 1
+                        :type ("CSunpinyinOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23272 23296])
+                    ("pinyin_data" variable
+                       (:pointer 1
+                        :type ("CIMIData" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23327 23349])
+                    ("history" variable
+                       (:pointer 1
+                        :type ("CBigramHistory" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [23380 23404]))                  
+                :type "void")
+                nil [23237 24219])
+            ("destroy_session" function
+               (:parent "SunPyInstance"
+                :type "void")
+                nil [24221 24590])
+            ("build_preedit_attribs" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("ppd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("IPreeditString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [24644 24670]))                  
+                :type ("AttributeList" type (:type "class") nil nil))
+                nil [24592 25639])
+            ("redraw_preedit_string" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("ppd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("IPreeditString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [25684 25710]))                  
+                :type "void")
+                nil [25641 26352])
+            ("redraw_lookup_table" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("pcl" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ICandidateList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26394 26420]))                  
+                :type "void")
+                nil [26354 26790])
+            ("reload_config" function
+               (:parent "SunPyInstance"
+                :arguments 
+                  ( ("config" variable
+                       (:constant-flag t
+                        :type ("ConfigPointer" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [26826 26854]))                  
+                :type "void")
+                nil [26792 27010]))          
+    :file "sunpinyin_imengine.cpp"
+    :pointmax 26983
+    :fsize 26976
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "Makefile.am"
+    :major-mode 'makefile-automake-mode
+    :tags nil
+    :file "Makefile.am"
+    :pointmax 5776
+    :fsize 5775
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "imi_scimwin.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("IMI_SCIMWIN_H" variable (:constant-flag t) nil [2080 2093])
+            ("sunpinyin_lookup_table.h" include nil nil [2095 2130])
+            ("imi_winHandler.h" include nil nil [2131 2158])
+            ("SunPyInstance" type
+               (:prototype t
+                :type "class")
+                nil [2160 2180])
+            ("CScimWinHandler" type
+               (:superclasses 
+                  ( ("CIMIWinHandler" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("public" label nil (reparse-symbol classsubparts) [2230 2237])
+                    ("CScimWinHandler" function
+                       (:prototype-flag t
+                        :constructor-flag t
+                        :arguments 
+                          ( ("ime" variable
+                               (:pointer 1
+                                :type ("SunPyInstance" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2258 2277])
+                            ("lookup_table" variable
+                               (:pointer 1
+                                :type ("SunLookupTable" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2278 2307]))                          
+                        :type ("CScimWinHandler" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [2242 2308])
+                    ("CScimWinHandler" function
+                       (:prototype-flag t
+                        :destructor-flag t
+                        :typemodifiers ("virtual")
+                        :type "void")
+                        (reparse-symbol classsubparts) [2368 2395])
+                    ("commit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("wstr" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("TWCHAR" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2479 2498]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2459 2499])
+                    ("throwBackKey" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("keycode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2574 2591])
+                            ("keyvalue" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2592 2610])
+                            ("modifier" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [2611 2629]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2548 2630])
+                    ("updatePreedit" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("ppd" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("IPreeditString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2723 2749]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2696 2750])
+                    ("updateCandidates" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pcl" variable
+                               (:pointer 1
+                                :constant-flag t
+                                :type ("ICandidateList" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [2849 2875]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2819 2876])
+                    ("updateStatus" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [2974 2982])
+                            ("value" variable (:type "int") (reparse-symbol arg-sub-list) [2983 2993]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [2947 2994])
+                    ("setOptions" function
+                       (:prototype-flag t
+                        :typemodifiers ("virtual")
+                        :arguments 
+                          ( ("pp" variable
+                               (:pointer 1
+                                :type ("CIMIOptions" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [3024 3040]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [3000 3041])
+                    ("private" label nil (reparse-symbol classsubparts) [3054 3062])
+                    ("load_images" function
+                       (:prototype-flag t
+                        :type "void")
+                        (reparse-symbol classsubparts) [3148 3167])
+                    ("private" label nil (reparse-symbol classsubparts) [3169 3177])
+                    ("m_buf" variable
+                       (:dereference 1
+                        :type "char")
+                        (reparse-symbol classsubparts) [3182 3198])
+                    ("m_ime" variable
+                       (:pointer 1
+                        :type ("SunPyInstance" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3203 3229])
+                    ("m_lookup_table" variable
+                       (:pointer 1
+                        :type ("SunLookupTable" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [3234 3269]))                  
+                :type "class")
+                nil [2182 3272]))          
+    :file "imi_scimwin.h"
+    :pointmax 3296
+    :fsize 3295
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IMI_SCIMWIN_H")
+          )
+
+    )
+   (semanticdb-table "sunpinyin_utils.h"
+    :tags 
+        '( ("SUNPINYIN_UTIL_H" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("Uses_SCIM_UTILITY" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("portability.h" include (:line 41) nil nil)
+            ("scim.h" include (:line 43) nil nil)
+            ("scim_event.h" include (:line 44) nil nil)
+            ("SunKeyEvent" type
+               (:type "class"
+                :line 48
+                :members 
+                  ( ("m_key" variable
+                       (:protection "private"
+                        :line 50)
+                        nil nil)
+                    ("m_is_shift" variable
+                       (:protection "private"
+                        :line 51)
+                        nil nil)
+                    ("code" variable
+                       (:protection "public"
+                        :line 53)
+                        nil nil)
+                    ("value" variable
+                       (:protection "public"
+                        :line 54)
+                        nil nil)
+                    ("modifier" variable
+                       (:protection "public"
+                        :line 55)
+                        nil nil)
+                    ("is_release" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 56
+                        :arguments (nil))
+                        nil nil)
+                    ("is_shift" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 57
+                        :arguments (nil))
+                        nil nil)
+                    ("SunKeyEvent" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 58
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("is_key_shift" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 60
+                        :arguments (nil))
+                        nil nil)
+                    ("is_shift_released" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 61
+                        :arguments (nil nil))
+                        nil nil))                  )
+                nil nil)
+            ("wstr_to_widestr" function
+               (:arguments (nil)
+                :line 64
+                :prototype-flag t)
+                nil nil)
+            ("wstr_to_widestr" function
+               (:arguments (nil nil)
+                :line 65
+                :prototype-flag t)
+                nil nil))          
+    :file "sunpinyin_utils.h"
+    :pointmax 26983
+    :fsize 2734
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sunpinyin_keycode.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("SUNPINYIN_KEYCODE_H" variable (:constant-flag t) nil [2087 2106])
+            ("SUNPINYIN_KEYCODE_H" variable (:constant-flag t) nil [2087 2106])
+            ("Uses_SCIM_TYPES" variable (:constant-flag t) nil [2116 2131])
+            ("Uses_SCIM_EVENT" variable (:constant-flag t) nil [2140 2155])
+            ("scim.h" include (:system-flag t) nil [2156 2173])
+            ("scim" using (:type ("scim" type (:type "class") nil nil)) nil [2175 2196])
+            ("IM_SHIFT_MASK" variable (:constant-flag t) nil [2206 2219])
+            ("IM_CTRL_MASK" variable (:constant-flag t) nil [2254 2266])
+            ("IM_META_MASK" variable (:constant-flag t) nil [2304 2316])
+            ("IM_ALT_MASK" variable (:constant-flag t) nil [2351 2362])
+            ("IM_VK_DELETE" variable (:constant-flag t) nil [2398 2410])
+            ("IM_VK_ENTER" variable (:constant-flag t) nil [2443 2454])
+            ("IM_VK_BACK_SPACE" variable (:constant-flag t) nil [2488 2504])
+            ("IM_VK_TAB" variable (:constant-flag t) nil [2536 2545])
+            ("IM_VK_SHIFT" variable (:constant-flag t) nil [2578 2589])
+            ("IM_VK_CONTROL" variable (:constant-flag t) nil [2624 2637])
+            ("IM_VK_ALT" variable (:constant-flag t) nil [2672 2681])
+            ("IM_VK_CAPS_LOCK" variable (:constant-flag t) nil [2716 2731])
+            ("IM_VK_ESCAPE" variable (:constant-flag t) nil [2764 2776])
+            ("IM_VK_SPACE" variable (:constant-flag t) nil [2809 2820])
+            ("IM_VK_PAGE_UP" variable (:constant-flag t) nil [2853 2866])
+            ("IM_VK_PAGE_DOWN" variable (:constant-flag t) nil [2899 2914])
+            ("IM_VK_END" variable (:constant-flag t) nil [2947 2956])
+            ("IM_VK_HOME" variable (:constant-flag t) nil [2989 2999])
+            ("IM_VK_LEFT" variable (:constant-flag t) nil [3032 3042])
+            ("IM_VK_UP" variable (:constant-flag t) nil [3075 3083])
+            ("IM_VK_RIGHT" variable (:constant-flag t) nil [3116 3127])
+            ("IM_VK_DOWN" variable (:constant-flag t) nil [3160 3170])
+            ("IM_VK_PAGE_UP" variable (:constant-flag t) nil [3204 3217])
+            ("IM_VK_PAGE_DOWN" variable (:constant-flag t) nil [3250 3265])
+            ("IM_VK_PAGE_DOWN" variable (:constant-flag t) nil [3250 3265])
+            ("IM_VK_OPEN_BRACKET" variable (:constant-flag t) nil [3298 3316])
+            ("IM_VK_CLOSE_BRACKET" variable (:constant-flag t) nil [3348 3367])
+            ("IM_VK_COMMA" variable (:constant-flag t) nil [3399 3410])
+            ("IM_VK_PERIOD" variable (:constant-flag t) nil [3443 3455])
+            ("IM_VK_MINUS" variable (:constant-flag t) nil [3488 3499])
+            ("IM_VK_EQUALS" variable (:constant-flag t) nil [3532 3544])
+            ("IM_VK_SLASH" variable (:constant-flag t) nil [3577 3588])
+            ("IM_VK_BACK_QUOTE" variable (:constant-flag t) nil [3621 3637])
+            ("IM_VK_QUOTE" variable (:constant-flag t) nil [3665 3676])
+            ("IM_VK_QUOTEDBL" variable (:constant-flag t) nil [3714 3728])
+            ("IM_VK_0" variable (:constant-flag t) nil [3762 3769])
+            ("IM_VK_1" variable (:constant-flag t) nil [3802 3809])
+            ("IM_VK_2" variable (:constant-flag t) nil [3842 3849])
+            ("IM_VK_3" variable (:constant-flag t) nil [3882 3889])
+            ("IM_VK_4" variable (:constant-flag t) nil [3922 3929])
+            ("IM_VK_5" variable (:constant-flag t) nil [3962 3969])
+            ("IM_VK_6" variable (:constant-flag t) nil [4002 4009])
+            ("IM_VK_7" variable (:constant-flag t) nil [4042 4049])
+            ("IM_VK_8" variable (:constant-flag t) nil [4082 4089])
+            ("IM_VK_9" variable (:constant-flag t) nil [4122 4129])
+            ("IM_VK_K" variable (:constant-flag t) nil [4163 4170]))          
+    :file "sunpinyin_keycode.h"
+    :pointmax 4224
+    :fsize 4222
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("IM_VK_DOWN" . ((symbol "SCIM_KEY_Down" 3180 . 3193)))
+          ("IM_VK_6" . ((symbol "SCIM_KEY_6" 4022 . 4032)))
+          ("IM_SHIFT_MASK" . ((symbol "SCIM_KEY_ShiftMask" 2226 . 2244)))
+          ("IM_VK_OPEN_BRACKET" . ((symbol "SCIM_KEY_bracketleft" 3318 . 3338)))
+          ("IM_VK_7" . ((symbol "SCIM_KEY_7" 4062 . 4072)))
+          ("IM_CTRL_MASK" . ((symbol "SCIM_KEY_ControlMask" 2274 . 2294)))
+          ("IM_VK_END" . ((symbol "SCIM_KEY_End" 2967 . 2979)))
+          ("IM_VK_EQUALS" . ((symbol "SCIM_KEY_equal" 3552 . 3566)))
+          ("IM_VK_SLASH" . ((symbol "SCIM_KEY_slash" 3597 . 3611)))
+          ("IM_VK_QUOTEDBL" . ((symbol "SCIM_KEY_quotedbl" 3734 . 3751)))
+          ("IM_VK_8" . ((symbol "SCIM_KEY_8" 4102 . 4112)))
+          ("IM_META_MASK" . ((symbol "SCIM_KEY_MetaMask" 2324 . 2341)))
+          ("IM_VK_UP" . ((symbol "SCIM_KEY_Up" 3095 . 3106)))
+          ("IM_VK_9" . ((symbol "SCIM_KEY_9" 4142 . 4152)))
+          ("Uses_SCIM_TYPES")
+          ("IM_VK_CAPS_LOCK" . ((symbol "SCIM_KEY_Caps_Lock" 2736 . 2754)))
+          ("IM_VK_ALT" . ((symbol "SCIM_KEY_Alt_L" 2692 . 2706)))
+          ("IM_VK_CLOSE_BRACKET" . ((symbol "SCIM_KEY_bracketright" 3368 . 3389)))
+          ("Uses_SCIM_EVENT")
+          ("IM_VK_ENTER" . ((symbol "SCIM_KEY_Return" 2463 . 2478)))
+          ("IM_VK_BACK_SPACE" . ((symbol "SCIM_KEY_BackSpace" 2508 . 2526)))
+          ("IM_VK_CONTROL" . ((symbol "SCIM_KEY_Control_L" 2644 . 2662)))
+          ("IM_VK_0" . ((symbol "SCIM_KEY_0" 3782 . 3792)))
+          ("IM_VK_SPACE" . ((symbol "SCIM_KEY_space" 2829 . 2843)))
+          ("IM_VK_PAGE_UP" . ((symbol "SCIM_KEY_Page_Up" 3224 . 3240)))
+          ("IM_VK_RIGHT" . ((symbol "SCIM_KEY_Right" 3136 . 3150)))
+          ("IM_VK_MINUS" . ((symbol "SCIM_KEY_minus" 3508 . 3522)))
+          ("IM_VK_1" . ((symbol "SCIM_KEY_1" 3822 . 3832)))
+          ("IM_VK_K" . ((symbol "SCIM_KEY_k" 4183 . 4193)))
+          ("IM_VK_DELETE" . ((symbol "SCIM_KEY_Delete" 2418 . 2433)))
+          ("IM_VK_HOME" . ((symbol "SCIM_KEY_Home" 3009 . 3022)))
+          ("IM_VK_BACK_QUOTE" . ((symbol "SCIM_KEY_grave" 3641 . 3655)))
+          ("IM_VK_2" . ((symbol "SCIM_KEY_2" 3862 . 3872)))
+          ("IM_ALT_MASK" . ((symbol "SCIM_KEY_AltMask" 2371 . 2387)))
+          ("IM_VK_ESCAPE" . ((symbol "SCIM_KEY_Escape" 2784 . 2799)))
+          ("IM_VK_QUOTE" . ((symbol "SCIM_KEY_apostrophe" 3685 . 3704)))
+          ("IM_VK_3" . ((symbol "SCIM_KEY_3" 3902 . 3912)))
+          ("IM_VK_TAB" . ((symbol "SCIM_KEY_Tab" 2556 . 2568)))
+          ("IM_VK_LEFT" . ((symbol "SCIM_KEY_Left" 3052 . 3065)))
+          ("IM_VK_4" . ((symbol "SCIM_KEY_4" 3942 . 3952)))
+          ("SUNPINYIN_KEYCODE_H")
+          ("IM_VK_SHIFT" . ((symbol "SCIM_KEY_Shift_L" 2598 . 2614)))
+          ("IM_VK_PAGE_DOWN" . ((symbol "SCIM_KEY_Page_Down" 3270 . 3288)))
+          ("IM_VK_COMMA" . ((symbol "SCIM_KEY_comma" 3419 . 3433)))
+          ("IM_VK_PERIOD" . ((symbol "SCIM_KEY_period" 3463 . 3478)))
+          ("IM_VK_5" . ((symbol "SCIM_KEY_5" 3982 . 3992)))
+          )
+
+    )
+   (semanticdb-table "sunpinyin_lookup_table.h"
+    :tags 
+        '( ("SUNPINYIN_LOOKUP_TABLE_H" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("Uses_SCIM_LOOKUP_TABLE" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("scim.h" include (:line 40) nil nil)
+            ("SunLookupTable" type
+               (:members 
+                  ( ("m_impl" variable
+                       (:protection "private"
+                        :line 49)
+                        nil nil)
+                    ("SunLookupTable" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 51
+                        :prototype-flag t
+                        :protection "private")
+                        nil nil)
+                    ("operator =" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 52
+                        :arguments (nil))
+                        nil nil)
+                    ("m_total" variable
+                       (:protection "private"
+                        :line 54)
+                        nil nil)
+                    ("SunLookupTable" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 57
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("SunLookupTable" function
+                       (:destructor-flag t
+                        :line 58
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("get_candidate" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("index" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 59
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_attributes" function
+                       (:protection "public"
+                        :arguments 
+                          ( ("index" variable (:type "int") nil nil)
+                            nil)                          
+                        :line 60
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("number_of_candidates" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 61
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("clear" function
+                       (:protection "public"
+                        :line 62
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("update" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 69
+                        :arguments (nil))
+                        nil nil)
+                    ("translate_index" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 75
+                        :arguments 
+                          ( ("index" variable (:type "int") nil nil)
+                            nil)                          )
+                        nil nil)
+                    ("append_candidate" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 76
+                        :arguments (nil nil nil))
+                        nil nil))                  
+                :line 46
+                :type "class")
+                nil nil))          
+    :file "sunpinyin_lookup_table.h"
+    :pointmax 26983
+    :fsize 3127
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sunpinyin_imengine.h"
+    :tags 
+        '( ("SUNPINYIN_IMENGINE_H" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("SunPyFactory" type
+               (:type "class"
+                :line 43
+                :members 
+                  ( ("m_user_data" variable
+                       (:protection "private"
+                        :line 45)
+                        nil nil)
+                    ("m_pref" variable
+                       (:protection "private"
+                        :line 46)
+                        nil nil)
+                    ("m_pinyin_data" variable
+                       (:protection "private"
+                        :line 47)
+                        nil nil)
+                    ("m_config" variable
+                       (:protection "private"
+                        :line 48)
+                        nil nil)
+                    ("m_valid" variable
+                       (:protection "private"
+                        :line 49)
+                        nil nil)
+                    ("m_name" variable
+                       (:protection "private"
+                        :line 50)
+                        nil nil)
+                    ("m_reload_signal_connection" variable
+                       (:protection "private"
+                        :line 51)
+                        nil nil)
+                    ("SunPyFactory" function
+                       (:constructor-flag t
+                        :arguments (nil)
+                        :line 56
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("SunPyFactory" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 58
+                        :protection "public")
+                        nil nil)
+                    ("get_name" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 60
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_authors" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 61
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_credits" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 62
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_help" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 63
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_uuid" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 64
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("get_icon_file" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 65
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("create_instance" function
+                       (:protection "public"
+                        :arguments (nil nil)
+                        :line 67
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("valid" function
+                       (:protection "public"
+                        :line 70
+                        :arguments (nil))
+                        nil nil)
+                    ("reload_config" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 71
+                        :arguments (nil))
+                        nil nil)
+                    ("init" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 74)
+                        nil nil)
+                    ("load_system_data" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 75)
+                        nil nil)
+                    ("load_user_config" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 76)
+                        nil nil)
+                    ("load_user_data" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 77)
+                        nil nil))                  )
+                nil nil)
+            ("SunPyInstance" type
+               (:type "class"
+                :line 80
+                :members 
+                  ( ("m_factory" variable
+                       (:protection "private"
+                        :line 82)
+                        nil nil)
+                    ("m_pinyin_data" variable
+                       (:protection "private"
+                        :line 83)
+                        nil nil)
+                    ("m_user_data" variable
+                       (:protection "private"
+                        :line 84)
+                        nil nil)
+                    ("m_pref" variable
+                       (:protection "private"
+                        :line 85)
+                        nil nil)
+                    ("m_ic" variable
+                       (:protection "private"
+                        :line 86)
+                        nil nil)
+                    ("m_pv" variable
+                       (:protection "private"
+                        :line 87)
+                        nil nil)
+                    ("m_wh" variable
+                       (:protection "private"
+                        :line 88)
+                        nil nil)
+                    ("m_lookup_table" variable
+                       (:protection "private"
+                        :line 89)
+                        nil nil)
+                    ("m_reload_signal_connection" variable
+                       (:protection "private"
+                        :line 91)
+                        nil nil)
+                    ("m_focused" variable
+                       (:protection "private"
+                        :line 92)
+                        nil nil)
+                    ("SunPyInstance" function
+                       (:constructor-flag t
+                        :arguments (nil nil nil nil)
+                        :line 95
+                        :prototype-flag t
+                        :protection "public")
+                        nil nil)
+                    ("SunPyInstance" function
+                       (:destructor-flag t
+                        :typemodifiers "virtual"
+                        :prototype-flag t
+                        :line 97
+                        :protection "public")
+                        nil nil)
+                    ("process_key_event" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 108
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("move_preedit_caret" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 109
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("select_candidate" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 110
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("update_lookup_table_page_size" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 111
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("lookup_table_page_up" function
+                       (:protection "public"
+                        :line 112
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("lookup_table_page_down" function
+                       (:protection "public"
+                        :line 113
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("reset" function
+                       (:protection "public"
+                        :line 114
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("focus_in" function
+                       (:protection "public"
+                        :line 115
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("focus_out" function
+                       (:protection "public"
+                        :line 116
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("trigger_property" function
+                       (:protection "public"
+                        :arguments (nil)
+                        :line 120
+                        :prototype-flag t
+                        :typemodifiers "virtual")
+                        nil nil)
+                    ("refresh_status_property" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 129
+                        :arguments 
+                          ( ("cn" variable (:type "bool") nil nil))                          )
+                        nil nil)
+                    ("refresh_fullsimbol_property" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 130
+                        :arguments 
+                          ( ("full" variable (:type "bool") nil nil))                          )
+                        nil nil)
+                    ("refresh_fullpunc_property" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 131
+                        :arguments 
+                          ( ("full" variable (:type "bool") nil nil))                          )
+                        nil nil)
+                    ("redraw_preedit_string" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 132
+                        :arguments (nil))
+                        nil nil)
+                    ("redraw_lookup_table" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 133
+                        :arguments (nil))
+                        nil nil)
+                    ("create_session" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 136
+                        :arguments (nil nil nil))
+                        nil nil)
+                    ("destroy_session" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 139)
+                        nil nil)
+                    ("init_lookup_table_labels" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 141)
+                        nil nil)
+                    ("reload_config" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 142
+                        :arguments (nil))
+                        nil nil)
+                    ("refresh_all_properties" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 143)
+                        nil nil)
+                    ("initialize_all_properties" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 144)
+                        nil nil)
+                    ("build_preedit_attribs" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 146
+                        :arguments (nil))
+                        nil nil)
+                    ("try_switch_style" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 148
+                        :arguments (nil))
+                        nil nil)
+                    ("try_switch_gbk" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 149
+                        :arguments (nil))
+                        nil nil)
+                    ("try_switch_cn" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 150
+                        :arguments (nil))
+                        nil nil)
+                    ("try_process_key" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 151
+                        :arguments (nil))
+                        nil nil)
+                    ("lookup_page_up" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 153)
+                        nil nil)
+                    ("lookup_page_down" function
+                       (:protection "private"
+                        :prototype-flag t
+                        :line 154)
+                        nil nil))                  )
+                nil nil))          
+    :file "sunpinyin_imengine.h"
+    :pointmax 26983
+    :fsize 5810
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sunpinyin_imengine_config_keys.h"
+    :tags 
+        '( ("SUNPINYIN_IMENGINE_CONFIG_KEYS_H" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_SYSTEM_LANGUAGE_MODEL" variable
+               (:constant-flag t
+                :line 40)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_SYSTEM_DICTIONARY" variable
+               (:constant-flag t
+                :line 41)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_HISTORY" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_VIEW_TYPE" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_CHARHSET" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_PAGE_MINUS" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_PAGE_BRACKET" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_PAGE_COMMA" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_MEMORY_POWER" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_CONTEXT_METHOD" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_USER_LAYOUT_VERTICAL" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_ANY" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_ZhiZi" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_ChiCi" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_ShiSi" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_NeLe" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_LeRi" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_FoHe" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_AnAng" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_EnEng" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("SCIM_CONFIG_IMENGINE_SUNPINYIN_AMBIGUITY_InIng" variable
+               (:constant-flag t
+                :line 63)
+                nil nil))          
+    :file "sunpinyin_imengine_config_keys.h"
+    :pointmax 26983
+    :fsize 4560
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sunpinyin_private.h"
+    :tags 
+        '( ("SUNPINYIN_PRIVATE_H" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("config.h" include (:line 41) nil nil)
+            ("libintl.h" include (:line 45) nil nil)
+            ("_" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("N_" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("_" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("N_" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("bindtextdomain" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("textdomain" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("bind_textdomain_codeset" variable
+               (:constant-flag t
+                :line 53)
+                nil nil))          
+    :file "sunpinyin_private.h"
+    :pointmax 26983
+    :fsize 2583
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "imi_scimwin.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("Uses_STL_AUTOPTR" variable (:constant-flag t) nil [2120 2136])
+            ("Uses_STL_FUNCTIONAL" variable (:constant-flag t) nil [2145 2164])
+            ("Uses_STL_VECTOR" variable (:constant-flag t) nil [2173 2188])
+            ("Uses_STL_IOSTREAM" variable (:constant-flag t) nil [2197 2214])
+            ("Uses_STL_FSTREAM" variable (:constant-flag t) nil [2223 2239])
+            ("Uses_STL_ALGORITHM" variable (:constant-flag t) nil [2248 2266])
+            ("Uses_STL_MAP" variable (:constant-flag t) nil [2275 2287])
+            ("Uses_STL_UTILITY" variable (:constant-flag t) nil [2296 2312])
+            ("Uses_STL_IOMANIP" variable (:constant-flag t) nil [2321 2337])
+            ("Uses_C_STDIO" variable (:constant-flag t) nil [2346 2358])
+            ("Uses_SCIM_UTILITY" variable (:constant-flag t) nil [2367 2384])
+            ("Uses_SCIM_IMENGINE" variable (:constant-flag t) nil [2393 2411])
+            ("Uses_SCIM_ICONV" variable (:constant-flag t) nil [2420 2435])
+            ("Uses_SCIM_CONFIG_BASE" variable (:constant-flag t) nil [2444 2465])
+            ("Uses_SCIM_CONFIG_PATH" variable (:constant-flag t) nil [2474 2495])
+            ("Uses_SCIM_LOOKUP_TABLE" variable (:constant-flag t) nil [2504 2526])
+            ("Uses_SCIM_DEBUG" variable (:constant-flag t) nil [2535 2550])
+            ("portability.h" include nil nil [2552 2576])
+            ("imi_scimwin.h" include (:system-flag t) nil [2578 2602])
+            ("imi_winHandler.h" include (:system-flag t) nil [2603 2630])
+            ("imi_uiobjects.h" include (:system-flag t) nil [2631 2657])
+            ("scim.h" include (:system-flag t) nil [2659 2676])
+            ("sunpinyin_utils.h" include nil nil [2677 2705])
+            ("sunpinyin_lookup_table.h" include nil nil [2706 2741])
+            ("sunpinyin_imengine.h" include nil nil [2742 2773])
+            ("scim" using (:type ("scim" type (:type "class") nil nil)) nil [2775 2796])
+            ("CScimWinHandler" function
+               (:constructor-flag t
+                :parent "CScimWinHandler"
+                :arguments 
+                  ( ("ime" variable
+                       (:pointer 1
+                        :type ("SunPyInstance" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2831 2850])
+                    ("lookup_table" variable
+                       (:pointer 1
+                        :type ("SunLookupTable" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2851 2880]))                  
+                :type ("CScimWinHandler" type (:type "class") nil nil))
+                nil [2798 2956])
+            ("CScimWinHandler" function
+               (:destructor-flag t
+                :parent "CScimWinHandler"
+                :type "void")
+                nil [2958 2997])
+            ("setOptions" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("pp" variable
+                       (:pointer 1
+                        :type ("CIMIOptions" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3032 3048]))                  
+                :type "void")
+                nil [2999 3074])
+            ("commit" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("wstr" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("TWCHAR" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3105 3124]))                  
+                :type "void")
+                nil [3076 3266])
+            ("updatePreedit" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("ppd" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("IPreeditString" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3304 3330]))                  
+                :type "void")
+                nil [3268 3390])
+            ("updateCandidates" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("pcl" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("ICandidateList" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3431 3457]))                  
+                :type "void")
+                nil [3392 3515])
+            ("throwBackKey" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("keycode" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3552 3569])
+                    ("keyvalue" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3570 3588])
+                    ("modifier" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [3589 3607]))                  
+                :type "void")
+                nil [3517 3718])
+            ("updateStatus" function
+               (:parent "CScimWinHandler"
+                :arguments 
+                  ( ("key" variable (:type "int") (reparse-symbol arg-sub-list) [3755 3763])
+                    ("value" variable (:type "int") (reparse-symbol arg-sub-list) [3764 3774]))                  
+                :type "void")
+                nil [3720 4225]))          
+    :file "imi_scimwin.cpp"
+    :pointmax 4226
+    :fsize 4225
+    :lastmodtime '(19082 13869)
+    :unmatched-syntax 'nil
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("Uses_SCIM_DEBUG")
+          ("Uses_STL_ALGORITHM")
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          )
+
+    )
+   )
+  :file "!home!risent!Code!im!inputmethod!sunpinyin!ime!wrapper!scim!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

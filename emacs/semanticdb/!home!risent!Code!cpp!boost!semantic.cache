@@ -1,0 +1,22 @@
+;; Object boost/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "boost/"
+  :tables (list 
+   (semanticdb-table "lexical_test.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("boost/lexical_cast.hpp" include (:system-flag t) nil [1 34])
+            ("iostream" include (:system-flag t) nil [35 54])
+            ("main" function (:type "int") nil [56 258])
+            ("println" function (:type "int") nil [260 330]))          
+    :file "lexical_test.cpp"
+    :pointmax 282
+    :fsize 258
+    :lastmodtime '(19088 3074)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!cpp!boost!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

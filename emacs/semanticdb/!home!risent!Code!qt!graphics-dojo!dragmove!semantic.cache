@@ -1,0 +1,44 @@
+;; Object dragmove/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "dragmove/"
+  :tables (list 
+   (semanticdb-table "dragmovecharm.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("PyQt4.QtCore" include nil nil [1078 1130])
+            ("PyQt4.QtGui" include nil nil [1131 1175])
+            ("DragMoveData" type
+               (:members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1214 1218]))                      ) (reparse-symbol indented_block_body) [1201 1285]))                  
+                :type "class")
+                nil [1177 1285])
+            ("DragMoveCharm" type
+               (:superclasses ("QObject")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1334 1338])
+                        ("parent" variable nil (reparse-symbol function_parameters) [1340 1346]))                      ) (reparse-symbol indented_block_body) [1321 1431])
+                    ("activateOn" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1455 1459])
+                        ("widget" variable nil (reparse-symbol function_parameters) [1461 1467]))                      ) (reparse-symbol indented_block_body) [1440 1731])
+                    ("deactivateFrom" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1759 1763])
+                        ("widget" variable nil (reparse-symbol function_parameters) [1765 1771]))                      ) (reparse-symbol indented_block_body) [1740 1897])
+                    ("eventFilter" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [1922 1926])
+                        ("object" variable nil (reparse-symbol function_parameters) [1928 1934])
+                        ("event" variable nil (reparse-symbol function_parameters) [1936 1941]))                      ) (reparse-symbol indented_block_body) [1906 3230]))                  
+                :type "class")
+                nil [1286 3230]))          
+    :file "dragmovecharm.py"
+    :pointmax 3230
+    :fsize 3229
+    :lastmodtime '(19084 7988)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!qt!graphics-dojo!dragmove!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

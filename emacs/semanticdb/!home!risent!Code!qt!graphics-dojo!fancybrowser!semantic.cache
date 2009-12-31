@@ -1,0 +1,93 @@
+;; Object fancybrowser/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "fancybrowser/"
+  :tables (list 
+   (semanticdb-table "fancybrowser.cpp"
+    :major-mode 'c++-mode
+    :tags 
+        '( ("QtCore" include (:system-flag t) nil [1078 1095])
+            ("QtGui" include (:system-flag t) nil [1096 1112])
+            ("QtWebKit" include (:system-flag t) nil [1113 1132])
+            ("USE_JQUERY" variable (:constant-flag t) nil [1242 1252])
+            ("FancyBrowser" type
+               (:superclasses 
+                  ( ("QMainWindow" type
+                       (:protection "public"
+                        :type "class")
+                        nil nil))                  
+                :members 
+                  ( ("private" label nil (reparse-symbol classsubparts) [1384 1392])
+                    ("jQuery" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1398 1413])
+                    ("view" variable
+                       (:pointer 1
+                        :type ("QWebView" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1418 1433])
+                    ("locationEdit" variable
+                       (:pointer 1
+                        :type ("QLineEdit" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1438 1462])
+                    ("title" variable (:type ("QString" type (:type "class") nil nil)) (reparse-symbol classsubparts) [1467 1481])
+                    ("progress" variable (:type "int") (reparse-symbol classsubparts) [1486 1499])
+                    ("public" label nil (reparse-symbol classsubparts) [1501 1508])
+                    ("FancyBrowser" function
+                       (:constructor-flag t
+                        :type ("FancyBrowser" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [1513 3967])
+                    ("protected" label nil (reparse-symbol classsubparts) [3970 3986])
+                    ("adjustLocation" function (:type "void") (reparse-symbol classsubparts) [3992 4076])
+                    ("adjustTitle" function
+                       (:arguments 
+                          ( ("t" variable
+                               (:constant-flag t
+                                :type ("QString" type (:type "class") nil nil))
+                                (reparse-symbol arg-sub-list) [4099 4116]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4082 4311])
+                    ("setProgress" function
+                       (:arguments 
+                          ( ("p" variable (:type "int") (reparse-symbol arg-sub-list) [4334 4340]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4317 4398])
+                    ("finishLoading" function
+                       (:arguments 
+                          ( ("" variable (:type "bool") (reparse-symbol arg-sub-list) [4423 4428]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4404 4576])
+                    ("changeLocation" function (:type "void") (reparse-symbol classsubparts) [4582 4756])
+                    ("highlightAllLinks" function (:type "void") (reparse-symbol classsubparts) [4781 4973])
+                    ("rotateImages" function
+                       (:arguments 
+                          ( ("toggle" variable (:type "bool") (reparse-symbol arg-sub-list) [4997 5009]))                          
+                        :type "void")
+                        (reparse-symbol classsubparts) [4979 5499])
+                    ("removeGifImages" function (:type "void") (reparse-symbol classsubparts) [5505 5647])
+                    ("removeInlineFrames" function (:type "void") (reparse-symbol classsubparts) [5653 5794])
+                    ("removeObjectElements" function (:type "void") (reparse-symbol classsubparts) [5800 5943])
+                    ("removeEmbeddedElements" function (:type "void") (reparse-symbol classsubparts) [5949 6093]))                  
+                :type "class")
+                nil [1328 7433])
+            ("fancybrowser.moc" include nil nil [7435 7462])
+            ("main" function
+               (:arguments 
+                  ( ("argc" variable (:type "int") (reparse-symbol arg-sub-list) [7473 7482])
+                    ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [7483 7495]))                  
+                :type "int")
+                nil [7464 7825]))          
+    :file "fancybrowser.cpp"
+    :pointmax 7826
+    :fsize 7825
+    :lastmodtime '(19084 7988)
+    :unmatched-syntax '((symbol 1374 . 1382) (symbol 1314 . 1319) (symbol 1311 . 1313) (number 1307 . 1310) (symbol 1304 . 1306) (symbol 1299 . 1303) (symbol 1295 . 1298) (symbol 1289 . 1294) (punctuation 1288 . 1289))
+    :lexical-table 
+        '(("USE_JQUERY")
+          )
+
+    )
+   )
+  :file "!home!risent!Code!qt!graphics-dojo!fancybrowser!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

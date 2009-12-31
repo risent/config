@@ -1,0 +1,82 @@
+;; Object themes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "themes/"
+  :tables (list 
+   (semanticdb-table "index.dwt"
+    :major-mode 'html-mode
+    :tags 
+        '( ("{$page_title}" section nil nil [398 879])
+            ("
+<!-- #BeginLibraryItem "/library/page_header.lbi" --><!-- #EndLibraryItem -->
+<div class="blank">" section (:members 
+              ( ("{$lang.shop_notice}" section (:members 
+                  ( ("{$cat.name|escape:html}" anchor nil nil [1591 1594])
+                    ("{$child.name|escape:html}" anchor nil nil [1706 1709])
+                    ("{$childer.name|escape:html}" anchor nil nil [1845 1848])
+                    ("" anchor nil nil [2727 2730])
+                    ("{$goods.short_name}" anchor nil nil [2949 2952]))                  ) nil [1145 3325]))              ) nil [879 3325])
+            ("var invalid_order_sn = "{$lang.invalid_order_sn}"" section (:members 
+              ( ("{$lang.order_query}" section (:members 
+                  ( ("{$order_query.order_sn}" anchor nil nil [3897 3900]))                  ) nil [3436 4790])
+                ("{$lang.shipping_query}" section nil nil [4790 6778])
+                ("{$lang.all_goods}" section (:members 
+                  ( ("{$lang.all_goods}" anchor nil nil [6782 6785]))                  ) nil [6778 6969])
+                ("{$rec_data.cat_name}" section (:members 
+                  ( ("{$rec_data.cat_name}" anchor nil nil [6986 6989])
+                    ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_style_name}" anchor nil nil [7375 7378])
+                    ("{$goods.short_style_name}" anchor nil nil [7501 7504])
+                    ("
+  <!-- {if $cat_rec_sign neq 1} -->" anchor nil nil [7869 7872])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [8204 8207])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [8470 8473])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [8596 8599]))                      ) nil [8194 9153])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [9163 9166])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [9429 9432])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [9555 9558]))                      ) nil [9153 10112])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [10122 10125])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [10388 10391])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [10514 10517]))                      ) nil [10112 11071])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [11081 11084])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [11347 11350])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [11473 11476]))                      ) nil [11071 12030])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [12040 12043])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [12306 12309])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [12432 12435]))                      ) nil [12030 12989])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [12999 13002])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [13265 13268])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [13391 13394]))                      ) nil [12989 13948])
+                    ("{$goods_cat.name|escape:html}" section (:members 
+                      ( ("{$goods_cat.name|escape:html}" anchor nil nil [13958 13961])
+                        ("
+           <p><a href="{$goods.url}" title="{$goods.name|escape:html}">{$goods.short_name|escape:html}" anchor nil nil [14224 14227])
+                        ("{$goods.short_name|escape:html}" anchor nil nil [14350 14353])
+                        ("
+    <!--结束图片类型的友情链接{/foreach}-->
+    <!-- {if $txt_links} -->
+    <!--开始文字类型的友情链接{foreach from=$txt_links item=link}-->
+    [<a href="{$link.url}" target="_blank" title="{$link.name}">{$link.name}" anchor nil nil [15349 15352])
+                        ("{$link.name}" anchor nil nil [15598 15601]))                      ) nil [13948 15912]))                  ) nil [6969 15912]))              ) nil [3325 15912]))          
+    :file "index.dwt"
+    :pointmax 15912
+    :fsize 16181
+    :lastmodtime '(19214 23246)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Desktop!lantian!themes!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

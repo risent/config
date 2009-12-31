@@ -1,0 +1,311 @@
+;; Object config/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "config/"
+  :tables (list 
+   (semanticdb-table "integral.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_INTEGRAL_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_BCC_INTEGRAL_CONSTANTS" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_MPL_CFG_NO_NESTED_VALUE_ARITHMETIC" variable
+               (:constant-flag t
+                :line 34)
+                nil nil))          
+    :file "integral.hpp"
+    :pointmax 286
+    :fsize 1152
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ctps.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_CTPS_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 17) nil nil)
+            ("boost/config.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_NO_NONTYPE_TEMPLATE_PARTIAL_SPEC" variable
+               (:constant-flag t
+                :line 24)
+                nil nil))          
+    :file "ctps.hpp"
+    :pointmax 286
+    :fsize 926
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "workaround.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_WORKAROUND_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/detail/workaround.hpp" include (:line 17) nil nil))          
+    :file "workaround.hpp"
+    :pointmax 286
+    :fsize 606
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "eti.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ETI_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_MSVC_60_ETI_BUG" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_MPL_CFG_MSVC_70_ETI_BUG" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("BOOST_MPL_CFG_MSVC_ETI_BUG" variable
+               (:constant-flag t
+                :line 43)
+                nil nil))          
+    :file "eti.hpp"
+    :pointmax 286
+    :fsize 1337
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "dtp.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_DTP_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_CFG_NO_DEFAULT_PARAMETERS_IN_NESTED_TEMPLATES" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("BOOST_MPL_CFG_BROKEN_DEFAULT_PARAMETERS_IN_NESTED_TEMPLATES" variable
+               (:constant-flag t
+                :line 42)
+                nil nil))          
+    :file "dtp.hpp"
+    :pointmax 286
+    :fsize 1673
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ttp.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_TTP_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/gcc.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 19) nil nil)
+            ("BOOST_MPL_CFG_NO_TEMPLATE_TEMPLATE_PARAMETERS" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_MPL_CFG_EXTENDED_TEMPLATE_PARAMETERS_MATCHING" variable
+               (:constant-flag t
+                :line 37)
+                nil nil))          
+    :file "ttp.hpp"
+    :pointmax 286
+    :fsize 1270
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lambda.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_LAMBDA_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/ttp.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/ctps.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_NO_FULL_LAMBDA_SUPPORT" variable
+               (:constant-flag t
+                :line 28)
+                nil nil))          
+    :file "lambda.hpp"
+    :pointmax 286
+    :fsize 1015
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "overload_resolution.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_OVERLOAD_RESOLUTION_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_CFG_BROKEN_OVERLOAD_RESOLUTION" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "overload_resolution.hpp"
+    :pointmax 286
+    :fsize 936
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "msvc.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_MSVC_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/config.hpp" include (:line 19) nil nil))          
+    :file "msvc.hpp"
+    :pointmax 286
+    :fsize 603
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "static_constant.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_STATIC_CONSTANT_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/config.hpp" include (:line 19) nil nil)
+            ("BOOST_STATIC_CONSTANT" variable
+               (:constant-flag t
+                :line 22)
+                nil nil))          
+    :file "static_constant.hpp"
+    :pointmax 286
+    :fsize 794
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "preprocessor.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_PREPROCESSOR_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 17) nil nil)
+            ("BOOST_MPL_CFG_BROKEN_PP_MACRO_EXPANSION" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_MPL_CFG_NO_OWN_PP_PRIMITIVES" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("BOOST_NEEDS_TOKEN_PASTING_OP_FOR_TOKENS_JUXTAPOSING" variable
+               (:constant-flag t
+                :line 35)
+                nil nil))          
+    :file "preprocessor.hpp"
+    :pointmax 286
+    :fsize 1220
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "nttp.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_NTTP_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_NTTP_BUG" variable
+               (:constant-flag t
+                :line 37)
+                nil nil))          
+    :file "nttp.hpp"
+    :pointmax 286
+    :fsize 1112
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "gcc.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_GCC_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("BOOST_MPL_CFG_GCC" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("BOOST_MPL_CFG_GCC" variable
+               (:constant-flag t
+                :line 20)
+                nil nil))          
+    :file "gcc.hpp"
+    :pointmax 286
+    :fsize 693
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "arrays.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ARRAYS_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 18) nil nil)
+            ("BOOST_MPL_CFG_NO_DEPENDENT_ARRAY_TYPES" variable
+               (:constant-flag t
+                :line 26)
+                nil nil))          
+    :file "arrays.hpp"
+    :pointmax 286
+    :fsize 934
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "adl.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_ADL_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/msvc.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/intel.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/gcc.hpp" include (:line 19) nil nil)
+            ("boost/mpl/aux_/config/workaround.hpp" include (:line 20) nil nil)
+            ("BOOST_MPL_CFG_NO_ADL_BARRIER_NAMESPACE" variable
+               (:constant-flag t
+                :line 36)
+                nil nil))          
+    :file "adl.hpp"
+    :pointmax 286
+    :fsize 1518
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "intel.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_CONFIG_INTEL_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/config.hpp" include (:line 19) nil nil))          
+    :file "intel.hpp"
+    :pointmax 286
+    :fsize 615
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!mpl!aux_!config!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

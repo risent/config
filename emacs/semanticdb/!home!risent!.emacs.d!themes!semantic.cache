@@ -1,0 +1,19 @@
+;; Object themes/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "themes/"
+  :tables (list 
+   (semanticdb-table "color-theme-blackboard.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("color-theme-blackboard" function (:user-visible-flag t) nil [561 2674]))          
+    :file "color-theme-blackboard.el"
+    :pointmax 2749
+    :fsize 2748
+    :lastmodtime '(19246 47907)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!.emacs.d!themes!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

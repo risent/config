@@ -1,0 +1,278 @@
+;;
+;; set the color
+;(set-cursor-color "white")
+;(set-mouse-color "white")
+;(set-face-foreground 'highlight "white")
+;(set-face-background 'highlight "darkblue")
+;(set-face-foreground 'highlight "white")
+;(set-face-background 'highlight "cyan")
+;; set the mouse back the cursor
+(mouse-avoidance-mode 'animate)
+;; show the column num
+(column-number-mode t)
+;; highlight syntax 
+(global-font-lock-mode t)
+;; use y/n instead yes/on
+(fset 'yes-or-no-p 'y-or-n-p)
+;; auto show the matching parenthesis
+(show-paren-mode 1)
+;; enable clipborad  with other application
+(setq x-select-enable-clipboard t)
+;; hide the toolbar
+(tool-bar-mode nil)
+;; hide menubar 
+(menu-bar-mode nil)
+;; hide the scroll bar
+(scroll-bar-mode nil)
+;;mouse  auto avoid  when the curse approach
+(mouse-avoidance-mode t)
+;; keep curse end of line when the move start of curse is end
+(setq track-eol t)
+;; set the fonts
+;(set-default-font "WenQuanYi Micro Hei Mono 16")
+(set-default-font "Inconsolata 18")
+;; (set-default-font "Monaco 14")
+;; cancle the auto backup
+(setq make-backup-files nil)
+(setq-default make-backup-files nil)
+;; show the line number -- linum-mode
+(require 'linum)
+(setq linum-format "%3d")
+;; enable for all the file
+(add-hook 'find-file-hooks (lambda () (linum-mode 1))) 
+;; highlight current line
+(require 'hl-line)
+(global-hl-line-mode t)
+(set-face-background 'hl-line "#330")
+;; display image
+(auto-image-file-mode t)
+;; close the startup image
+(setq inhibit-startup-message t)
+
+;; set the color-theme
+(require 'color-theme)
+(color-theme-initialize)
+;(load-file "~/.emacs.d/themes/color-theme-blackboard.el")
+;(color-theme-blackboard)
+(color-theme-dark-laptop)
+;;(color-theme-vivid-chalk)
+
+;; set the mark set key bording
+;; (global-set-key (kbd "C-SPC") 'set-mark-command)
+;; set the default  tab width
+(setq-default indent-tabs-mode nil)
+(setq default-tab-width 8)
+;; set the fullscreen keybings
+(global-set-key (kbd "<f11>") 'djcb-full-screen-toggle)
+
+
+
+
+
+;;; Set the gnus
+;(setq user-full-name "risent")
+;(setq user-mail-address "shengqi542@gmail.com")
+;(setq gnus-select-method '(nntp "news.newsfan.net"))
+;(gnus-agentize);use proxy
+;(add-hook 'gnus-group-mode-hook 'gnus-topic-mode);use topic mode
+;(add-to-list 'gnus-secondary-select-methods '(nnimap "gmail"
+                                  ;(nnimap-address "imap.gmail.com")
+                                  ;(nnimap-server-port 993)
+                                  ;(nnimap-stream ssl)))
+;(setq message-send-mail-function 'smtpmail-send-it
+      ;smtpmail-starttls-credentials '(("smtp.gmail.com" 587 nil nil))
+      ;smtpmail-auth-credentials '(("smtp.gmail.com" 587 "shengqi542@gmail.com" nil))
+      ;smtpmail-default-smtp-server "smtp.gmail.com"
+      ;smtpmail-smtp-server "smtp.gmail.com"
+      ;smtpmail-smtp-service 587
+      ;smtpmail-local-domain "yourcompany.com")
+;; set the semantic;;;;;;;;;;;
+(require 'cedet)
+(setq semanticdb-default-save-directory "~/.emacs.d/semanticdb")
+(semantic-load-enable-all-exuberent-ctags-support)
+(semantic-load-enable-code-helpers)
+(setq company-idle-delay t)
+;; config erc
+(require 'erc)
+;; set the jabber to use Gtalk
+(require 'jabber)
+;; (setq jabber-username "shengqi542"
+;;       jabber-password "19890904zsq"
+;;       jabber-server "gmail.com"
+;;       jabber-network-server "talk.google.com"
+;;       jabber-port 5223
+;;       jabber-resource "HOME"
+;;       jabber-connection-type (quote ssl))
+;; (jabber-mode-line-mode)
+;; set twitter use twit.el
+(add-to-list 'load-path "~/.emacs.d/site-lisp/twit")
+(autoload 'twit-show-recent-tweets	"twit" "" t) ; most recent direct tweets (!)
+(autoload 'twit-show-at-tweets		"twit" "" t) ; directed to you
+(autoload 'twit-show-friends 		"twit" "" t) ; your friends
+(autoload 'twit-show-followers 		"twit" "" t) ; your followers
+
+(autoload 'twit-follow-recent-tweets	"twit" "" t) ; at idle, check at background
+
+(autoload 'twit-post			"twit" "" t)
+(autoload 'twit-post-region		"twit" "" t)
+(autoload 'twit-post-buffer		"twit" "" t)
+(autoload 'twit-direct			"twit" "" t) ; tweet to person
+
+(autoload 'twit-add-favorite		"twit" "" t) ; Add to favourite: (*) star
+(autoload 'twit-remove-favorite 	"twit" "" t)
+
+(autoload 'twit-add-friend  		"twit" "" t) ; follow a friend
+(autoload 'twit-remove-friend 		"twit" "" t) ; emove a frienda
+
+;; Customize twit-multi-accounts in order to use these: ((user . pass) ...)
+(autoload 'twit-switch-account 		"twit" "" t)
+(autoload 'twit-direct-with-account  	"twit" "" t)
+(autoload 'twit-post-with-account 	"twit" "" t)
+
+(autoload 'twit-show-direct-tweets-with-account "twit" "" t)
+(autoload 'twit-show-at-tweets-with-account 	"twit" "" t)
+;; customizations for twiter
+(setq twit-user "risent")
+(setq twit-pass "19890904zsq")
+
+;; Key bindings examples
+;; Requires that autoloads above have been added to ~/.emacs
+
+(global-set-key "\C-cTT"  'twit-follow-recent-tweets) ; (s)how (T)weets
+(global-set-key "\C-cTst" 'twit-follow-recent-tweets) ; (s)how (t)weets
+(global-set-key "\C-cTsa" 'twit-show-at-tweets)       ; (s)how (a)t
+(global-set-key "\C-cTsf" 'twit-show-at-tweets)       ; (s)how (f)riends
+(global-set-key "\C-cTsl" 'twit-show-at-tweets)       ; (s)how fo(l)lowers
+
+(global-set-key "\C-cTpp" 'twit-post)		      ; (p)ost
+(global-set-key "\C-cTpr" 'twit-post-region)	      ; (p)post (r)egion
+(global-set-key "\C-cTpb" 'twit-post-buffer)	      ; (p)post (b)uffer
+(global-set-key "\C-cTpr" 'twit-direct)		      ; (p)post (d)irect
+(global-set-key "\C-cTfa" 'twit-add-favorite)	      ; (f)avorite (a)dd
+(global-set-key "\C-cTfr" 'twit-remove-favorite)      ; (f)avorite (r)emove
+
+
+
+;(require 'twit)
+(setq twit-user-image-dir "~/.twit")
+(setq twit-show-user-images t)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;;just make company-mode in c file
+;;(add-hook 'c-mode-hook 
+  ;;(lambda ()
+    ;;(setq semanticdb-default-save-directory "~/.emacs.d/semanticdb")	
+    ;;(semantic-load-enable-code-helpers)
+    ;;(setq company-idle-delay t)
+    ;;(company-mode)))
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+;; insert the current time
+;;(defun my-insert-date()
+;;  (interactive)
+;;  (insert format-time-string "%y%m%d %H:%M:%S (current-time))))
+;;(gLobal-set-key (kbd "C-c m d") 'my-insert-date)
+;; set the company-mode
+(setq company-idle-delay t)
+
+
+;;(put 'upcase-region 'disabled nil)
+
+;;(put 'downcase-region 'disabled nil)
+
+;;(put 'set-goal-column 'disabled nil)
+;;set a new inputmethod
+(add-to-list 'load-path "~/.emacs.d/site-lisp/eim-2.4/")
+(autoload 'eim-use-package "eim" "Another emacs input method")
+;;; Tooltip 暂时还不好用
+(setq eim-use-tooltip nil)
+
+;(register-input-method
+ ;"eim-wb" "euc-cn" 'eim-use-package
+ ;"五笔" "汉字五笔输入法" "wb.txt")
+(register-input-method
+"eim-py" "euc-cn" 'eim-use-package
+"拼音" "汉字拼音输入法" "py.txt")
+
+;;; 用 ; 暂时输入英文
+(require 'eim-extra)
+(global-set-key ";" 'eim-insert-ascii)
+;; set eim as the default input method
+(setq default-input-method "eim-py")
+
+
+
+;; Edit the path in the following line to reflect the
+;; actual location of the MATLAB root directory on your system.
+;(autoload 'matlab-mode "matlab" "Enter MATLAB mode." t)
+;(autoload 'matlab-shell "matlab" "Interactive MATLAB mode." t)
+;(setq auto-mode-alist (cons '("\\.m\\'" . matlab-mode-hook) auto-mode-alist))
+
+(setq matlab-shell-command "/home/risent/Program/matlab/bin/matlab"
+      matlab-shell-command-swithes '("-nodesktop -v=glnx64")
+      matlab-indent-level 2
+      matlab-indent-function-body nil
+      matlab-highlight-cross-function-variables t
+      matlab-return-add-semicolon t
+      matlab-show-mlint-warnings t
+      mlint-programs '("/home/risent/Program/matlab/bin/glnxa64/mlint"
+		       "/usr/local/bin/mlint")
+      )
+(autoload 'mlint-minor-mode "mlint" nil t)
+(add-hook 'matlab-mode-hook (lambda () (mlint-minor-mode 1)))
+(add-hook 'matlab-shell-mode-hook 'ansi-color-for-comint-mode-on)
+(add-hook 'matlab-shell-mode-hook
+	  (lambda () (setenv "LANG" "C")))
+(eval-after-load "shell"
+  '(define-key shell-mode-map [down] 'comint-next-matching-input-from-input))
+(eval-after-load "shell"
+  '(define-key shell-mode-map [up] 'comint-previous-matching-input-from-input))
+
+;;; set jde
+;(setq jde-jdk-registry (quote (("1.6.0"."/usr/lib/jvm/sun-jdk-1.6")))
+;(jde-enable-abbrev-mode t)
+;(defun my-jde-mode-hook ()
+;(message "my-jde-mode-hook function executed"))
+;(add-hook 'jde-mode-hook 'my-jde-mode-hook)
+;(setq debug-on-error t)
+;(setq defer-loading-jde t)
+;(if defer-loading-jde
+    ;(progn
+      ;(autoload 'jde-mode "jde" "JDE mode." t)
+      ;(setq auto-mode-alist
+	    ;(append
+	     ;'(("\\.java\\'" . jde-mode))
+	     ;auto-mode-alist)))
+  ;(require 'jde))
+
+;;(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+;; '(jde-jdk-registry (quote (("1.6.0" . "/usr/lib/jvm/sun-jdk-1.6") ("1.6.0.15" . "/home/risent/Program/JDK")))))
+;;(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+;; )
+
+(custom-set-variables
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(jabber-account-list (quote (("shengqi542@gmail.com" (:password . "19890904zsq") (:network-server . "talk.google.com") (:port . 5223) (:connection-type . ssl)))))
+ '(weblogger-config-alist (quote (("risent.net" ("user" . "admin") ("server-url" . "http://risent.net/blog/xmlrpc.php") ("weblog" . "1")) ("lovelansay" ("user" . "risent") ("server-url" . "http://lovelansay.wordpress.com/xmlrpc.php") ("weblog" . "5390535"))))))
+(custom-set-faces
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ )
+;; set wordpress
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(require 'weblogger)

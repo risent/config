@@ -1,0 +1,1449 @@
+;; Object detail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "detail/"
+  :tables (list 
+   (semanticdb-table "lcast_precision.hpp"
+    :tags 
+        '( ("BOOST_DETAIL_LCAST_PRECISION_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 9)
+                nil nil)
+            ("climits" include (:line 11) nil nil)
+            ("ios" include (:line 12) nil nil)
+            ("limits" include (:line 13) nil nil)
+            ("boost/config.hpp" include (:line 15) nil nil)
+            ("boost/integer_traits.hpp" include (:line 16) nil nil)
+            ("boost/mpl/if.hpp" include (:line 20) nil nil)
+            ("boost/type_traits/is_abstract.hpp" include (:line 21) nil nil)
+            ("BOOST_LCAST_NO_COMPILE_TIME_PRECISION" variable
+               (:constant-flag t
+                :line 27)
+                nil nil)
+            ("boost/assert.hpp" include (:line 31) nil nil)
+            ("boost/static_assert.hpp" include (:line 33) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("lcast_abstract_stub" type
+                               (:type "class"
+                                :line 38)
+                                nil nil)
+                            ("lcast_precision" type
+                               (:type "struct"
+                                :line 45
+                                :members 
+                                  ( ("limits" type
+                                       (:protection "public"
+                                        :line 48
+                                        :type "typedef")
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 57
+                                        :arguments 
+                                          ( ("" variable (:type "bool") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 61
+                                        :arguments 
+                                          ( ("" variable (:type "bool") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 66
+                                        :arguments 
+                                          ( ("" variable (:type "bool") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 71
+                                        :arguments (nil nil))
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 75
+                                        :arguments 
+                                          ( ("int" variable (:type "unsigned") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 81
+                                        :arguments 
+                                          ( ("long" variable (:type "unsigned") nil nil)
+                                            nil)                                          )
+                                        nil nil)
+                                    ("BOOST_STATIC_CONSTANT" function
+                                       (:protection "public"
+                                        :prototype-flag t
+                                        :line 91
+                                        :arguments (nil nil))
+                                        nil nil))                                  )
+                                nil nil)
+                            ("lcast_get_precision" function
+                               (:arguments (nil)
+                                :line 99)
+                                nil nil)
+                            ("lcast_set_precision" function
+                               (:arguments (nil nil)
+                                :line 168)
+                                nil nil)
+                            ("lcast_set_precision" function
+                               (:arguments (nil nil nil)
+                                :line 174)
+                                nil nil))                          
+                        :line 36
+                        :type "namespace")
+                        nil nil))                  
+                :line 36
+                :type "namespace")
+                nil nil))          
+    :file "lcast_precision.hpp"
+    :pointmax 286
+    :fsize 5996
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "workaround.hpp"
+    :tags 
+        '( ("WORKAROUND_DWA2002126_HPP" variable
+               (:constant-flag t
+                :line 6)
+                nil nil)
+            ("boost/config.hpp" include (:line 41) nil nil)
+            ("__BORLANDC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("__BORLANDC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("__CODEGEARC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("__CODEGEARC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("_MSC_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("_MSC_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("_MSC_FULL_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("_MSC_FULL_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("BOOST_MSVC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 64)
+                nil nil)
+            ("BOOST_MSVC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("__GNUC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 69)
+                nil nil)
+            ("__GNUC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 71)
+                nil nil)
+            ("__GNUC_MINOR___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("__GNUC_MINOR___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 76)
+                nil nil)
+            ("__GNUC_PATCHLEVEL___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 79)
+                nil nil)
+            ("__GNUC_PATCHLEVEL___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("__IBMCPP___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 84)
+                nil nil)
+            ("__IBMCPP___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 86)
+                nil nil)
+            ("__SUNPRO_CC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("__SUNPRO_CC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 91)
+                nil nil)
+            ("__DECCXX_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 94)
+                nil nil)
+            ("__DECCXX_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("__MWERKS___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 99)
+                nil nil)
+            ("__MWERKS___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 101)
+                nil nil)
+            ("__EDG___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 104)
+                nil nil)
+            ("__EDG___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 106)
+                nil nil)
+            ("__EDG_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 109)
+                nil nil)
+            ("__EDG_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 111)
+                nil nil)
+            ("__HP_aCC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 114)
+                nil nil)
+            ("__HP_aCC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("__hpxstd98_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 119)
+                nil nil)
+            ("__hpxstd98_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 121)
+                nil nil)
+            ("_CRAYC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 124)
+                nil nil)
+            ("_CRAYC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 126)
+                nil nil)
+            ("__DMC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 129)
+                nil nil)
+            ("__DMC___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 131)
+                nil nil)
+            ("MPW_CPLUS_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 134)
+                nil nil)
+            ("MPW_CPLUS_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 136)
+                nil nil)
+            ("__COMO___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 139)
+                nil nil)
+            ("__COMO___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 141)
+                nil nil)
+            ("__COMO_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 144)
+                nil nil)
+            ("__COMO_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 146)
+                nil nil)
+            ("__INTEL_COMPILER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 149)
+                nil nil)
+            ("__INTEL_COMPILER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 151)
+                nil nil)
+            ("__ICL_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 154)
+                nil nil)
+            ("__ICL_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 156)
+                nil nil)
+            ("_COMPILER_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 159)
+                nil nil)
+            ("_COMPILER_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 161)
+                nil nil)
+            ("_RWSTD_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 165)
+                nil nil)
+            ("_RWSTD_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 167)
+                nil nil)
+            ("BOOST_RWSTD_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 170)
+                nil nil)
+            ("BOOST_RWSTD_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 172)
+                nil nil)
+            ("__GLIBCPP___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 175)
+                nil nil)
+            ("__GLIBCPP___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 177)
+                nil nil)
+            ("_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 180)
+                nil nil)
+            ("_GLIBCXX_USE_C99_FP_MACROS_DYNAMIC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 182)
+                nil nil)
+            ("__SGI_STL_PORT_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 185)
+                nil nil)
+            ("__SGI_STL_PORT_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 187)
+                nil nil)
+            ("_STLPORT_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 190)
+                nil nil)
+            ("_STLPORT_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 192)
+                nil nil)
+            ("__LIBCOMO_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 195)
+                nil nil)
+            ("__LIBCOMO_VERSION___WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 197)
+                nil nil)
+            ("_CPPLIB_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 200)
+                nil nil)
+            ("_CPPLIB_VER_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 202)
+                nil nil)
+            ("BOOST_INTEL_CXX_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 206)
+                nil nil)
+            ("BOOST_INTEL_CXX_VERSION_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 208)
+                nil nil)
+            ("BOOST_INTEL_WIN_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 211)
+                nil nil)
+            ("BOOST_INTEL_WIN_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 213)
+                nil nil)
+            ("BOOST_DINKUMWARE_STDLIB_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 216)
+                nil nil)
+            ("BOOST_DINKUMWARE_STDLIB_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 218)
+                nil nil)
+            ("BOOST_INTEL_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 221)
+                nil nil)
+            ("BOOST_INTEL_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 223)
+                nil nil)
+            ("BOOST_MPL_CFG_GCC_WORKAROUND_GUARD" variable
+               (:constant-flag t
+                :line 226)
+                nil nil)
+            ("BOOST_WORKAROUND" variable
+               (:constant-flag t
+                :line 228)
+                nil nil)
+            ("BOOST_OPEN_PAREN" variable
+               (:constant-flag t
+                :line 250)
+                nil nil)
+            ("BOOST_TESTED_AT" variable
+               (:constant-flag t
+                :line 251)
+                nil nil)
+            ("BOOST_TESTED_AT" variable
+               (:constant-flag t
+                :line 253)
+                nil nil)
+            ("BOOST_WORKAROUND" variable
+               (:constant-flag t
+                :line 258)
+                nil nil))          
+    :file "workaround.hpp"
+    :pointmax 286
+    :fsize 7150
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "limits.hpp"
+    :tags 
+        '( ("BOOST_SGI_CPP_LIMITS" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("climits" include (:line 46) nil nil)
+            ("cfloat" include (:line 47) nil nil)
+            ("boost/config.hpp" include (:line 48) nil nil)
+            ("boost/detail/endian.hpp" include (:line 49) nil nil)
+            ("cwchar" include (:line 52) nil nil)
+            ("std" type
+               (:members 
+                  ( ("float_round_style" type
+                       (:type "enum"
+                        :line 57)
+                        nil nil))                  
+                :line 55
+                :type "namespace")
+                nil nil)
+            ("round_indeterminate" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("round_toward_zero" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("round_to_nearest" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("round_toward_infinity" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("round_toward_neg_infinity" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("float_denorm_style" type
+               (:parent "std"
+                :line 65
+                :type "enum")
+                nil nil)
+            ("denorm_indeterminate" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("denorm_absent" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("denorm_present" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("BOOST_STL_DECLARE_LIMITS_MEMBER" variable
+               (:constant-flag t
+                :line 85)
+                nil nil)
+            ("BOOST_STL_DECLARE_LIMITS_MEMBER" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("_Numeric_limits_base" type
+               (:parent "std"
+                :line 94
+                :type "class"
+                :members 
+                  ( ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 96
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                       (:protection "public"
+                        :line 98)
+                        nil nil)
+                    ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                       (:protection "public"
+                        :line 99)
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 101
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 102
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 104
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 105
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 106
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 108
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("epsilon" function
+                       (:protection "public"
+                        :line 110)
+                        nil nil)
+                    ("round_error" function
+                       (:protection "public"
+                        :line 111)
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 113
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 114
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 115
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 116
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 118
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 119
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 120
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 121
+                        :arguments (nil nil nil))
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 124
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("infinity" function
+                       (:protection "public"
+                        :line 126)
+                        nil nil)
+                    ("quiet_NaN" function
+                       (:protection "public"
+                        :line 127)
+                        nil nil)
+                    ("signaling_NaN" function
+                       (:protection "public"
+                        :line 128)
+                        nil nil)
+                    ("denorm_min" function
+                       (:protection "public"
+                        :line 129)
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 131
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 132
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 133
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 135
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 136
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 137
+                        :arguments (nil nil nil))
+                        nil nil))                  )
+                nil nil)
+            ("_Integer_limits" type
+               (:members 
+                  ( ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 151
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                       (:protection "public"
+                        :line 153)
+                        nil nil)
+                    ("BOOST_PREVENT_MACRO_SUBSTITUTION" function
+                       (:protection "public"
+                        :line 154)
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 156
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil
+                            ("" variable (:type "int") nil nil)
+                            ("" variable (:type "sizeof") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 161
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 164
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 165
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 166
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 167
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 169
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 170
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil))                  
+                :type "class"
+                :line 148
+                :parent "std")
+                nil nil)
+            ("float_helper" type
+               (:members 
+                  ( ("get_word" function
+                       (:protection "public"
+                        :line 177)
+                        nil nil))                  
+                :type "struct"
+                :line 176
+                :parent "std")
+                nil nil)
+            ("float_helper" type
+               (:members 
+                  ( ("get_word" function
+                       (:protection "public"
+                        :line 188)
+                        nil nil))                  
+                :type "struct"
+                :line 187
+                :parent "std")
+                nil nil)
+            ("_Floating_limits" type
+               (:parent "std"
+                :line 208
+                :type "class"
+                :members 
+                  ( ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 211
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 213
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 214
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 216
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 218
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 220
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 221
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 222
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 223
+                        :arguments 
+                          ( ("" variable (:type "int") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 225
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 226
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 227
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 228
+                        :arguments (nil nil nil))
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 231
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("infinity" function
+                       (:protection "public"
+                        :line 234)
+                        nil nil)
+                    ("quiet_NaN" function
+                       (:protection "public"
+                        :line 237)
+                        nil nil)
+                    ("signaling_NaN" function
+                       (:protection "public"
+                        :line 240)
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 244
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 245
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 246
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 247
+                        :arguments 
+                          ( ("" variable (:type "bool") nil nil)
+                            nil
+                            nil)                          )
+                        nil nil)
+                    ("BOOST_STL_DECLARE_LIMITS_MEMBER" function
+                       (:protection "public"
+                        :prototype-flag t
+                        :line 249
+                        :arguments (nil nil nil))
+                        nil nil))                  )
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 257
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 262
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 267
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 272
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 277
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 283
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 302
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 307
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 312
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 317
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 322
+                :type "class")
+                nil nil)
+            ("numeric_limits" type
+               (:parent "std"
+                :line 327
+                :type "class")
+                nil nil)
+            ("ULONGLONG_MAX" variable
+               (:constant-flag t
+                :line 338)
+                nil nil)
+            ("LONGLONG_MAX" variable
+               (:constant-flag t
+                :line 339)
+                nil nil)
+            ("LONGLONG_MIN" variable
+               (:constant-flag t
+                :line 344)
+                nil nil)
+            ("ULONGLONG_MIN" variable
+               (:constant-flag t
+                :line 349)
+                nil nil))          
+    :file "limits.hpp"
+    :pointmax 286
+    :fsize 16582
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ob_call_traits.hpp"
+    :tags 
+        '( ("BOOST_OB_CALL_TRAITS_HPP" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("boost/config.hpp" include (:line 23) nil nil)
+            ("boost/type_traits/arithmetic_traits.hpp" include (:line 27) nil nil)
+            ("boost/type_traits/composite_traits.hpp" include (:line 30) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:members 
+                          ( ("standard_call_traits" type
+                               (:type "struct"
+                                :line 43
+                                :members 
+                                  ( ("value_type" type
+                                       (:protection "public"
+                                        :line 45
+                                        :type "typedef")
+                                        nil nil)
+                                    ("reference" type
+                                       (:protection "public"
+                                        :line 46
+                                        :type "typedef")
+                                        nil nil)
+                                    ("const_reference" type
+                                       (:protection "public"
+                                        :line 47
+                                        :type "typedef")
+                                        nil nil)
+                                    ("param_type" type
+                                       (:protection "public"
+                                        :line 48
+                                        :type "typedef")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("simple_call_traits" type
+                               (:type "struct"
+                                :line 51
+                                :members 
+                                  ( ("value_type" type
+                                       (:protection "public"
+                                        :line 53
+                                        :type "typedef")
+                                        nil nil)
+                                    ("reference" type
+                                       (:protection "public"
+                                        :line 54
+                                        :type "typedef")
+                                        nil nil)
+                                    ("const_reference" type
+                                       (:protection "public"
+                                        :line 55
+                                        :type "typedef")
+                                        nil nil)
+                                    ("param_type" type
+                                       (:protection "public"
+                                        :line 56
+                                        :type "typedef")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("reference_call_traits" type
+                               (:type "struct"
+                                :line 59
+                                :members 
+                                  ( ("value_type" type
+                                       (:protection "public"
+                                        :line 61
+                                        :type "typedef")
+                                        nil nil)
+                                    ("reference" type
+                                       (:protection "public"
+                                        :line 62
+                                        :type "typedef")
+                                        nil nil)
+                                    ("const_reference" type
+                                       (:protection "public"
+                                        :line 63
+                                        :type "typedef")
+                                        nil nil)
+                                    ("param_type" type
+                                       (:protection "public"
+                                        :line 64
+                                        :type "typedef")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("call_traits_chooser" type
+                               (:members 
+                                  ( ("rebind" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 73
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 71
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 68
+                                :type "struct")
+                                nil nil)
+                            ("call_traits_chooser" type
+                               (:members 
+                                  ( ("rebind" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 83
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 81
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 78
+                                :type "struct")
+                                nil nil)
+                            ("call_traits_chooser" type
+                               (:members 
+                                  ( ("rebind" type
+                                       (:members 
+                                          ( ("type" type
+                                               (:protection "public"
+                                                :line 93
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 91
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 88
+                                :type "struct")
+                                nil nil)
+                            ("call_traits_sizeof_chooser2" type
+                               (:members 
+                                  ( ("small_rebind" type
+                                       (:members 
+                                          ( ("small_type" type
+                                               (:protection "public"
+                                                :line 103
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 101
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 98
+                                :type "struct")
+                                nil nil)
+                            ("call_traits_sizeof_chooser2" type
+                               (:members 
+                                  ( ("small_rebind" type
+                                       (:members 
+                                          ( ("small_type" type
+                                               (:protection "public"
+                                                :line 113
+                                                :type "typedef")
+                                                nil nil))                                          
+                                        :type "struct"
+                                        :line 111
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 108
+                                :type "struct")
+                                nil nil)
+                            ("call_traits_chooser" type
+                               (:members 
+                                  ( ("rebind" type
+                                       (:protection "public"
+                                        :line 121
+                                        :type "struct")
+                                        nil nil))                                  
+                                :line 118
+                                :type "struct")
+                                nil nil))                          
+                        :line 40
+                        :type "namespace")
+                        nil nil))                  
+                :line 33
+                :type "namespace")
+                nil nil)
+            ("sizeof_choice" variable
+               (:constant-flag t
+                :line 123)
+                nil nil))          
+    :file "ob_call_traits.hpp"
+    :pointmax 286
+    :fsize 3846
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "call_traits.hpp"
+    :tags 
+        '( ("BOOST_DETAIL_CALL_TRAITS_HPP" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("boost/config.hpp" include (:line 22) nil nil)
+            ("cstddef" include (:line 24) nil nil)
+            ("boost/type_traits/is_arithmetic.hpp" include (:line 26) nil nil)
+            ("boost/type_traits/is_pointer.hpp" include (:line 27) nil nil)
+            ("boost/detail/workaround.hpp" include (:line 28) nil nil)
+            ("boost" type
+               (:members 
+                  ( ("detail" type
+                       (:type "namespace"
+                        :line 32
+                        :members 
+                          ( ("ct_imp2" type
+                               (:members 
+                                  ( ("param_type" type
+                                       (:protection "public"
+                                        :line 37
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 35
+                                :type "struct")
+                                nil nil)
+                            ("ct_imp2" type
+                               (:members 
+                                  ( ("param_type" type
+                                       (:protection "public"
+                                        :line 43
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 41
+                                :type "struct")
+                                nil nil)
+                            ("ct_imp" type
+                               (:members 
+                                  ( ("param_type" type
+                                       (:protection "public"
+                                        :line 49
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 47
+                                :type "struct")
+                                nil nil)
+                            ("ct_imp" type
+                               (:type "struct"
+                                :line 53)
+                                nil nil))                          )
+                        nil nil))                  
+                :line 30
+                :type "namespace")
+                nil nil))          
+    :file "call_traits.hpp"
+    :pointmax 286
+    :fsize 4050
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "endian.hpp"
+    :tags 
+        '( ("BOOST_DETAIL_ENDIAN_HPP" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("endian.h" include (:line 34) nil nil)
+            ("BOOST_LITTLE_ENDIAN" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("BOOST_BIG_ENDIAN" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_PDP_ENDIAN" variable
+               (:constant-flag t
+                :line 40)
+                nil nil)
+            ("BOOST_BYTE_ORDER" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("BOOST_BIG_ENDIAN" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("BOOST_BYTE_ORDER" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("BOOST_LITTLE_ENDIAN" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("BOOST_BYTE_ORDER" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("BOOST_BIG_ENDIAN" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("BOOST_BYTE_ORDER" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("BOOST_LITTLE_ENDIAN" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("BOOST_BYTE_ORDER" variable
+               (:constant-flag t
+                :line 67)
+                nil nil))          
+    :file "endian.hpp"
+    :pointmax 286
+    :fsize 2462
+    :lastmodtime '(19085 43069)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!detail!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

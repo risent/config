@@ -1,0 +1,38 @@
+;; Object c/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "c/"
+  :tables (list 
+   (semanticdb-table "screenshot.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "screenshot.c"
+    :pointmax 2490
+    :fsize 2489
+    :lastmodtime '(19111 30152)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hello.c"
+    :major-mode 'c-mode
+    :tags nil
+    :file "hello.c"
+    :pointmax 193
+    :fsize 183
+    :lastmodtime '(19116 29965)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "send_mort_money.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("main" function (:type "void") nil [21 772]))          
+    :file "send_mort_money.c"
+    :pointmax 784
+    :fsize 773
+    :lastmodtime '(19249 38156)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!c!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

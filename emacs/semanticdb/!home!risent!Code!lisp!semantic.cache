@@ -1,0 +1,23 @@
+;; Object lisp/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "lisp/"
+  :tables (list 
+   (semanticdb-table "hello.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("hello-world" function nil nil [1 52])
+            ("hello-world" code nil nil [54 67])
+            ("this" code nil nil [70 107])
+            ("+" code nil nil [108 115])
+            ("this" code nil nil [117 140]))          
+    :file "hello.el"
+    :pointmax 141
+    :fsize 22
+    :lastmodtime '(19248 19148)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!lisp!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

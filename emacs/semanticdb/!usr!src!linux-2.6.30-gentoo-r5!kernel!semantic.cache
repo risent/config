@@ -1,0 +1,771 @@
+;; Object kernel/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "kernel/"
+  :tables (list 
+   (semanticdb-table "sys.c"
+    :major-mode 'c-mode
+    :tags 
+        '( ("linux/module.h" include (:system-flag t) nil [80 105])
+            ("linux/mm.h" include (:system-flag t) nil [106 127])
+            ("linux/utsname.h" include (:system-flag t) nil [128 154])
+            ("linux/mman.h" include (:system-flag t) nil [155 178])
+            ("linux/smp_lock.h" include (:system-flag t) nil [179 206])
+            ("linux/notifier.h" include (:system-flag t) nil [207 234])
+            ("linux/reboot.h" include (:system-flag t) nil [235 260])
+            ("linux/prctl.h" include (:system-flag t) nil [261 285])
+            ("linux/highuid.h" include (:system-flag t) nil [286 312])
+            ("linux/fs.h" include (:system-flag t) nil [313 334])
+            ("linux/resource.h" include (:system-flag t) nil [335 362])
+            ("linux/kernel.h" include (:system-flag t) nil [363 388])
+            ("linux/kexec.h" include (:system-flag t) nil [389 413])
+            ("linux/workqueue.h" include (:system-flag t) nil [414 442])
+            ("linux/capability.h" include (:system-flag t) nil [443 472])
+            ("linux/device.h" include (:system-flag t) nil [473 498])
+            ("linux/key.h" include (:system-flag t) nil [499 521])
+            ("linux/times.h" include (:system-flag t) nil [522 546])
+            ("linux/posix-timers.h" include (:system-flag t) nil [547 578])
+            ("linux/security.h" include (:system-flag t) nil [579 606])
+            ("linux/dcookies.h" include (:system-flag t) nil [607 634])
+            ("linux/suspend.h" include (:system-flag t) nil [635 661])
+            ("linux/tty.h" include (:system-flag t) nil [662 684])
+            ("linux/signal.h" include (:system-flag t) nil [685 710])
+            ("linux/cn_proc.h" include (:system-flag t) nil [711 737])
+            ("linux/getcpu.h" include (:system-flag t) nil [738 763])
+            ("linux/task_io_accounting_ops.h" include (:system-flag t) nil [764 805])
+            ("linux/seccomp.h" include (:system-flag t) nil [806 832])
+            ("linux/cpu.h" include (:system-flag t) nil [833 855])
+            ("linux/ptrace.h" include (:system-flag t) nil [856 881])
+            ("linux/fs_struct.h" include (:system-flag t) nil [882 910])
+            ("linux/compat.h" include (:system-flag t) nil [912 937])
+            ("linux/syscalls.h" include (:system-flag t) nil [938 965])
+            ("linux/kprobes.h" include (:system-flag t) nil [966 992])
+            ("linux/user_namespace.h" include (:system-flag t) nil [993 1026])
+            ("asm/uaccess.h" include (:system-flag t) nil [1028 1052])
+            ("asm/io.h" include (:system-flag t) nil [1053 1072])
+            ("asm/unistd.h" include (:system-flag t) nil [1073 1096])
+            ("SET_UNALIGN_CTL" variable (:constant-flag t) nil [1131 1146])
+            ("GET_UNALIGN_CTL" variable (:constant-flag t) nil [1202 1217])
+            ("SET_FPEMU_CTL" variable (:constant-flag t) nil [1271 1284])
+            ("GET_FPEMU_CTL" variable (:constant-flag t) nil [1338 1351])
+            ("SET_FPEXC_CTL" variable (:constant-flag t) nil [1405 1418])
+            ("GET_FPEXC_CTL" variable (:constant-flag t) nil [1472 1485])
+            ("GET_ENDIAN" variable (:constant-flag t) nil [1536 1546])
+            ("SET_ENDIAN" variable (:constant-flag t) nil [1597 1607])
+            ("GET_TSC_CTL" variable (:constant-flag t) nil [1659 1670])
+            ("SET_TSC_CTL" variable (:constant-flag t) nil [1721 1732])
+            ("overflowuid" variable
+               (:default-value "DEFAULT_OVERFLOWUID;"
+                :type "int")
+                nil [1903 1941])
+            ("overflowgid" variable
+               (:default-value "DEFAULT_OVERFLOWGID;"
+                :type "int")
+                nil [1942 1980])
+            ("fs_overflowuid" variable
+               (:default-value "DEFAULT_FS_OVERFLOWUID;"
+                :type "int")
+                nil [2207 2251])
+            ("fs_overflowgid" variable
+               (:default-value "DEFAULT_FS_OVERFLOWUID;"
+                :type "int")
+                nil [2252 2296])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fs_overflowuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2312 2327]))                  
+                :type "int")
+                nil [2298 2328])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("fs_overflowgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2343 2358]))                  
+                :type "int")
+                nil [2329 2359])
+            ("C_A_D" variable
+               (:default-value "1"
+                :type "int")
+                nil [2448 2462])
+            ("cad_pid" variable
+               (:pointer 1
+                :type ("pid" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [2463 2483])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("cad_pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2498 2506]))                  
+                :type "int")
+                nil [2484 2507])
+            ("*pm_power_off_prepare" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [2609 2614]))                  
+                :type "void")
+                nil [2580 2615])
+            ("set_one_prio" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [2722 2744])
+                    ("niceval" variable (:type "int") (reparse-symbol arg-sub-list) [2745 2757])
+                    ("error" variable (:type "int") (reparse-symbol arg-sub-list) [2758 2768]))                  
+                :type "int")
+                nil [2698 3251])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("setpriority" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3269 3281])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3282 3286])
+                    ("" variable (:type ("which" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3287 3293])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3294 3298])
+                    ("" variable (:type ("who" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3299 3303])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [3304 3308])
+                    ("" variable (:type ("niceval" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3309 3317]))                  
+                :type "int")
+                nil [3253 4616])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("getpriority" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4854 4866])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4867 4871])
+                    ("" variable (:type ("which" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4872 4878])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [4879 4883])
+                    ("" variable (:type ("who" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4884 4888]))                  
+                :type "int")
+                nil [4838 6178])
+            ("emergency_restart" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [6470 6475]))                  
+                :type "void")
+                nil [6447 6509])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("emergency_restart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6528 6546]))                  
+                :type "int")
+                nil [6510 6547])
+            ("kernel_restart_prepare" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6577 6587]))                  
+                :type "void")
+                nil [6549 6735])
+            ("kernel_restart" function
+               (:arguments 
+                  ( ("cmd" variable
+                       (:pointer 1
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [6989 6999]))                  
+                :type "void")
+                nil [6969 7186])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("kernel_restart" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7205 7220]))                  
+                :type "int")
+                nil [7187 7221])
+            ("kernel_shutdown_prepare" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("state" variable (:type ("system_states" type (:type "enum") nil nil)) (reparse-symbol arg-sub-list) [7259 7284]))                  
+                :type "void")
+                nil [7223 7440])
+            ("kernel_halt" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7558 7563]))                  
+                :type "void")
+                nil [7541 7683])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("kernel_halt" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7703 7715]))                  
+                :type "int")
+                nil [7685 7716])
+            ("kernel_power_off" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [7855 7860]))                  
+                :type "void")
+                nil [7833 8065])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("kernel_power_off" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8084 8101]))                  
+                :type "int")
+                nil [8066 8102])
+            ("SYSCALL_DEFINE4" function
+               (:arguments 
+                  ( ("" variable (:type ("reboot" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8454 8461])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8462 8466])
+                    ("" variable (:type ("magic1" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8467 8474])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [8475 8479])
+                    ("" variable (:type ("magic2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8480 8487])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [8488 8501])
+                    ("" variable (:type ("cmd" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8502 8506])
+                    ("__user" variable (:type "void") (reparse-symbol arg-sub-list) [8509 8522])
+                    ("" variable (:type ("arg" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8524 8528]))                  
+                :type "int")
+                nil [8438 10059])
+            ("deferred_cad" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("dummy" variable
+                       (:pointer 1
+                        :type ("work_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [10086 10112]))                  
+                :type "void")
+                nil [10061 10139])
+            ("ctrl_alt_del" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [10378 10383]))                  
+                :type "void")
+                nil [10360 10507])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setregid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11307 11316])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11317 11323])
+                    ("" variable (:type ("rgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11324 11329])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11330 11336])
+                    ("" variable (:type ("egid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11337 11342]))                  
+                :type "int")
+                nil [11291 12124])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("setgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12241 12248])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12249 12255])
+                    ("" variable (:type ("gid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12256 12260]))                  
+                :type "int")
+                nil [12225 12769])
+            ("set_user" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("cred" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [12866 12882]))                  
+                :type "int")
+                nil [12846 13321])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setreuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13981 13990])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13991 13997])
+                    ("" variable (:type ("ruid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [13998 14003])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14004 14010])
+                    ("" variable (:type ("euid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [14011 14016]))                  
+                :type "int")
+                nil [13965 14968])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("setuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15530 15537])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15538 15544])
+                    ("" variable (:type ("uid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [15545 15549]))                  
+                :type "int")
+                nil [15514 16219])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("setresuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16386 16396])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16397 16403])
+                    ("" variable (:type ("ruid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16404 16409])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16410 16416])
+                    ("" variable (:type ("euid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16417 16422])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16423 16429])
+                    ("" variable (:type ("suid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [16430 16435]))                  
+                :type "int")
+                nil [16370 17468])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("getresuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17486 17496])
+                    ("__user" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17497 17511])
+                    ("" variable (:type ("ruid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17513 17518])
+                    ("__user" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17519 17533])
+                    ("" variable (:type ("euid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17535 17540])
+                    ("__user" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17541 17555])
+                    ("" variable (:type ("suid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17557 17562]))                  
+                :type "int")
+                nil [17470 17775])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("setresgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17844 17854])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17855 17861])
+                    ("" variable (:type ("rgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17862 17867])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17868 17874])
+                    ("" variable (:type ("egid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17875 17880])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17881 17887])
+                    ("" variable (:type ("sgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17888 17893]))                  
+                :type "int")
+                nil [17828 18736])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("getresgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18754 18764])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18765 18779])
+                    ("" variable (:type ("rgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18781 18786])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18787 18801])
+                    ("" variable (:type ("egid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18803 18808])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18809 18823])
+                    ("" variable (:type ("sgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [18825 18830]))                  
+                :type "int")
+                nil [18738 19043])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("setfsuid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19332 19341])
+                    ("" variable (:type ("uid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19342 19348])
+                    ("" variable (:type ("uid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [19349 19353]))                  
+                :type "int")
+                nil [19316 19974])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("setfsgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20021 20030])
+                    ("" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20031 20037])
+                    ("" variable (:type ("gid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [20038 20042]))                  
+                :type "int")
+                nil [20005 20596])
+            ("do_sys_times" function
+               (:arguments 
+                  ( ("tms" variable
+                       (:pointer 1
+                        :type ("tms" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [20616 20632]))                  
+                :type "void")
+                nil [20598 21096])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("times" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21114 21120])
+                    ("__user" variable (:type ("tms" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [21121 21140])
+                    ("" variable (:type ("tbuf" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21142 21147]))                  
+                :type "int")
+                nil [21098 21371])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setpgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21865 21873])
+                    ("" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21874 21880])
+                    ("" variable (:type ("pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21881 21885])
+                    ("" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21886 21892])
+                    ("" variable (:type ("pgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [21893 21898]))                  
+                :type "int")
+                nil [21849 23172])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("getpgid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23190 23198])
+                    ("" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23199 23205])
+                    ("" variable (:type ("pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23206 23210]))                  
+                :type "int")
+                nil [23174 23587])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("getsid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23699 23706])
+                    ("" variable (:type ("pid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23707 23713])
+                    ("" variable (:type ("pid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [23714 23718]))                  
+                :type "int")
+                nil [23683 24100])
+            ("SYSCALL_DEFINE0" function
+               (:arguments 
+                  ( ("" variable (:type ("setsid" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [24118 24125]))                  
+                :type "int")
+                nil [24102 24710])
+            ("init_groups" variable
+               (:default-value "{ .usage = ATOMIC_INIT(2) }"
+                :type ("group_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24816 24876])
+            ("groups_alloc" function
+               (:pointer 1
+                :arguments 
+                  ( ("gidsetsize" variable (:type "int") (reparse-symbol arg-sub-list) [24910 24925]))                  
+                :type ("group_info" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [24878 25784])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("groups_alloc" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [25800 25813]))                  
+                :type "int")
+                nil [25786 25814])
+            ("groups_free" function
+               (:arguments 
+                  ( ("group_info" variable
+                       (:pointer 1
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [25833 25863]))                  
+                :type "void")
+                nil [25816 26052])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("groups_free" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26068 26080]))                  
+                :type "int")
+                nil [26054 26081])
+            ("groups_to_user" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26159 26173])
+                    ("" variable (:type ("grouplist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26173 26183])
+                    ("group_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26189 26225]))                  
+                :type "int")
+                nil [26133 26584])
+            ("groups_from_user" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("group_info" variable
+                       (:pointer 1
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [26693 26723])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26728 26742])
+                    ("" variable (:type ("grouplist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [26742 26752]))                  
+                :type "int")
+                nil [26665 27113])
+            ("groups_sort" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("group_info" variable
+                       (:pointer 1
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27165 27195]))                  
+                :type "void")
+                nil [27141 27773])
+            ("groups_search" function
+               (:arguments 
+                  ( ("group_info" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [27816 27852])
+                    ("grp" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [27853 27863]))                  
+                :type "int")
+                nil [27798 28177])
+            ("set_groups" function
+               (:arguments 
+                  ( ("" variable
+                       (:pointer 1
+                        :type ("cred" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28459 28475])
+                    ("group_info" variable
+                       (:pointer 1
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28477 28507]))                  
+                :type "int")
+                nil [28444 28734])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_groups" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28750 28761]))                  
+                :type "int")
+                nil [28736 28762])
+            ("set_current_groups" function
+               (:arguments 
+                  ( ("group_info" variable
+                       (:pointer 1
+                        :type ("group_info" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [28997 29027]))                  
+                :type "int")
+                nil [28974 29232])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("set_current_groups" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29248 29267]))                  
+                :type "int")
+                nil [29234 29268])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("getgroups" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29286 29296])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [29297 29301])
+                    ("" variable (:type ("gidsetsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29302 29313])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29314 29328])
+                    ("" variable (:type ("grouplist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29330 29340]))                  
+                :type "int")
+                nil [29270 29705])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setgroups" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29830 29840])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [29841 29845])
+                    ("" variable (:type ("gidsetsize" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29846 29857])
+                    ("__user" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29858 29872])
+                    ("" variable (:type ("grouplist" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29874 29884]))                  
+                :type "int")
+                nil [29814 30319])
+            ("in_group_p" function
+               (:arguments 
+                  ( ("grp" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30408 30418]))                  
+                :type "int")
+                nil [30393 30573])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("in_group_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30589 30600]))                  
+                :type "int")
+                nil [30575 30601])
+            ("in_egroup_p" function
+               (:arguments 
+                  ( ("grp" variable (:type ("gid_t" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30619 30629]))                  
+                :type "int")
+                nil [30603 30783])
+            ("EXPORT_SYMBOL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("in_egroup_p" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30799 30811]))                  
+                :type "int")
+                nil [30785 30812])
+            ("DECLARE_RWSEM" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("uts_sem" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30828 30836]))                  
+                :type "int")
+                nil [30814 30837])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("newuname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30855 30864])
+                    ("__user" variable (:type ("new_utsname" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [30865 30892])
+                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [30894 30899]))                  
+                :type "int")
+                nil [30839 31046])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("sethostname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31064 31076])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [31077 31090])
+                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31092 31097])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [31098 31102])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31103 31107]))                  
+                :type "int")
+                nil [31048 31515])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setdomainname" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [31999 32013])
+                    ("__user" variable (:type "char") (reparse-symbol arg-sub-list) [32014 32027])
+                    ("" variable (:type ("name" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32029 32034])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [32035 32039])
+                    ("" variable (:type ("len" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32040 32044]))                  
+                :type "int")
+                nil [31983 32459])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("getrlimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32477 32487])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [32488 32501])
+                    ("" variable (:type ("resource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32502 32511])
+                    ("__user" variable (:type ("rlimit" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [32512 32534])
+                    ("" variable (:type ("rlim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [32536 32541]))                  
+                :type "int")
+                nil [32461 32811])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("setrlimit" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33380 33390])
+                    ("" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [33391 33404])
+                    ("" variable (:type ("resource" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33405 33414])
+                    ("__user" variable (:type ("rlimit" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [33415 33437])
+                    ("" variable (:type ("rlim" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [33439 33444]))                  
+                :type "int")
+                nil [33364 34781])
+            ("accumulate_thread_rusage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("t" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36601 36623])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("rusage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36624 36641]))                  
+                :type "void")
+                nil [36564 36841])
+            ("k_getrusage" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36867 36889])
+                    ("who" variable (:type "int") (reparse-symbol arg-sub-list) [36890 36898])
+                    ("r" variable
+                       (:pointer 1
+                        :type ("rusage" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [36899 36916]))                  
+                :type "void")
+                nil [36843 38312])
+            ("getrusage" function
+               (:arguments 
+                  ( ("p" variable
+                       (:pointer 1
+                        :type ("task_struct" type
+                             (:prototype t
+                              :type "struct")
+                              nil nil))
+                        (reparse-symbol arg-sub-list) [38328 38350])
+                    ("who" variable (:type "int") (reparse-symbol arg-sub-list) [38351 38359])
+                    ("__user" variable (:type ("rusage" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [38360 38382])
+                    ("" variable (:type ("ru" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38382 38385]))                  
+                :type "int")
+                nil [38314 38488])
+            ("SYSCALL_DEFINE2" function
+               (:arguments 
+                  ( ("" variable (:type ("getrusage" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38506 38516])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [38517 38521])
+                    ("" variable (:type ("who" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38522 38526])
+                    ("__user" variable (:type ("rusage" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [38527 38549])
+                    ("" variable (:type ("ru" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38551 38554]))                  
+                :type "int")
+                nil [38490 38693])
+            ("SYSCALL_DEFINE1" function
+               (:arguments 
+                  ( ("" variable (:type ("umask" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38711 38717])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [38718 38722])
+                    ("" variable (:type ("mask" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38723 38728]))                  
+                :type "int")
+                nil [38695 38799])
+            ("SYSCALL_DEFINE5" function
+               (:arguments 
+                  ( ("" variable (:type ("prctl" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38817 38823])
+                    ("" variable (:type "int") (reparse-symbol arg-sub-list) [38824 38828])
+                    ("" variable (:type ("option" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38829 38836])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38837 38851])
+                    ("" variable (:type ("arg2" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38852 38857])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38858 38872])
+                    ("" variable (:type ("arg3" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38873 38878])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38881 38895])
+                    ("" variable (:type ("arg4" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38896 38901])
+                    ("" variable (:type "unsigned long") (reparse-symbol arg-sub-list) [38902 38916])
+                    ("" variable (:type ("arg5" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [38917 38922]))                  
+                :type "int")
+                nil [38801 41240])
+            ("SYSCALL_DEFINE3" function
+               (:arguments 
+                  ( ("" variable (:type ("getcpu" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41258 41265])
+                    ("__user" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41266 41283])
+                    ("" variable (:type ("cpup" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41285 41290])
+                    ("__user" variable (:type "unsigned int") (reparse-symbol arg-sub-list) [41291 41308])
+                    ("" variable (:type ("nodep" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41310 41316])
+                    ("__user" variable (:type ("getcpu_cache" type
+                         (:prototype t
+                          :type "struct")
+                          nil nil)) (reparse-symbol arg-sub-list) [41319 41347])
+                    ("" variable (:type ("unused" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [41349 41356]))                  
+                :type "int")
+                nil [41242 41533])
+            ("poweroff_cmd" variable
+               (:dereference 1
+                :default-value "\"/sbin/poweroff\""
+                :type "char")
+                nil [41535 41595])
+            ("argv_cleanup" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("argv" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41622 41634])
+                    ("envp" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [41635 41647]))                  
+                :type "void")
+                nil [41597 41669])
+            ("orderly_poweroff" function
+               (:arguments 
+                  ( ("force" variable (:type "bool") (reparse-symbol arg-sub-list) [41953 41964]))                  
+                :type "int")
+                nil [41932 42887])
+            ("EXPORT_SYMBOL_GPL" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("" variable (:type ("orderly_poweroff" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [42906 42923]))                  
+                :type "int")
+                nil [42888 42924]))          
+    :file "sys.c"
+    :pointmax 42925
+    :fsize 42925
+    :lastmodtime '(18991 8951)
+    :unmatched-syntax '((punctuation 41346 . 41347) (punctuation 41307 . 41308) (punctuation 41282 . 41283) (punctuation 38548 . 38549) (punctuation 38381 . 38382) (punctuation 33436 . 33437) (punctuation 32533 . 32534) (punctuation 32026 . 32027) (punctuation 31089 . 31090) (punctuation 30891 . 30892) (punctuation 29871 . 29872) (punctuation 29327 . 29328) (NEW 28472 . 28475) (punctuation 26741 . 26742) (punctuation 26172 . 26173) (punctuation 21139 . 21140) (punctuation 18822 . 18823) (punctuation 18800 . 18801) (punctuation 18778 . 18779) (punctuation 17554 . 17555) (punctuation 17532 . 17533) (punctuation 17510 . 17511) (NEW 12879 . 12882) (punctuation 8521 . 8522))
+    :lexical-table 
+        '(("SET_FPEMU_CTL" (spp-arg-list ("a" "b") 1284 . 1289) . ((semantic-list "(-EINVAL)" 1290 . 1299)))
+          ("GET_ENDIAN" (spp-arg-list ("a" "b") 1546 . 1551) . ((semantic-list "(-EINVAL)" 1552 . 1561)))
+          ("GET_UNALIGN_CTL" (spp-arg-list ("a" "b") 1217 . 1222) . ((semantic-list "(-EINVAL)" 1223 . 1232)))
+          ("SET_FPEXC_CTL" (spp-arg-list ("a" "b") 1418 . 1423) . ((semantic-list "(-EINVAL)" 1424 . 1433)))
+          ("GET_TSC_CTL" (spp-arg-list ("a") 1670 . 1673) . ((semantic-list "(-EINVAL)" 1675 . 1684)))
+          ("GET_FPEMU_CTL" (spp-arg-list ("a" "b") 1351 . 1356) . ((semantic-list "(-EINVAL)" 1357 . 1366)))
+          ("SET_ENDIAN" (spp-arg-list ("a" "b") 1607 . 1612) . ((semantic-list "(-EINVAL)" 1613 . 1622)))
+          ("SET_UNALIGN_CTL" (spp-arg-list ("a" "b") 1146 . 1151) . ((semantic-list "(-EINVAL)" 1152 . 1161)))
+          ("GET_FPEXC_CTL" (spp-arg-list ("a" "b") 1485 . 1490) . ((semantic-list "(-EINVAL)" 1491 . 1500)))
+          ("SET_TSC_CTL" (spp-arg-list ("a") 1732 . 1735) . ((semantic-list "(-EINVAL)" 1737 . 1746)))
+          )
+
+    )
+   )
+  :file "!usr!src!linux-2.6.30-gentoo-r5!kernel!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

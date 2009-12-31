@@ -1,0 +1,38 @@
+;; Object no_tr1/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "no_tr1/"
+  :tables (list 
+   (semanticdb-table "utility.hpp"
+    :tags 
+        '( ("BOOST_CONFIG_UTILITY" variable
+               (:constant-flag t
+                :line 14)
+                nil nil)
+            ("BOOST_TR1_NO_RECURSION" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("BOOST_CONFIG_NO_UTILITY_RECURSION" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("utility" include (:line 21) nil nil)
+            ("BOOST_TR1_NO_RECURSION" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_CONFIG_NO_UTILITY_RECURSION" variable
+               (:constant-flag t
+                :line 25)
+                nil nil))          
+    :file "utility.hpp"
+    :pointmax 286
+    :fsize 854
+    :lastmodtime '(19085 43086)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!config!no_tr1!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

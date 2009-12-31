@@ -1,0 +1,434 @@
+;; Object preprocessor/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "preprocessor/"
+  :tables (list 
+   (semanticdb-table "params.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_PARAMS_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:line 17) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 26) nil nil)
+            ("BOOST_MPL_PP_PARAMS" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_0" variable
+               (:constant-flag t
+                :line 32)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_1" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_2" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_3" variable
+               (:constant-flag t
+                :line 35)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_4" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_5" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_6" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_7" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_8" variable
+               (:constant-flag t
+                :line 40)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS_9" variable
+               (:constant-flag t
+                :line 41)
+                nil nil)
+            ("boost/preprocessor/comma_if.hpp" include (:line 45) nil nil)
+            ("boost/preprocessor/repeat.hpp" include (:line 46) nil nil)
+            ("boost/preprocessor/inc.hpp" include (:line 47) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 48) nil nil)
+            ("BOOST_MPL_PP_AUX_PARAM_FUNC" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("BOOST_MPL_PP_PARAMS" variable
+               (:constant-flag t
+                :line 55)
+                nil nil))          
+    :file "params.hpp"
+    :pointmax 286
+    :fsize 2031
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "enum.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_ENUM_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:line 17) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 26) nil nil)
+            ("BOOST_MPL_PP_ENUM" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_0" variable
+               (:constant-flag t
+                :line 32)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_1" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_2" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_3" variable
+               (:constant-flag t
+                :line 35)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_4" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_5" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_6" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_7" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_8" variable
+               (:constant-flag t
+                :line 40)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM_9" variable
+               (:constant-flag t
+                :line 41)
+                nil nil)
+            ("boost/preprocessor/comma_if.hpp" include (:line 45) nil nil)
+            ("boost/preprocessor/repeat.hpp" include (:line 46) nil nil)
+            ("BOOST_MPL_PP_AUX_ENUM_FUNC" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("BOOST_MPL_PP_ENUM" variable
+               (:constant-flag t
+                :line 52)
+                nil nil))          
+    :file "enum.hpp"
+    :pointmax 286
+    :fsize 1759
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "def_params_tail.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_DEF_PARAMS_TAIL_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/limits/arity.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/config/dtp.hpp" include (:line 18) nil nil)
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:line 19) nil nil)
+            ("boost/preprocessor/comma_if.hpp" include (:line 21) nil nil)
+            ("boost/preprocessor/logical/and.hpp" include (:line 22) nil nil)
+            ("boost/preprocessor/identity.hpp" include (:line 23) nil nil)
+            ("boost/preprocessor/empty.hpp" include (:line 24) nil nil)
+            ("boost/mpl/aux_/preprocessor/filter_params.hpp" include (:line 32) nil nil)
+            ("boost/mpl/aux_/preprocessor/sub.hpp" include (:line 33) nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" variable
+               (:constant-flag t
+                :line 35)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_DELAY_1" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_DELAY_2" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_0" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_1" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_2" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_3" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_4" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_5" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_6" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_7" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_8" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_9" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("boost/preprocessor/arithmetic/add.hpp" include (:line 66) nil nil)
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:line 67) nil nil)
+            ("boost/preprocessor/inc.hpp" include (:line 68) nil nil)
+            ("boost/preprocessor/tuple/elem.hpp" include (:line 69) nil nil)
+            ("boost/preprocessor/repeat.hpp" include (:line 70) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 71) nil nil)
+            ("BOOST_MPL_PP_AUX_TAIL_PARAM_FUNC" variable
+               (:constant-flag t
+                :line 73)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL_IMPL" variable
+               (:constant-flag t
+                :line 80)
+                nil nil)
+            ("BOOST_MPL_PP_DEF_PARAMS_TAIL" variable
+               (:constant-flag t
+                :line 91)
+                nil nil)
+            ("BOOST_MPL_PP_NESTED_DEF_PARAMS_TAIL" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("BOOST_MPL_PP_NESTED_DEF_PARAMS_TAIL" variable
+               (:constant-flag t
+                :line 100)
+                nil nil))          
+    :file "def_params_tail.hpp"
+    :pointmax 286
+    :fsize 4587
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "filter_params.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_FILTER_PARAMS_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_0" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_1" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_2" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_3" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_4" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_5" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_6" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_7" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_8" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_MPL_PP_FILTER_PARAMS_9" variable
+               (:constant-flag t
+                :line 26)
+                nil nil))          
+    :file "filter_params.hpp"
+    :pointmax 286
+    :fsize 1383
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sub.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_SUB_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("boost/mpl/aux_/config/preprocessor.hpp" include (:line 17) nil nil)
+            ("boost/mpl/aux_/preprocessor/tuple.hpp" include (:line 21) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 24) nil nil)
+            ("BOOST_MPL_PP_SUB" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_DELAY" variable
+               (:constant-flag t
+                :line 30)
+                nil nil)
+            ("BOOST_MPL_PP_SUB" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_DELAY" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_0" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_1" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_2" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_3" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_4" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_5" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_6" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_7" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_8" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_9" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("BOOST_MPL_PP_SUB_10" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("boost/preprocessor/arithmetic/sub.hpp" include (:line 57) nil nil)
+            ("BOOST_MPL_PP_SUB" variable
+               (:constant-flag t
+                :line 59)
+                nil nil))          
+    :file "sub.hpp"
+    :pointmax 286
+    :fsize 1945
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tuple.hpp"
+    :tags 
+        '( ("BOOST_MPL_AUX_PREPROCESSOR_TUPLE_HPP_INCLUDED" variable
+               (:constant-flag t
+                :line 3)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_0" variable
+               (:constant-flag t
+                :line 17)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_1" variable
+               (:constant-flag t
+                :line 18)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_2" variable
+               (:constant-flag t
+                :line 19)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_3" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_4" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_5" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_6" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_7" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_8" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_9" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("BOOST_MPL_PP_TUPLE_11_ELEM_10" variable
+               (:constant-flag t
+                :line 27)
+                nil nil))          
+    :file "tuple.hpp"
+    :pointmax 286
+    :fsize 1392
+    :lastmodtime '(19085 43025)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!mpl!aux_!preprocessor!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

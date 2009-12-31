@@ -1,0 +1,9 @@
+Emacs.FontBackend: xft
+Emacs.Font:Bitstream Vera Sans Mono-13 
+Emacs.Foreground: Wheat
+Emacs.Background: DarkSlateGray
+Emacs.ScrollBars: nil
+Emacs.Geometry: 80x32+0+0
+Xft.dpi: 96
+Xft.hinting: none
+

@@ -1,0 +1,429 @@
+;; Object exception/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "exception/"
+  :tables (list 
+   (semanticdb-table "exception.hpp"
+    :tags 
+        '( ("UUID_274DA366004E11DCB1DDFE2E56D89593" variable
+               (:constant-flag t
+                :line 7)
+                nil nil)
+            ("boost" type
+               (:type "namespace"
+                :line 10
+                :members 
+                  ( ("exception_detail" type
+                       (:members 
+                          ( ("refcount_ptr" type
+                               (:members 
+                                  ( ("refcount_ptr" function
+                                       (:constructor-flag t
+                                        :line 21
+                                        :protection "public")
+                                        nil nil)
+                                    ("refcount_ptr" function
+                                       (:destructor-flag t
+                                        :line 26
+                                        :protection "public")
+                                        nil nil)
+                                    ("refcount_ptr" function
+                                       (:constructor-flag t
+                                        :arguments (nil)
+                                        :line 31
+                                        :protection "public")
+                                        nil nil)
+                                    ("operator =" function
+                                       (:protection "public"
+                                        :line 38
+                                        :arguments (nil))
+                                        nil nil)
+                                    ("adopt" function
+                                       (:protection "public"
+                                        :line 45
+                                        :arguments (nil))
+                                        nil nil)
+                                    ("get" function
+                                       (:protection "public"
+                                        :line 53
+                                        :arguments (nil))
+                                        nil nil)
+                                    ("px_" variable
+                                       (:protection "private"
+                                        :line 60)
+                                        nil nil)
+                                    ("add_ref" function
+                                       (:protection "private"
+                                        :line 63)
+                                        nil nil)
+                                    ("release" function
+                                       (:protection "private"
+                                        :line 70)
+                                        nil nil))                                  
+                                :line 17
+                                :type "class")
+                                nil nil))                          
+                        :line 13
+                        :type "namespace")
+                        nil nil)
+                    ("throw_function" type
+                       (:type "typedef"
+                        :line 83)
+                        nil nil)
+                    ("throw_file" type
+                       (:type "typedef"
+                        :line 84)
+                        nil nil)
+                    ("throw_line" type
+                       (:type "typedef"
+                        :line 85)
+                        nil nil)
+                    ("error_info" type
+                       (:members 
+                          ( ("value_type" type
+                               (:protection "public"
+                                :line 92
+                                :type "typedef")
+                                nil nil)
+                            ("v_" variable
+                               (:protection "public"
+                                :line 93)
+                                nil nil)
+                            ("error_info" function
+                               (:constructor-flag t
+                                :arguments (nil)
+                                :line 95
+                                :protection "public")
+                                nil nil))                          
+                        :line 89
+                        :type "class")
+                        nil nil)
+                    ("error_info" type
+                       (:members 
+                          ( ("value_type" type
+                               (:protection "public"
+                                :line 106
+                                :type "typedef")
+                                nil nil)
+                            ("v_" variable
+                               (:protection "public"
+                                :line 107)
+                                nil nil)
+                            ("error_info" function
+                               (:constructor-flag t
+                                :arguments (nil)
+                                :line 109
+                                :protection "public")
+                                nil nil))                          
+                        :line 103
+                        :type "class")
+                        nil nil)
+                    ("error_info" type
+                       (:members 
+                          ( ("value_type" type
+                               (:protection "public"
+                                :line 120
+                                :type "typedef")
+                                nil nil)
+                            ("v_" variable
+                               (:protection "public"
+                                :line 121)
+                                nil nil)
+                            ("error_info" function
+                               (:constructor-flag t
+                                :arguments (nil)
+                                :line 123
+                                :protection "public")
+                                nil nil))                          
+                        :line 117
+                        :type "class")
+                        nil nil)
+                    ("operator <<" function
+                       (:arguments (nil nil nil)
+                        :line 130
+                        :prototype-flag t)
+                        nil nil)
+                    ("exception_detail" type
+                       (:type "namespace"
+                        :line 138
+                        :members 
+                          ( ("error_info_container" type
+                               (:type "struct"
+                                :line 144
+                                :members 
+                                  ( ("diagnostic_information" function
+                                       (:protection "public"
+                                        :arguments (nil)
+                                        :line 146
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("get" function
+                                       (:protection "public"
+                                        :arguments (nil nil)
+                                        :line 147
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("set" function
+                                       (:protection "public"
+                                        :arguments (nil nil)
+                                        :line 148
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("add_ref" function
+                                       (:protection "public"
+                                        :arguments (nil)
+                                        :line 149
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("release" function
+                                       (:protection "public"
+                                        :arguments (nil)
+                                        :line 150
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("error_info_container" function
+                                       (:destructor-flag t
+                                        :typemodifiers "virtual"
+                                        :line 155
+                                        :protection "protected")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("get_diagnostic_information" function
+                               (:arguments (nil)
+                                :line 172
+                                :prototype-flag t)
+                                nil nil))                          )
+                        nil nil)
+                    ("exception" type
+                       (:members 
+                          ( ("exception" function
+                               (:constructor-flag t
+                                :line 180
+                                :protection "protected")
+                                nil nil)
+                            ("exception" function
+                               (:constructor-flag t
+                                :arguments (nil)
+                                :line 190
+                                :protection "protected")
+                                nil nil)
+                            ("exception" function
+                               (:destructor-flag t
+                                :typemodifiers "pure virtual"
+                                :prototype-flag t
+                                :line 199
+                                :protection "protected")
+                                nil nil)
+                            ("operator <<" function
+                               (:protection "friend"
+                                :line 210
+                                :arguments (nil nil))
+                                nil nil)
+                            ("operator <<" function
+                               (:protection "friend"
+                                :line 219
+                                :arguments (nil nil))
+                                nil nil)
+                            ("operator <<" function
+                               (:protection "friend"
+                                :line 228
+                                :arguments (nil nil))
+                                nil nil)
+                            ("get_diagnostic_information" function
+                               (:parent "exception_detail"
+                                :arguments (nil)
+                                :line 234
+                                :prototype-flag t
+                                :protection "friend")
+                                nil nil)
+                            ("operator <<" function
+                               (:protection "friend"
+                                :prototype-flag t
+                                :line 237
+                                :arguments (nil nil nil))
+                                nil nil)
+                            ("data_" variable
+                               (:protection "private"
+                                :line 245)
+                                nil nil)
+                            ("throw_function_" variable
+                               (:protection "private"
+                                :line 246)
+                                nil nil)
+                            ("throw_file_" variable
+                               (:protection "private"
+                                :line 247)
+                                nil nil)
+                            ("throw_line_" variable
+                               (:protection "private"
+                                :line 248)
+                                nil nil)
+                            ("exception" function
+                               (:destructor-flag t
+                                :line 253)
+                                nil nil))                          
+                        :line 176
+                        :type "class")
+                        nil nil)
+                    ("exception_detail" type
+                       (:type "namespace"
+                        :line 260
+                        :members 
+                          ( ("error_info_injector" type
+                               (:type "struct"
+                                :line 264
+                                :members 
+                                  ( ("error_info_injector" function
+                                       (:constructor-flag t
+                                        :arguments (nil)
+                                        :line 269
+                                        :protection "public")
+                                        nil nil)
+                                    ("error_info_injector" function
+                                       (:destructor-flag t
+                                        :line 274
+                                        :protection "public")
+                                        nil nil))                                  )
+                                nil nil)
+                            ("large_size" type
+                               (:members 
+                                  ( ("c" variable
+                                       (:protection "public"
+                                        :line 279)
+                                        nil nil))                                  
+                                :line 279
+                                :type "struct")
+                                nil nil)
+                            ("dispatch" function
+                               (:arguments (nil)
+                                :line 280
+                                :prototype-flag t)
+                                nil nil)
+                            ("small_size" type
+                               (:type "struct"
+                                :line 282)
+                                nil nil)
+                            ("dispatch" function
+                               (:arguments (nil)
+                                :line 283
+                                :prototype-flag t)
+                                nil nil)
+                            ("enable_error_info_helper" type
+                               (:members 
+                                  ( ("type" type
+                                       (:protection "public"
+                                        :line 292
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 290
+                                :type "struct")
+                                nil nil)
+                            ("enable_error_info_helper" type
+                               (:members 
+                                  ( ("type" type
+                                       (:protection "public"
+                                        :line 299
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 297
+                                :type "struct")
+                                nil nil)
+                            ("enable_error_info_return_type" type
+                               (:members 
+                                  ( ("type" type
+                                       (:protection "public"
+                                        :line 306
+                                        :type "typedef")
+                                        nil nil))                                  
+                                :line 304
+                                :type "struct")
+                                nil nil))                          )
+                        nil nil)
+                    ("enable_error_info" function
+                       (:arguments (nil)
+                        :line 314)
+                        nil nil)
+                    ("exception_detail" type
+                       (:type "namespace"
+                        :line 323
+                        :members 
+                          ( ("clone_base" type
+                               (:members 
+                                  ( ("clone" function
+                                       (:protection "public"
+                                        :arguments (nil)
+                                        :line 330
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("rethrow" function
+                                       (:protection "public"
+                                        :arguments (nil)
+                                        :line 331
+                                        :prototype-flag t
+                                        :typemodifiers "pure virtual")
+                                        nil nil)
+                                    ("clone_base" function
+                                       (:destructor-flag t
+                                        :typemodifiers "virtual"
+                                        :line 334
+                                        :protection "public")
+                                        nil nil))                                  
+                                :line 326
+                                :type "class")
+                                nil nil)
+                            ("copy_boost_exception" function
+                               (:arguments (nil nil)
+                                :line 341)
+                                nil nil)
+                            ("copy_boost_exception" function
+                               (:arguments (nil nil)
+                                :line 348)
+                                nil nil)
+                            ("clone_impl" type
+                               (:type "class"
+                                :line 354
+                                :members 
+                                  ( ("clone_impl" function
+                                       (:constructor-flag t
+                                        :arguments (nil)
+                                        :line 361
+                                        :protection "public")
+                                        nil nil)
+                                    ("clone_impl" function
+                                       (:destructor-flag t
+                                        :line 367
+                                        :protection "public")
+                                        nil nil)
+                                    ("clone" function
+                                       (:protection "private"
+                                        :line 374
+                                        :arguments (nil))
+                                        nil nil)
+                                    ("rethrow" function
+                                       (:protection "private"
+                                        :line 380
+                                        :arguments (nil))
+                                        nil nil))                                  )
+                                nil nil))                          )
+                        nil nil)
+                    ("enable_current_exception" function
+                       (:arguments (nil)
+                        :line 390)
+                        nil nil))                  )
+                nil nil))          
+    :file "exception.hpp"
+    :pointmax 286
+    :fsize 9128
+    :lastmodtime '(19085 43070)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!exception!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,107 @@
+;; Object pam-dev/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "pam-dev/"
+  :tables (list 
+   (semanticdb-table "pam_ext.h"
+    :major-mode 'c-mode
+    :tags 
+        '( ("_SECURITY__PAM_EXT_H_" variable (:constant-flag t) nil [2181 2202])
+            ("security/_pam_types.h" include (:system-flag t) nil [2244 2276])
+            ("stdarg.h" include (:system-flag t) nil [2277 2296])
+            ("pam_vsyslog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pamh" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pam_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2367 2392])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [2393 2406])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2420 2436])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2437 2450]))                  
+                :type "int")
+                nil [2354 2451])
+            ("pam_syslog" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pamh" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("pam_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2521 2546])
+                    ("priority" variable (:type "int") (reparse-symbol arg-sub-list) [2547 2560])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2561 2577])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2578 2582]))                  
+                :type "int")
+                nil [2509 2583])
+            ("pam_vprompt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pamh" variable
+                       (:pointer 1
+                        :type ("pam_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2655 2674])
+                    ("style" variable (:type "int") (reparse-symbol arg-sub-list) [2675 2685])
+                    ("response" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2686 2702])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2709 2725])
+                    ("args" variable (:type ("va_list" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2726 2739]))                  
+                :type "int")
+                nil [2642 2740])
+            ("pam_prompt" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("pamh" variable
+                       (:pointer 1
+                        :type ("pam_handle_t" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2811 2830])
+                    ("style" variable (:type "int") (reparse-symbol arg-sub-list) [2831 2841])
+                    ("response" variable
+                       (:pointer 2
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2842 2858])
+                    ("fmt" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2864 2880])
+                    ("..." variable (:type "vararg") (reparse-symbol arg-sub-list) [2881 2885]))                  
+                :type "int")
+                nil [2799 2886])
+            ("pam_error" variable (:constant-flag t) nil [2896 2905])
+            ("pam_verror" variable (:constant-flag t) nil [2974 2984])
+            ("pam_info" variable (:constant-flag t) nil [3064 3072])
+            ("pam_vinfo" variable (:constant-flag t) nil [3138 3147]))          
+    :file "pam_ext.h"
+    :pointmax 3252
+    :fsize 3243
+    :lastmodtime '(19247 9420)
+    :unmatched-syntax '((semantic-list 2791 . 2798) (symbol 2780 . 2791) (semantic-list 2792 . 2797) (semantic-list 2763 . 2779) (symbol 2753 . 2763) (semantic-list 2764 . 2778) (INT 2749 . 2752) (semantic-list 2764 . 2778) (EXTERN 2742 . 2748) (semantic-list 2764 . 2778) (semantic-list 2634 . 2641) (symbol 2623 . 2634) (semantic-list 2635 . 2640) (semantic-list 2606 . 2622) (symbol 2596 . 2606) (semantic-list 2607 . 2621) (INT 2592 . 2595) (semantic-list 2607 . 2621) (EXTERN 2585 . 2591) (semantic-list 2607 . 2621) (semantic-list 2503 . 2508) (symbol 2492 . 2503) (semantic-list 2504 . 2507) (semantic-list 2475 . 2491) (symbol 2465 . 2475) (semantic-list 2476 . 2490) (VOID 2460 . 2464) (semantic-list 2476 . 2490) (EXTERN 2453 . 2459) (semantic-list 2476 . 2490) (semantic-list 2348 . 2353) (symbol 2337 . 2348) (semantic-list 2349 . 2352) (semantic-list 2320 . 2336) (symbol 2310 . 2320) (semantic-list 2321 . 2335) (VOID 2305 . 2309) (semantic-list 2321 . 2335) (EXTERN 2298 . 2304) (semantic-list 2321 . 2335) (semantic-list 2933 . 2965) (symbol 2923 . 2933) (semantic-list 2905 . 2919))
+    :lexical-table 
+        '(("pam_info" (spp-arg-list ("pamh" "fmt...") 3072 . 3086) . ((symbol "pam_prompt" 3087 . 3097) (semantic-list "(pamh, PAM_TEXT_INFO, NULL, fmt)" 3097 . 3129)))
+          ("_SECURITY__PAM_EXT_H_")
+          ("pam_error" (spp-arg-list ("pamh" "fmt...") 2905 . 2919) . ((symbol "pam_prompt" 2923 . 2933) (semantic-list "(pamh, PAM_ERROR_MSG, NULL, fmt)" 2933 . 2965)))
+          ("pam_verror" (spp-arg-list ("pamh" "fmt" "args") 2984 . 3001) . ((symbol "pam_vprompt" 3005 . 3016) (semantic-list "(pamh, PAM_ERROR_MSG, NULL, fmt, args)" 3016 . 3054)))
+          ("pam_vinfo" (spp-arg-list ("pamh" "fmt" "args") 3147 . 3164) . ((symbol "pam_vprompt" 3165 . 3176) (semantic-list "(pamh, PAM_TEXT_INFO, NULL, fmt, args)" 3176 . 3214)))
+          )
+
+    )
+   )
+  :file "!home!risent!Code!google!chromiumos!chromiumos.git!src!third_party!pam-dev!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,32 @@
+;; Object qt/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "qt/"
+  :tables (list 
+   (semanticdb-table "sigslot.py"
+    :major-mode 'python-mode
+    :tags 
+        '( ("sys" include nil nil [37 47])
+            ("PyQt4" include nil nil [48 78])
+            ("SigSlot" type
+               (:superclasses ("QtGui.QWidget")
+                :members 
+                  ( ("__init__" function (:arguments 
+                      ( ("self" variable nil (reparse-symbol function_parameters) [127 131])
+                        ("parent" variable nil (reparse-symbol function_parameters) [133 139]))                      ) (reparse-symbol indented_block_body) [114 633]))                  
+                :type "class")
+                nil [80 633])
+            ("app" variable nil nil [634 669])
+            ("qb" variable nil nil [670 684])
+            ("qb" code nil nil [685 694])
+            ("sys" code nil nil [695 716]))          
+    :file "sigslot.py"
+    :pointmax 728
+    :fsize 685
+    :lastmodtime '(19083 58545)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!home!risent!Code!python!qt!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

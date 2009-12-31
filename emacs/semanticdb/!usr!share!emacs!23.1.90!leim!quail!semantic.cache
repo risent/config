@@ -1,0 +1,1078 @@
+;; Object quail/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "quail/"
+  :tables (list 
+   (semanticdb-table "py-punct.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1216 1232])
+            ("load" code nil nil [1234 1251])
+            ("load" code nil nil [1252 1272])
+            ("quail-define-package" code nil nil [1274 1668])
+            ("setcar" code nil nil [1670 1777])
+            ("quail-defrule" code nil nil [1779 1850])
+            ("load" code nil nil [1852 1873])
+            ("quail-define-package" code nil nil [1875 2285])
+            ("setcar" code nil nil [2287 2398])
+            ("quail-defrule" code nil nil [2400 2471]))          
+    :file "py-punct.el"
+    :pointmax 2549
+    :fsize 2644
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Punct.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1332 1348])
+            ("quail-define-package" code nil nil [1350 1790])
+            ("quail-define-rules" code nil nil [1792 2461]))          
+    :file "Punct.el"
+    :pointmax 2462
+    :fsize 2753
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hanja3.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1134 1150])
+            ("quail-define-package" code nil nil [1152 1296])
+            ("quail-define-rules" code nil nil [1298 14199]))          
+    :file "hanja3.el"
+    :pointmax 14275
+    :fsize 24474
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "QJ.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [992 1008])
+            ("quail-define-package" code nil nil [1010 1428])
+            ("quail-define-rules" code nil nil [1430 2403]))          
+    :file "QJ.el"
+    :pointmax 2404
+    :fsize 2515
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ARRAY30.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [3354 3370])
+            ("quail-define-package" code nil nil [3372 5254])
+            ("quail-define-rules" code nil nil [5256 174597]))          
+    :file "ARRAY30.el"
+    :pointmax 174598
+    :fsize 189142
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "japanese.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1156 1172])
+            ("kkc" include nil nil [1173 1187])
+            ("quail-japanese-use-double-n" variable nil nil [1189 1274])
+            ("quail-japanese-update-translation" function (:arguments ("control-flag")) nil [1368 2170])
+            ("quail-japanese-toggle-kana" function nil nil [2240 2713])
+            ("quail-japanese-kanji-kkc" function nil nil [2820 3615])
+            ("quail-japanese-self-insert-and-switch-to-alpha" function (:arguments ("key" "idx")) nil [3617 3803])
+            ("quail-japanese-switch-table" variable (:default-value (quote ((122 . "japanese-zenkaku") (107 . "japanese-hankaku-kana") (104 . "japanese") (113 "japanese-ascii")))) nil [3805 3959])
+            ("quail-japanese-package-saved" variable nil nil [3961 4002])
+            ("make-variable-buffer-local" code nil nil [4003 4061])
+            ("put" code nil nil [4062 4116])
+            ("quail-japanese-switch-package" function (:arguments ("key" "idx")) nil [4118 4726])
+            ("quail-japanese-transliteration-rules" variable (:default-value (quote (("a" "あ") ("i" "い") ("u" "う") ("e" "え") ("o" "お") ("ka" "か") ("ki" "き") ("ku" "く") ("ke" "け") ("ko" "こ") ("sa" "さ") ("si" "し") ("su" "す") ("se" "せ") ("so" "そ") ("ta" "た") ("ti" "ち") ("tu" "つ") ("te" "て") ("to" "と") ("na" "な") ("ni" "に") ("nu" "ぬ") ("ne" "ね") ("no" "の") ("ha" "は") ("hi" "ひ") ("hu" "ふ") ("he" "へ") ("ho" "ほ") ("ma" "ま") ("mi" "み") ("mu" "む") ("me" "め") ("mo" "も") ("ya" "や") ("yu" "ゆ") ("yo" "よ") ("ra" "ら") ("ri" "り") ("ru" "る") ("re" "れ") ("ro" "ろ") ("la" "ら") ("li" "り") ("lu" "る") ("le" "れ") ("lo" "ろ") ("wa" "わ") ("wi" "ゐ") ("wu" "う") ("we" "ゑ") ("wo" "を") ("n'" "ん") ("ga" "が") ("gi" "ぎ") ("gu" "ぐ") ("ge" "げ") ("go" "ご") ("za" "ざ") ("zi" "じ") ("zu" "ず") ("ze" "ぜ") ("zo" "ぞ") ("da" "だ") ("di" "ぢ") ("du" "づ") ("de" "で") ("do" "ど") ("ba" "ば") ("bi" "び") ("bu" "ぶ") ("be" "べ") ("bo" "ぼ") ("pa" "ぱ") ("pi" "ぴ") ("pu" "ぷ") ("pe" "ぺ") ("po" "ぽ") ("kya" ["きゃ"]) ("kyu" ["きゅ"]) ("kye" ["きぇ"]) ("kyo" ["きょ"]) ("sya" ["しゃ"]) ("syu" ["しゅ"]) ("sye" ["しぇ"]) ("syo" ["しょ"]) ("sha" ["しゃ"]) ("shu" ["しゅ"]) ("she" ["しぇ"]) ("sho" ["しょ"]) ("cha" ["ちゃ"]) ("chu" ["ちゅ"]) ("che" ["ちぇ"]) ("cho" ["ちょ"]) ("tya" ["ちゃ"]) ("tyu" ["ちゅ"]) ("tye" ["ちぇ"]) ("tyo" ["ちょ"]) ("nya" ["にゃ"]) ("nyu" ["にゅ"]) ("nye" ["にぇ"]) ("nyo" ["にょ"]) ("hya" ["ひゃ"]) ("hyu" ["ひゅ"]) ("hye" ["ひぇ"]) ("hyo" ["ひょ"]) ("mya" ["みゃ"]) ("myu" ["みゅ"]) ("mye" ["みぇ"]) ("myo" ["みょ"]) ("rya" ["りゃ"]) ("ryu" ["りゅ"]) ("rye" ["りぇ"]) ("ryo" ["りょ"]) ("lya" ["りゃ"]) ("lyu" ["りゅ"]) ("lye" ["りぇ"]) ("lyo" ["りょ"]) ("gya" ["ぎゃ"]) ("gyu" ["ぎゅ"]) ("gye" ["ぎぇ"]) ("gyo" ["ぎょ"]) ("zya" ["じゃ"]) ("zyu" ["じゅ"]) ("zye" ["じぇ"]) ("zyo" ["じょ"]) ("jya" ["じゃ"]) ("jyu" ["じゅ"]) ("jye" ["じぇ"]) ("jyo" ["じょ"]) ("ja" ["じゃ"]) ("ju" ["じゅ"]) ("je" ["じぇ"]) ("jo" ["じょ"]) ("bya" ["びゃ"]) ("byu" ["びゅ"]) ("bye" ["びぇ"]) ("byo" ["びょ"]) ("pya" ["ぴゃ"]) ("pyu" ["ぴゅ"]) ("pye" ["ぴぇ"]) ("pyo" ["ぴょ"]) ("kwa" ["くゎ"]) ("kwi" ["くぃ"]) ("kwe" ["くぇ"]) ("kwo" ["くぉ"]) ("tsa" ["つぁ"]) ("tsi" ["つぃ"]) ("tse" ["つぇ"]) ("tso" ["つぉ"]) ("fa" ["ふぁ"]) ("fi" ["ふぃ"]) ("fe" ["ふぇ"]) ("fo" ["ふぉ"]) ("gwa" ["ぐゎ"]) ("gwi" ["ぐぃ"]) ("gwe" ["ぐぇ"]) ("gwo" ["ぐぉ"]) ("dyi" ["でぃ"]) ("dyu" ["どぅ"]) ("dye" ["でぇ"]) ("dyo" ["どぉ"]) ("xwi" ["うぃ"]) ("xwe" ["うぇ"]) ("xwo" ["うぉ"]) ("shi" "し") ("tyi" ["てぃ"]) ("chi" "ち") ("tsu" "つ") ("ji" "じ") ("fu" "ふ") ("ye" ["いぇ"]) ("va" ["ヴぁ"]) ("vi" ["ヴぃ"]) ("vu" "ヴ") ("ve" ["ヴぇ"]) ("vo" ["ヴぉ"]) ("xa" "ぁ") ("xi" "ぃ") ("xu" "ぅ") ("xe" "ぇ") ("xo" "ぉ") ("xtu" "っ") ("xya" "ゃ") ("xyu" "ゅ") ("xyo" "ょ") ("xwa" "ゎ") ("xka" "ヵ") ("xke" "ヶ") ("1" "１") ("2" "２") ("3" "３") ("4" "４") ("5" "５") ("6" "６") ("7" "７") ("8" "８") ("9" "９") ("0" "０") ("!" "！") ("@" "＠") ("#" "＃") ("$" "＄") ("%" "％") ("^" "＾") ("&" "＆") ("*" "＊") ("(" "（") (")" "）") ("-" "ー") ("=" "＝") ("`" "｀") ("\\" "￥") ("|" "｜") ("_" "＿") ("+" "＋") ("~" "￣") ("[" "「") ("]" "」") ("{" "｛") ("}" "｝") (":" "：") (";" "；") ("\"" "”") ("'" "’") ("." "。") ("," "、") ("<" "＜") (">" "＞") ("?" "？") ("/" "／") ("z1" "○") ("z!" "●") ("z2" "▽") ("z@" "▼") ("z3" "△") ("z#" "▲") ("z4" "□") ("z$" "■") ("z5" "◇") ("z%" "◆") ("z6" "☆") ("z^" "★") ("z7" "◎") ("z&" "£") ("z8" "¢") ("z*" "×") ("z9" "♂") ("z(" "【") ("z0" "♀") ("z)" "】") ("z-" "〜") ("z_" "∴") ("z=" "≠") ("z+" "±") ("z\\" "＼") ("z|" "‖") ("z`" "´") ("z~" "¨") ("zq" "《") ("zQ" "〈") ("zw" "》") ("zW" "〉") ("zr" "々") ("zR" "仝") ("zt" "〆") ("zT" "§") ("zp" "〒") ("zP" "↑") ("z[" "『") ("z{" "〔") ("z]" "』") ("z}" "〕") ("zs" "ヽ") ("zS" "ヾ") ("zd" "ゝ") ("zD" "ゞ") ("zf" "〃") ("zF" "→") ("zg" "‐") ("zG" "—") ("zh" "←") ("zj" "↓") ("zk" "↑") ("zl" "→") ("z;" "゛") ("z:" "゜") ("z'" "‘") ("z\"" "“") ("zx" [":-"]) ("zX" [":-)"]) ("zc" "〇") ("zC" "℃") ("zv" "※") ("zV" "÷") ("zb" "°") ("zB" "←") ("zn" "′") ("zN" "↓") ("zm" "″") ("zM" "〓") ("z," "‥") ("z<" "≦") ("z." "…") ("z>" "≧") ("z/" "・") ("z?" "∞") ("\\\\" quail-japanese-self-insert-and-switch-to-alpha) ("{{" quail-japanese-self-insert-and-switch-to-alpha) ("}}" quail-japanese-self-insert-and-switch-to-alpha) ("qq" quail-japanese-switch-package) ("qz" quail-japanese-switch-package)))) nil [4728 9214])
+            ("quail-define-package" code nil nil [10931 14535])
+            ("dolist" code nil nil [14537 14628])
+            ("quail-define-package" code nil nil [14630 14820])
+            ("quail-define-rules" code nil nil [14822 14879])
+            ("quail-define-package" code nil nil [14881 15211])
+            ("quail-define-rules" code nil nil [15213 16262])
+            ("quail-japanese-hankaku-update-translation" function (:arguments ("control-flag")) nil [16264 16602])
+            ("quail-define-package" code nil nil [16604 16921])
+            ("dolist" code nil nil [16923 17624])
+            ("quail-define-package" code nil nil [17626 17814])
+            ("setcar" code nil nil [17859 17949])
+            ("quail-japanese-katakana-update-translation" function (:arguments ("control-flag")) nil [18025 18365])
+            ("quail-define-package" code nil nil [18367 18564])
+            ("dolist" code nil nil [18566 18822]))          
+    :file "japanese.el"
+    :pointmax 18900
+    :fsize 23133
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CCDOSPY.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [2432 2448])
+            ("quail-define-package" code nil nil [2450 3806])
+            ("quail-define-rules" code nil nil [3808 14878]))          
+    :file "CCDOSPY.el"
+    :pointmax 14879
+    :fsize 21777
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lrt.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1178 1194])
+            ("lao-util" include nil nil [1195 1214])
+            ("quail-lao-update-translation" function (:arguments ("control-flag")) nil [1377 1956])
+            ("quail-define-package" code nil nil [1959 2354])
+            ("quail-install-map" code nil nil [2512 2992]))          
+    :file "lrt.el"
+    :pointmax 3065
+    :fsize 3100
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "uni-input.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1507 1523])
+            ("ucs-input-insert-char" function (:arguments ("char")) nil [1525 1646])
+            ("ucs-input-method" function (:arguments ("key")) nil [1648 2773])
+            ("ucs-input-activate" function (:arguments ("&optional" "arg")) nil [2775 3635])
+            ("ucs-input-inactivate" function (:user-visible-flag t) nil [3637 3743])
+            ("ucs-input-help" function nil nil [3745 3962])
+            ("uni-input" package nil nil [4141 4161]))          
+    :file "uni-input.el"
+    :pointmax 4240
+    :fsize 4239
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PY.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1438 1454])
+            ("quail-define-package" code nil nil [1455 3435])
+            ("quail-define-rules" code nil nil [3437 15089]))          
+    :file "PY.el"
+    :pointmax 15090
+    :fsize 22199
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "georgian.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1039 1055])
+            ("quail-define-package" code nil nil [1057 1200])
+            ("quail-define-rules" code nil nil [1202 1853]))          
+    :file "georgian.el"
+    :pointmax 1931
+    :fsize 2014
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "pypunct-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1111 1127])
+            ("load" code nil nil [1129 1149])
+            ("load" code nil nil [1150 1173])
+            ("quail-define-package" code nil nil [1175 1585])
+            ("setcar" code nil nil [1587 1681])
+            ("quail-defrule" code nil nil [1683 1757]))          
+    :file "pypunct-b5.el"
+    :pointmax 1837
+    :fsize 1881
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "4Corner.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1395 1411])
+            ("quail-define-package" code nil nil [1413 1971])
+            ("quail-define-rules" code nil nil [1973 101449]))          
+    :file "4Corner.el"
+    :pointmax 101450
+    :fsize 114730
+    :lastmodtime '(19246 140)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "quick-cns.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [625 641])
+            ("quail-define-package" code nil nil [642 1021])
+            ("quail-define-rules" code nil nil [1023 20700]))          
+    :file "quick-cns.el"
+    :pointmax 20701
+    :fsize 51590
+    :lastmodtime '(19246 143)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "SW.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [2674 2690])
+            ("quail-define-package" code nil nil [2692 4090])
+            ("quail-define-rules" code nil nil [4092 17076]))          
+    :file "SW.el"
+    :pointmax 17077
+    :fsize 24145
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "indian.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1081 1097])
+            ("ind-util" include nil nil [1098 1117])
+            ("quail-define-indian-trans-package" function (:arguments ("hashtbls" "pkgname" "lang" "title" "doc")) nil [1157 1481])
+            ("if" code nil nil [1639 1737])
+            ("quail-define-indian-trans-package" code nil nil [1738 1889])
+            ("if" code nil nil [1891 2003])
+            ("quail-define-indian-trans-package" code nil nil [2004 2174])
+            ("if" code nil nil [2176 2270])
+            ("quail-define-indian-trans-package" code nil nil [2271 2413])
+            ("if" code nil nil [2415 2504])
+            ("quail-define-indian-trans-package" code nil nil [2505 2647])
+            ("if" code nil nil [2649 2741])
+            ("quail-define-indian-trans-package" code nil nil [2742 2887])
+            ("if" code nil nil [2889 2972])
+            ("quail-define-indian-trans-package" code nil nil [2973 3109])
+            ("if" code nil nil [3111 3200])
+            ("quail-define-indian-trans-package" code nil nil [3201 3343])
+            ("if" code nil nil [3345 3437])
+            ("quail-define-indian-trans-package" code nil nil [3438 3583])
+            ("if" code nil nil [3585 3671])
+            ("quail-define-indian-trans-package" code nil nil [3672 3811])
+            ("if" code nil nil [3813 3902])
+            ("quail-define-indian-trans-package" code nil nil [3903 4045])
+            ("if" code nil nil [4047 4142])
+            ("quail-define-indian-trans-package" code nil nil [4143 4291])
+            ("if" code nil nil [4293 4376])
+            ("quail-define-indian-trans-package" code nil nil [4377 4513])
+            ("quail-define-inscript-package" function (:arguments ("char-tables" "key-tables" "pkgname" "lang" "title" "docstring")) nil [4547 5577])
+            ("inscript-dev-keytable" variable (:default-value (quote (((68 nil) (69 101) (70 102) (82 114) (71 103) (84 116) (43 61) ("F]" "f]") (33 64) (90 122) (83 115) (87 119) (124 92) (126 96) (65 97) (81 113) ("+]" "=]") ("R]" "r]")) (107 75 105 73 85 59 58 112 80 125 39 34 91 123 67 108 76 111 79 118 86 104 72 121 89 99 47 106 74 110 78 "N]" 98 77 60 109 117 "k]" "K]" "i]" "p]" "[]" "{]" "H]" "/]" 37 38) (88 120 95 ">]" 100 "X]" 62) (48 49 50 51 52 53 54 55 56 57) (35 36 94 42 93)))) nil [5583 6383])
+            ("inscript-mlm-keytable" variable (:default-value (quote (((68 nil) (69 101) (70 102) (82 114) (71 103) (84 116) (43 61) ("F]" "f]") (33 64) (83 115) (90 122) (87 119) (124 92) (126 96) (65 97) (81 113) ("+]" "=]") ("R]" "r]")) (107 75 105 73 85 59 58 112 80 125 39 34 91 123 67 108 76 111 79 118 86 104 72 121 89 99 47 106 74 110 78 "N]" 98 77 60 109 117 "k]" "K]" "i]" "p]" "[]" "{]" "H]" "/]" 37 38) (88 120 95 ">]" 100 "X]" 62) (48 49 50 51 52 53 54 55 56 57) (35 36 94 42 93)))) nil [6385 7185])
+            ("inscript-tml-keytable" variable (:default-value (quote (((68 nil) (69 101) (70 102) (82 114) (71 103) (84 116) nil nil nil (83 115) (90 122) (87 119) nil (65 97) (126 96) (81 113) nil nil) (107 75 105 73 85 59 58 112 80 125 39 34 91 123 67 108 76 111 79 118 86 104 72 121 89 99 47 106 74 110 78 "N]" 98 77 60 109 117 "k]" "K]" "i]" "p]" "[]" "{]" "H]" "/]" 37 38) (88 120 95 ">]" 100 "X]" 62) (48 49 50 51 52 53 54 55 56 57) (35 36 94 42 93)))) nil [7187 7950])
+            ("if" code nil nil [7952 8063])
+            ("quail-define-inscript-package" code nil nil [8064 8217])
+            ("if" code nil nil [8219 8321])
+            ("quail-define-inscript-package" code nil nil [8322 8466])
+            ("if" code nil nil [8468 8573])
+            ("quail-define-inscript-package" code nil nil [8574 8721])
+            ("if" code nil nil [8723 8819])
+            ("quail-define-inscript-package" code nil nil [8820 8958])
+            ("if" code nil nil [8960 9062])
+            ("quail-define-inscript-package" code nil nil [9063 9207])
+            ("if" code nil nil [9209 9314])
+            ("quail-define-inscript-package" code nil nil [9315 9462])
+            ("if" code nil nil [9464 9563])
+            ("quail-define-inscript-package" code nil nil [9564 9705])
+            ("if" code nil nil [9707 9809])
+            ("quail-define-inscript-package" code nil nil [9810 9954])
+            ("if" code nil nil [9956 10064])
+            ("quail-define-inscript-package" code nil nil [10065 10215])
+            ("if" code nil nil [10217 10313])
+            ("quail-define-inscript-package" code nil nil [10314 10452]))          
+    :file "indian.el"
+    :pointmax 10528
+    :fsize 10527
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cyrillic.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1488 1504])
+            ("quail-define-package" code nil nil [2122 2279])
+            ("quail-define-rules" code nil nil [2442 3412])
+            ("push" code nil nil [3453 3570])
+            ("if" code nil nil [3728 3869])
+            ("quail-define-package" code nil nil [3942 4072])
+            ("quail-define-rules" code nil nil [4236 5211])
+            ("quail-define-package" code nil nil [5363 5514])
+            ("quail-define-rules" code nil nil [5678 6645])
+            ("quail-define-package" code nil nil [6651 6799])
+            ("quail-define-rules" code nil nil [6963 7930])
+            ("quail-define-package" code nil nil [10705 10889])
+            ("quail-define-rules" code nil nil [11053 12020])
+            ("quail-define-package" code nil nil [12023 12189])
+            ("quail-define-rules" code nil nil [12353 13317])
+            ("quail-define-package" code nil nil [13497 13933])
+            ("quail-define-rules" code nil nil [14257 15512])
+            ("quail-define-package" code nil nil [16216 17288])
+            ("quail-define-rules" code nil nil [17290 20314])
+            ("quail-define-package" code nil nil [20504 20683])
+            ("quail-define-rules" code nil nil [20849 21623])
+            ("quail-define-package" code nil nil [21905 22277])
+            ("quail-define-rules" code nil nil [22403 23046])
+            ("quail-define-package" code nil nil [23143 23674])
+            ("quail-define-rules" code nil nil [23848 24771]))          
+    :file "cyrillic.el"
+    :pointmax 24903
+    :fsize 34312
+    :lastmodtime '(19225 51962)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sgml-input.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1048 1064])
+            ("quail-define-package" code nil nil [1066 1491])
+            ("quail-define-rules" code nil nil [1493 48293]))          
+    :file "sgml-input.el"
+    :pointmax 48373
+    :fsize 49804
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tsang-cns.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [628 644])
+            ("quail-define-package" code nil nil [645 1027])
+            ("quail-define-rules" code nil nil [1029 166321]))          
+    :file "tsang-cns.el"
+    :pointmax 166322
+    :fsize 264423
+    :lastmodtime '(19246 143)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hangul.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1080 1096])
+            ("cl" include nil nil [1116 1129])
+            ("hanja-util" include nil nil [1148 1169])
+            ("hangul-djamo-table" variable
+               (:constant-flag t
+                :default-value (quote ((cho (1 . [1]) (7 . [7]) (18 . [18]) (21 . [21]) (24 . [24])) (jung (39 . [31 32 51]) (44 . [35 36 51]) (49 . [51])) (jong (1 . [1 21]) (4 . [24 30]) (9 . [1 17 18 21 28 29 30]) (18 . [18 21]) (21 . [21])))))
+                nil [1597 2059])
+            ("hangul2-keymap" variable
+               (:constant-flag t
+                :default-value [17 48 26 23 7 9 30 39 33 35 31 51 49 44 32 36 18 1 4 21 37 29 24 28 43 27])
+                nil [2171 2274])
+            ("hangul3-keymap" variable
+               (:constant-flag t
+                :default-value [2 183 24 15 14 8220 120 39 126 8221 43 44 41 46 74 119 30 22 18 78 83 68 73 85 79 52 110 44 62 46 33 10 7 63 27 12 5 11 69 48 55 49 50 51 34 45 56 57 29 16 6 13 54 3 28 20 53 26 40 58 60 61 59 42 23 79 71 86 72 66 84 96 109 115 93 116 122 113 118 121 21 67 4 70 99 74 9 1 101 17 37 92 47 8251])
+                nil [2488 2830])
+            ("hangul390-keymap" variable
+               (:constant-flag t
+                :default-value [24 34 35 36 37 38 120 40 41 42 43 44 45 46 73 119 30 22 18 77 82 67 72 84 78 58 110 50 61 51 63 64 7 33 11 10 27 2 47 39 56 52 53 54 49 48 57 62 29 68 6 59 55 16 28 20 60 26 91 92 93 94 95 96 23 78 70 85 71 65 83 90 109 115 87 116 122 113 118 121 21 66 4 69 99 73 9 1 101 17 123 124 125 126])
+                nil [2908 3254])
+            ("hangul-im-keymap" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "" (quote hangul-delete-backward-char)) (define-key map [f9] (quote hangul-to-hanja-conversion)) (define-key map [Hangul_Hanja] (quote hangul-to-hanja-conversion)) map)) nil [3256 3570])
+            ("hangul-queue" variable (:default-value (make-vector 6 0)) nil [3839 3880])
+            ("notzerop" function (:arguments ("number")) nil [3882 3933])
+            ("alphabetp" function (:arguments ("char")) nil [3935 4039])
+            ("hangul-character" function (:arguments ("cho" "jung" "jong")) nil [4041 4891])
+            ("hangul-insert-character" function (:arguments ("&rest" "queues")) nil [4893 5978])
+            ("hangul-djamo" function (:arguments ("jamo" "char1" "char2")) nil [5980 6592])
+            ("hangul2-input-method-jaum" function (:arguments ("char")) nil [6594 9059])
+            ("hangul2-input-method-moum" function (:arguments ("char")) nil [9061 10064])
+            ("hangul3-input-method-cho" function (:arguments ("char")) nil [10066 10928])
+            ("hangul3-input-method-jung" function (:arguments ("char")) nil [10930 11673])
+            ("hangul3-input-method-jong" function (:arguments ("char")) nil [11675 13769])
+            ("hangul-delete-backward-char" function (:user-visible-flag t) nil [13771 14132])
+            ("hangul-to-hanja-conversion" function (:user-visible-flag t) nil [14134 14999])
+            ("hangul2-input-method-internal" function (:arguments ("key")) nil [15176 15578])
+            ("hangul2-input-method" function (:arguments ("key")) nil [15580 16433])
+            ("hangul3-input-method-internal" function (:arguments ("key")) nil [16616 17127])
+            ("hangul3-input-method" function (:arguments ("key")) nil [17129 18004])
+            ("hangul390-input-method-internal" function (:arguments ("key")) nil [18189 18774])
+            ("hangul390-input-method" function (:arguments ("key")) nil [18776 19655])
+            ("hangul-input-method-help-text" variable nil nil [19755 19797])
+            ("make-variable-buffer-local" code nil nil [19798 19857])
+            ("hangul-input-method-activate" function (:arguments ("input-method" "func" "help-text" "&rest" "args")) nil [19859 20473])
+            ("hangul-input-method-inactivate" function (:user-visible-flag t) nil [20475 20782])
+            ("hangul-input-method-help" function (:user-visible-flag t) nil [20784 20963])
+            ("hangul" package nil nil [20965 20982]))          
+    :file "hangul.el"
+    :pointmax 21058
+    :fsize 21057
+    :lastmodtime '(19097 14252)
+    :unmatched-syntax '((close-paren 1129 . 1130) (symbol 1098 . 1115) (open-paren 1097 . 1098))
+    )
+   (semanticdb-table "slovak.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1210 1226])
+            ("quail-define-package" code nil nil [1229 1345])
+            ("quail-define-rules" code nil nil [1347 2728])
+            ("quail-define-package" code nil nil [2731 3070])
+            ("quail-define-rules" code nil nil [3072 4041])
+            ("quail-define-package" code nil nil [4044 4374])
+            ("quail-define-rules" code nil nil [4376 5396])
+            ("quail-define-package" code nil nil [5399 5648])
+            ("quail-define-rules" code nil nil [5650 6901]))          
+    :file "slovak.el"
+    :pointmax 6977
+    :fsize 8668
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "cyril-jis.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail-define-package" code nil nil [1345 1513])
+            ("quail-define-rules" code nil nil [1673 2637]))          
+    :file "cyril-jis.el"
+    :pointmax 2770
+    :fsize 3645
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "viqr.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1063 1079])
+            ("viet-util" include nil nil [1080 1100])
+            ("viet-quail-define-rules" function nil nil [1283 1501])
+            ("quail-define-package" code nil nil [1503 2232])
+            ("viet-quail-define-rules" code nil nil [2235 2260]))          
+    :file "viqr.el"
+    :pointmax 2334
+    :fsize 2393
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latin-alt.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1508 1524])
+            ("quail-define-package" code nil nil [1526 2514])
+            ("quail-define-rules" code nil nil [2516 4419])
+            ("quail-define-package" code nil nil [4421 5409])
+            ("quail-define-rules" code nil nil [5411 7653])
+            ("quail-define-package" code nil nil [7655 8624])
+            ("quail-define-rules" code nil nil [8626 10606])
+            ("quail-define-package" code nil nil [10608 11672])
+            ("quail-define-rules" code nil nil [11674 13943])
+            ("quail-define-package" code nil nil [13945 14915])
+            ("quail-define-rules" code nil nil [14917 16658])
+            ("quail-define-package" code nil nil [16662 17094])
+            ("quail-define-rules" code nil nil [17096 17899])
+            ("quail-define-package" code nil nil [17903 18488])
+            ("quail-define-rules" code nil nil [18490 19215])
+            ("quail-define-package" code nil nil [19218 19733])
+            ("quail-define-rules" code nil nil [19735 20229])
+            ("push" code nil nil [20259 20389])
+            ("quail-define-package" code nil nil [20471 21278])
+            ("quail-define-rules" code nil nil [21280 24415])
+            ("quail-define-package" code nil nil [24502 24638])
+            ("quail-define-rules" code nil nil [24640 24860])
+            ("quail-define-package" code nil nil [24972 25118])
+            ("quail-define-rules" code nil nil [25120 25310])
+            ("quail-define-package" code nil nil [25364 25501])
+            ("quail-define-rules" code nil nil [25503 25825])
+            ("quail-define-package" code nil nil [25827 27011])
+            ("quail-define-rules" code nil nil [27069 31792]))          
+    :file "latin-alt.el"
+    :pointmax 31871
+    :fsize 32828
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CTLau-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1342 1358])
+            ("quail-define-package" code nil nil [1359 2020])
+            ("quail-define-rules" code nil nil [2022 15487]))          
+    :file "CTLau-b5.el"
+    :pointmax 15488
+    :fsize 21615
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latin-ltx.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1193 1209])
+            ("quail-define-package" code nil nil [1211 1541])
+            ("quail-define-rules" code nil nil [1543 20013]))          
+    :file "latin-ltx.el"
+    :pointmax 20092
+    :fsize 21784
+    :lastmodtime '(19106 34046)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ZIRANMA.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1445 1461])
+            ("quail-define-package" code nil nil [1462 4110])
+            ("quail-define-rules" code nil nil [4112 514424]))          
+    :file "ZIRANMA.el"
+    :pointmax 514425
+    :fsize 603133
+    :lastmodtime '(19246 146)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ETZY.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [3829 3845])
+            ("quail-define-package" code nil nil [3847 6708])
+            ("quail-define-rules" code nil nil [6710 35794]))          
+    :file "ETZY.el"
+    :pointmax 35795
+    :fsize 50333
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "symbol-ksc.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1404 1420])
+            ("korea-util" include nil nil [1421 1442])
+            ("quail-define-package" code nil nil [1444 2080])
+            ("quail-define-rules" code nil nil [2082 4763]))          
+    :file "symbol-ksc.el"
+    :pointmax 4843
+    :fsize 7758
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "lao.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1046 1062])
+            ("lao-util" include nil nil [1063 1082])
+            ("quail-lao-update-translation" function (:arguments ("control-flag")) nil [1084 1539])
+            ("lao-key-alist" variable (:default-value (quote (("!" . "1") ("\"" . "=") ("#" . "3") ("$" . "4") ("&" . "5") ("%" . "໌") ("'" . "ງ") ("(" . "7") (")" . "8") ("*" . "6") ("+" . ["ໍ່"]) ("," . "ມ") ("-" . "ຊ") ("." . "ໃ") ("/" . "ຝ") ("0" . "ຂ") ("1" . "ຢ") ("2" . "ຟ") ("3" . "ໂ") ("4" . "ຖ") ("5" . "ຸ") ("6" . "ູ") ("7" . "ຄ") ("8" . "ຕ") ("9" . "ຈ") (":" . "%") (";" . "ວ") ("<" . "ໝ") ("=" . "ໍ") (">" . "$") ("?" . ")") ("@" . "2") ("A" . ["ັ້"]) ("B" . ["ຶ້"]) ("C" . "ຯ") ("D" . ".") ("E" . ["ຳ້"]) ("F" . ",") ("G" . ":") ("H" . "໊") ("I" . "ຮ") ("J" . "໋") ("K" . "!") ("L" . "?") ("M" . "ໆ") ("N" . ["ື້"]) ("O" . "ໜ") ("P" . "ຽ") ("Q" . ["ົ້"]) ("R" . "_") ("S" . ";") ("T" . "+") ("U" . ["ີ້"]) ("V" . "x") ("W" . "0") ("X" . "(") ("Y" . ["ິ້"]) ("Z" . "\"") ("[" . "ບ") ("]" . "ລ") ("^" . "ຼ") ("_" . "9") ("`" . "ງ") ("a" . "ັ") ("b" . "ຶ") ("c" . "ແ") ("d" . "ກ") ("e" . "ຳ") ("f" . "ດ") ("g" . "ເ") ("h" . "້") ("i" . "ຣ") ("j" . "່") ("k" . "າ") ("l" . "ສ") ("m" . "ທ") ("n" . "ື") ("o" . "ນ") ("p" . "ຍ") ("q" . "ົ") ("r" . "ພ") ("s" . "ຫ") ("t" . "ະ") ("u" . "ີ") ("v" . "ອ") ("w" . "ໄ") ("x" . "ປ") ("y" . "ິ") ("z" . "ຜ") ("{" . "-") ("|" . ["ຫຼ"]) ("}" . "/") ("~" . "໌") ("\\0" . "໐") ("\\1" . "໑") ("\\2" . "໒") ("\\3" . "໓") ("\\4" . "໔") ("\\5" . "໕") ("\\6" . "໖") ("\\7" . "໗") ("\\8" . "໘") ("\\9" . "໙")))) nil [1541 3523])
+            ("lao-key-alist-vector" variable
+               (:constant-flag t
+                :default-value (let ((tail lao-key-alist) consonant-key-alist semivowel-key-alist vowel-key-alist voweltone-key-alist tone-key-alist other-key-alist elt phonetic-type) (while tail (setq elt (car tail) tail (cdr tail)) (if (stringp (cdr elt)) (setq phonetic-type (get-char-code-property (aref (cdr elt) 0) (quote phonetic-type))) (setq phonetic-type (get-char-code-property (aref (aref (cdr elt) 0) 0) (quote phonetic-type))) (aset (cdr elt) 0 (compose-string (aref (cdr elt) 0)))) (cond ((eq phonetic-type (quote consonant)) (setq consonant-key-alist (cons elt consonant-key-alist))) ((memq phonetic-type (quote (vowel-upper vowel-lower))) (if (stringp (cdr elt)) (setq vowel-key-alist (cons elt vowel-key-alist)) (setq voweltone-key-alist (cons elt voweltone-key-alist)))) ((eq phonetic-type (quote tone)) (setq tone-key-alist (cons elt tone-key-alist))) ((eq phonetic-type (quote semivowel-lower)) (setq semivowel-key-alist (cons elt semivowel-key-alist))) (t (setq other-key-alist (cons elt other-key-alist))))) (vector consonant-key-alist semivowel-key-alist vowel-key-alist voweltone-key-alist tone-key-alist other-key-alist)))
+                nil [3591 4824])
+            ("lao-consonant-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 0))
+                nil [4826 4890])
+            ("lao-semivowel-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 1))
+                nil [4891 4955])
+            ("lao-vowel-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 2))
+                nil [4956 5016])
+            ("lao-voweltone-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 3))
+                nil [5017 5081])
+            ("lao-tone-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 4))
+                nil [5082 5141])
+            ("lao-other-key-alist" variable
+               (:constant-flag t
+                :default-value (aref lao-key-alist-vector 5))
+                nil [5142 5202])
+            ("makunbound" code nil nil [5221 5255])
+            ("quail-define-package" code nil nil [5257 5431])
+            ("quail-install-map" code nil nil [5433 5853]))          
+    :file "lao.el"
+    :pointmax 5926
+    :fsize 6387
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "sisheng.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [967 983])
+            ("sisheng-regexp" variable
+               (:constant-flag t
+                :default-value "[āēīōūǖ]\\|üē")
+                nil [985 1028])
+            ("sisheng-vowel-table" variable
+               (:constant-flag t
+                :default-value (quote (("ā" "a" "ā" "á" "ǎ" "à") ("ē" "e" "ē" "é" "ě" "è") ("ī" "i" "ī" "í" "ǐ" "ì") ("ō" "o" "ō" "ó" "ǒ" "ò") ("ū" "u" "ū" "ú" "ǔ" "ù") ("ǖ" "v" "ǖ" "ǘ" "ǚ" "ǜ") ("üē" "ve" "üē" "üé" "üě" "üè"))))
+                nil [1169 1416])
+            ("sisheng-syllable-table" variable
+               (:constant-flag t
+                :default-value (quote ("ā" "āi" "ān" "āng" "āo" "bā" "bāi" "bān" "bāng" "bāo" "bēi" "bēn" "bēng" "bī" "biān" "biāo" "biē" "bīn" "bīng" "bō" "bū" "cā" "cāi" "cān" "cāng" "cāo" "cē" "cēn" "cēng" "cī" "cōng" "cōu" "cū" "cuān" "cuī" "cūn" "cuō" "chā" "chāi" "chān" "chāng" "chāo" "chē" "chēn" "chēng" "chī" "chōng" "chōu" "chū" "chuā" "chuāi" "chuān" "chuāng" "chuī" "chūn" "chuō" "dā" "dāi" "dān" "dāng" "dāo" "dē" "dēi" "dēn" "dēng" "dī" "diān" "diāo" "diē" "dīng" "diū" "dōng" "dōu" "dū" "duān" "duī" "dūn" "duō" "ē" "ēi" "ēn" "ēng" "ēr" "fā" "fān" "fāng" "fēi" "fēn" "fēng" "fiāo" "fō" "fōu" "fū" "gā" "gāi" "gān" "gāng" "gāo" "gē" "gēi" "gēn" "gēng" "gōng" "gōu" "gū" "guā" "guāi" "guān" "guāng" "guī" "gūn" "guō" "hā" "hāi" "hān" "hāng" "hāo" "hē" "hēi" "hēn" "hēng" "hōng" "hōu" "hū" "huā" "huāi" "huān" "huāng" "huī" "hūn" "huō" "jī" "jiā" "jiān" "jiāng" "jiāo" "jiē" "jīn" "jīng" "jiōng" "jiū" "jū" "juān" "juē" "jūn" "kā" "kāi" "kān" "kāng" "kāo" "kē" "kēi" "kēn" "kēng" "kōng" "kōu" "kū" "kuā" "kuāi" "kuān" "kuāng" "kuī" "kūn" "kuō" "lā" "lāi" "lān" "lāng" "lāo" "lē" "lēi" "lēng" "lī" "liā" "liān" "liāng" "liāo" "liē" "līn" "līng" "liū" "lōng" "lōu" "lū" "luān" "lūn" "luō" "lǖ" "lüē" "mā" "māi" "mān" "māng" "māo" "mē" "mēi" "mēn" "mēng" "mī" "miān" "miāo" "miē" "mīn" "mīng" "miū" "mō" "mōu" "mū" "nā" "nāi" "nān" "nāng" "nāo" "nē" "nēi" "nēn" "nēng" "nī" "niān" "niāng" "niāo" "niē" "nīn" "nīng" "niū" "nōng" "nōu" "nū" "nuān" "nuō" "nǖ" "nüē" "ō" "ōu" "pā" "pāi" "pān" "pāng" "pāo" "pēi" "pēn" "pēng" "pī" "piān" "piāo" "piē" "pīn" "pīng" "pō" "pōu" "pū" "qī" "qiā" "qiān" "qiāng" "qiāo" "qiē" "qīn" "qīng" "qiōng" "qiū" "qū" "quān" "quē" "qūn" "rān" "rāng" "rāo" "rē" "rēn" "rēng" "rī" "rōng" "rōu" "rū" "ruā" "ruān" "ruī" "rūn" "ruō" "sā" "sāi" "sān" "sāng" "sāo" "sē" "sēn" "sēng" "sī" "sōng" "sōu" "sū" "suān" "suī" "sūn" "suō" "shā" "shāi" "shān" "shāng" "shāo" "shē" "shēi" "shēn" "shēng" "shī" "shōu" "shū" "shuā" "shuāi" "shuān" "shuāng" "shuī" "shūn" "shuō" "tā" "tāi" "tān" "tāng" "tāo" "tē" "tēi" "tēng" "tī" "tiān" "tiāo" "tiē" "tīng" "tōng" "tōu" "tū" "tuān" "tuī" "tūn" "tuō" "wā" "wāi" "wān" "wāng" "wēi" "wēn" "wēng" "wō" "wū" "xī" "xiā" "xiān" "xiāng" "xiāo" "xiē" "xīn" "xīng" "xiōng" "xiū" "xū" "xuān" "xuē" "xūn" "yā" "yān" "yāng" "yāo" "yē" "yī" "yīn" "yīng" "yō" "yōng" "yōu" "yū" "yuān" "yuē" "yūn" "zā" "zāi" "zān" "zāng" "zāo" "zē" "zēi" "zēn" "zēng" "zī" "zōng" "zōu" "zū" "zuān" "zuī" "zūn" "zuō" "zhā" "zhāi" "zhān" "zhāng" "zhāo" "zhē" "zhēi" "zhēn" "zhēng" "zhī" "zhōng" "zhōu" "zhū" "zhuā" "zhuāi" "zhuān" "zhuāng" "zhuī" "zhūn" "zhuō")))
+                nil [1630 4675])
+            ("quail-make-sisheng-rules" function (:arguments ("syllable")) nil [4841 5527])
+            ("quail-define-package" code nil nil [5564 6238])
+            ("let" code nil nil [6321 7174]))          
+    :file "sisheng.el"
+    :pointmax 7297
+    :fsize 7783
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ethiopic.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1110 1126])
+            ("ethio-util" include nil nil [1127 1148])
+            ("quail-define-package" code nil nil [1183 2693])
+            ("quail-define-rules" code nil nil [2695 15485])
+            ("ethio-select-a-translation" function nil nil [15487 15686]))          
+    :file "ethiopic.el"
+    :pointmax 15764
+    :fsize 23967
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "TONEPY.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [2171 2187])
+            ("quail-define-package" code nil nil [2189 3258])
+            ("quail-define-rules" code nil nil [3260 26973]))          
+    :file "TONEPY.el"
+    :pointmax 26974
+    :fsize 34919
+    :lastmodtime '(19246 143)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "vntelex.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1165 1181])
+            ("quail-define-package" code nil nil [1184 2569])
+            ("quail-define-rules" code nil nil [2609 12914]))          
+    :file "vntelex.el"
+    :pointmax 13045
+    :fsize 14342
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "croatian.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [993 1009])
+            ("quail-define-package" code nil nil [1011 1142])
+            ("quail-define-rules" code nil nil [1144 1451])
+            ("quail-define-package" code nil nil [1453 1598])
+            ("quail-define-rules" code nil nil [1600 1867])
+            ("quail-define-package" code nil nil [1869 2050])
+            ("quail-define-rules" code nil nil [2052 2188])
+            ("quail-define-package" code nil nil [2190 2372])
+            ("quail-define-rules" code nil nil [2374 2510])
+            ("quail-define-package" code nil nil [2512 2692])
+            ("quail-define-rules" code nil nil [2694 2879])
+            ("quail-define-package" code nil nil [2881 3066])
+            ("quail-define-rules" code nil nil [3068 3253]))          
+    :file "croatian.el"
+    :pointmax 3331
+    :fsize 3330
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latin-pre.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1943 1959])
+            ("quail-define-package" code nil nil [1961 2909])
+            ("quail-define-rules" code nil nil [2911 4158])
+            ("quail-define-package" code nil nil [4160 4631])
+            ("quail-define-rules" code nil nil [4633 5014])
+            ("quail-define-package" code nil nil [5016 5323])
+            ("quail-define-rules" code nil nil [5325 5511])
+            ("quail-define-package" code nil nil [5513 5948])
+            ("quail-define-rules" code nil nil [5950 6375])
+            ("quail-define-package" code nil nil [6377 6823])
+            ("quail-define-rules" code nil nil [6825 6981])
+            ("quail-define-package" code nil nil [6983 7420])
+            ("quail-define-rules" code nil nil [7422 7573])
+            ("quail-define-package" code nil nil [7575 7800])
+            ("quail-define-rules" code nil nil [7802 7920])
+            ("quail-define-package" code nil nil [7922 8139])
+            ("quail-define-rules" code nil nil [8141 8283])
+            ("quail-define-package" code nil nil [8285 8718])
+            ("quail-define-rules" code nil nil [8720 9119])
+            ("quail-define-package" code nil nil [9121 9504])
+            ("quail-define-rules" code nil nil [9506 9764])
+            ("quail-define-package" code nil nil [9766 10342])
+            ("quail-define-rules" code nil nil [10344 11390])
+            ("quail-define-package" code nil nil [11392 11998])
+            ("quail-define-rules" code nil nil [12000 13070])
+            ("quail-define-package" code nil nil [13073 13311])
+            ("quail-define-rules" code nil nil [13313 13542])
+            ("quail-define-package" code nil nil [13544 14520])
+            ("quail-define-rules" code nil nil [14522 15791])
+            ("quail-define-package" code nil nil [15877 16479])
+            ("quail-define-rules" code nil nil [16542 17701])
+            ("quail-define-package" code nil nil [17703 18649])
+            ("quail-define-rules" code nil nil [18651 20641]))          
+    :file "latin-pre.el"
+    :pointmax 20720
+    :fsize 21813
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "Punct-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1447 1463])
+            ("quail-define-package" code nil nil [1465 1983])
+            ("quail-define-rules" code nil nil [1985 3314]))          
+    :file "Punct-b5.el"
+    :pointmax 3315
+    :fsize 3732
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "thai.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1060 1076])
+            ("thai-generate-quail-map" function (:arguments ("translation-table")) nil [1078 1461])
+            ("quail-define-package" code nil nil [1499 1866])
+            ("thai-generate-quail-map" code nil nil [1868 3141])
+            ("quail-define-package" code nil nil [3182 3333])
+            ("thai-generate-quail-map" code nil nil [3335 3986]))          
+    :file "thai.el"
+    :pointmax 4060
+    :fsize 5613
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hanja.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1266 1282])
+            ("korea-util" include nil nil [1283 1304])
+            ("quail-define-package" code nil nil [1306 1435])
+            ("quail-define-rules" code nil nil [1437 11947]))          
+    :file "hanja.el"
+    :pointmax 12022
+    :fsize 20316
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hanja-jis.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1072 1088])
+            ("quail-define-package" code nil nil [1090 1216])
+            ("quail-define-rules" code nil nil [1218 14392]))          
+    :file "hanja-jis.el"
+    :pointmax 14471
+    :fsize 24874
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ECDICT.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1653 1669])
+            ("quail-define-package" code nil nil [1671 2377])
+            ("quail-define-rules" code nil nil [2379 153493]))          
+    :file "ECDICT.el"
+    :pointmax 153494
+    :fsize 172855
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ipa.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1136 1152])
+            ("cl" include nil nil [1172 1185])
+            ("quail-define-package" code nil nil [1188 1412])
+            ("quail-define-rules" code nil nil [1414 2227])
+            ("quail-define-package" code nil nil [2229 2925])
+            ("quail-define-rules" code nil nil [2927 7950])
+            ("ipa-x-sampa-implosive-submap" variable
+               (:constant-flag t
+                :default-value (quote (("b_<" 595) ("d_<" 599) ("g_<" 608) ("G\\_<" 667) ("J\\_<" 644))))
+                nil [7989 8624])
+            ("ipa-x-sampa-prepend-to-keymap-entry" function (:arguments ("to-prepend" "quail-keymap")) nil [8846 9687])
+            ("ipa-x-sampa-underscore-implosive" function (:arguments ("input-string" "length")) nil [9689 11856])
+            ("quail-define-package" code nil nil [11858 12523])
+            ("quail-define-rules" code nil nil [12525 19509])
+            ("dolist" code nil nil [19864 20093]))          
+    :file "ipa.el"
+    :pointmax 20166
+    :fsize 20483
+    :lastmodtime '(19106 34046)
+    :unmatched-syntax '((close-paren 1185 . 1186) (symbol 1154 . 1171) (open-paren 1153 . 1154))
+    )
+   (semanticdb-table "QJ-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [998 1014])
+            ("quail-define-package" code nil nil [1016 1441])
+            ("quail-define-rules" code nil nil [1443 2416]))          
+    :file "QJ-b5.el"
+    :pointmax 2417
+    :fsize 2524
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "greek.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1145 1161])
+            ("quail-define-package" code nil nil [1163 1416])
+            ("quail-define-rules" code nil nil [1418 2389])
+            ("quail-define-package" code nil nil [2395 3293])
+            ("quail-define-rules" code nil nil [3295 9038])
+            ("quail-define-package" code nil nil [9044 9937])
+            ("quail-define-rules" code nil nil [9939 13477])
+            ("quail-define-package" code nil nil [13483 13651])
+            ("quail-define-rules" code nil nil [13653 17774])
+            ("quail-define-package" code nil nil [17780 18043])
+            ("quail-define-rules" code nil nil [18248 19465])
+            ("quail-define-package" code nil nil [19467 19763])
+            ("quail-define-rules" code nil nil [19968 21185]))          
+    :file "greek.el"
+    :pointmax 21261
+    :fsize 31885
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "arabic.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [925 941])
+            ("quail-define-package" code nil nil [943 1105])
+            (""F"" code nil nil [1480 1985]))          
+    :file "arabic.el"
+    :pointmax 2061
+    :fsize 2177
+    :lastmodtime '(19097 14252)
+    :unmatched-syntax '((semantic-list 1283 . 1478))
+    )
+   (semanticdb-table "ZOZY.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [3782 3798])
+            ("quail-define-package" code nil nil [3800 6613])
+            ("quail-define-rules" code nil nil [6615 35699]))          
+    :file "ZOZY.el"
+    :pointmax 35700
+    :fsize 50252
+    :lastmodtime '(19246 143)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "rfc1345.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [990 1006])
+            ("quail-define-package" code nil nil [1008 1187])
+            ("quail-define-rules" code nil nil [1189 28518])
+            ("rfc1345" package nil nil [28520 28538]))          
+    :file "rfc1345.el"
+    :pointmax 28615
+    :fsize 31757
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "latin-post.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1368 1384])
+            ("quail-define-package" code nil nil [1386 2082])
+            ("quail-define-rules" code nil nil [2084 4014])
+            ("quail-define-package" code nil nil [4016 4711])
+            ("quail-define-rules" code nil nil [4713 6955])
+            ("quail-define-package" code nil nil [6957 7606])
+            ("quail-define-rules" code nil nil [7608 9588])
+            ("quail-define-package" code nil nil [9590 10336])
+            ("quail-define-rules" code nil nil [10338 12607])
+            ("quail-define-package" code nil nil [12609 13269])
+            ("quail-define-rules" code nil nil [13271 15012])
+            ("quail-define-package" code nil nil [15014 15251])
+            ("quail-define-rules" code nil nil [15253 15492])
+            ("quail-define-package" code nil nil [15494 15807])
+            ("quail-define-rules" code nil nil [15809 16480])
+            ("quail-define-package" code nil nil [16482 16654])
+            ("quail-define-rules" code nil nil [16656 16787])
+            ("quail-define-package" code nil nil [16789 17217])
+            ("quail-define-rules" code nil nil [17219 18022])
+            ("quail-define-package" code nil nil [18024 18251])
+            ("quail-define-rules" code nil nil [18253 18582])
+            ("quail-define-package" code nil nil [18584 18912])
+            ("quail-define-rules" code nil nil [18914 19477])
+            ("quail-define-package" code nil nil [19479 19930])
+            ("quail-define-rules" code nil nil [19932 20387])
+            ("quail-define-package" code nil nil [20389 20635])
+            ("quail-define-rules" code nil nil [20637 20876])
+            ("quail-define-package" code nil nil [20878 21239])
+            ("quail-define-rules" code nil nil [21241 21604])
+            ("quail-define-package" code nil nil [21606 21912])
+            ("quail-define-rules" code nil nil [21914 22373])
+            ("quail-define-package" code nil nil [22375 22626])
+            ("quail-define-rules" code nil nil [22628 22867])
+            ("quail-define-package" code nil nil [22869 23276])
+            ("quail-define-rules" code nil nil [23278 23772])
+            ("push" code nil nil [23802 23924])
+            ("quail-define-package" code nil nil [23926 24083])
+            ("quail-define-rules" code nil nil [24085 24122])
+            ("quail-define-package" code nil nil [24615 24808])
+            ("quail-define-rules" code nil nil [25013 25308])
+            ("quail-define-package" code nil nil [25313 25584])
+            ("quail-define-rules" code nil nil [25788 26870])
+            ("quail-define-package" code nil nil [26875 27071])
+            ("quail-define-rules" code nil nil [27276 27638])
+            ("quail-define-package" code nil nil [27643 27791])
+            ("quail-define-rules" code nil nil [27996 28295])
+            ("quail-define-package" code nil nil [28300 28465])
+            ("quail-define-rules" code nil nil [28670 28979])
+            ("quail-define-package" code nil nil [28984 29153])
+            ("quail-define-rules" code nil nil [29358 29657])
+            ("quail-define-package" code nil nil [29662 29821])
+            ("quail-define-rules" code nil nil [30026 30325])
+            ("quail-define-package" code nil nil [30330 30478])
+            ("quail-define-rules" code nil nil [30683 31024])
+            ("quail-define-package" code nil nil [31029 31191])
+            ("quail-define-rules" code nil nil [31396 31685])
+            ("quail-define-package" code nil nil [31690 31851])
+            ("quail-define-rules" code nil nil [32056 32355])
+            ("quail-define-package" code nil nil [32360 32512])
+            ("quail-define-rules" code nil nil [32717 33487])
+            ("quail-define-package" code nil nil [33489 34525])
+            ("quail-define-rules" code nil nil [34581 39479])
+            ("quail-define-package" code nil nil [39589 39708])
+            ("quail-define-rules" code nil nil [39710 39840]))          
+    :file "latin-post.el"
+    :pointmax 39920
+    :fsize 41104
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tibetan.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1381 1397])
+            ("tibet-util" include nil nil [1398 1419])
+            ("quail-tibetan-update-translation" function (:arguments ("control-flag")) nil [1638 2632])
+            ("tibetan-wylie-non-stacking-alist" variable
+               (:constant-flag t
+                :default-value (quote (("-d" . "ད") ("-y" . "ཡ"))))
+                nil [3020 3098])
+            ("tibetan-wylie-punctuation-alist" variable
+               (:constant-flag t
+                :default-value (quote (("." . " ") (":" . "ཿ") (" " . "་") ("/" . "།") ("//" . "༎") ("////" . ["༎ ༎"]) ("$" . "༏") ("/\"" . "༐") ("&" . "༐") (";" . "༑") ("%" . "༔") ("!" . "༈") ("<" . "༼") (">" . "༽") ("@" . "྅") ("*" . ["༄༅"]) ("#" . ["༄༅༅"]) ("^" . "༆") ("0" . "༠") ("1" . "༡") ("2" . "༢") ("3" . "༣") ("4" . "༤") ("5" . "༥") ("6" . "༦") ("7" . "༧") ("8" . "༨") ("9" . "༩") ("-0" . "༳") ("-1" . "༪") ("-2" . "༫") ("-3" . "༬") ("-4" . "༭") ("-5" . "༮") ("-6" . "༯") ("-7" . "༰") ("-8" . "༱") ("-9" . "༲") ("|" . "ༀ༁༂༃༇༉༊༒༓༕༖༗༘༙༚༛༜༝༞༟༴༶༸༺༻༾༿྾྿࿀࿁࿂࿃࿄࿅࿆࿇࿈࿉࿊࿋࿌࿏"))))
+                nil [3138 3960])
+            ("quail-define-package" code nil nil [3962 5532])
+            ("quail-install-map" code nil nil [6120 6879])
+            ("tibetan-tibkey-to-transcription-alist" variable
+               (:constant-flag t
+                :default-value (quote (("`" . "`") ("~" . "~") ("q" . "k") ("Q" . "kSH") ("w" . "kh") ("e" . "g") ("r" . "ng") ("t" . "c") ("T" . "I") ("y" . "ch") ("u" . "j") ("i" . "ny") ("o" . "t") ("O" . "T") ("p" . "th") ("P" . "TH") ("[" . "d") ("{" . "D") ("]" . "n") ("}" . "N") ("a" . "p") ("A" . "a") ("s" . "ph") ("d" . "b") ("f" . "m") ("F" . "M") ("g" . "u") ("G" . "i") ("H" . ",") ("j" . "o") ("J" . "e") ("k" . "ts") ("l" . "tsh") (";" . "dz") ("'" . "w") ("\"" . "+w") ("z" . "zh") ("x" . "z") ("c" . "'") ("C" . "+'") ("v" . "y") ("V" . "+y") ("b" . "r") ("B" . "+r") ("n" . "l") ("N" . "+l") ("m" . "sh") ("M" . "SH") ("," . "s") ("." . "h") ("/" . "A") ("hq" . "+k") ("hQ" . "+kSH") ("hw" . "+kh") ("he" . "+g") ("hr" . "+ng") ("ht" . "+c") ("hy" . "+ch") ("hu" . "+j") ("hi" . "+ny") ("ho" . "+t") ("hO" . "+T") ("hp" . "+th") ("hP" . "+TH") ("h[" . "+d") ("h{" . "+D") ("h]" . "+n") ("h}" . "+N") ("ha" . "+p") ("hs" . "+ph") ("hd" . "+b") ("hf" . "+m") ("hk" . "+ts") ("hl" . "+tsh") ("h;" . "+dz") ("h'" . "+w") ("hz" . "+zh") ("hx" . "+z") ("hc" . "+'") ("hv" . "+y") ("hb" . "+r") ("hn" . "+l") ("hm" . "+sh") ("hM" . "+SH") ("h," . "+s") ("h." . "+h") ("h/" . "+A") ("E" . "-y"))))
+                nil [6934 9418])
+            ("tibetan-consonant-tibkey-alist" variable (:constant-flag t) nil [9420 9465])
+            ("tibetan-subjoined-tibkey-alist" variable (:constant-flag t) nil [9466 9511])
+            ("tibetan-vowel-tibkey-alist" variable (:constant-flag t) nil [9512 9553])
+            ("tibetan-modifier-tibkey-alist" variable (:constant-flag t) nil [9554 9598])
+            ("tibetan-non-stacking-tibkey-alist" variable (:constant-flag t) nil [9599 9647])
+            ("let" code nil nil [9649 10500])
+            ("tibetan-punctuation-tibkey-alist" variable
+               (:constant-flag t
+                :default-value (quote (("1" . "༡") ("!" . "༄") ("2" . "༢") ("@" . "༅") ("3" . "༣") ("4" . "༤") ("5" . "༥") ("%" . "༔") ("6" . "༦") ("^" . "༁") ("7" . "༧") ("8" . "༨") ("9" . "༩") ("(" . "༼") ("0" . "༠") (")" . "༽") ("+" . "༑") ("\\" . "༏") ("|" . "༈") ("I" . "྅") (":" . "ཿ") (">" . " ") ("?" . "།") ("??" . "༎") ("????" . ["༎ ༎"]) (" " . "་"))))
+                nil [10502 11228])
+            ("quail-tibkey-to-transcription" function (:arguments ("tibkey")) nil [11342 11822])
+            ("quail-tibkey-characters" variable nil nil [11824 11860])
+            ("quail-tibkey-update-translation" function (:arguments ("control-flag")) nil [11862 12535])
+            ("quail-define-package" code nil nil [12537 14427])
+            ("quail-install-map" code nil nil [14429 14856]))          
+    :file "tibetan.el"
+    :pointmax 14933
+    :fsize 16807
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "PY-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [3627 3643])
+            ("quail-define-package" code nil nil [3645 5784])
+            ("quail-define-rules" code nil nil [5786 36012]))          
+    :file "PY-b5.el"
+    :pointmax 36013
+    :fsize 50548
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "tsang-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [615 631])
+            ("quail-define-package" code nil nil [632 1015])
+            ("quail-define-rules" code nil nil [1017 166309]))          
+    :file "tsang-b5.el"
+    :pointmax 166310
+    :fsize 179517
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "CTLau.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1338 1354])
+            ("quail-define-package" code nil nil [1355 2016])
+            ("quail-define-rules" code nil nil [2018 15691]))          
+    :file "CTLau.el"
+    :pointmax 15692
+    :fsize 22027
+    :lastmodtime '(19246 142)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "czech.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1252 1268])
+            ("quail-define-package" code nil nil [1271 1419])
+            ("quail-define-rules" code nil nil [1421 2709])
+            ("quail-define-package" code nil nil [2711 2885])
+            ("quail-define-rules" code nil nil [2887 4135])
+            ("quail-define-package" code nil nil [4137 4535])
+            ("quail-define-rules" code nil nil [4537 5440])
+            ("quail-define-package" code nil nil [5442 5840])
+            ("quail-define-rules" code nil nil [5842 6745])
+            ("quail-define-package" code nil nil [6747 7268])
+            ("quail-define-rules" code nil nil [7270 8380]))          
+    :file "czech.el"
+    :pointmax 8455
+    :fsize 10098
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "hebrew.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1035 1051])
+            ("quail-define-package" code nil nil [1053 1250])
+            ("quail-define-rules" code nil nil [1419 1760]))          
+    :file "hebrew.el"
+    :pointmax 1836
+    :fsize 2165
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "quick-b5.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [612 628])
+            ("quail-define-package" code nil nil [629 1009])
+            ("quail-define-rules" code nil nil [1011 20688]))          
+    :file "quick-b5.el"
+    :pointmax 20689
+    :fsize 33896
+    :lastmodtime '(19246 141)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "welsh.el"
+    :major-mode 'emacs-lisp-mode
+    :tags 
+        '( ("quail" include nil nil [1020 1036])
+            ("quail-define-package" code nil nil [1038 1154])
+            ("quail-define-rules" code nil nil [1156 2051]))          
+    :file "welsh.el"
+    :pointmax 3311
+    :fsize 4208
+    :lastmodtime '(19005 47374)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!share!emacs!23.1.90!leim!quail!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

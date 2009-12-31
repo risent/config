@@ -1,0 +1,124 @@
+;; Object iteration/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "iteration/"
+  :tables (list 
+   (semanticdb-table "iterate.hpp"
+    :tags 
+        '( ("BOOST_PREPROCESSOR_ITERATION_ITERATE_HPP" variable
+               (:constant-flag t
+                :line 13)
+                nil nil)
+            ("boost/preprocessor/arithmetic/dec.hpp" include (:line 15) nil nil)
+            ("boost/preprocessor/arithmetic/inc.hpp" include (:line 16) nil nil)
+            ("boost/preprocessor/array/elem.hpp" include (:line 17) nil nil)
+            ("boost/preprocessor/array/size.hpp" include (:line 18) nil nil)
+            ("boost/preprocessor/cat.hpp" include (:line 19) nil nil)
+            ("boost/preprocessor/slot/slot.hpp" include (:line 20) nil nil)
+            ("boost/preprocessor/tuple/elem.hpp" include (:line 21) nil nil)
+            ("BOOST_PP_ITERATION_DEPTH" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("BOOST_PP_ITERATION" variable
+               (:constant-flag t
+                :line 29)
+                nil nil)
+            ("BOOST_PP_ITERATION_START" variable
+               (:constant-flag t
+                :line 33)
+                nil nil)
+            ("BOOST_PP_ITERATION_FINISH" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("BOOST_PP_ITERATION_FLAGS" variable
+               (:constant-flag t
+                :line 38)
+                nil nil)
+            ("BOOST_PP_FRAME_ITERATION" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("BOOST_PP_FRAME_START" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("BOOST_PP_FRAME_FINISH" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("BOOST_PP_FRAME_FLAGS" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("BOOST_PP_RELATIVE_ITERATION" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("BOOST_PP_RELATIVE_0" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("BOOST_PP_RELATIVE_1" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("BOOST_PP_RELATIVE_2" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("BOOST_PP_RELATIVE_3" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("BOOST_PP_RELATIVE_4" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("BOOST_PP_RELATIVE_START" variable
+               (:constant-flag t
+                :line 65)
+                nil nil)
+            ("BOOST_PP_RELATIVE_FINISH" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("BOOST_PP_RELATIVE_FLAGS" variable
+               (:constant-flag t
+                :line 70)
+                nil nil)
+            ("BOOST_PP_ITERATE" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("BOOST_PP_ITERATE_1" variable
+               (:constant-flag t
+                :line 76)
+                nil nil)
+            ("BOOST_PP_ITERATE_2" variable
+               (:constant-flag t
+                :line 77)
+                nil nil)
+            ("BOOST_PP_ITERATE_3" variable
+               (:constant-flag t
+                :line 78)
+                nil nil)
+            ("BOOST_PP_ITERATE_4" variable
+               (:constant-flag t
+                :line 79)
+                nil nil)
+            ("BOOST_PP_ITERATE_5" variable
+               (:constant-flag t
+                :line 80)
+                nil nil))          
+    :file "iterate.hpp"
+    :pointmax 286
+    :fsize 3700
+    :lastmodtime '(19085 43080)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!boost-1_39!boost!preprocessor!iteration!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )

@@ -1,0 +1,2550 @@
+;; Object sys/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "sys/"
+  :tables (list 
+   (semanticdb-table "cdefs.h"
+    :tags 
+        '( ("_SYS_CDEFS_H" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("features.h" include (:line 25) nil nil)
+            ("__P" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("__PMT" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("__THROW" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("__NTH" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("__THROW" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("__NTH" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("__THROW" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("__NTH" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("__inline" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("__THROW" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("__NTH" variable
+               (:constant-flag t
+                :line 64)
+                nil nil)
+            ("__const" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("__signed" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("__volatile" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("__P" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("__PMT" variable
+               (:constant-flag t
+                :line 75)
+                nil nil)
+            ("__CONCAT" variable
+               (:constant-flag t
+                :line 80)
+                nil nil)
+            ("__STRING" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("__ptr_t" variable
+               (:constant-flag t
+                :line 84)
+                nil nil)
+            ("__long_double_t" variable
+               (:constant-flag t
+                :line 85)
+                nil nil)
+            ("__BEGIN_DECLS" variable
+               (:constant-flag t
+                :line 90)
+                nil nil)
+            ("__END_DECLS" variable
+               (:constant-flag t
+                :line 91)
+                nil nil)
+            ("__BEGIN_DECLS" variable
+               (:constant-flag t
+                :line 93)
+                nil nil)
+            ("__END_DECLS" variable
+               (:constant-flag t
+                :line 94)
+                nil nil)
+            ("__BEGIN_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 104)
+                nil nil)
+            ("__END_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 105)
+                nil nil)
+            ("__USING_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 106)
+                nil nil)
+            ("__BEGIN_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 107)
+                nil nil)
+            ("__END_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 108)
+                nil nil)
+            ("__USING_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 109)
+                nil nil)
+            ("__BEGIN_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 114)
+                nil nil)
+            ("__END_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 115)
+                nil nil)
+            ("__USING_NAMESPACE_STD" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("__BEGIN_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 117)
+                nil nil)
+            ("__END_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 118)
+                nil nil)
+            ("__USING_NAMESPACE_C99" variable
+               (:constant-flag t
+                :line 119)
+                nil nil)
+            ("__bounded" variable
+               (:constant-flag t
+                :line 125)
+                nil nil)
+            ("__unbounded" variable
+               (:constant-flag t
+                :line 126)
+                nil nil)
+            ("__ptrvalue" variable
+               (:constant-flag t
+                :line 127)
+                nil nil)
+            ("__bos" variable
+               (:constant-flag t
+                :line 132)
+                nil nil)
+            ("__bos0" variable
+               (:constant-flag t
+                :line 133)
+                nil nil)
+            ("__warndecl" variable
+               (:constant-flag t
+                :line 136)
+                nil nil)
+            ("__warnattr" variable
+               (:constant-flag t
+                :line 138)
+                nil nil)
+            ("__errordecl" variable
+               (:constant-flag t
+                :line 139)
+                nil nil)
+            ("__warndecl" variable
+               (:constant-flag t
+                :line 142)
+                nil nil)
+            ("__warnattr" variable
+               (:constant-flag t
+                :line 143)
+                nil nil)
+            ("__errordecl" variable
+               (:constant-flag t
+                :line 144)
+                nil nil)
+            ("__flexarr" variable
+               (:constant-flag t
+                :line 150)
+                nil nil)
+            ("__flexarr" variable
+               (:constant-flag t
+                :line 153)
+                nil nil)
+            ("__flexarr" variable
+               (:constant-flag t
+                :line 156)
+                nil nil)
+            ("__flexarr" variable
+               (:constant-flag t
+                :line 159)
+                nil nil)
+            ("__REDIRECT" variable
+               (:constant-flag t
+                :line 177)
+                nil nil)
+            ("__REDIRECT_NTH" variable
+               (:constant-flag t
+                :line 179)
+                nil nil)
+            ("__REDIRECT_NTH" variable
+               (:constant-flag t
+                :line 182)
+                nil nil)
+            ("__ASMNAME" variable
+               (:constant-flag t
+                :line 185)
+                nil nil)
+            ("__ASMNAME2" variable
+               (:constant-flag t
+                :line 186)
+                nil nil)
+            ("__attribute__" variable
+               (:constant-flag t
+                :line 200)
+                nil nil)
+            ("__attribute_malloc__" variable
+               (:constant-flag t
+                :line 207)
+                nil nil)
+            ("__attribute_malloc__" variable
+               (:constant-flag t
+                :line 209)
+                nil nil)
+            ("__attribute_pure__" variable
+               (:constant-flag t
+                :line 216)
+                nil nil)
+            ("__attribute_pure__" variable
+               (:constant-flag t
+                :line 218)
+                nil nil)
+            ("__attribute_used__" variable
+               (:constant-flag t
+                :line 225)
+                nil nil)
+            ("__attribute_noinline__" variable
+               (:constant-flag t
+                :line 226)
+                nil nil)
+            ("__attribute_used__" variable
+               (:constant-flag t
+                :line 228)
+                nil nil)
+            ("__attribute_noinline__" variable
+               (:constant-flag t
+                :line 229)
+                nil nil)
+            ("__attribute_deprecated__" variable
+               (:constant-flag t
+                :line 234)
+                nil nil)
+            ("__attribute_deprecated__" variable
+               (:constant-flag t
+                :line 236)
+                nil nil)
+            ("__attribute_format_arg__" variable
+               (:constant-flag t
+                :line 246)
+                nil nil)
+            ("__attribute_format_arg__" variable
+               (:constant-flag t
+                :line 248)
+                nil nil)
+            ("__attribute_format_strfmon__" variable
+               (:constant-flag t
+                :line 256)
+                nil nil)
+            ("__attribute_format_strfmon__" variable
+               (:constant-flag t
+                :line 259)
+                nil nil)
+            ("__nonnull" variable
+               (:constant-flag t
+                :line 265)
+                nil nil)
+            ("__nonnull" variable
+               (:constant-flag t
+                :line 267)
+                nil nil)
+            ("__attribute_warn_unused_result__" variable
+               (:constant-flag t
+                :line 273)
+                nil nil)
+            ("__wur" variable
+               (:constant-flag t
+                :line 276)
+                nil nil)
+            ("__attribute_warn_unused_result__" variable
+               (:constant-flag t
+                :line 279)
+                nil nil)
+            ("__wur" variable
+               (:constant-flag t
+                :line 282)
+                nil nil)
+            ("__always_inline" variable
+               (:constant-flag t
+                :line 287)
+                nil nil)
+            ("__always_inline" variable
+               (:constant-flag t
+                :line 289)
+                nil nil)
+            ("__extern_inline" variable
+               (:constant-flag t
+                :line 296)
+                nil nil)
+            ("__extern_always_inline" variable
+               (:constant-flag t
+                :line 298)
+                nil nil)
+            ("__extern_always_inline" variable
+               (:constant-flag t
+                :line 301)
+                nil nil)
+            ("__extern_inline" variable
+               (:constant-flag t
+                :line 305)
+                nil nil)
+            ("__extern_always_inline" variable
+               (:constant-flag t
+                :line 307)
+                nil nil)
+            ("__extern_always_inline" variable
+               (:constant-flag t
+                :line 310)
+                nil nil)
+            ("__va_arg_pack" variable
+               (:constant-flag t
+                :line 318)
+                nil nil)
+            ("__va_arg_pack_len" variable
+               (:constant-flag t
+                :line 319)
+                nil nil)
+            ("__extension__" variable
+               (:constant-flag t
+                :line 327)
+                nil nil)
+            ("__restrict" variable
+               (:constant-flag t
+                :line 332)
+                nil nil)
+            ("__restrict_arr" variable
+               (:constant-flag t
+                :line 339)
+                nil nil)
+            ("__restrict_arr" variable
+               (:constant-flag t
+                :line 342)
+                nil nil)
+            ("__restrict_arr" variable
+               (:constant-flag t
+                :line 345)
+                nil nil)
+            ("__restrict_arr" variable
+               (:constant-flag t
+                :line 348)
+                nil nil)
+            ("bits/wordsize.h" include (:line 353) nil nil)
+            ("__LDBL_COMPAT" variable
+               (:constant-flag t
+                :line 356)
+                nil nil)
+            ("__LDBL_REDIR1" variable
+               (:constant-flag t
+                :line 358)
+                nil nil)
+            ("__LDBL_REDIR" variable
+               (:constant-flag t
+                :line 359)
+                nil nil)
+            ("__LDBL_REDIR1_NTH" variable
+               (:constant-flag t
+                :line 361)
+                nil nil)
+            ("__LDBL_REDIR_NTH" variable
+               (:constant-flag t
+                :line 362)
+                nil nil)
+            ("__LDBL_REDIR1_DECL" variable
+               (:constant-flag t
+                :line 364)
+                nil nil)
+            ("__LDBL_REDIR_DECL" variable
+               (:constant-flag t
+                :line 366)
+                nil nil)
+            ("__REDIRECT_LDBL" variable
+               (:constant-flag t
+                :line 368)
+                nil nil)
+            ("__REDIRECT_NTH_LDBL" variable
+               (:constant-flag t
+                :line 370)
+                nil nil)
+            ("__LDBL_REDIR1" variable
+               (:constant-flag t
+                :line 375)
+                nil nil)
+            ("__LDBL_REDIR" variable
+               (:constant-flag t
+                :line 376)
+                nil nil)
+            ("__LDBL_REDIR1_NTH" variable
+               (:constant-flag t
+                :line 377)
+                nil nil)
+            ("__LDBL_REDIR_NTH" variable
+               (:constant-flag t
+                :line 378)
+                nil nil)
+            ("__LDBL_REDIR_DECL" variable
+               (:constant-flag t
+                :line 379)
+                nil nil)
+            ("__REDIRECT_LDBL" variable
+               (:constant-flag t
+                :line 381)
+                nil nil)
+            ("__REDIRECT_NTH_LDBL" variable
+               (:constant-flag t
+                :line 382)
+                nil nil))          
+    :file "cdefs.h"
+    :pointmax 774
+    :fsize 13195
+    :lastmodtime '(19231 24724)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ucontext.h"
+    :tags 
+        '( ("_SYS_UCONTEXT_H" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("features.h" include (:line 22) nil nil)
+            ("signal.h" include (:line 23) nil nil)
+            ("bits/wordsize.h" include (:line 24) nil nil)
+            ("bits/sigcontext.h" include (:line 28) nil nil)
+            ("greg_t" type
+               (:type "typedef"
+                :line 33)
+                nil nil)
+            ("NGREG" variable
+               (:constant-flag t
+                :line 36)
+                nil nil)
+            ("gregset_t" type
+               (:type "typedef"
+                :line 39)
+                nil nil)
+            ("REG_R8" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("REG_R8" variable
+               (:constant-flag t
+                :line 46)
+                nil nil)
+            ("REG_R9" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("REG_R9" variable
+               (:constant-flag t
+                :line 48)
+                nil nil)
+            ("REG_R10" variable
+               (:constant-flag t
+                :line 49)
+                nil nil)
+            ("REG_R10" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("REG_R11" variable
+               (:constant-flag t
+                :line 51)
+                nil nil)
+            ("REG_R11" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("REG_R12" variable
+               (:constant-flag t
+                :line 53)
+                nil nil)
+            ("REG_R12" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("REG_R13" variable
+               (:constant-flag t
+                :line 55)
+                nil nil)
+            ("REG_R13" variable
+               (:constant-flag t
+                :line 56)
+                nil nil)
+            ("REG_R14" variable
+               (:constant-flag t
+                :line 57)
+                nil nil)
+            ("REG_R14" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("REG_R15" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("REG_R15" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("REG_RDI" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("REG_RDI" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("REG_RSI" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("REG_RSI" variable
+               (:constant-flag t
+                :line 64)
+                nil nil)
+            ("REG_RBP" variable
+               (:constant-flag t
+                :line 65)
+                nil nil)
+            ("REG_RBP" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("REG_RBX" variable
+               (:constant-flag t
+                :line 67)
+                nil nil)
+            ("REG_RBX" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("REG_RDX" variable
+               (:constant-flag t
+                :line 69)
+                nil nil)
+            ("REG_RDX" variable
+               (:constant-flag t
+                :line 70)
+                nil nil)
+            ("REG_RAX" variable
+               (:constant-flag t
+                :line 71)
+                nil nil)
+            ("REG_RAX" variable
+               (:constant-flag t
+                :line 72)
+                nil nil)
+            ("REG_RCX" variable
+               (:constant-flag t
+                :line 73)
+                nil nil)
+            ("REG_RCX" variable
+               (:constant-flag t
+                :line 74)
+                nil nil)
+            ("REG_RSP" variable
+               (:constant-flag t
+                :line 75)
+                nil nil)
+            ("REG_RSP" variable
+               (:constant-flag t
+                :line 76)
+                nil nil)
+            ("REG_RIP" variable
+               (:constant-flag t
+                :line 77)
+                nil nil)
+            ("REG_RIP" variable
+               (:constant-flag t
+                :line 78)
+                nil nil)
+            ("REG_EFL" variable
+               (:constant-flag t
+                :line 79)
+                nil nil)
+            ("REG_EFL" variable
+               (:constant-flag t
+                :line 80)
+                nil nil)
+            ("REG_CSGSFS" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("REG_CSGSFS" variable
+               (:constant-flag t
+                :line 82)
+                nil nil)
+            ("REG_ERR" variable
+               (:constant-flag t
+                :line 83)
+                nil nil)
+            ("REG_ERR" variable
+               (:constant-flag t
+                :line 84)
+                nil nil)
+            ("REG_TRAPNO" variable
+               (:constant-flag t
+                :line 85)
+                nil nil)
+            ("REG_TRAPNO" variable
+               (:constant-flag t
+                :line 86)
+                nil nil)
+            ("REG_OLDMASK" variable
+               (:constant-flag t
+                :line 87)
+                nil nil)
+            ("REG_OLDMASK" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("REG_CR2" variable
+               (:constant-flag t
+                :line 89)
+                nil nil)
+            ("REG_CR2" variable
+               (:constant-flag t
+                :line 90)
+                nil nil)
+            ("_libc_fpxreg" type
+               (:members 
+                  ( ("significand" variable
+                       (:protection "public"
+                        :line 96)
+                        nil nil)
+                    ("exponent" variable
+                       (:protection "public"
+                        :line 97)
+                        nil nil)
+                    ("padding" variable
+                       (:protection "public"
+                        :line 98)
+                        nil nil))                  
+                :line 94
+                :type "struct")
+                nil nil)
+            ("_libc_xmmreg" type
+               (:members 
+                  ( ("element" variable
+                       (:protection "public"
+                        :line 103)
+                        nil nil))                  
+                :line 101
+                :type "struct")
+                nil nil)
+            ("_libc_fpstate" type
+               (:members 
+                  ( ("cwd" variable
+                       (:protection "public"
+                        :line 109)
+                        nil nil)
+                    ("swd" variable
+                       (:protection "public"
+                        :line 110)
+                        nil nil)
+                    ("ftw" variable
+                       (:protection "public"
+                        :line 111)
+                        nil nil)
+                    ("fop" variable
+                       (:protection "public"
+                        :line 112)
+                        nil nil)
+                    ("rip" variable
+                       (:protection "public"
+                        :line 113)
+                        nil nil)
+                    ("rdp" variable
+                       (:protection "public"
+                        :line 114)
+                        nil nil)
+                    ("mxcsr" variable
+                       (:protection "public"
+                        :line 115)
+                        nil nil)
+                    ("mxcr_mask" variable
+                       (:protection "public"
+                        :line 116)
+                        nil nil)
+                    ("_st" variable
+                       (:protection "public"
+                        :line 117)
+                        nil nil)
+                    ("_xmm" variable
+                       (:protection "public"
+                        :line 118)
+                        nil nil)
+                    ("padding" variable
+                       (:protection "public"
+                        :line 119)
+                        nil nil))                  
+                :line 106
+                :type "struct")
+                nil nil)
+            ("fpregset_t" type
+               (:type "typedef"
+                :line 123)
+                nil nil)
+            ("gregs" variable
+               (:parent "__anon2"
+                :line 128
+                :protection "public")
+                nil nil)
+            ("fpregs" variable
+               (:parent "__anon2"
+                :line 130
+                :protection "public")
+                nil nil)
+            ("__reserved1" variable
+               (:parent "__anon2"
+                :line 131
+                :protection "public")
+                nil nil)
+            ("mcontext_t" type
+               (:type "typedef"
+                :line 132)
+                nil nil)
+            ("ucontext" type
+               (:type "struct"
+                :line 135
+                :members 
+                  ( ("uc_flags" variable
+                       (:protection "public"
+                        :line 137)
+                        nil nil)
+                    ("uc_link" variable
+                       (:protection "public"
+                        :line 138)
+                        nil nil)
+                    ("uc_stack" variable
+                       (:protection "public"
+                        :line 139)
+                        nil nil)
+                    ("uc_mcontext" variable
+                       (:protection "public"
+                        :line 140)
+                        nil nil)
+                    ("uc_sigmask" variable
+                       (:protection "public"
+                        :line 141)
+                        nil nil)
+                    ("__fpregs_mem" variable
+                       (:protection "public"
+                        :line 142)
+                        nil nil))                  )
+                nil nil)
+            ("ucontext_t" type
+               (:type "typedef"
+                :line 143)
+                nil nil)
+            ("greg_t" type
+               (:type "typedef"
+                :line 148)
+                nil nil)
+            ("NGREG" variable
+               (:constant-flag t
+                :line 151)
+                nil nil)
+            ("gregset_t" type
+               (:type "typedef"
+                :line 154)
+                nil nil)
+            ("REG_GS" variable
+               (:constant-flag t
+                :line 160)
+                nil nil)
+            ("REG_GS" variable
+               (:constant-flag t
+                :line 161)
+                nil nil)
+            ("REG_FS" variable
+               (:constant-flag t
+                :line 162)
+                nil nil)
+            ("REG_FS" variable
+               (:constant-flag t
+                :line 163)
+                nil nil)
+            ("REG_ES" variable
+               (:constant-flag t
+                :line 164)
+                nil nil)
+            ("REG_ES" variable
+               (:constant-flag t
+                :line 165)
+                nil nil)
+            ("REG_DS" variable
+               (:constant-flag t
+                :line 166)
+                nil nil)
+            ("REG_DS" variable
+               (:constant-flag t
+                :line 167)
+                nil nil)
+            ("REG_EDI" variable
+               (:constant-flag t
+                :line 168)
+                nil nil)
+            ("REG_EDI" variable
+               (:constant-flag t
+                :line 169)
+                nil nil)
+            ("REG_ESI" variable
+               (:constant-flag t
+                :line 170)
+                nil nil)
+            ("REG_ESI" variable
+               (:constant-flag t
+                :line 171)
+                nil nil)
+            ("REG_EBP" variable
+               (:constant-flag t
+                :line 172)
+                nil nil)
+            ("REG_EBP" variable
+               (:constant-flag t
+                :line 173)
+                nil nil)
+            ("REG_ESP" variable
+               (:constant-flag t
+                :line 174)
+                nil nil)
+            ("REG_ESP" variable
+               (:constant-flag t
+                :line 175)
+                nil nil)
+            ("REG_EBX" variable
+               (:constant-flag t
+                :line 176)
+                nil nil)
+            ("REG_EBX" variable
+               (:constant-flag t
+                :line 177)
+                nil nil)
+            ("REG_EDX" variable
+               (:constant-flag t
+                :line 178)
+                nil nil)
+            ("REG_EDX" variable
+               (:constant-flag t
+                :line 179)
+                nil nil)
+            ("REG_ECX" variable
+               (:constant-flag t
+                :line 180)
+                nil nil)
+            ("REG_ECX" variable
+               (:constant-flag t
+                :line 181)
+                nil nil)
+            ("REG_EAX" variable
+               (:constant-flag t
+                :line 182)
+                nil nil)
+            ("REG_EAX" variable
+               (:constant-flag t
+                :line 183)
+                nil nil)
+            ("REG_TRAPNO" variable
+               (:constant-flag t
+                :line 184)
+                nil nil)
+            ("REG_TRAPNO" variable
+               (:constant-flag t
+                :line 185)
+                nil nil)
+            ("REG_ERR" variable
+               (:constant-flag t
+                :line 186)
+                nil nil)
+            ("REG_ERR" variable
+               (:constant-flag t
+                :line 187)
+                nil nil)
+            ("REG_EIP" variable
+               (:constant-flag t
+                :line 188)
+                nil nil)
+            ("REG_EIP" variable
+               (:constant-flag t
+                :line 189)
+                nil nil)
+            ("REG_CS" variable
+               (:constant-flag t
+                :line 190)
+                nil nil)
+            ("REG_CS" variable
+               (:constant-flag t
+                :line 191)
+                nil nil)
+            ("REG_EFL" variable
+               (:constant-flag t
+                :line 192)
+                nil nil)
+            ("REG_EFL" variable
+               (:constant-flag t
+                :line 193)
+                nil nil)
+            ("REG_UESP" variable
+               (:constant-flag t
+                :line 194)
+                nil nil)
+            ("REG_UESP" variable
+               (:constant-flag t
+                :line 195)
+                nil nil)
+            ("REG_SS" variable
+               (:constant-flag t
+                :line 196)
+                nil nil)
+            ("REG_SS" variable
+               (:constant-flag t
+                :line 197)
+                nil nil)
+            ("_libc_fpreg" type
+               (:type "struct"
+                :line 202
+                :members 
+                  ( ("significand" variable
+                       (:protection "public"
+                        :line 204)
+                        nil nil)
+                    ("exponent" variable
+                       (:protection "public"
+                        :line 205)
+                        nil nil))                  )
+                nil nil)
+            ("_libc_fpstate" type
+               (:members 
+                  ( ("cw" variable
+                       (:protection "public"
+                        :line 210)
+                        nil nil)
+                    ("sw" variable
+                       (:protection "public"
+                        :line 211)
+                        nil nil)
+                    ("tag" variable
+                       (:protection "public"
+                        :line 212)
+                        nil nil)
+                    ("ipoff" variable
+                       (:protection "public"
+                        :line 213)
+                        nil nil)
+                    ("cssel" variable
+                       (:protection "public"
+                        :line 214)
+                        nil nil)
+                    ("dataoff" variable
+                       (:protection "public"
+                        :line 215)
+                        nil nil)
+                    ("datasel" variable
+                       (:protection "public"
+                        :line 216)
+                        nil nil)
+                    ("_st" variable
+                       (:protection "public"
+                        :line 217)
+                        nil nil)
+                    ("status" variable
+                       (:protection "public"
+                        :line 218)
+                        nil nil))                  
+                :line 208
+                :type "struct")
+                nil nil)
+            ("fpregset_t" type
+               (:type "typedef"
+                :line 222)
+                nil nil)
+            ("gregs" variable
+               (:parent "__anon4"
+                :line 227
+                :protection "public")
+                nil nil)
+            ("fpregs" variable
+               (:parent "__anon4"
+                :line 230
+                :protection "public")
+                nil nil)
+            ("oldmask" variable
+               (:parent "__anon4"
+                :line 231
+                :protection "public")
+                nil nil)
+            ("cr2" variable
+               (:parent "__anon4"
+                :line 232
+                :protection "public")
+                nil nil)
+            ("mcontext_t" type
+               (:type "typedef"
+                :line 233)
+                nil nil)
+            ("ucontext" type
+               (:type "struct"
+                :line 236
+                :members 
+                  ( ("uc_flags" variable
+                       (:protection "public"
+                        :line 238)
+                        nil nil)
+                    ("uc_link" variable
+                       (:protection "public"
+                        :line 239)
+                        nil nil)
+                    ("uc_stack" variable
+                       (:protection "public"
+                        :line 240)
+                        nil nil)
+                    ("uc_mcontext" variable
+                       (:protection "public"
+                        :line 241)
+                        nil nil)
+                    ("uc_sigmask" variable
+                       (:protection "public"
+                        :line 242)
+                        nil nil)
+                    ("__fpregs_mem" variable
+                       (:protection "public"
+                        :line 243)
+                        nil nil))                  )
+                nil nil)
+            ("ucontext_t" type
+               (:type "typedef"
+                :line 244)
+                nil nil))          
+    :file "ucontext.h"
+    :pointmax 774
+    :fsize 5455
+    :lastmodtime '(19231 24705)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "types.h"
+    :tags 
+        '( ("_SYS_TYPES_H" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("features.h" include (:line 27) nil nil)
+            ("bits/types.h" include (:line 31) nil nil)
+            ("u_char" type
+               (:type "typedef"
+                :line 35)
+                nil nil)
+            ("u_short" type
+               (:type "typedef"
+                :line 36)
+                nil nil)
+            ("u_int" type
+               (:type "typedef"
+                :line 37)
+                nil nil)
+            ("u_long" type
+               (:type "typedef"
+                :line 38)
+                nil nil)
+            ("quad_t" type
+               (:type "typedef"
+                :line 39)
+                nil nil)
+            ("u_quad_t" type
+               (:type "typedef"
+                :line 40)
+                nil nil)
+            ("fsid_t" type
+               (:type "typedef"
+                :line 41)
+                nil nil)
+            ("__u_char_defined" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("loff_t" type
+               (:type "typedef"
+                :line 46)
+                nil nil)
+            ("ino_t" type
+               (:type "typedef"
+                :line 50)
+                nil nil)
+            ("ino_t" type
+               (:type "typedef"
+                :line 52)
+                nil nil)
+            ("__ino_t_defined" variable
+               (:constant-flag t
+                :line 54)
+                nil nil)
+            ("ino64_t" type
+               (:type "typedef"
+                :line 57)
+                nil nil)
+            ("__ino64_t_defined" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("dev_t" type
+               (:type "typedef"
+                :line 62)
+                nil nil)
+            ("__dev_t_defined" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("gid_t" type
+               (:type "typedef"
+                :line 67)
+                nil nil)
+            ("__gid_t_defined" variable
+               (:constant-flag t
+                :line 68)
+                nil nil)
+            ("mode_t" type
+               (:type "typedef"
+                :line 72)
+                nil nil)
+            ("__mode_t_defined" variable
+               (:constant-flag t
+                :line 73)
+                nil nil)
+            ("nlink_t" type
+               (:type "typedef"
+                :line 77)
+                nil nil)
+            ("__nlink_t_defined" variable
+               (:constant-flag t
+                :line 78)
+                nil nil)
+            ("uid_t" type
+               (:type "typedef"
+                :line 82)
+                nil nil)
+            ("__uid_t_defined" variable
+               (:constant-flag t
+                :line 83)
+                nil nil)
+            ("off_t" type
+               (:type "typedef"
+                :line 88)
+                nil nil)
+            ("off_t" type
+               (:type "typedef"
+                :line 90)
+                nil nil)
+            ("__off_t_defined" variable
+               (:constant-flag t
+                :line 92)
+                nil nil)
+            ("off64_t" type
+               (:type "typedef"
+                :line 95)
+                nil nil)
+            ("__off64_t_defined" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("pid_t" type
+               (:type "typedef"
+                :line 100)
+                nil nil)
+            ("__pid_t_defined" variable
+               (:constant-flag t
+                :line 101)
+                nil nil)
+            ("id_t" type
+               (:type "typedef"
+                :line 105)
+                nil nil)
+            ("__id_t_defined" variable
+               (:constant-flag t
+                :line 106)
+                nil nil)
+            ("ssize_t" type
+               (:type "typedef"
+                :line 110)
+                nil nil)
+            ("__ssize_t_defined" variable
+               (:constant-flag t
+                :line 111)
+                nil nil)
+            ("daddr_t" type
+               (:type "typedef"
+                :line 116)
+                nil nil)
+            ("caddr_t" type
+               (:type "typedef"
+                :line 117)
+                nil nil)
+            ("__daddr_t_defined" variable
+               (:constant-flag t
+                :line 118)
+                nil nil)
+            ("key_t" type
+               (:type "typedef"
+                :line 123)
+                nil nil)
+            ("__key_t_defined" variable
+               (:constant-flag t
+                :line 124)
+                nil nil)
+            ("__need_clock_t" variable
+               (:constant-flag t
+                :line 128)
+                nil nil)
+            ("__need_time_t" variable
+               (:constant-flag t
+                :line 130)
+                nil nil)
+            ("__need_timer_t" variable
+               (:constant-flag t
+                :line 131)
+                nil nil)
+            ("__need_clockid_t" variable
+               (:constant-flag t
+                :line 132)
+                nil nil)
+            ("time.h" include (:line 133) nil nil)
+            ("useconds_t" type
+               (:type "typedef"
+                :line 137)
+                nil nil)
+            ("__useconds_t_defined" variable
+               (:constant-flag t
+                :line 138)
+                nil nil)
+            ("suseconds_t" type
+               (:type "typedef"
+                :line 141)
+                nil nil)
+            ("__suseconds_t_defined" variable
+               (:constant-flag t
+                :line 142)
+                nil nil)
+            ("__need_size_t" variable
+               (:constant-flag t
+                :line 146)
+                nil nil)
+            ("stddef.h" include (:line 147) nil nil)
+            ("ulong" type
+               (:type "typedef"
+                :line 151)
+                nil nil)
+            ("ushort" type
+               (:type "typedef"
+                :line 152)
+                nil nil)
+            ("uint" type
+               (:type "typedef"
+                :line 153)
+                nil nil)
+            ("__int8_t_defined" variable
+               (:constant-flag t
+                :line 162)
+                nil nil)
+            ("int8_t" type
+               (:type "typedef"
+                :line 163)
+                nil nil)
+            ("int16_t" type
+               (:type "typedef"
+                :line 164)
+                nil nil)
+            ("int32_t" type
+               (:type "typedef"
+                :line 165)
+                nil nil)
+            ("int64_t" type
+               (:type "typedef"
+                :line 167)
+                nil nil)
+            ("int64_t" type
+               (:type "typedef"
+                :line 169)
+                nil nil)
+            ("u_int8_t" type
+               (:type "typedef"
+                :line 174)
+                nil nil)
+            ("u_int16_t" type
+               (:type "typedef"
+                :line 175)
+                nil nil)
+            ("u_int32_t" type
+               (:type "typedef"
+                :line 176)
+                nil nil)
+            ("u_int64_t" type
+               (:type "typedef"
+                :line 178)
+                nil nil)
+            ("u_int64_t" type
+               (:type "typedef"
+                :line 180)
+                nil nil)
+            ("register_t" type
+               (:type "typedef"
+                :line 183)
+                nil nil)
+            ("__intN_t" variable
+               (:constant-flag t
+                :line 188)
+                nil nil)
+            ("__u_intN_t" variable
+               (:constant-flag t
+                :line 190)
+                nil nil)
+            ("__int8_t_defined" variable
+               (:constant-flag t
+                :line 194)
+                nil nil)
+            ("register_t" type
+               (:type "typedef"
+                :line 206)
+                nil nil)
+            ("__BIT_TYPES_DEFINED__" variable
+               (:constant-flag t
+                :line 212)
+                nil nil)
+            ("endian.h" include (:line 217) nil nil)
+            ("sys/select.h" include (:line 220) nil nil)
+            ("sys/sysmacros.h" include (:line 223) nil nil)
+            ("blksize_t" type
+               (:type "typedef"
+                :line 228)
+                nil nil)
+            ("__blksize_t_defined" variable
+               (:constant-flag t
+                :line 229)
+                nil nil)
+            ("blkcnt_t" type
+               (:type "typedef"
+                :line 235)
+                nil nil)
+            ("__blkcnt_t_defined" variable
+               (:constant-flag t
+                :line 236)
+                nil nil)
+            ("fsblkcnt_t" type
+               (:type "typedef"
+                :line 239)
+                nil nil)
+            ("__fsblkcnt_t_defined" variable
+               (:constant-flag t
+                :line 240)
+                nil nil)
+            ("fsfilcnt_t" type
+               (:type "typedef"
+                :line 243)
+                nil nil)
+            ("__fsfilcnt_t_defined" variable
+               (:constant-flag t
+                :line 244)
+                nil nil)
+            ("blkcnt_t" type
+               (:type "typedef"
+                :line 248)
+                nil nil)
+            ("__blkcnt_t_defined" variable
+               (:constant-flag t
+                :line 249)
+                nil nil)
+            ("fsblkcnt_t" type
+               (:type "typedef"
+                :line 252)
+                nil nil)
+            ("__fsblkcnt_t_defined" variable
+               (:constant-flag t
+                :line 253)
+                nil nil)
+            ("fsfilcnt_t" type
+               (:type "typedef"
+                :line 256)
+                nil nil)
+            ("__fsfilcnt_t_defined" variable
+               (:constant-flag t
+                :line 257)
+                nil nil)
+            ("blkcnt64_t" type
+               (:type "typedef"
+                :line 262)
+                nil nil)
+            ("fsblkcnt64_t" type
+               (:type "typedef"
+                :line 263)
+                nil nil)
+            ("fsfilcnt64_t" type
+               (:type "typedef"
+                :line 264)
+                nil nil)
+            ("bits/pthreadtypes.h" include (:line 270) nil nil))          
+    :file "types.h"
+    :pointmax 26983
+    :fsize 6775
+    :lastmodtime '(19231 24719)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "stat.h"
+    :tags 
+        '( ("_SYS_STAT_H" variable
+               (:constant-flag t
+                :line 25)
+                nil nil)
+            ("features.h" include (:line 27) nil nil)
+            ("bits/types.h" include (:line 29) nil nil)
+            ("__need_time_t" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("__need_timespec" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("time.h" include (:line 39) nil nil)
+            ("dev_t" type
+               (:type "typedef"
+                :line 46)
+                nil nil)
+            ("__dev_t_defined" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("gid_t" type
+               (:type "typedef"
+                :line 51)
+                nil nil)
+            ("__gid_t_defined" variable
+               (:constant-flag t
+                :line 52)
+                nil nil)
+            ("ino_t" type
+               (:type "typedef"
+                :line 57)
+                nil nil)
+            ("ino_t" type
+               (:type "typedef"
+                :line 59)
+                nil nil)
+            ("__ino_t_defined" variable
+               (:constant-flag t
+                :line 61)
+                nil nil)
+            ("mode_t" type
+               (:type "typedef"
+                :line 65)
+                nil nil)
+            ("__mode_t_defined" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("nlink_t" type
+               (:type "typedef"
+                :line 70)
+                nil nil)
+            ("__nlink_t_defined" variable
+               (:constant-flag t
+                :line 71)
+                nil nil)
+            ("off_t" type
+               (:type "typedef"
+                :line 76)
+                nil nil)
+            ("off_t" type
+               (:type "typedef"
+                :line 78)
+                nil nil)
+            ("__off_t_defined" variable
+               (:constant-flag t
+                :line 80)
+                nil nil)
+            ("uid_t" type
+               (:type "typedef"
+                :line 84)
+                nil nil)
+            ("__uid_t_defined" variable
+               (:constant-flag t
+                :line 85)
+                nil nil)
+            ("blkcnt_t" type
+               (:type "typedef"
+                :line 92)
+                nil nil)
+            ("blkcnt_t" type
+               (:type "typedef"
+                :line 94)
+                nil nil)
+            ("__blkcnt_t_defined" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("blksize_t" type
+               (:type "typedef"
+                :line 100)
+                nil nil)
+            ("__blksize_t_defined" variable
+               (:constant-flag t
+                :line 101)
+                nil nil)
+            ("bits/stat.h" include (:line 107) nil nil)
+            ("S_IFMT" variable
+               (:constant-flag t
+                :line 110)
+                nil nil)
+            ("S_IFDIR" variable
+               (:constant-flag t
+                :line 111)
+                nil nil)
+            ("S_IFCHR" variable
+               (:constant-flag t
+                :line 112)
+                nil nil)
+            ("S_IFBLK" variable
+               (:constant-flag t
+                :line 113)
+                nil nil)
+            ("S_IFREG" variable
+               (:constant-flag t
+                :line 114)
+                nil nil)
+            ("S_IFIFO" variable
+               (:constant-flag t
+                :line 116)
+                nil nil)
+            ("S_IFLNK" variable
+               (:constant-flag t
+                :line 119)
+                nil nil)
+            ("S_IFSOCK" variable
+               (:constant-flag t
+                :line 123)
+                nil nil)
+            ("__S_ISTYPE" variable
+               (:constant-flag t
+                :line 129)
+                nil nil)
+            ("S_ISDIR" variable
+               (:constant-flag t
+                :line 131)
+                nil nil)
+            ("S_ISCHR" variable
+               (:constant-flag t
+                :line 132)
+                nil nil)
+            ("S_ISBLK" variable
+               (:constant-flag t
+                :line 133)
+                nil nil)
+            ("S_ISREG" variable
+               (:constant-flag t
+                :line 134)
+                nil nil)
+            ("S_ISFIFO" variable
+               (:constant-flag t
+                :line 136)
+                nil nil)
+            ("S_ISLNK" variable
+               (:constant-flag t
+                :line 139)
+                nil nil)
+            ("S_ISLNK" variable
+               (:constant-flag t
+                :line 143)
+                nil nil)
+            ("S_ISSOCK" variable
+               (:constant-flag t
+                :line 148)
+                nil nil)
+            ("S_TYPEISMQ" variable
+               (:constant-flag t
+                :line 156)
+                nil nil)
+            ("S_TYPEISSEM" variable
+               (:constant-flag t
+                :line 157)
+                nil nil)
+            ("S_TYPEISSHM" variable
+               (:constant-flag t
+                :line 158)
+                nil nil)
+            ("S_ISUID" variable
+               (:constant-flag t
+                :line 164)
+                nil nil)
+            ("S_ISGID" variable
+               (:constant-flag t
+                :line 165)
+                nil nil)
+            ("S_ISVTX" variable
+               (:constant-flag t
+                :line 169)
+                nil nil)
+            ("S_IRUSR" variable
+               (:constant-flag t
+                :line 172)
+                nil nil)
+            ("S_IWUSR" variable
+               (:constant-flag t
+                :line 173)
+                nil nil)
+            ("S_IXUSR" variable
+               (:constant-flag t
+                :line 174)
+                nil nil)
+            ("S_IRWXU" variable
+               (:constant-flag t
+                :line 176)
+                nil nil)
+            ("S_IREAD" variable
+               (:constant-flag t
+                :line 179)
+                nil nil)
+            ("S_IWRITE" variable
+               (:constant-flag t
+                :line 180)
+                nil nil)
+            ("S_IEXEC" variable
+               (:constant-flag t
+                :line 181)
+                nil nil)
+            ("S_IRGRP" variable
+               (:constant-flag t
+                :line 184)
+                nil nil)
+            ("S_IWGRP" variable
+               (:constant-flag t
+                :line 185)
+                nil nil)
+            ("S_IXGRP" variable
+               (:constant-flag t
+                :line 186)
+                nil nil)
+            ("S_IRWXG" variable
+               (:constant-flag t
+                :line 188)
+                nil nil)
+            ("S_IROTH" variable
+               (:constant-flag t
+                :line 190)
+                nil nil)
+            ("S_IWOTH" variable
+               (:constant-flag t
+                :line 191)
+                nil nil)
+            ("S_IXOTH" variable
+               (:constant-flag t
+                :line 192)
+                nil nil)
+            ("S_IRWXO" variable
+               (:constant-flag t
+                :line 194)
+                nil nil)
+            ("ACCESSPERMS" variable
+               (:constant-flag t
+                :line 199)
+                nil nil)
+            ("ALLPERMS" variable
+               (:constant-flag t
+                :line 200)
+                nil nil)
+            ("DEFFILEMODE" variable
+               (:constant-flag t
+                :line 201)
+                nil nil)
+            ("S_BLKSIZE" variable
+               (:constant-flag t
+                :line 203)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil)
+                    nil)                  
+                :line 210
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 214
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil)
+                    nil)                  
+                :line 229
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 230
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 240
+                :prototype-flag t)
+                nil nil)
+            ("fstatat" variable
+               (:constant-flag t
+                :line 248)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 255
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil)
+                    nil)                  
+                :line 264
+                :prototype-flag t)
+                nil nil)
+            ("lstat" variable
+               (:constant-flag t
+                :line 272)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil)
+                    nil)                  
+                :line 278
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 285
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 292
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 322
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 329
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 337
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 344
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 351
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 358
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil))                  
+                :line 367
+                :prototype-flag t)
+                nil nil)
+            ("_STAT_VER" variable
+               (:constant-flag t
+                :line 391)
+                nil nil)
+            ("_MKNOD_VER" variable
+               (:constant-flag t
+                :line 394)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "3") nil nil))                  
+                :line 400
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 402
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 404
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "3") nil nil)
+                    nil)                  
+                :line 407
+                :prototype-flag t)
+                nil nil)
+            ("__fxstat" variable
+               (:constant-flag t
+                :line 425)
+                nil nil)
+            ("__xstat" variable
+               (:constant-flag t
+                :line 426)
+                nil nil)
+            ("__lxstat" variable
+               (:constant-flag t
+                :line 427)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "3") nil nil))                  
+                :line 433
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 435
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 437
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "3") nil nil)
+                    nil)                  
+                :line 440
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "2") nil nil)
+                    nil)                  
+                :line 443
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "3") nil nil)
+                    nil)                  
+                :line 447
+                :prototype-flag t)
+                nil nil)
+            ("stat" function
+               (:arguments (nil nil)
+                :line 453)
+                nil nil)
+            ("lstat" function
+               (:arguments (nil nil)
+                :line 460)
+                nil nil)
+            ("fstat" function
+               (:arguments (nil nil)
+                :line 467)
+                nil nil)
+            ("fstatat" function
+               (:arguments (nil nil nil nil)
+                :line 474)
+                nil nil)
+            ("mknod" function
+               (:arguments (nil nil nil)
+                :line 483)
+                nil nil)
+            ("mknodat" function
+               (:arguments (nil nil nil nil)
+                :line 491)
+                nil nil)
+            ("stat64" function
+               (:arguments (nil nil)
+                :line 502)
+                nil nil)
+            ("lstat64" function
+               (:arguments (nil nil)
+                :line 509)
+                nil nil)
+            ("fstat64" function
+               (:arguments (nil nil)
+                :line 516)
+                nil nil)
+            ("fstatat64" function
+               (:arguments (nil nil nil nil)
+                :line 523)
+                nil nil))          
+    :file "stat.h"
+    :pointmax 26983
+    :fsize 16711
+    :lastmodtime '(19231 24720)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "time.h"
+    :tags 
+        '( ("_SYS_TIME_H" variable
+               (:constant-flag t
+                :line 21)
+                nil nil)
+            ("features.h" include (:line 23) nil nil)
+            ("bits/types.h" include (:line 25) nil nil)
+            ("__need_time_t" variable
+               (:constant-flag t
+                :line 26)
+                nil nil)
+            ("time.h" include (:line 27) nil nil)
+            ("__need_timeval" variable
+               (:constant-flag t
+                :line 28)
+                nil nil)
+            ("bits/time.h" include (:line 29) nil nil)
+            ("sys/select.h" include (:line 31) nil nil)
+            ("suseconds_t" type
+               (:type "typedef"
+                :line 34)
+                nil nil)
+            ("__suseconds_t_defined" variable
+               (:constant-flag t
+                :line 35)
+                nil nil)
+            ("TIMEVAL_TO_TIMESPEC" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("TIMESPEC_TO_TIMEVAL" variable
+               (:constant-flag t
+                :line 47)
+                nil nil)
+            ("timezone" type
+               (:type "struct"
+                :line 57
+                :members 
+                  ( ("tz_minuteswest" variable
+                       (:protection "public"
+                        :line 59)
+                        nil nil)
+                    ("tz_dsttime" variable
+                       (:protection "public"
+                        :line 60)
+                        nil nil))                  )
+                nil nil)
+            ("__timezone_ptr_t" type
+               (:type "typedef"
+                :line 63)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 74
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 81
+                :prototype-flag t)
+                nil nil)
+            ("__itimer_which" type
+               (:type "enum"
+                :line 93)
+                nil nil)
+            ("ITIMER_REAL" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("ITIMER_REAL" variable
+               (:constant-flag t
+                :line 97)
+                nil nil)
+            ("ITIMER_VIRTUAL" variable
+               (:constant-flag t
+                :line 99)
+                nil nil)
+            ("ITIMER_VIRTUAL" variable
+               (:constant-flag t
+                :line 100)
+                nil nil)
+            ("ITIMER_PROF" variable
+               (:constant-flag t
+                :line 103)
+                nil nil)
+            ("ITIMER_PROF" variable
+               (:constant-flag t
+                :line 104)
+                nil nil)
+            ("itimerval" type
+               (:type "struct"
+                :line 109
+                :members 
+                  ( ("it_interval" variable
+                       (:protection "public"
+                        :line 112)
+                        nil nil)
+                    ("it_value" variable
+                       (:protection "public"
+                        :line 114)
+                        nil nil))                  )
+                nil nil)
+            ("__itimer_which_t" type
+               (:type "typedef"
+                :line 120)
+                nil nil)
+            ("__itimer_which_t" type
+               (:type "typedef"
+                :line 122)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 141
+                :prototype-flag t)
+                nil nil)
+            ("__THROW" function
+               (:arguments 
+                  ( ("" variable (:type "1") nil nil))                  
+                :line 146
+                :prototype-flag t)
+                nil nil)
+            ("timerisset" variable
+               (:constant-flag t
+                :line 164)
+                nil nil)
+            ("timerclear" variable
+               (:constant-flag t
+                :line 165)
+                nil nil)
+            ("timercmp" variable
+               (:constant-flag t
+                :line 166)
+                nil nil)
+            ("timeradd" variable
+               (:constant-flag t
+                :line 170)
+                nil nil)
+            ("timersub" variable
+               (:constant-flag t
+                :line 180)
+                nil nil))          
+    :file "time.h"
+    :pointmax 26983
+    :fsize 6825
+    :lastmodtime '(19231 24715)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "select.h"
+    :tags 
+        '( ("_SYS_SELECT_H" variable
+               (:constant-flag t
+                :line 23)
+                nil nil)
+            ("features.h" include (:line 25) nil nil)
+            ("bits/types.h" include (:line 28) nil nil)
+            ("bits/select.h" include (:line 31) nil nil)
+            ("bits/sigset.h" include (:line 34) nil nil)
+            ("__sigset_t_defined" variable
+               (:constant-flag t
+                :line 37)
+                nil nil)
+            ("sigset_t" type
+               (:type "typedef"
+                :line 38)
+                nil nil)
+            ("__need_time_t" variable
+               (:constant-flag t
+                :line 42)
+                nil nil)
+            ("__need_timespec" variable
+               (:constant-flag t
+                :line 43)
+                nil nil)
+            ("time.h" include (:line 44) nil nil)
+            ("__need_timeval" variable
+               (:constant-flag t
+                :line 45)
+                nil nil)
+            ("bits/time.h" include (:line 46) nil nil)
+            ("suseconds_t" type
+               (:type "typedef"
+                :line 49)
+                nil nil)
+            ("__suseconds_t_defined" variable
+               (:constant-flag t
+                :line 50)
+                nil nil)
+            ("__fd_mask" type
+               (:type "typedef"
+                :line 55)
+                nil nil)
+            ("__NFDBITS" variable
+               (:constant-flag t
+                :line 58)
+                nil nil)
+            ("__FDELT" variable
+               (:constant-flag t
+                :line 59)
+                nil nil)
+            ("__FDMASK" variable
+               (:constant-flag t
+                :line 60)
+                nil nil)
+            ("__NFDBITS" variable
+               (:constant-flag t
+                :line 62)
+                nil nil)
+            ("__FDELT" variable
+               (:constant-flag t
+                :line 63)
+                nil nil)
+            ("__FDMASK" variable
+               (:constant-flag t
+                :line 64)
+                nil nil)
+            ("fds_bits" variable
+               (:parent "__anon1"
+                :line 72
+                :protection "public")
+                nil nil)
+            ("__FDS_BITS" variable
+               (:constant-flag t
+                :line 73)
+                nil nil)
+            ("fd_set" type
+               (:type "typedef"
+                :line 78)
+                nil nil)
+            ("FD_SETSIZE" variable
+               (:constant-flag t
+                :line 81)
+                nil nil)
+            ("fd_mask" type
+               (:type "typedef"
+                :line 85)
+                nil nil)
+            ("NFDBITS" variable
+               (:constant-flag t
+                :line 88)
+                nil nil)
+            ("FD_SET" variable
+               (:constant-flag t
+                :line 93)
+                nil nil)
+            ("FD_CLR" variable
+               (:constant-flag t
+                :line 94)
+                nil nil)
+            ("FD_ISSET" variable
+               (:constant-flag t
+                :line 95)
+                nil nil)
+            ("FD_ZERO" variable
+               (:constant-flag t
+                :line 96)
+                nil nil)
+            ("select" function
+               (:arguments (nil nil nil nil nil)
+                :line 109
+                :prototype-flag t)
+                nil nil)
+            ("pselect" function
+               (:arguments (nil nil nil nil nil nil)
+                :line 121
+                :prototype-flag t)
+                nil nil))          
+    :file "select.h"
+    :pointmax 26983
+    :fsize 4151
+    :lastmodtime '(19231 24724)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sysmacros.h"
+    :tags 
+        '( ("_SYS_SYSMACROS_H" variable
+               (:constant-flag t
+                :line 22)
+                nil nil)
+            ("features.h" include (:line 24) nil nil)
+            ("gnu_dev_major" function
+               (:arguments (nil)
+                :line 43)
+                nil nil)
+            ("gnu_dev_minor" function
+               (:arguments (nil)
+                :line 49)
+                nil nil)
+            ("gnu_dev_makedev" function
+               (:arguments (nil nil)
+                :line 55)
+                nil nil)
+            ("major" variable
+               (:constant-flag t
+                :line 65)
+                nil nil)
+            ("minor" variable
+               (:constant-flag t
+                :line 66)
+                nil nil)
+            ("makedev" variable
+               (:constant-flag t
+                :line 67)
+                nil nil))          
+    :file "sysmacros.h"
+    :pointmax 26983
+    :fsize 2468
+    :lastmodtime '(19231 24719)
+    :unmatched-syntax '((string 6296 . 6298) (string "\"/IMEngine/SunPinyin/Punct\"" 6279 . 6294) (string 6238 . 6240) (string "\"/IMEngine/SunPinyin/Letter\"" 6220 . 6236) (string 6179 . 6181) (string "\"/IMEngine/SunPinyin/Status\"" 6161 . 6177) (number 6120 . 6121) (number 6079 . 6080) (symbol 5697 . 5701) (BOOL 5692 . 5696))
+    :lexical-table 
+        '(("Uses_STL_AUTOPTR")
+          ("Uses_STL_IOMANIP")
+          ("Uses_STL_VECTOR")
+          ("Uses_C_STDIO")
+          ("SCIM_HALF_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-punct.png\")" 3695 . 3727)))
+          ("Uses_SCIM_UTILITY")
+          ("Uses_STL_FSTREAM")
+          ("Uses_STL_MAP")
+          ("Uses_SCIM_LOOKUP_TABLE")
+          ("Uses_STL_FUNCTIONAL")
+          ("SCIM_ICONDIR" . ((string "\"/usr/share/scim/icons\"" 3269 . 3292)))
+          ("SCIM_SUNPINYIN_ICON_FILE" . ((semantic-list "(SCIM_ICONDIR \"/sunpinyin_logo.xpm\")" 3377 . 3413)))
+          ("SCIM_FULL_PUNCT_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-punct.png\")" 3619 . 3651)))
+          ("Uses_SCIM_DEBUG")
+          ("SCIM_PROP_LETTER" . ((string "\"/IMEngine/SunPinyin/Letter\"" 2989 . 3017)))
+          ("SCIM_SUNPINYIN_DATADIR" . ((string "\"/usr/share/scim/sunpinyin\"" 3166 . 3193)))
+          ("SCIM_FULL_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/full-letter.png\")" 3465 . 3498)))
+          ("Uses_STL_ALGORITHM")
+          ("SCIM_PROP_STATUS" . ((string "\"/IMEngine/SunPinyin/Status\"" 2918 . 2946)))
+          ("SCIM_HALF_LETTER_ICON" . ((semantic-list "(SCIM_ICONDIR \"/half-letter.png\")" 3542 . 3575)))
+          ("Uses_SCIM_CONFIG_BASE")
+          ("Uses_STL_IOSTREAM")
+          ("Uses_SCIM_IMENGINE")
+          ("Uses_STL_UTILITY")
+          ("Uses_SCIM_ICONV")
+          ("Uses_SCIM_CONFIG_PATH")
+          ("SCIM_PROP_PUNCT" . ((string "\"/IMEngine/SunPinyin/Punct\"" 3060 . 3087)))
+          )
+
+    )
+   (semanticdb-table "sem.h"
+    :tags 
+        '( ("_SYS_SEM_H" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("features.h" include (:line 22) nil nil)
+            ("__need_size_t" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("stddef.h" include (:line 25) nil nil)
+            ("sys/ipc.h" include (:line 28) nil nil)
+            ("bits/sem.h" include (:line 31) nil nil)
+            ("__need_timespec" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("time.h" include (:line 35) nil nil)
+            ("sembuf" type
+               (:members 
+                  ( ("sem_num" variable
+                       (:protection "public"
+                        :line 44)
+                        nil nil)
+                    ("sem_op" variable
+                       (:protection "public"
+                        :line 45)
+                        nil nil)
+                    ("sem_flg" variable
+                       (:protection "public"
+                        :line 46)
+                        nil nil))                  
+                :line 42
+                :type "struct")
+                nil nil))          
+    :file "sem.h"
+    :pointmax 14412
+    :fsize 2120
+    :lastmodtime '(19231 24726)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "shm.h"
+    :tags 
+        '( ("_SYS_SHM_H" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("features.h" include (:line 22) nil nil)
+            ("__need_size_t" variable
+               (:constant-flag t
+                :line 24)
+                nil nil)
+            ("stddef.h" include (:line 25) nil nil)
+            ("sys/ipc.h" include (:line 28) nil nil)
+            ("bits/shm.h" include (:line 31) nil nil)
+            ("__need_time_t" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("time.h" include (:line 35) nil nil)
+            ("pid_t" type
+               (:type "typedef"
+                :line 39)
+                nil nil)
+            ("__pid_t_defined" variable
+               (:constant-flag t
+                :line 40)
+                nil nil))          
+    :file "shm.h"
+    :pointmax 14412
+    :fsize 1965
+    :lastmodtime '(19231 24726)
+    :unmatched-syntax 'nil
+    )
+   (semanticdb-table "ipc.h"
+    :tags 
+        '( ("_SYS_IPC_H" variable
+               (:constant-flag t
+                :line 20)
+                nil nil)
+            ("features.h" include (:line 22) nil nil)
+            ("bits/ipctypes.h" include (:line 29) nil nil)
+            ("bits/ipc.h" include (:line 30) nil nil)
+            ("uid_t" type
+               (:type "typedef"
+                :line 33)
+                nil nil)
+            ("__uid_t_defined" variable
+               (:constant-flag t
+                :line 34)
+                nil nil)
+            ("gid_t" type
+               (:type "typedef"
+                :line 38)
+                nil nil)
+            ("__gid_t_defined" variable
+               (:constant-flag t
+                :line 39)
+                nil nil)
+            ("mode_t" type
+               (:type "typedef"
+                :line 43)
+                nil nil)
+            ("__mode_t_defined" variable
+               (:constant-flag t
+                :line 44)
+                nil nil)
+            ("key_t" type
+               (:type "typedef"
+                :line 48)
+                nil nil)
+            ("__key_t_defined" variable
+               (:constant-flag t
+                :line 49)
+                nil nil))          
+    :file "ipc.h"
+    :pointmax 14412
+    :fsize 1706
+    :lastmodtime '(19231 24726)
+    :unmatched-syntax 'nil
+    )
+   )
+  :file "!usr!include!sys!semantic.cache"
+  :semantic-tag-version "2.0pre6"
+  :semanticdb-version "2.0pre6"
+  )
